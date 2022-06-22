@@ -3,7 +3,7 @@ Library for fetching JSON data from site https://enka.shinshin.moe/
 
 # Installation
 ```
-pip install enkanetwork
+pip install enkanetwork.py
 ```
 
 # Usage
