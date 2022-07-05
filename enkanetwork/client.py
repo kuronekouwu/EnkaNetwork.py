@@ -1,15 +1,21 @@
 import aiohttp
 import sys
 
+from typing import Union
+
 from .model import EnkaNetworkResponse
 from .exception import VaildateUIDError, UIDNotFounded
+from .json import Config
+from .utils import create_path, VERSION, validate_uid
 
 class EnkaNetworkAPI:
-    URL = "https://enka.shinshin.moe/u/{uid}/__data.json"
-    USER_AGENT = "EnkaNetwork.py / {version} (Python {major}.{minor}.{micro})"
+    USER_AGENT = "EnkaNetwork.py/{version} (Python {major}.{minor}.{micro})"
 
-    def __init__(self) -> None:
-        pass
+    def __init__(self, lang: str = "en") -> None:
+        # Set language and load config
+        Config.set_languege(lang)
+        Config.load_json_data()
+        Config.load_json_lang()
     
     async def __get_headers(self):
         # Get python version
@@ -17,29 +23,33 @@ class EnkaNetworkAPI:
 
         return {
             "User-Agent": self.USER_AGENT.format(
-                version='1.0.0',
+                version=VERSION,
                 major=python_version.major,
                 minor=python_version.minor,
                 micro=python_version.micro
             ),
         }
 
-    async def fetch_user(self, uid: int) -> EnkaNetworkResponse:
-        if not isinstance(uid, int) or \
-            len(str(uid)) != 9 or \
-            (uid < 100000000 and uid > 999999999):
+    async def fetch_user(self, uid: Union[str, int]) -> EnkaNetworkResponse:
+        if not validate_uid(str(uid)):
             raise VaildateUIDError("Validate UID failed. Please check your UID.")
             
-        session = aiohttp.ClientSession(headers=await self.__get_headers())
-        resp = await session.request(method="GET", url=self.URL.format(uid=uid))
-        if resp.status != 200:
-            raise UIDNotFounded(f"UID {uid} not found.")
+        async with aiohttp.ClientSession(headers=await self.__get_headers()) as session:
+            # Fetch JSON data
+            resp = await session.request(method="GET", url=create_path(f"u/{uid}/__data.json"))
 
-        data = await resp.json()
-                    
-        if not data:
-            raise UIDNotFounded(f"UID {uid} not found.")
+            # Check if status code is not 200 (Ex. 500)
+            if resp.status != 200:
+                raise UIDNotFounded(f"UID {uid} not found.")
 
-        await session.close()
+            # Parse JSON data
+            data = await resp.json()
+                        
+            if not data:
+                raise UIDNotFounded(f"UID {uid} not found.")
 
-        return EnkaNetworkResponse.parse_obj(data)
+            # Cleanup
+            await session.close()
+
+            # Return data
+            return EnkaNetworkResponse.parse_obj(data)
