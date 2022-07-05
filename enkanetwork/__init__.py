@@ -1,6 +1,7 @@
 from .client import *
 from .exception import *
 from .model import *
+from .utils import *
 
-__VERSION__ = '1.0.0'
-__AUTHOR__ = 'M-307'
+__VERSION__ = VERSION
+__AUTHOR__ = AUTHOR
