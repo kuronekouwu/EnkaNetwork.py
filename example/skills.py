@@ -1,6 +1,6 @@
 import asyncio
 
-from enkanetwork import EnkaNetworkAPI, Config
+from enkanetwork import EnkaNetworkAPI
 
 client = EnkaNetworkAPI(lang="th")
 
