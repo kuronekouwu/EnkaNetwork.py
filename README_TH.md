@@ -1,14 +1,14 @@
 # Enka Network Python
-EN | [TH](./README_TH.md)
+[EN](./README.md) | TH
 
-Library for fetching JSON data from site https://enka.shinshin.moe/
+ไลบารีสำหรับดึงข้อมูล JSON จากเว็บ https://enka.shinshin.moe
 
-# 💾 Installation
+# 💾 วิธีการติดตั้ง
 ```
 pip install enkanetwork.py
 ```
 
-# ✨ Usage
+# ✨ วิธีใช้
 ```py
 import asyncio
 
@@ -42,14 +42,14 @@ Abyss floor: 8 - 3
 Cache timeout: 300
 ```
 
-If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
+หากต้องการดูข้อมูล API เพิ่มเติม ไปดูที่ [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
 
-## Example
-Please see in [example](./example/) folder.
+## ตัวอย่างการใช้งาน
+ดูได้ที่โฟเดอร์ [example](./example/)
 
 # LICENSE
 [MIT License](./LICENSE)
 
-![Keqing](https://c.tenor.com/MnkpnVCLcb0AAAAC/keqing-dance.gif)
+![น้อง Keqing น่ารัก 💗](https://c.tenor.com/MnkpnVCLcb0AAAAC/keqing-dance.gif)
 
-[Picture by KKOMDASTRO](https://twitter.com/KKOMDASTRO)
+[รูปจาก KKOMDASTRO](https://twitter.com/KKOMDASTRO)
