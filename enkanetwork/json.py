@@ -1,12 +1,16 @@
 import json
 import os
+import logging
 
 from typing import Dict, List
 from io import TextIOWrapper
 
 PATH = os.path.dirname(os.path.abspath(__file__))
+
 def _load(path: str) -> TextIOWrapper:
     return open(path, "r", encoding="utf-8")
+
+LOGGER = logging.getLogger(__name__)
 
 class Config:
     # Characters & Skills
@@ -25,6 +29,7 @@ class Config:
         if not lang.split("-")[0].lower() in cls.LANGS_SUPPORTS:
             raise ValueError("Language not supported. Please check your language.")
 
+        LOGGER.debug(f"Set language to {lang}.")
         cls.LANGS = lang.upper()
 
     @classmethod
@@ -32,6 +37,7 @@ class Config:
         _PATH = os.path.join(PATH, "json", "lang")
         FILE_LANG = os.listdir(_PATH)
         for FILENAME in FILE_LANG:
+            LOGGER.debug(f"Loading language file {FILENAME}...")
             cls.HASH_MAP[FILENAME.split(".")[0]] = json.load(_load(os.path.join(_PATH, FILENAME)))
 
     @classmethod
@@ -39,4 +45,5 @@ class Config:
         _PATH = os.path.join(PATH, "json", "data")
         FILE_DATA = os.listdir(_PATH)
         for FILENAME in FILE_DATA:
+            LOGGER.debug(f"Loading data file {FILENAME}...")
             cls.DATA[FILENAME.split(".")[0]] = json.load(_load(os.path.join(_PATH, FILENAME)))

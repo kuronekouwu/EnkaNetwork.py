@@ -1,9 +1,12 @@
+import logging
+
 from pydantic import BaseModel, Field
 from typing import List, Any
 
 from ..json import Config
 from ..utils import create_ui_path
 
+LOGGER = logging.getLogger(__name__)
 class ProfilePicture(BaseModel):
     """
         API Response data
@@ -19,9 +22,14 @@ class ProfilePicture(BaseModel):
         super().__init__(**data)
 
         # Get character
+        LOGGER.debug(f"=== Avatar ===")
+        LOGGER.debug(f"Getting character wtih id: {data['avatarId']}")
         character = Config.DATA["characters"].get(str(data["avatarId"]))
-        if character:
-            __pydantic_self__.icon = create_ui_path(character["SideIconName"].replace("_Side", ""))
+        if not character:
+            LOGGER.error(f"Character not found with id: {data['avatarId']}")
+            return
+            
+        __pydantic_self__.icon = create_ui_path(character["SideIconName"].replace("_Side", ""))
 
 class showAvatar(BaseModel):
     """
@@ -40,13 +48,26 @@ class showAvatar(BaseModel):
         super().__init__(**data)
 
         # Get character
-        character = Config.DATA["characters"].get(str(data["avatarId"]))
-        if character:
-            # Get name hash map
-            name = Config.HASH_MAP["characters"].get(str(character["NameTextMapHash"]))
+        LOGGER.debug(f"=== Character preview ===")
+        LOGGER.debug(f"Getting character preview wtih id: {__pydantic_self__.id}")
+        character_preview = Config.DATA["characters"].get(str(data["avatarId"]))
 
-            __pydantic_self__.name = name[Config.LANGS]
-            __pydantic_self__.icon = create_ui_path(character["SideIconName"].replace("_Side", ""))
+        if not character_preview:
+            LOGGER.error(f"Character preview not found with id: {__pydantic_self__.id}")
+            return
+
+        __pydantic_self__.icon = create_ui_path(character_preview["SideIconName"].replace("_Side", ""))
+
+        # Get name hash map
+        LOGGER.debug(f"Getting name hash map id: {character_preview['nameTextMapHash']}")
+        _name = Config.HASH_MAP["characters"].get(str(character_preview["nameTextMapHash"]))
+
+        if _name is None:
+            LOGGER.error(f"Name hash map not found.")
+            return 
+
+        __pydantic_self__.name = _name[Config.LANGS]
+        
 
 class Namecard(BaseModel):
     id: int = 0
@@ -59,14 +80,26 @@ class Namecard(BaseModel):
         super().__init__(**data)
 
         if __pydantic_self__.id > 0:
+            LOGGER.debug(f"=== Namecard ===")
+            LOGGER.debug(f"Getting namecard wtih id: {__pydantic_self__.id}")
             # Get name card
             namecard = Config.DATA["namecards"].get(str(__pydantic_self__.id))
 
-            if namecard:
-                __pydantic_self__.name = Config.HASH_MAP["namecards"].get(str(namecard["nameTextMapHash"]))[Config.LANGS]
-                __pydantic_self__.icon = create_ui_path(namecard["icon"])
-                __pydantic_self__.banner = create_ui_path(namecard["banner"])
-                __pydantic_self__.navbar = create_ui_path(namecard["navbar"])
+            if not namecard:
+                LOGGER.error(f"Namecard not found with id: {__pydantic_self__.id}")
+                return
+
+            __pydantic_self__.icon = create_ui_path(namecard["icon"])
+            __pydantic_self__.banner = create_ui_path(namecard["banner"])
+            __pydantic_self__.navbar = create_ui_path(namecard["navbar"])
+
+            LOGGER.debug(f"Getting name hash map id: {namecard['nameTextMapHash']}")
+            _name = Config.HASH_MAP["namecards"].get(str(namecard["nameTextMapHash"]))
+            if _name is None:
+                LOGGER.error(f"Name hash map not found.")
+                return 
+
+            __pydantic_self__.name = _name[Config.LANGS]
 
 class PlayerInfo(BaseModel):
     """
