@@ -44,10 +44,28 @@ Cache timeout: 300
 
 หากต้องการดูข้อมูล API เพิ่มเติม ไปดูที่ [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
 
-## ตัวอย่างการใช้งาน
+## 🌎 ภาษาที่รองรับ
+| ภาษา        | รหัสโค๊ต   |
+|-------------|---------|
+|  English    |     en  |
+|  Россия     |     ru  |
+|  Tiếng Việt |     vi  |
+|  ไทย        |     th  |
+|  português  |     pt  |
+|  한국어      |     kr  |
+|  日本語      |     jp  |
+|  中文        |     zh  |
+|  Indonesian |     id  |
+|  français   |     fr  |
+|  español    |     es  |
+|  deutsch    |     de  |
+|  Taiwan     |    cht  |
+|  Chinese    |    chs  |
+
+## 👀 ตัวอย่างการใช้งาน
 ดูได้ที่โฟเดอร์ [example](./example/)
 
-# LICENSE
+# 📄 LICENSE
 [MIT License](./LICENSE)
 
 ![น้อง Keqing น่ารัก 💗](https://c.tenor.com/MnkpnVCLcb0AAAAC/keqing-dance.gif)

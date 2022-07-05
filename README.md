@@ -44,10 +44,28 @@ Cache timeout: 300
 
 If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
 
-## Example
+## 🌎 Languages Supported
+| Languege    |  Code   |
+|-------------|---------|
+|  English    |     en  |
+|  Россия     |     ru  |
+|  Tiếng Việt |     vi  |
+|  ไทย        |     th  |
+|  português  |     pt  |
+|  한국어      |     kr  |
+|  日本語      |     jp  |
+|  中文        |     zh  |
+|  Indonesian |     id  |
+|  français   |     fr  |
+|  español    |     es  |
+|  deutsch    |     de  |
+|  Taiwan     |    cht  |
+|  Chinese    |    chs  |
+
+## 👀 Example
 Please see in [example](./example/) folder.
 
-# LICENSE
+# 📄 LICENSE
 [MIT License](./LICENSE)
 
 ![Keqing](https://c.tenor.com/MnkpnVCLcb0AAAAC/keqing-dance.gif)
