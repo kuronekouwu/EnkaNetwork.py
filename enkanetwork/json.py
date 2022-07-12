@@ -5,10 +5,9 @@ import logging
 from typing import Dict, List
 from io import TextIOWrapper
 
-PATH = os.path.dirname(os.path.abspath(__file__))
+from .utils import request, get_default_header
 
-def _load(path: str) -> TextIOWrapper:
-    return open(path, "r", encoding="utf-8")
+PATH = os.path.dirname(os.path.abspath(__file__))
 
 LOGGER = logging.getLogger(__name__)
 
@@ -33,17 +32,27 @@ class Config:
         cls.LANGS = lang.upper()
 
     @classmethod
+    def get_path_json(cls) -> Dict[str, str]:
+        return {
+            "data": os.path.join(PATH, "json", "data"),
+            "langs": os.path.join(PATH, "json", "langs")
+        }
+
+    @classmethod
     def load_json_lang(cls) -> None:
-        _PATH = os.path.join(PATH, "json", "lang")
+        _PATH = cls.get_path_json()["langs"]
         FILE_LANG = os.listdir(_PATH)
         for FILENAME in FILE_LANG:
             LOGGER.debug(f"Loading language file {FILENAME}...")
-            cls.HASH_MAP[FILENAME.split(".")[0]] = json.load(_load(os.path.join(_PATH, FILENAME)))
+            cls.HASH_MAP[FILENAME.split(".")[0]] = json.load(cls._load(os.path.join(_PATH, FILENAME)))
 
     @classmethod
     def load_json_data(cls) -> None:
-        _PATH = os.path.join(PATH, "json", "data")
+        _PATH = cls.get_path_json()["data"]
         FILE_DATA = os.listdir(_PATH)
         for FILENAME in FILE_DATA:
             LOGGER.debug(f"Loading data file {FILENAME}...")
-            cls.DATA[FILENAME.split(".")[0]] = json.load(_load(os.path.join(_PATH, FILENAME)))
+            cls.DATA[FILENAME.split(".")[0]] = json.load(cls._load(os.path.join(_PATH, FILENAME)))
+    
+    def _load(path: str) -> TextIOWrapper:
+        return open(path, "r", encoding="utf-8")
