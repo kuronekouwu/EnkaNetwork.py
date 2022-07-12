@@ -2,9 +2,9 @@ import setuptools
 
 setuptools.setup(
 	name="enkanetwork.py",
-	version="1.2.1",
+	version="1.2.2",
 	author="M-307",
-	author_email="me@m-307.tk",
+	author_email="me@m307.dev",
 	description="Library for fetching JSON data from site https://enka.shinshin.moe/",
 	long_description=open("README.md", "r", encoding="utf-8").read(),
 	long_description_content_type="text/markdown",
