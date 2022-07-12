@@ -63,6 +63,7 @@ class EquipmentsDetail(BaseModel):
 
         if data["itemType"] == "ITEM_RELIQUARY": # AKA. Artifact
             LOGGER.debug(f"=== Artifact ===")
+            __pydantic_self__.icon = create_ui_path(data["icon"])
             __pydantic_self__.artifactType = EquipType[data["equipType"]]
             # Sub Stats
             for stats in data["reliquarySubstats"]:

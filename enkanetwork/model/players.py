@@ -16,7 +16,7 @@ class ProfilePicture(BaseModel):
     """
         Custom add data
     """
-    icon: str = ""
+    url: str = ""
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
@@ -29,7 +29,7 @@ class ProfilePicture(BaseModel):
             LOGGER.error(f"Character not found with id: {data['avatarId']}")
             return
             
-        __pydantic_self__.icon = create_ui_path(character["SideIconName"].replace("_Side", ""))
+        __pydantic_self__.url = create_ui_path(character["sideIconName"].replace("_Side", ""))
 
 class showAvatar(BaseModel):
     """
@@ -56,7 +56,7 @@ class showAvatar(BaseModel):
             LOGGER.error(f"Character preview not found with id: {__pydantic_self__.id}")
             return
 
-        __pydantic_self__.icon = create_ui_path(character_preview["SideIconName"].replace("_Side", ""))
+        __pydantic_self__.icon = create_ui_path(character_preview["sideIconName"].replace("_Side", ""))
 
         # Get name hash map
         LOGGER.debug(f"Getting name hash map id: {character_preview['nameTextMapHash']}")
@@ -90,8 +90,8 @@ class Namecard(BaseModel):
                 return
 
             __pydantic_self__.icon = create_ui_path(namecard["icon"])
-            __pydantic_self__.banner = create_ui_path(namecard["banner"])
-            __pydantic_self__.navbar = create_ui_path(namecard["navbar"])
+            __pydantic_self__.banner = create_ui_path(namecard["picPath"][1])
+            __pydantic_self__.navbar = create_ui_path(namecard["picPath"][0])
 
             LOGGER.debug(f"Getting name hash map id: {namecard['nameTextMapHash']}")
             _name = Config.HASH_MAP["namecards"].get(str(namecard["nameTextMapHash"]))
@@ -111,7 +111,7 @@ class PlayerInfo(BaseModel):
     nickname: str = ""
     signature: str = ""
     world_level: int = Field(1, alias="worldLevel")
-    profile_picture: ProfilePicture = Field(None, alias="profilePicture")
+    icon: ProfilePicture = Field(None, alias="profilePicture")
     # Avatars
     characters_preview: List[showAvatar] = Field([], alias="showAvatarInfoList")
     # Abyss floor

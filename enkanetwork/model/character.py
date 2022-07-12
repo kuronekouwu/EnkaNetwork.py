@@ -7,6 +7,7 @@ from .equipments import Equipments
 from .combats import CharacterCombat
 from ..json import Config
 from ..utils import create_ui_path
+from ..enum import ElementType
 
 LOGGER = logging.getLogger(__name__)
 
@@ -45,6 +46,7 @@ class CharacterInfo(BaseModel):
         Custom data
     """
     name: str = "" # Get from name hash map 
+    element: ElementType = ElementType.Unknown
     image: CharacterImages = CharacterImages()
     skills: List[CharacterSkill] = []
     constellations: List[CharacterConstellations] = []
@@ -74,14 +76,17 @@ class CharacterInfo(BaseModel):
 
         # Load icon
         __pydantic_self__.image = CharacterImages(
-            icon=create_ui_path(character["SideIconName"].replace("_Side", "")),
-            side=create_ui_path(character["SideIconName"]),
-            gacha=create_ui_path(character["SideIconName"].replace("AvatarIcon_Side", "Gacha_AvatarImg"))
+            icon=create_ui_path(character["sideIconName"].replace("_Side", "")),
+            side=create_ui_path(character["sideIconName"]),
+            gacha=create_ui_path(character["sideIconName"].replace("AvatarIcon_Side", "Gacha_AvatarImg"))
         )
+
+        # Get element
+        __pydantic_self__.element = ElementType[character["costElemType"]]
 
         # Load constellation
         LOGGER.debug(f"=== Constellation ===")
-        for constellation in character["Consts"]:
+        for constellation in character["talents"]:
             LOGGER.debug(f"Getting constellation icon ID: {constellation}")
             _constellation = Config.DATA["constellations"].get(str(constellation))
 
@@ -98,15 +103,15 @@ class CharacterInfo(BaseModel):
                 continue
 
             __pydantic_self__.constellations.append(CharacterConstellations(
-                id=_constellation["talentId"],
+                id=int(constellation),
                 name=_name[Config.LANGS],
-                icon=create_ui_path(constellation),
-                unlocked=_constellation["talentId"] in data["talentIdList"] if "talentIdList" in data else False
+                icon=create_ui_path(_constellation["icon"]),
+                unlocked=int(constellation) in data["talentIdList"] if "talentIdList" in data else False
             ))
         
         # Load skills 
         LOGGER.debug(f"=== Skills ===")
-        for skill in character["SkillOrder"]:
+        for skill in character["skills"]:
             LOGGER.debug(f"Getting skill ID: {skill}")
             _skill = Config.DATA["skills"].get(str(skill))
 
@@ -139,5 +144,6 @@ class CharacterInfo(BaseModel):
 
         # Get name from hash map
         __pydantic_self__.name = _name[Config.LANGS]
-
-        
+    
+    class Config:
+        use_enum_values = True
