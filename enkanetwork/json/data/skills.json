@@ -1,35 +1,7 @@
 {
-    "10001": {
-        "nameTextMapHash": 4051912989,
-        "skillIcon": ""
-    },
-    "10002": {
-        "nameTextMapHash": 2797477245,
-        "skillIcon": ""
-    },
-    "10003": {
-        "nameTextMapHash": 2648689197,
-        "skillIcon": ""
-    },
-    "10004": {
-        "nameTextMapHash": 3242239485,
-        "skillIcon": ""
-    },
-    "10006": {
-        "nameTextMapHash": 1336754621,
-        "skillIcon": ""
-    },
     "10011": {
         "nameTextMapHash": 2749847941,
         "skillIcon": "Skill_A_01"
-    },
-    "10101": {
-        "nameTextMapHash": 2767867797,
-        "skillIcon": ""
-    },
-    "10102": {
-        "nameTextMapHash": 35476733,
-        "skillIcon": ""
     },
     "10111": {
         "nameTextMapHash": 1707104125,
@@ -955,10 +927,6 @@
         "nameTextMapHash": 823035501,
         "skillIcon": "Skill_S_Yae_01"
     },
-    "10583": {
-        "nameTextMapHash": 2689623765,
-        "skillIcon": ""
-    },
     "10585": {
         "nameTextMapHash": 3675029365,
         "skillIcon": "Skill_E_Yae_01"
@@ -1139,14 +1107,6 @@
         "nameTextMapHash": 147099245,
         "skillIcon": "Btn_Temari_S_01"
     },
-    "20033": {
-        "nameTextMapHash": 4149105741,
-        "skillIcon": ""
-    },
-    "20034": {
-        "nameTextMapHash": 2624422197,
-        "skillIcon": ""
-    },
     "20035": {
         "nameTextMapHash": 2400987205,
         "skillIcon": "Skill_S_LunaRiteQuest_BanSkill"
@@ -1290,10 +1250,6 @@
     "20520": {
         "nameTextMapHash": 2680677653,
         "skillIcon": "Btn_HideAndSeek_Hider_E_01"
-    },
-    "20310": {
-        "nameTextMapHash": 4098249149,
-        "skillIcon": ""
     },
     "20311": {
         "nameTextMapHash": 467388069,

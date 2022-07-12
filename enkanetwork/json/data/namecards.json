@@ -1,821 +1,1172 @@
 {
     "210001": {
+        "nameTextMapHash": 3539860852,
         "icon": "UI_NameCardIcon_0",
-        "banner": "UI_NameCardPic_0_P",
-        "navbar": "",
-        "rarity": 4,
-        "nameTextMapHash": 3539860852
+        "picPath": [
+            "",
+            "UI_NameCardPic_0_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210002": {
+        "nameTextMapHash": 2465259604,
         "icon": "UI_NameCardIcon_Bp1",
-        "banner": "UI_NameCardPic_Bp1_P",
-        "navbar": "UI_NameCardPic_Bp1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2465259604
+        "picPath": [
+            "UI_NameCardPic_Bp1_Alpha",
+            "UI_NameCardPic_Bp1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210003": {
+        "nameTextMapHash": 273890284,
         "icon": "UI_NameCardIcon_Ambor",
-        "banner": "UI_NameCardPic_Ambor_P",
-        "navbar": "UI_NameCardPic_Ambor_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 273890284
+        "picPath": [
+            "UI_NameCardPic_Ambor_Alpha",
+            "UI_NameCardPic_Ambor_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210004": {
+        "nameTextMapHash": 2515326244,
         "icon": "UI_NameCardIcon_Klee",
-        "banner": "UI_NameCardPic_Klee_P",
-        "navbar": "UI_NameCardPic_Klee_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2515326244
+        "picPath": [
+            "UI_NameCardPic_Klee_Alpha",
+            "UI_NameCardPic_Klee_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210005": {
+        "nameTextMapHash": 1029388116,
         "icon": "UI_NameCardIcon_Diluc",
-        "banner": "UI_NameCardPic_Diluc_P",
-        "navbar": "UI_NameCardPic_Diluc_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1029388116
+        "picPath": [
+            "UI_NameCardPic_Diluc_Alpha",
+            "UI_NameCardPic_Diluc_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210006": {
+        "nameTextMapHash": 179136692,
         "icon": "UI_NameCardIcon_Razor",
-        "banner": "UI_NameCardPic_Razor_P",
-        "navbar": "UI_NameCardPic_Razor_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 179136692
+        "picPath": [
+            "UI_NameCardPic_Razor_Alpha",
+            "UI_NameCardPic_Razor_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210007": {
+        "nameTextMapHash": 1368575780,
         "icon": "UI_NameCardIcon_Venti",
-        "banner": "UI_NameCardPic_Venti_P",
-        "navbar": "UI_NameCardPic_Venti_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1368575780
+        "picPath": [
+            "UI_NameCardPic_Venti_Alpha",
+            "UI_NameCardPic_Venti_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210008": {
+        "nameTextMapHash": 1458264396,
         "icon": "UI_NameCardIcon_Qin",
-        "banner": "UI_NameCardPic_Qin_P",
-        "navbar": "UI_NameCardPic_Qin_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1458264396
+        "picPath": [
+            "UI_NameCardPic_Qin_Alpha",
+            "UI_NameCardPic_Qin_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210009": {
+        "nameTextMapHash": 1225517052,
         "icon": "UI_NameCardIcon_Barbara",
-        "banner": "UI_NameCardPic_Barbara_P",
-        "navbar": "UI_NameCardPic_Barbara_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1225517052
+        "picPath": [
+            "UI_NameCardPic_Barbara_Alpha",
+            "UI_NameCardPic_Barbara_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210010": {
+        "nameTextMapHash": 739507180,
         "icon": "UI_NameCardIcon_Kaeya",
-        "banner": "UI_NameCardPic_Kaeya_P",
-        "navbar": "UI_NameCardPic_Kaeya_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 739507180
+        "picPath": [
+            "UI_NameCardPic_Kaeya_Alpha",
+            "UI_NameCardPic_Kaeya_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210011": {
+        "nameTextMapHash": 2137272300,
         "icon": "UI_NameCardIcon_Lisa",
-        "banner": "UI_NameCardPic_Lisa_P",
-        "navbar": "UI_NameCardPic_Lisa_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2137272300
+        "picPath": [
+            "UI_NameCardPic_Lisa_Alpha",
+            "UI_NameCardPic_Lisa_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210012": {
+        "nameTextMapHash": 1872093284,
         "icon": "UI_NameCardIcon_Sucrose",
-        "banner": "UI_NameCardPic_Sucrose_P",
-        "navbar": "UI_NameCardPic_Sucrose_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1872093284
+        "picPath": [
+            "UI_NameCardPic_Sucrose_Alpha",
+            "UI_NameCardPic_Sucrose_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210013": {
+        "nameTextMapHash": 488905812,
         "icon": "UI_NameCardIcon_Fischl",
-        "banner": "UI_NameCardPic_Fischl_P",
-        "navbar": "UI_NameCardPic_Fischl_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 488905812
+        "picPath": [
+            "UI_NameCardPic_Fischl_Alpha",
+            "UI_NameCardPic_Fischl_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210014": {
+        "nameTextMapHash": 73191444,
         "icon": "UI_NameCardIcon_Noel",
-        "banner": "UI_NameCardPic_Noel_P",
-        "navbar": "UI_NameCardPic_Noel_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 73191444
+        "picPath": [
+            "UI_NameCardPic_Noel_Alpha",
+            "UI_NameCardPic_Noel_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210015": {
+        "nameTextMapHash": 3868762092,
         "icon": "UI_NameCardIcon_Mona",
-        "banner": "UI_NameCardPic_Mona_P",
-        "navbar": "UI_NameCardPic_Mona_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3868762092
+        "picPath": [
+            "UI_NameCardPic_Mona_Alpha",
+            "UI_NameCardPic_Mona_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210016": {
+        "nameTextMapHash": 741394036,
         "icon": "UI_NameCardIcon_Bennett",
-        "banner": "UI_NameCardPic_Bennett_P",
-        "navbar": "UI_NameCardPic_Bennett_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 741394036
+        "picPath": [
+            "UI_NameCardPic_Bennett_Alpha",
+            "UI_NameCardPic_Bennett_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210017": {
+        "nameTextMapHash": 4038322452,
         "icon": "UI_NameCardIcon_Xiangling",
-        "banner": "UI_NameCardPic_Xiangling_P",
-        "navbar": "UI_NameCardPic_Xiangling_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4038322452
+        "picPath": [
+            "UI_NameCardPic_Xiangling_Alpha",
+            "UI_NameCardPic_Xiangling_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210018": {
+        "nameTextMapHash": 1472554132,
         "icon": "UI_NameCardIcon_Xingqiu",
-        "banner": "UI_NameCardPic_Xingqiu_P",
-        "navbar": "UI_NameCardPic_Xingqiu_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1472554132
+        "picPath": [
+            "UI_NameCardPic_Xingqiu_Alpha",
+            "UI_NameCardPic_Xingqiu_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210019": {
+        "nameTextMapHash": 3581079636,
         "icon": "UI_NameCardIcon_Qiqi",
-        "banner": "UI_NameCardPic_Qiqi_P",
-        "navbar": "UI_NameCardPic_Qiqi_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3581079636
+        "picPath": [
+            "UI_NameCardPic_Qiqi_Alpha",
+            "UI_NameCardPic_Qiqi_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210020": {
+        "nameTextMapHash": 3585227580,
         "icon": "UI_NameCardIcon_Keqing",
-        "banner": "UI_NameCardPic_Keqing_P",
-        "navbar": "UI_NameCardPic_Keqing_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3585227580
+        "picPath": [
+            "UI_NameCardPic_Keqing_Alpha",
+            "UI_NameCardPic_Keqing_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210021": {
+        "nameTextMapHash": 1728778908,
         "icon": "UI_NameCardIcon_Csxy1",
-        "banner": "UI_NameCardPic_Csxy1_P",
-        "navbar": "UI_NameCardPic_Csxy1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1728778908
+        "picPath": [
+            "UI_NameCardPic_Csxy1_Alpha",
+            "UI_NameCardPic_Csxy1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210022": {
+        "nameTextMapHash": 3616510012,
         "icon": "UI_NameCardIcon_Mxsy",
-        "banner": "UI_NameCardPic_Mxsy_P",
-        "navbar": "UI_NameCardPic_Mxsy_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3616510012
+        "picPath": [
+            "UI_NameCardPic_Mxsy_Alpha",
+            "UI_NameCardPic_Mxsy_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210023": {
+        "nameTextMapHash": 4069591388,
         "icon": "UI_NameCardIcon_Yxzl",
-        "banner": "UI_NameCardPic_Yxzl_P",
-        "navbar": "UI_NameCardPic_Yxzl_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4069591388
+        "picPath": [
+            "UI_NameCardPic_Yxzl_Alpha",
+            "UI_NameCardPic_Yxzl_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210024": {
+        "nameTextMapHash": 3919805516,
         "icon": "UI_NameCardIcon_Md",
-        "banner": "UI_NameCardPic_Md_P",
-        "navbar": "UI_NameCardPic_Md_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3919805516
+        "picPath": [
+            "UI_NameCardPic_Md_Alpha",
+            "UI_NameCardPic_Md_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210025": {
+        "nameTextMapHash": 1251144964,
         "icon": "UI_NameCardIcon_Ly",
-        "banner": "UI_NameCardPic_Ly_P",
-        "navbar": "UI_NameCardPic_Ly_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1251144964
+        "picPath": [
+            "UI_NameCardPic_Ly_Alpha",
+            "UI_NameCardPic_Ly_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210026": {
+        "nameTextMapHash": 2107257348,
         "icon": "UI_NameCardIcon_Yszj",
-        "banner": "UI_NameCardPic_Yszj_P",
-        "navbar": "UI_NameCardPic_Yszj_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2107257348
+        "picPath": [
+            "UI_NameCardPic_Yszj_Alpha",
+            "UI_NameCardPic_Yszj_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210027": {
+        "nameTextMapHash": 1000252212,
         "icon": "UI_NameCardIcon_Sss",
-        "banner": "UI_NameCardPic_Sss_P",
-        "navbar": "UI_NameCardPic_Sss_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1000252212
+        "picPath": [
+            "UI_NameCardPic_Sss_Alpha",
+            "UI_NameCardPic_Sss_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210028": {
+        "nameTextMapHash": 505938796,
         "icon": "UI_NameCardIcon_Tzz1",
-        "banner": "UI_NameCardPic_Tzz1_P",
-        "navbar": "UI_NameCardPic_Tzz1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 505938796
+        "picPath": [
+            "UI_NameCardPic_Tzz1_Alpha",
+            "UI_NameCardPic_Tzz1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210029": {
+        "nameTextMapHash": 3219583044,
         "icon": "UI_NameCardIcon_Sj1",
-        "banner": "UI_NameCardPic_Sj1_P",
-        "navbar": "UI_NameCardPic_Sj1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3219583044
+        "picPath": [
+            "UI_NameCardPic_Sj1_Alpha",
+            "UI_NameCardPic_Sj1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210030": {
+        "nameTextMapHash": 288420212,
         "icon": "UI_NameCardIcon_Olah1",
-        "banner": "UI_NameCardPic_Olah1_P",
-        "navbar": "UI_NameCardPic_Olah1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 288420212
+        "picPath": [
+            "UI_NameCardPic_Olah1_Alpha",
+            "UI_NameCardPic_Olah1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210031": {
+        "nameTextMapHash": 2892155556,
         "icon": "UI_NameCardIcon_Zdg1",
-        "banner": "UI_NameCardPic_Zdg1_P",
-        "navbar": "UI_NameCardPic_Zdg1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2892155556
+        "picPath": [
+            "UI_NameCardPic_Zdg1_Alpha",
+            "UI_NameCardPic_Zdg1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210032": {
+        "nameTextMapHash": 78129044,
         "icon": "UI_NameCardIcon_Lyws1",
-        "banner": "UI_NameCardPic_Lyws1_P",
-        "navbar": "UI_NameCardPic_Lyws1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 78129044
+        "picPath": [
+            "UI_NameCardPic_Lyws1_Alpha",
+            "UI_NameCardPic_Lyws1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210033": {
+        "nameTextMapHash": 2109606084,
         "icon": "UI_NameCardIcon_Ysxf1",
-        "banner": "UI_NameCardPic_Ysxf1_P",
-        "navbar": "UI_NameCardPic_Ysxf1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2109606084
+        "picPath": [
+            "UI_NameCardPic_Ysxf1_Alpha",
+            "UI_NameCardPic_Ysxf1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210038": {
+        "nameTextMapHash": 523001444,
         "icon": "UI_NameCardIcon_Ningguang",
-        "banner": "UI_NameCardPic_Ningguang_P",
-        "navbar": "UI_NameCardPic_Ningguang_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 523001444
+        "picPath": [
+            "UI_NameCardPic_Ningguang_Alpha",
+            "UI_NameCardPic_Ningguang_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210039": {
+        "nameTextMapHash": 3791261516,
         "icon": "UI_NameCardIcon_Beidou",
-        "banner": "UI_NameCardPic_Beidou_P",
-        "navbar": "UI_NameCardPic_Beidou_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3791261516
+        "picPath": [
+            "UI_NameCardPic_Beidou_Alpha",
+            "UI_NameCardPic_Beidou_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210040": {
+        "nameTextMapHash": 1185661092,
         "icon": "UI_NameCardIcon_Chongyun",
-        "banner": "UI_NameCardPic_Chongyun_P",
-        "navbar": "UI_NameCardPic_Chongyun_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1185661092
+        "picPath": [
+            "UI_NameCardPic_Chongyun_Alpha",
+            "UI_NameCardPic_Chongyun_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210041": {
+        "nameTextMapHash": 452965660,
         "icon": "UI_NameCardIcon_Tzz2",
-        "banner": "UI_NameCardPic_Tzz2_P",
-        "navbar": "UI_NameCardPic_Tzz2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 452965660
+        "picPath": [
+            "UI_NameCardPic_Tzz2_Alpha",
+            "UI_NameCardPic_Tzz2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210042": {
+        "nameTextMapHash": 1365245820,
         "icon": "UI_NameCardIcon_Bp2",
-        "banner": "UI_NameCardPic_Bp2_P",
-        "navbar": "UI_NameCardPic_Bp2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1365245820
+        "picPath": [
+            "UI_NameCardPic_Bp2_Alpha",
+            "UI_NameCardPic_Bp2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210043": {
+        "nameTextMapHash": 2512009332,
         "icon": "UI_NameCardIcon_Diona",
-        "banner": "UI_NameCardPic_Diona_P",
-        "navbar": "UI_NameCardPic_Diona_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2512009332
+        "picPath": [
+            "UI_NameCardPic_Diona_Alpha",
+            "UI_NameCardPic_Diona_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210044": {
+        "nameTextMapHash": 2333236916,
         "icon": "UI_NameCardIcon_Zhongli",
-        "banner": "UI_NameCardPic_Zhongli_P",
-        "navbar": "UI_NameCardPic_Zhongli_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2333236916
+        "picPath": [
+            "UI_NameCardPic_Zhongli_Alpha",
+            "UI_NameCardPic_Zhongli_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210045": {
+        "nameTextMapHash": 3735385756,
         "icon": "UI_NameCardPic_Xinyan",
-        "banner": "UI_NameCardPic_Xinyan_P",
-        "navbar": "UI_NameCardPic_Xinyan_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3735385756
+        "picPath": [
+            "UI_NameCardPic_Xinyan_Alpha",
+            "UI_NameCardPic_Xinyan_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210046": {
+        "nameTextMapHash": 532848108,
         "icon": "UI_NameCardIcon_Tartaglia",
-        "banner": "UI_NameCardPic_Tartaglia_P",
-        "navbar": "UI_NameCardPic_Tartaglia_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 532848108
+        "picPath": [
+            "UI_NameCardPic_Tartaglia_Alpha",
+            "UI_NameCardPic_Tartaglia_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210047": {
+        "nameTextMapHash": 1227874644,
         "icon": "UI_NameCardPic_Md2",
-        "banner": "UI_NameCardPic_Md2_P",
-        "navbar": "UI_NameCardPic_Md2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1227874644
+        "picPath": [
+            "UI_NameCardPic_Md2_Alpha",
+            "UI_NameCardPic_Md2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210048": {
+        "nameTextMapHash": 3283981516,
         "icon": "UI_NameCardPic_Md1",
-        "banner": "UI_NameCardPic_Md1_P",
-        "navbar": "UI_NameCardPic_Md1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3283981516
+        "picPath": [
+            "UI_NameCardPic_Md1_Alpha",
+            "UI_NameCardPic_Md1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210049": {
+        "nameTextMapHash": 3474324460,
         "icon": "UI_NameCardPic_Ly1",
-        "banner": "UI_NameCardPic_Ly1_P",
-        "navbar": "UI_NameCardPic_Ly1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3474324460
+        "picPath": [
+            "UI_NameCardPic_Ly1_Alpha",
+            "UI_NameCardPic_Ly1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210050": {
+        "nameTextMapHash": 3132121140,
         "icon": "UI_NameCardPic_Ly2",
-        "banner": "UI_NameCardPic_Ly2_P",
-        "navbar": "UI_NameCardPic_Ly2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3132121140
+        "picPath": [
+            "UI_NameCardPic_Ly2_Alpha",
+            "UI_NameCardPic_Ly2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210051": {
+        "nameTextMapHash": 741495036,
         "icon": "UI_NameCardIcon_Tzz3",
-        "banner": "UI_NameCardPic_Tzz3_P",
-        "navbar": "UI_NameCardPic_Tzz3_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 741495036
+        "picPath": [
+            "UI_NameCardPic_Tzz3_Alpha",
+            "UI_NameCardPic_Tzz3_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210052": {
+        "nameTextMapHash": 1816201940,
         "icon": "UI_NameCardIcon_Xssdlk",
-        "banner": "UI_NameCardPic_Xssdlk_P",
-        "navbar": "UI_NameCardPic_Xssdlk_P_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1816201940
+        "picPath": [
+            "UI_NameCardPic_Xssdlk_P_Alpha",
+            "UI_NameCardPic_Xssdlk_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210053": {
+        "nameTextMapHash": 3809570428,
         "icon": "UI_NameCardIcon_Ganyu",
-        "banner": "UI_NameCardPic_Ganyu_P",
-        "navbar": "UI_NameCardPic_Ganyu_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3809570428
+        "picPath": [
+            "UI_NameCardPic_Ganyu_Alpha",
+            "UI_NameCardPic_Ganyu_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210054": {
+        "nameTextMapHash": 2541715356,
         "icon": "UI_NameCardIcon_Albedo",
-        "banner": "UI_NameCardPic_Albedo_P",
-        "navbar": "UI_NameCardPic_Albedo_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2541715356
+        "picPath": [
+            "UI_NameCardPic_Albedo_Alpha",
+            "UI_NameCardPic_Albedo_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210055": {
+        "nameTextMapHash": 81600036,
         "icon": "UI_NameCardIcon_Bp3",
-        "banner": "UI_NameCardPic_Bp3_P",
-        "navbar": "UI_NameCardPic_Bp3_P_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 81600036
+        "picPath": [
+            "UI_NameCardPic_Bp3_P_Alpha",
+            "UI_NameCardPic_Bp3_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210056": {
+        "nameTextMapHash": 382629508,
         "icon": "UI_NameCardIcon_ElderTree",
-        "banner": "UI_NameCardPic_ElderTree_P",
-        "navbar": "UI_NameCardPic_ElderTree_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 382629508
+        "picPath": [
+            "UI_NameCardPic_ElderTree_Alpha",
+            "UI_NameCardPic_ElderTree_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210057": {
+        "nameTextMapHash": 1244103588,
         "icon": "UI_NameCardIcon_EffigyChallenge",
-        "banner": "UI_NameCardPic_EffigyChallenge_P",
-        "navbar": "UI_NameCardPic_EffigyChallenge_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1244103588
+        "picPath": [
+            "UI_NameCardPic_EffigyChallenge_Alpha",
+            "UI_NameCardPic_EffigyChallenge_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210058": {
+        "nameTextMapHash": 975317892,
         "icon": "UI_NameCardIcon_Xiao",
-        "banner": "UI_NameCardPic_Xiao_P",
-        "navbar": "UI_NameCardPic_Xiao_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 975317892
+        "picPath": [
+            "UI_NameCardPic_Xiao_Alpha",
+            "UI_NameCardPic_Xiao_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210059": {
+        "nameTextMapHash": 1848039196,
         "icon": "UI_NameCardIcon_Hutao",
-        "banner": "UI_NameCardPic_Hutao_P",
-        "navbar": "UI_NameCardPic_Hutao_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1848039196
+        "picPath": [
+            "UI_NameCardPic_Hutao_Alpha",
+            "UI_NameCardPic_Hutao_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210060": {
+        "nameTextMapHash": 4005497196,
         "icon": "UI_NameCardIcon_Bp4",
-        "banner": "UI_NameCardPic_Bp4_P",
-        "navbar": "UI_NameCardPic_Bp4_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4005497196
+        "picPath": [
+            "UI_NameCardPic_Bp4_Alpha",
+            "UI_NameCardPic_Bp4_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210061": {
+        "nameTextMapHash": 1358846364,
         "icon": "UI_NameCardIcon_LanternRite",
-        "banner": "UI_NameCardPic_LanternRite_P",
-        "navbar": "UI_NameCardPic_LanternRite_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1358846364
+        "picPath": [
+            "UI_NameCardPic_LanternRite_Alpha",
+            "UI_NameCardPic_LanternRite_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210062": {
+        "nameTextMapHash": 2402595316,
         "icon": "UI_NameCardIcon_TheatreMechanicus",
-        "banner": "UI_NameCardPic_TheatreMechanicus_P",
-        "navbar": "UI_NameCardPic_TheatreMechanicus_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2402595316
+        "picPath": [
+            "UI_NameCardPic_TheatreMechanicus_Alpha",
+            "UI_NameCardPic_TheatreMechanicus_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210063": {
+        "nameTextMapHash": 981233524,
         "icon": "UI_NameCardIcon_Rosaria",
-        "banner": "UI_NameCardPic_Rosaria_P",
-        "navbar": "UI_NameCardPic_Rosaria_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 981233524
+        "picPath": [
+            "UI_NameCardPic_Rosaria_Alpha",
+            "UI_NameCardPic_Rosaria_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210064": {
+        "nameTextMapHash": 4135824276,
         "icon": "UI_NameCardIcon_Bp5",
-        "banner": "UI_NameCardPic_Bp5_P",
-        "navbar": "UI_NameCardPic_Bp5_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4135824276
+        "picPath": [
+            "UI_NameCardPic_Bp5_Alpha",
+            "UI_NameCardPic_Bp5_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210065": {
+        "nameTextMapHash": 2047766308,
         "icon": "UI_NameCardIcon_RedandWhite",
-        "banner": "UI_NameCardPic_RedandWhite_P",
-        "navbar": "UI_NameCardPic_RedandWhite_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2047766308
+        "picPath": [
+            "UI_NameCardPic_RedandWhite_Alpha",
+            "UI_NameCardPic_RedandWhite_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210066": {
+        "nameTextMapHash": 3264822228,
         "icon": "UI_NameCardIcon_Razer",
-        "banner": "UI_NameCardPic_Razer_P",
-        "navbar": "UI_NameCardPic_Razer_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3264822228
+        "picPath": [
+            "UI_NameCardPic_Razer_Alpha",
+            "UI_NameCardPic_Razer_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210067": {
+        "nameTextMapHash": 4198302372,
         "icon": "UI_NameCardIcon_ChannellerSlab",
-        "banner": "UI_NameCardPic_ChannellerSlab_P",
-        "navbar": "UI_NameCardPic_ChannellerSlab_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4198302372
+        "picPath": [
+            "UI_NameCardPic_ChannellerSlab_Alpha",
+            "UI_NameCardPic_ChannellerSlab_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210068": {
+        "nameTextMapHash": 3754293348,
         "icon": "UI_NameCardIcon_HideandSeek",
-        "banner": "UI_NameCardPic_HideandSeek_P",
-        "navbar": "UI_NameCardPic_HideandSeek_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3754293348
+        "picPath": [
+            "UI_NameCardPic_HideandSeek_Alpha",
+            "UI_NameCardPic_HideandSeek_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210069": {
+        "nameTextMapHash": 1496263228,
         "icon": "UI_NameCardIcon_Feiyan",
-        "banner": "UI_NameCardPic_Feiyan_P",
-        "navbar": "UI_NameCardPic_Feiyan_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1496263228
+        "picPath": [
+            "UI_NameCardPic_Feiyan_Alpha",
+            "UI_NameCardPic_Feiyan_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210070": {
+        "nameTextMapHash": 1021308668,
         "icon": "UI_NameCardIcon_Eula",
-        "banner": "UI_NameCardPic_Eula_P",
-        "navbar": "UI_NameCardPic_Eula_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1021308668
+        "picPath": [
+            "UI_NameCardPic_Eula_Alpha",
+            "UI_NameCardPic_Eula_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210071": {
+        "nameTextMapHash": 2906313100,
         "icon": "UI_NameCardIcon_Bp6",
-        "banner": "UI_NameCardPic_Bp6_P",
-        "navbar": "UI_NameCardPic_Bp6_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2906313100
+        "picPath": [
+            "UI_NameCardPic_Bp6_Alpha",
+            "UI_NameCardPic_Bp6_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210072": {
+        "nameTextMapHash": 3502886956,
         "icon": "UI_NameCardIcon_Homeworld",
-        "banner": "UI_NameCardPic_Homeworld_P",
-        "navbar": "UI_NameCardPic_Homeworld_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3502886956
+        "picPath": [
+            "UI_NameCardPic_Homeworld_Alpha",
+            "UI_NameCardPic_Homeworld_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210073": {
+        "nameTextMapHash": 354336332,
         "icon": "UI_NameCardIcon_Kazuha",
-        "banner": "UI_NameCardPic_Kazuha_P",
-        "navbar": "UI_NameCardPic_Kazuha_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 354336332
+        "picPath": [
+            "UI_NameCardPic_Kazuha_Alpha",
+            "UI_NameCardPic_Kazuha_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210074": {
+        "nameTextMapHash": 3629192860,
         "icon": "UI_NameCardIcon_Bp7",
-        "banner": "UI_NameCardPic_Bp7_P",
-        "navbar": "UI_NameCardPic_Bp7_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3629192860
+        "picPath": [
+            "UI_NameCardPic_Bp7_Alpha",
+            "UI_NameCardPic_Bp7_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210075": {
+        "nameTextMapHash": 1763845860,
         "icon": "UI_NameCardIcon_Homeworld1",
-        "banner": "UI_NameCardPic_Homeworld1_P",
-        "navbar": "UI_NameCardPic_Homeworld1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1763845860
+        "picPath": [
+            "UI_NameCardPic_Homeworld1_Alpha",
+            "UI_NameCardPic_Homeworld1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210076": {
+        "nameTextMapHash": 3838953412,
         "icon": "UI_NameCardIcon_Google",
-        "banner": "UI_NameCardPic_Google_P",
-        "navbar": "UI_NameCardPic_Google_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3838953412
+        "picPath": [
+            "UI_NameCardPic_Google_Alpha",
+            "UI_NameCardPic_Google_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210077": {
+        "nameTextMapHash": 3706272004,
         "icon": "UI_NameCardIcon_BounceConjuringChallenge",
-        "banner": "UI_NameCardPic_BounceConjuringChallenge_P",
-        "navbar": "UI_NameCardPic_BounceConjuringChallenge_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3706272004
+        "picPath": [
+            "UI_NameCardPic_BounceConjuringChallenge_Alpha",
+            "UI_NameCardPic_BounceConjuringChallenge_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210078": {
+        "nameTextMapHash": 89337292,
         "icon": "UI_NameCardIcon_EffigyChallenge02",
-        "banner": "UI_NameCardPic_EffigyChallenge02_P",
-        "navbar": "UI_NameCardPic_EffigyChallenge02_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 89337292
+        "picPath": [
+            "UI_NameCardPic_EffigyChallenge02_Alpha",
+            "UI_NameCardPic_EffigyChallenge02_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210079": {
+        "nameTextMapHash": 2410190956,
         "icon": "UI_NameCardIcon_Oraionokami",
-        "banner": "UI_NameCardPic_Oraionokami_P",
-        "navbar": "UI_NameCardPic_Oraionokami_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2410190956
+        "picPath": [
+            "UI_NameCardPic_Oraionokami_Alpha",
+            "UI_NameCardPic_Oraionokami_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210080": {
+        "nameTextMapHash": 1626279628,
         "icon": "UI_NameCardIcon_Bp8",
-        "banner": "UI_NameCardPic_Bp8_P",
-        "navbar": "UI_NameCardPic_Bp8_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1626279628
+        "picPath": [
+            "UI_NameCardPic_Bp8_Alpha",
+            "UI_NameCardPic_Bp8_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210081": {
+        "nameTextMapHash": 1967492164,
         "icon": "UI_NameCardIcon_Ayaka",
-        "banner": "UI_NameCardPic_Ayaka_P",
-        "navbar": "UI_NameCardPic_Ayaka_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1967492164
+        "picPath": [
+            "UI_NameCardPic_Ayaka_Alpha",
+            "UI_NameCardPic_Ayaka_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210082": {
+        "nameTextMapHash": 884046340,
         "icon": "UI_NameCardIcon_Yoimiya",
-        "banner": "UI_NameCardPic_Yoimiya_P",
-        "navbar": "UI_NameCardPic_Yoimiya_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 884046340
+        "picPath": [
+            "UI_NameCardPic_Yoimiya_Alpha",
+            "UI_NameCardPic_Yoimiya_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210083": {
+        "nameTextMapHash": 910139316,
         "icon": "UI_NameCardIcon_Sayu",
-        "banner": "UI_NameCardPic_Sayu_P",
-        "navbar": "UI_NameCardPic_Sayu_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 910139316
+        "picPath": [
+            "UI_NameCardPic_Sayu_Alpha",
+            "UI_NameCardPic_Sayu_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210084": {
+        "nameTextMapHash": 1034897276,
         "icon": "UI_NameCardIcon_Dq1",
-        "banner": "UI_NameCardPic_Dq1_P",
-        "navbar": "UI_NameCardPic_Dq1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1034897276
+        "picPath": [
+            "UI_NameCardPic_Dq1_Alpha",
+            "UI_NameCardPic_Dq1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210085": {
+        "nameTextMapHash": 1388672580,
         "icon": "UI_NameCardIcon_Dq2",
-        "banner": "UI_NameCardPic_Dq2_P",
-        "navbar": "UI_NameCardPic_Dq2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1388672580
+        "picPath": [
+            "UI_NameCardPic_Dq2_Alpha",
+            "UI_NameCardPic_Dq2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210086": {
+        "nameTextMapHash": 915017620,
         "icon": "UI_NameCardIcon_Ysxf2",
-        "banner": "UI_NameCardPic_Ysxf2_P",
-        "navbar": "UI_NameCardPic_Ysxf2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 915017620
+        "picPath": [
+            "UI_NameCardPic_Ysxf2_Alpha",
+            "UI_NameCardPic_Ysxf2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210087": {
+        "nameTextMapHash": 3790721260,
         "icon": "UI_NameCardIcon_Csxy2",
-        "banner": "UI_NameCardPic_Csxy2_P",
-        "navbar": "UI_NameCardPic_Csxy2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3790721260
+        "picPath": [
+            "UI_NameCardPic_Csxy2_Alpha",
+            "UI_NameCardPic_Csxy2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210088": {
+        "nameTextMapHash": 2157446436,
         "icon": "UI_NameCardIcon_Tzz4",
-        "banner": "UI_NameCardPic_Tzz4_P",
-        "navbar": "UI_NameCardPic_Tzz4_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2157446436
+        "picPath": [
+            "UI_NameCardPic_Tzz4_Alpha",
+            "UI_NameCardPic_Tzz4_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210089": {
+        "nameTextMapHash": 2308551284,
         "icon": "UI_NameCardIcon_Homeworld2",
-        "banner": "UI_NameCardPic_Homeworld2_P",
-        "navbar": "UI_NameCardPic_Homeworld2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2308551284
+        "picPath": [
+            "UI_NameCardPic_Homeworld2_Alpha",
+            "UI_NameCardPic_Homeworld2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210090": {
+        "nameTextMapHash": 2278845564,
         "icon": "UI_NameCardIcon_Daoqi1",
-        "banner": "UI_NameCardPic_Daoqi1_P",
-        "navbar": "UI_NameCardPic_Daoqi1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2278845564
+        "picPath": [
+            "UI_NameCardPic_Daoqi1_Alpha",
+            "UI_NameCardPic_Daoqi1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210091": {
+        "nameTextMapHash": 3431743516,
         "icon": "UI_NameCardIcon_TheatreMechanicus2",
-        "banner": "UI_NameCardPic_TheatreMechanicus2_P",
-        "navbar": "UI_NameCardPic_TheatreMechanicus2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3431743516
+        "picPath": [
+            "UI_NameCardPic_TheatreMechanicus2_Alpha",
+            "UI_NameCardPic_TheatreMechanicus2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210092": {
+        "nameTextMapHash": 829905988,
         "icon": "UI_NameCardIcon_Shougun",
-        "banner": "UI_NameCardPic_Shougun_P",
-        "navbar": "UI_NameCardPic_Shougun_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 829905988
+        "picPath": [
+            "UI_NameCardPic_Shougun_Alpha",
+            "UI_NameCardPic_Shougun_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210093": {
+        "nameTextMapHash": 4001325628,
         "icon": "UI_NameCardIcon_Kokomi",
-        "banner": "UI_NameCardPic_Kokomi_P",
-        "navbar": "UI_NameCardPic_Kokomi_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4001325628
+        "picPath": [
+            "UI_NameCardPic_Kokomi_Alpha",
+            "UI_NameCardPic_Kokomi_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210094": {
+        "nameTextMapHash": 1809683652,
         "icon": "UI_NameCardIcon_Sara",
-        "banner": "UI_NameCardPic_Sara_P",
-        "navbar": "UI_NameCardPic_Sara_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1809683652
+        "picPath": [
+            "UI_NameCardPic_Sara_Alpha",
+            "UI_NameCardPic_Sara_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210095": {
+        "nameTextMapHash": 1189635932,
         "icon": "UI_NameCardIcon_Aloy",
-        "banner": "UI_NameCardPic_Aloy_P",
-        "navbar": "UI_NameCardPic_Aloy_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1189635932
+        "picPath": [
+            "UI_NameCardPic_Aloy_Alpha",
+            "UI_NameCardPic_Aloy_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210096": {
+        "nameTextMapHash": 1788425036,
         "icon": "UI_NameCardIcon_Bp9",
-        "banner": "UI_NameCardPic_Bp9_P",
-        "navbar": "UI_NameCardPic_Bp9_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1788425036
+        "picPath": [
+            "UI_NameCardPic_Bp9_Alpha",
+            "UI_NameCardPic_Bp9_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210097": {
+        "nameTextMapHash": 1465826588,
         "icon": "UI_NameCardIcon_Daoqi2",
-        "banner": "UI_NameCardPic_Daoqi2_P",
-        "navbar": "UI_NameCardPic_Daoqi2_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1465826588
+        "picPath": [
+            "UI_NameCardPic_Daoqi2_Alpha",
+            "UI_NameCardPic_Daoqi2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210098": {
+        "nameTextMapHash": 610572236,
         "icon": "UI_NameCardIcon_Fishing",
-        "banner": "UI_NameCardPic_Fishing_P",
-        "navbar": "UI_NameCardPic_Fishing_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 610572236
+        "picPath": [
+            "UI_NameCardPic_Fishing_Alpha",
+            "UI_NameCardPic_Fishing_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210099": {
+        "nameTextMapHash": 1234196780,
         "icon": "UI_NameCardIcon_Concert",
-        "banner": "UI_NameCardPic_Concert_P",
-        "navbar": "UI_NameCardPic_Concert_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1234196780
+        "picPath": [
+            "UI_NameCardPic_Concert_Alpha",
+            "UI_NameCardPic_Concert_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210100": {
+        "nameTextMapHash": 4157504452,
         "icon": "UI_NameCardIcon_Sumo",
-        "banner": "UI_NameCardPic_Sumo_P",
-        "navbar": "UI_NameCardPic_Sumo_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4157504452
+        "picPath": [
+            "UI_NameCardPic_Sumo_Alpha",
+            "UI_NameCardPic_Sumo_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210101": {
+        "nameTextMapHash": 4076207684,
         "icon": "UI_NameCardIcon_Tohma",
-        "banner": "UI_NameCardPic_Tohma_P",
-        "navbar": "UI_NameCardPic_Tohma_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4076207684
+        "picPath": [
+            "UI_NameCardPic_Tohma_Alpha",
+            "UI_NameCardPic_Tohma_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210102": {
+        "nameTextMapHash": 632319876,
         "icon": "UI_NameCardIcon_Bp10",
-        "banner": "UI_NameCardPic_Bp10_P",
-        "navbar": "UI_NameCardPic_Bp10_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 632319876
+        "picPath": [
+            "UI_NameCardPic_Bp10_Alpha",
+            "UI_NameCardPic_Bp10_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210103": {
+        "nameTextMapHash": 209399988,
         "icon": "UI_NameCardIcon_Daoqi3",
-        "banner": "UI_NameCardPic_Daoqi3_P",
-        "navbar": "UI_NameCardPic_Daoqi3_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 209399988
+        "picPath": [
+            "UI_NameCardPic_Daoqi3_Alpha",
+            "UI_NameCardPic_Daoqi3_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210104": {
+        "nameTextMapHash": 1897177796,
         "icon": "UI_NameCardIcon_Gorou",
-        "banner": "UI_NameCardPic_Gorou_P",
-        "navbar": "UI_NameCardPic_Gorou_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1897177796
+        "picPath": [
+            "UI_NameCardPic_Gorou_Alpha",
+            "UI_NameCardPic_Gorou_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210105": {
+        "nameTextMapHash": 2514840108,
         "icon": "UI_NameCardIcon_Itto",
-        "banner": "UI_NameCardPic_Itto_P",
-        "navbar": "UI_NameCardPic_Itto_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2514840108
+        "picPath": [
+            "UI_NameCardPic_Itto_Alpha",
+            "UI_NameCardPic_Itto_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210106": {
+        "nameTextMapHash": 3843143436,
         "icon": "UI_NameCardIcon_Bp11",
-        "banner": "UI_NameCardPic_Bp11_P",
-        "navbar": "UI_NameCardPic_Bp11_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3843143436
+        "picPath": [
+            "UI_NameCardPic_Bp11_Alpha",
+            "UI_NameCardPic_Bp11_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210107": {
+        "nameTextMapHash": 2849383404,
         "icon": "UI_NameCardIcon_Shenhe",
-        "banner": "UI_NameCardPic_Shenhe_P",
-        "navbar": "UI_NameCardPic_Shenhe_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2849383404
+        "picPath": [
+            "UI_NameCardPic_Shenhe_Alpha",
+            "UI_NameCardPic_Shenhe_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210108": {
+        "nameTextMapHash": 1435336524,
         "icon": "UI_NameCardIcon_Yunjin",
-        "banner": "UI_NameCardPic_Yunjin_P",
-        "navbar": "UI_NameCardPic_Yunjin_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1435336524
+        "picPath": [
+            "UI_NameCardPic_Yunjin_Alpha",
+            "UI_NameCardPic_Yunjin_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210109": {
+        "nameTextMapHash": 3295622364,
         "icon": "UI_NameCardIcon_Daoqi4",
-        "banner": "UI_NameCardPic_Daoqi4_P",
-        "navbar": "UI_NameCardPic_Daoqi4_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3295622364
+        "picPath": [
+            "UI_NameCardPic_Daoqi4_Alpha",
+            "UI_NameCardPic_Daoqi4_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210110": {
+        "nameTextMapHash": 4026280356,
         "icon": "UI_NameCardIcon_Bp12",
-        "banner": "UI_NameCardPic_Bp12_P",
-        "navbar": "UI_NameCardPic_Bp12_P_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4026280356
+        "picPath": [
+            "UI_NameCardPic_Bp12_P_Alpha",
+            "UI_NameCardPic_Bp12_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210111": {
+        "nameTextMapHash": 2921604708,
         "icon": "UI_NameCardIcon_Bartender",
-        "banner": "UI_NameCardPic_Bartender_P",
-        "navbar": "UI_NameCardPic_Bartender_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2921604708
+        "picPath": [
+            "UI_NameCardPic_Bartender_Alpha",
+            "UI_NameCardPic_Bartender_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210112": {
+        "nameTextMapHash": 3322694252,
         "icon": "UI_NameCardIcon_Yae1",
-        "banner": "UI_NameCardPic_Yae1_P",
-        "navbar": "UI_NameCardPic_Yae1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3322694252
+        "picPath": [
+            "UI_NameCardPic_Yae1_Alpha",
+            "UI_NameCardPic_Yae1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210113": {
+        "nameTextMapHash": 4249583788,
         "icon": "UI_NameCardIcon_Bp13",
-        "banner": "UI_NameCardPic_Bp13_P",
-        "navbar": "UI_NameCardPic_Bp13_P_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4249583788
+        "picPath": [
+            "UI_NameCardPic_Bp13_P_Alpha",
+            "UI_NameCardPic_Bp13_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210114": {
+        "nameTextMapHash": 294140780,
         "icon": "UI_NameCardIcon_Ayato",
-        "banner": "UI_NameCardPic_Ayato_P",
-        "navbar": "UI_NameCardPic_Ayato_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 294140780
+        "picPath": [
+            "UI_NameCardPic_Ayato_Alpha",
+            "UI_NameCardPic_Ayato_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210115": {
+        "nameTextMapHash": 3278382996,
         "icon": "UI_NameCardIcon_LuminanceStone",
-        "banner": "UI_NameCardPic_LuminanceStone_P",
-        "navbar": "UI_NameCardPic_LuminanceStone_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3278382996
+        "picPath": [
+            "UI_NameCardPic_LuminanceStone_Alpha",
+            "UI_NameCardPic_LuminanceStone_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210116": {
+        "nameTextMapHash": 1424307148,
         "icon": "UI_NameCardIcon_Tzz5",
-        "banner": "UI_NameCardPic_Tzz5_P",
-        "navbar": "UI_NameCardPic_Tzz5_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 1424307148
+        "picPath": [
+            "UI_NameCardPic_Tzz5_Alpha",
+            "UI_NameCardPic_Tzz5_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210117": {
+        "nameTextMapHash": 60191844,
         "icon": "UI_NameCardIcon_Cenyan1",
-        "banner": "UI_NameCardPic_Cenyan1_P",
-        "navbar": "UI_NameCardPic_Cenyan1_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 60191844
+        "picPath": [
+            "UI_NameCardPic_Cenyan1_Alpha",
+            "UI_NameCardPic_Cenyan1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210118": {
+        "nameTextMapHash": 4085716716,
         "icon": "UI_NameCardIcon_Bp14",
-        "banner": "UI_NameCardPic_Bp14_P",
-        "navbar": "UI_NameCardPic_Bp14_P_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 4085716716
+        "picPath": [
+            "UI_NameCardPic_Bp14_P_Alpha",
+            "UI_NameCardPic_Bp14_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210119": {
+        "nameTextMapHash": 2757081100,
         "icon": "UI_NameCardIcon_Yelan",
-        "banner": "UI_NameCardPic_Yelan_P",
-        "navbar": "UI_NameCardPic_Yelan_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2757081100
+        "picPath": [
+            "UI_NameCardPic_Yelan_Alpha",
+            "UI_NameCardPic_Yelan_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210120": {
+        "nameTextMapHash": 2907339228,
         "icon": "UI_NameCardIcon_Shinobu",
-        "banner": "UI_NameCardPic_Shinobu_P",
-        "navbar": "UI_NameCardPic_Shinobu_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 2907339228
+        "picPath": [
+            "UI_NameCardPic_Shinobu_Alpha",
+            "UI_NameCardPic_Shinobu_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     },
     "210121": {
+        "nameTextMapHash": 3188840620,
         "icon": "UI_NameCardIcon_Bp15",
-        "banner": "UI_NameCardPic_Bp15_P",
-        "navbar": "UI_NameCardPic_Bp15_P_Alpha",
-        "rarity": 4,
-        "nameTextMapHash": 3188840620
+        "picPath": [
+            "UI_NameCardPic_Bp15_P_Alpha",
+            "UI_NameCardPic_Bp15_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }
