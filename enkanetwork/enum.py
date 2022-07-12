@@ -1,5 +1,4 @@
 from enum import Enum
-from lib2to3.pgen2.token import PERCENT
 
 class EquipmentsType(int, Enum):
     UNKNOWN = -1
@@ -10,6 +9,15 @@ class DigitType(int, Enum):
     NUMBER = 0
     PERCENT = 1
     
+class ElementType(str, Enum):
+    Unknown = "Unknown"
+    Ice = "Cyro"
+    Water = "Hydro"
+    Wind = "Anemo"
+    Fire = "Pyro"
+    Rock = "Geo"
+    Electric = "Electro"
+
 class EquipType(str, Enum):
     UNKNOWN = "Unknown"
     EQUIP_BRACER = "Flower"
