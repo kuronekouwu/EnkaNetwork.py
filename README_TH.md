@@ -1,7 +1,7 @@
 # Enka Network Python
 [EN](./README.md) | TH
 
-ไลบารีสำหรับดึงข้อมูล JSON จากเว็บ https://enka.shinshin.moe
+ไลบารีสำหรับดึงข้อมูล JSON จากเว็บ https://enka.network
 
 # 💾 วิธีการติดตั้ง
 ```
@@ -35,7 +35,7 @@ loop.run_until_complete(main())
 === Player Info ===
 Nickname: mrwan2546
 Level: 55
-Icon: https://enka.shinshin.moe/ui/UI_AvatarIcon_Hutao.png
+Icon: https://enka.network/ui/UI_AvatarIcon_Hutao.png
 Signature: ?
 Achievement: 395
 Abyss floor: 8 - 3
