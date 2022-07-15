@@ -2,7 +2,7 @@ import setuptools
 
 setuptools.setup(
 	name="enkanetwork.py",
-	version="1.2.2",
+	version="1.2.3",
 	author="M-307",
 	author_email="me@m307.dev",
 	description="Library for fetching JSON data from site https://enka.shinshin.moe/",

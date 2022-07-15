@@ -12,7 +12,7 @@ VERSION = "1.2.2"
 AUTHOR = "M-307"
 
 # Base URL
-BASE_URL = "https://enka.shinshin.moe/{PATH}"
+BASE_URL = "https://enka.network/{PATH}"
 
 # Request
 CHUNK_SIZE = 1024 * 1024 * 1
