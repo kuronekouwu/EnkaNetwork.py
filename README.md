@@ -8,6 +8,7 @@ Library for fetching JSON data from site https://enka.network/
 pip install enkanetwork.py
 ```
 
+
 # ✨ Usage
 ```py
 import asyncio
@@ -21,7 +22,7 @@ async def main():
     print("=== Player Info ===")
     print(f"Nickname: {data.player.nickname}")
     print(f"Level: {data.player.level}")
-    print(f"Icon: {data.player.profile_picture.icon}")
+    print(f"Icon: {data.player.icon.url}")
     print(f"Signature: {data.player.signature}")
     print(f"Achievement: {data.player.achievement}")
     print(f"Abyss floor: {data.player.abyss_floor} - {data.player.abyss_room}")
@@ -35,9 +36,9 @@ loop.run_until_complete(main())
 === Player Info ===
 Nickname: mrwan2546
 Level: 55
-Icon: https://enka.network/ui/UI_AvatarIcon_Hutao.png
-Signature: ?
-Achievement: 395
+Icon: https://enka.network/ui/UI_AvatarIcon_Kazuha.png
+Signature: K A Z U H A M U C H <3
+Achievement: 396
 Abyss floor: 8 - 3
 Cache timeout: 300
 ```
@@ -48,7 +49,7 @@ If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.c
 | Languege    |  Code   |
 |-------------|---------|
 |  English    |     en  |
-|  Россия     |     ru  |
+|  русский    |     ru  |
 |  Tiếng Việt |     vi  |
 |  ไทย        |     th  |
 |  português  |     pt  |
