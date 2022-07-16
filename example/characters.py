@@ -16,7 +16,7 @@ async def main():
         print(f"XP: {character.xp}")
         print(f"Icon: {character.image.icon}")
         print(f"Side icon: {character.image.side}")
-        print(f"Wish banner: {character.image.gacha}")
+        print(f"Wish banner: {character.image.banner}")
         print("="*18)
 
 loop = asyncio.get_event_loop()

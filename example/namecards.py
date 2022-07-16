@@ -14,7 +14,7 @@ async def main():
     print(f"Icon URL: {data.player.namecard.icon}")
     print("\n")
     print("=== List Namecard ===")
-    for namecard in data.player.list_namecard:
+    for namecard in data.player.namecards:
         print(f"ID: {namecard.id}")
         print(f"Name: {namecard.name}")
         print(f"Banner URL: {namecard.banner}")
