@@ -5,6 +5,6 @@ from .players import PlayerInfo
 from .character import CharacterInfo
 
 class EnkaNetworkResponse(BaseModel):
-    player: PlayerInfo = Field({}, alias="playerInfo")
-    characters: List[CharacterInfo] = Field([], alias="avatarInfoList")
+    player: PlayerInfo = Field(None, alias="playerInfo")
+    characters: List[CharacterInfo] = Field(None, alias="avatarInfoList")
     ttl: int = 0
