@@ -1,5 +1,27 @@
 from enum import Enum
 
+class Language(str, Enum):
+    EN = "en"
+    RU = "ru" 
+    VI = "vi" 
+    TH = "th"
+    PT = "pt"
+    KR = "kr"
+    JP = "jp"
+    ID = "id"
+    FR = "fr"
+    ES = "es"
+    DE = "de"
+    
+    """
+        zh-CN: CHT
+        zh-TW: CHS
+    """
+    TW = "cht"
+    CN = "chs"
+    CHT = "cht"
+    CHS = "chs"
+
 class EquipmentsType(int, Enum):
     UNKNOWN = -1
     ARTIFACT = 0
@@ -11,17 +33,17 @@ class DigitType(int, Enum):
     
 class ElementType(str, Enum):
     Unknown = "Unknown"
-    Ice = "Cyro"
-    Water = "Hydro"
-    Wind = "Anemo"
-    Fire = "Pyro"
-    Rock = "Geo"
-    Electric = "Electro"
+    Cyro = "Ice"
+    Hydro = "Water"
+    Anemo = "Wind"
+    Pyro = "Fire"
+    Geo = "Rock"
+    Electro = "Electric"
 
 class EquipType(str, Enum):
-    UNKNOWN = "Unknown"
-    EQUIP_BRACER = "Flower"
-    EQUIP_NECKLACE = "Feather"
-    EQUIP_SHOES = "Sands"
-    EQUIP_RING = "Goblet"
-    EQUIP_DRESS = "Circlet"
+    Unknown = "UNKNOWN"
+    Flower = "EQUIP_BRACER"
+    Feather = "EQUIP_NECKLACE"
+    Sands = "EQUIP_SHOES"
+    Goblet = "EQUIP_RING"
+    Circlet = "EQUIP_DRESS"
