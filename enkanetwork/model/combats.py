@@ -100,8 +100,5 @@ class CharacterCombat(BaseModel):
     FIGHT_PROP_NONEXTRA_SHIELD_COST_MINUS_RATIO: int = Field(0, alias="3023")
     FIGHT_PROP_NONEXTRA_PHYSICAL_ADD_HURT: int = Field(0, alias="3024")
 
-    RAW: dict = {}
-
     def __init__(self, **data):
         super().__init__(**data)
-        self.RAW = data

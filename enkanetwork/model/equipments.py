@@ -4,7 +4,7 @@ from pydantic import BaseModel, Field
 from typing import Any, List
 
 from ..enum import EquipmentsType, DigitType, EquipType
-from ..json import Config
+from ..assets import Assets
 from ..utils import create_ui_path
 
 LOGGER = logging.getLogger(__name__)
@@ -27,18 +27,15 @@ class EquipmentsStats(BaseModel):
 
         if "mainPropId" in data:
             __pydantic_self__.prop_id = str(data["mainPropId"])
-            LOGGER.debug(f"Getting name hash map ID: {data['mainPropId']}")
-            fight_prop = Config.HASH_MAP["fight_props"].get(str(data["mainPropId"]))
+            fight_prop = Assets.get_hash_map(str(data["mainPropId"]))
         else:
             __pydantic_self__.prop_id = str(data["appendPropId"])
-            LOGGER.debug(f"Getting name hash map ID: {data['appendPropId']}")
-            fight_prop = Config.HASH_MAP["fight_props"].get(str(data["appendPropId"]))
+            fight_prop = Assets.get_hash_map(str(data["appendPropId"]))
 
         if not fight_prop:
-            LOGGER.error(f"Fight prop not found with ID: {__pydantic_self__.prop_id}")
             return
 
-        __pydantic_self__.name = fight_prop[Config.LANGS]
+        __pydantic_self__.name = fight_prop
 
 
 class EquipmentsDetail(BaseModel):
@@ -52,7 +49,7 @@ class EquipmentsDetail(BaseModel):
         Custom data
     """
     name: str = "" # Get from name hash map
-    artifactType: EquipType = EquipType.UNKNOWN # Type of artifact
+    artifactType: EquipType = EquipType.Unknown # Type of artifact
     icon: str = "" 
     rarity: int = Field(0, alias="rankLevel")
     mainstats: EquipmentsStats = Field(None, alias="reliquaryMainstat")
@@ -63,21 +60,11 @@ class EquipmentsDetail(BaseModel):
 
         if data["itemType"] == "ITEM_RELIQUARY": # AKA. Artifact
             LOGGER.debug(f"=== Artifact ===")
-            __pydantic_self__.icon = create_ui_path(data["icon"])
-            __pydantic_self__.artifactType = EquipType[data["equipType"]]
+            __pydantic_self__.icon = Assets.create_icon_path(data["icon"])
+            __pydantic_self__.artifactType = data["equipType"]
             # Sub Stats
             for stats in data["reliquarySubstats"]:
                 __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
-
-            LOGGER.debug(f"Getting name hash map ID: {data['nameTextMapHash']}")
-
-            _name = Config.HASH_MAP["artifacts"].get(str(data["nameTextMapHash"]))
-
-            if _name is None:
-                LOGGER.error(f"Name hash map not found.")
-                return
-
-            __pydantic_self__.name = _name[Config.LANGS]
 
         if data["itemType"] == "ITEM_WEAPON": # AKA. Weapon
             LOGGER.debug(f"=== Weapon ===")
@@ -88,15 +75,13 @@ class EquipmentsDetail(BaseModel):
             for stats in data["weaponStats"][1:]:
                 __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
-            LOGGER.debug(f"Getting name hash map ID: {data['nameTextMapHash']}")
+        _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
 
-            _name = Config.HASH_MAP["weapons"].get(str(data["nameTextMapHash"]))
+        if _name is None:
+            return
 
-            if _name is None:
-                LOGGER.error(f"Name hash map not found.")
-                return
+        __pydantic_self__.name = _name
 
-            __pydantic_self__.name = _name[Config.LANGS]
 
     class Config:
         use_enum_values = True
