@@ -99,6 +99,7 @@ class Equipments(BaseModel):
     level: int = 0 # Get form key "reliquary" and "weapon"
     type: EquipmentsType = EquipmentsType.UNKNOWN # Type of equipments (Ex. Artifact, Weapon)
     refinement: int = 0 # Refinement  of equipments (Weapon only)
+    ascension: int = 0 # Ascension (Weapon only)
 
     class Config:
         use_enum_values = True
@@ -112,6 +113,8 @@ class Equipments(BaseModel):
         
         if data["flat"]["itemType"] == "ITEM_WEAPON": # AKA. Weapon
             __pydantic_self__.type = EquipmentsType.WEAPON
-            __pydantic_self__.level = data["weapon"]["level"] - 1
+            __pydantic_self__.level = data["weapon"]["level"]
             if "affixMap" in data["weapon"]:
                 __pydantic_self__.refinement = data["weapon"]["affixMap"][list(data["weapon"]["affixMap"].keys())[0]] + 1 
+            if "promoteLevel" in data["weapon"]:
+                __pydantic_self__.ascension = data["weapon"]["promoteLevel"]
