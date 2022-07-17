@@ -12,6 +12,7 @@ async def main():
         print(f"Name: {character.name}")
         print(f"Level: {character.level} / {character.max_level}")
         print(f"Element: {character.element}")
+        print(f"Friendship Level: {character.friendship_level}")
         print(f"Ascension: {'⭐'*character.ascension}")
         print(f"XP: {character.xp}")
         print(f"Icon: {character.image.icon}")
