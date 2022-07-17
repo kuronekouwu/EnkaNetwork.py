@@ -8,7 +8,8 @@
         "skills": [
             10024,
             10018,
-            10013
+            10013,
+            10019
         ],
         "talents": [
             21,
@@ -27,7 +28,8 @@
         "costElemType": "Wind",
         "skills": [
             10031,
-            10033
+            10033,
+            10034
         ],
         "talents": [
             31,
@@ -64,7 +66,8 @@
         "costElemType": "Electric",
         "skills": [
             10060,
-            10061
+            10061,
+            10062
         ],
         "talents": [
             41,
@@ -101,7 +104,8 @@
         "costElemType": "Water",
         "skills": [
             10070,
-            10071
+            10071,
+            10072
         ],
         "talents": [
             141,
@@ -120,7 +124,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -139,7 +144,8 @@
         "costElemType": "Fire",
         "skills": [
             10160,
-            10161
+            10161,
+            10165
         ],
         "talents": [
             161,
@@ -158,7 +164,8 @@
         "costElemType": "Electric",
         "skills": [
             10201,
-            10202
+            10202,
+            10203
         ],
         "talents": [
             201,
@@ -177,7 +184,8 @@
         "costElemType": "Fire",
         "skills": [
             10041,
-            10032
+            10032,
+            10017
         ],
         "talents": [
             211,
@@ -196,7 +204,8 @@
         "costElemType": "Wind",
         "skills": [
             10221,
-            10224
+            10224,
+            10225
         ],
         "talents": [
             221,
@@ -215,7 +224,8 @@
         "costElemType": "Fire",
         "skills": [
             10231,
-            10232
+            10232,
+            10235
         ],
         "talents": [
             231,
@@ -234,7 +244,8 @@
         "costElemType": "Electric",
         "skills": [
             10241,
-            10242
+            10242,
+            10245
         ],
         "talents": [
             241,
@@ -253,7 +264,8 @@
         "costElemType": "Water",
         "skills": [
             10381,
-            10382
+            10382,
+            10385
         ],
         "talents": [
             251,
@@ -272,7 +284,8 @@
         "costElemType": "Wind",
         "skills": [
             10261,
-            10262
+            10262,
+            10265
         ],
         "talents": [
             261,
@@ -291,7 +304,8 @@
         "costElemType": "Rock",
         "skills": [
             10271,
-            10272
+            10272,
+            10274
         ],
         "talents": [
             271,
@@ -310,7 +324,8 @@
         "costElemType": "Fire",
         "skills": [
             10291,
-            10292
+            10292,
+            10295
         ],
         "talents": [
             291,
@@ -329,7 +344,8 @@
         "costElemType": "Rock",
         "skills": [
             10301,
-            10302
+            10302,
+            10303
         ],
         "talents": [
             301,
@@ -348,7 +364,8 @@
         "costElemType": "Electric",
         "skills": [
             10311,
-            10312
+            10312,
+            10313
         ],
         "talents": [
             311,
@@ -367,7 +384,8 @@
         "costElemType": "Fire",
         "skills": [
             10321,
-            10322
+            10322,
+            10323
         ],
         "talents": [
             321,
@@ -386,7 +404,8 @@
         "costElemType": "Water",
         "skills": [
             10331,
-            10332
+            10332,
+            10333
         ],
         "talents": [
             331,
@@ -405,7 +424,8 @@
         "costElemType": "Rock",
         "skills": [
             10341,
-            10342
+            10342,
+            10343
         ],
         "talents": [
             341,
@@ -424,7 +444,8 @@
         "costElemType": "Ice",
         "skills": [
             10351,
-            10352
+            10352,
+            10353
         ],
         "talents": [
             351,
@@ -443,7 +464,8 @@
         "costElemType": "Ice",
         "skills": [
             10401,
-            10402
+            10402,
+            10403
         ],
         "talents": [
             361,
@@ -462,7 +484,8 @@
         "costElemType": "Ice",
         "skills": [
             10371,
-            10372
+            10372,
+            10373
         ],
         "talents": [
             371,
@@ -481,7 +504,8 @@
         "costElemType": "Rock",
         "skills": [
             10386,
-            10387
+            10387,
+            10388
         ],
         "talents": [
             381,
@@ -500,7 +524,8 @@
         "costElemType": "Ice",
         "skills": [
             10391,
-            10392
+            10392,
+            10395
         ],
         "talents": [
             391,
@@ -520,7 +545,8 @@
         "skills": [
             10411,
             10412,
-            10413
+            10413,
+            10415
         ],
         "talents": [
             411,
@@ -539,7 +565,8 @@
         "costElemType": "Electric",
         "skills": [
             10421,
-            10422
+            10422,
+            10425
         ],
         "talents": [
             421,
@@ -558,7 +585,8 @@
         "costElemType": "Wind",
         "skills": [
             10431,
-            10432
+            10432,
+            10435
         ],
         "talents": [
             431,
@@ -577,7 +605,8 @@
         "costElemType": "Fire",
         "skills": [
             10441,
-            10442
+            10442,
+            10443
         ],
         "talents": [
             441,
@@ -596,7 +625,8 @@
         "costElemType": "Ice",
         "skills": [
             10451,
-            10452
+            10452,
+            10453
         ],
         "talents": [
             451,
@@ -615,7 +645,8 @@
         "costElemType": "Fire",
         "skills": [
             10461,
-            10462
+            10462,
+            10463
         ],
         "talents": [
             461,
@@ -634,7 +665,8 @@
         "costElemType": "Wind",
         "skills": [
             10471,
-            10472
+            10472,
+            10475
         ],
         "talents": [
             471,
@@ -653,7 +685,8 @@
         "costElemType": "Fire",
         "skills": [
             10481,
-            10482
+            10482,
+            10485
         ],
         "talents": [
             481,
@@ -672,7 +705,8 @@
         "costElemType": "Fire",
         "skills": [
             10491,
-            10492
+            10492,
+            10495
         ],
         "talents": [
             491,
@@ -691,7 +725,8 @@
         "costElemType": "Fire",
         "skills": [
             10501,
-            10502
+            10502,
+            10505
         ],
         "talents": [
             501,
@@ -710,7 +745,8 @@
         "costElemType": "Ice",
         "skills": [
             10511,
-            10512
+            10512,
+            10515
         ],
         "talents": [
             511,
@@ -729,7 +765,8 @@
         "costElemType": "Electric",
         "skills": [
             10521,
-            10522
+            10522,
+            10525
         ],
         "talents": [
             521,
@@ -748,7 +785,8 @@
         "costElemType": "Wind",
         "skills": [
             10531,
-            10532
+            10532,
+            10535
         ],
         "talents": [
             531,
@@ -767,7 +805,8 @@
         "costElemType": "Water",
         "skills": [
             10541,
-            10542
+            10542,
+            10545
         ],
         "talents": [
             541,
@@ -786,7 +825,8 @@
         "costElemType": "Rock",
         "skills": [
             10551,
-            10552
+            10552,
+            10555
         ],
         "talents": [
             551,
@@ -805,7 +845,8 @@
         "costElemType": "Electric",
         "skills": [
             10561,
-            10562
+            10562,
+            10565
         ],
         "talents": [
             561,
@@ -824,7 +865,8 @@
         "costElemType": "Rock",
         "skills": [
             10571,
-            10572
+            10572,
+            10575
         ],
         "talents": [
             571,
@@ -843,7 +885,8 @@
         "costElemType": "Electric",
         "skills": [
             10581,
-            10582
+            10582,
+            10585
         ],
         "talents": [
             581,
@@ -862,7 +905,8 @@
         "costElemType": "Wind",
         "skills": [
             10591,
-            10592
+            10592,
+            10595
         ],
         "talents": [
             591,
@@ -881,7 +925,8 @@
         "costElemType": "Water",
         "skills": [
             10606,
-            10607
+            10607,
+            10610
         ],
         "talents": [
             601,
@@ -900,7 +945,8 @@
         "costElemType": "Ice",
         "skills": [
             10621,
-            10622
+            10622,
+            10625
         ],
         "talents": [
             621,
@@ -919,7 +965,8 @@
         "costElemType": "Ice",
         "skills": [
             10631,
-            10632
+            10632,
+            10635
         ],
         "talents": [
             631,
@@ -938,7 +985,8 @@
         "costElemType": "Rock",
         "skills": [
             10641,
-            10642
+            10642,
+            10643
         ],
         "talents": [
             641,
@@ -957,7 +1005,8 @@
         "costElemType": "Electric",
         "skills": [
             10651,
-            10652
+            10652,
+            10655
         ],
         "talents": [
             651,
@@ -976,7 +1025,8 @@
         "costElemType": "Water",
         "skills": [
             10661,
-            10662
+            10662,
+            10665
         ],
         "talents": [
             661,
@@ -1011,7 +1061,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -1030,7 +1081,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -1049,7 +1101,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -1068,7 +1121,8 @@
         "costElemType": "Ice",
         "skills": [
             10251,
-            10362
+            10362,
+            10255
         ],
         "talents": [
             0,
@@ -1087,7 +1141,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -1106,7 +1161,8 @@
         "costElemType": "Fire",
         "skills": [
             10281,
-            10282
+            10282,
+            10283
         ],
         "talents": [
             0,
@@ -1125,7 +1181,8 @@
         "costElemType": "Electric",
         "skills": [
             11301,
-            11302
+            11302,
+            11305
         ],
         "talents": [
             311,
@@ -1144,7 +1201,8 @@
         "costElemType": "Ice",
         "skills": [
             11371,
-            11372
+            11372,
+            11373
         ],
         "talents": [
             0,
@@ -1199,7 +1257,8 @@
         "costElemType": "Ice",
         "skills": [
             100540,
-            10365
+            10365,
+            10362
         ],
         "talents": [
             0,
@@ -1218,7 +1277,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -1237,7 +1297,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
@@ -1256,7 +1317,8 @@
         "costElemType": "Ice",
         "skills": [
             10073,
-            10074
+            10074,
+            10075
         ],
         "talents": [
             151,
