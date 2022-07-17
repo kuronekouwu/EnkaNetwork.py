@@ -52,9 +52,9 @@ class EnkaNetworkAPI:
         self.LOGGER.debug("Parsing data...")
         return EnkaNetworkResponse.parse_obj(data)
 
-    async def download_data(self) -> None:
+    async def update_assets(self) -> None:
         self.LOGGER.debug("Downloading new content...")
-        _PATH = Assets.get_path_json()
+        _PATH = Assets._get_path_assets()
         for folder in _PATH:
             for filename in os.listdir(_PATH[folder]):
                 self.LOGGER.debug(f"Downloading {folder} file {filename}...")
@@ -66,5 +66,5 @@ class EnkaNetworkAPI:
                 with open(os.path.join(_PATH[folder], filename), "w", encoding="utf-8") as f:
                     json.dump(_json["content"], f, ensure_ascii=False, indent=4)
 
-        # Load config 
-        self.__load_config(Assets.LANGS)
+        # Reload config
+        self.assets.reload_assets()

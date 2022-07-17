@@ -26,10 +26,13 @@ class Assets:
     def __init__(self, lang: Language = Language.EN) -> None:
         # Set language
         self.__set_languege(lang)
+        self.reload_assets()
 
+    @classmethod
+    def reload_assets(cls) -> None:
         # Load assets
-        self.__load_assets_lang()
-        self.__load_assets_data()
+        cls.__load_assets_lang()
+        cls.__load_assets_data()
 
     @classmethod
     def character(cls, id: int) -> Union[assets.CharacterAsset, None]:
@@ -131,15 +134,15 @@ class Assets:
         cls.LANGS = lang.upper()
 
     @classmethod
-    def __get_path_assets(cls) -> Dict[str, str]:
+    def _get_path_assets(cls) -> Dict[str, str]:
         return {
-            "data": os.path.join(PATH, "json", "data"),
-            "langs": os.path.join(PATH, "json", "langs")
+            "data": os.path.join(PATH, "assets", "data"),
+            "langs": os.path.join(PATH, "assets", "langs")
         }
 
     @classmethod
     def __load_assets_lang(cls) -> None:
-        _PATH = cls.__get_path_assets()["langs"]
+        _PATH = cls._get_path_assets()["langs"]
         FILE_LANG = os.listdir(_PATH)
         for FILENAME in FILE_LANG:
             LOGGER.debug(f"Loading language file {FILENAME}...")
@@ -147,7 +150,7 @@ class Assets:
 
     @classmethod
     def __load_assets_data(cls) -> None:
-        _PATH = cls.__get_path_assets()["data"]
+        _PATH = cls._get_path_assets()["data"]
         FILE_DATA = os.listdir(_PATH)
         for FILENAME in FILE_DATA:
             LOGGER.debug(f"Loading data file {FILENAME}...")
