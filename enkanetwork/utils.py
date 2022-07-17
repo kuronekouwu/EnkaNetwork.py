@@ -5,11 +5,9 @@ import asyncio
 import json
 import sys
 
-LOGGER = logging.getLogger(__name__)
+from .info import VERSION
 
-# Info library
-VERSION = "1.2.6dev"
-AUTHOR = "M-307"
+LOGGER = logging.getLogger(__name__)
 
 # Base URL
 BASE_URL = "https://enka.network/{PATH}"
