@@ -854,6 +854,25 @@
             586
         ]
     },
+    "10000059": {
+        "nameTextMapHash": 646032090,
+        "iconName": "UI_AvatarIcon_Heizo",
+        "sideIconName": "UI_AvatarIcon_Side_Heizo",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Wind",
+        "skills": [
+            10591,
+            10592
+        ],
+        "talents": [
+            591,
+            592,
+            593,
+            594,
+            595,
+            596
+        ]
+    },
     "10000060": {
         "nameTextMapHash": 2848374378,
         "iconName": "UI_AvatarIcon_Yelan",

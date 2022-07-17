@@ -1103,6 +1103,30 @@
         "nameTextMapHash": 913339777,
         "icon": "UI_Talent_S_Yae_04"
     },
+    "591": {
+        "nameTextMapHash": 1159663785,
+        "icon": "UI_Talent_S_Heizo_01"
+    },
+    "592": {
+        "nameTextMapHash": 286623921,
+        "icon": "UI_Talent_S_Heizo_02"
+    },
+    "593": {
+        "nameTextMapHash": 2470569577,
+        "icon": "UI_Talent_U_Heizo_01"
+    },
+    "594": {
+        "nameTextMapHash": 501887121,
+        "icon": "UI_Talent_S_Heizo_03"
+    },
+    "595": {
+        "nameTextMapHash": 298040329,
+        "icon": "UI_Talent_U_Heizo_02"
+    },
+    "596": {
+        "nameTextMapHash": 2921909753,
+        "icon": "UI_Talent_S_Heizo_04"
+    },
     "601": {
         "nameTextMapHash": 748294089,
         "icon": "UI_Talent_S_Yelan_01"

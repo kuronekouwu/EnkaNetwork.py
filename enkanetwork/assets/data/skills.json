@@ -931,6 +931,18 @@
         "nameTextMapHash": 3675029365,
         "skillIcon": "Skill_E_Yae_01"
     },
+    "10591": {
+        "nameTextMapHash": 2195671413,
+        "skillIcon": "Skill_A_Catalyst_MD"
+    },
+    "10592": {
+        "nameTextMapHash": 3012298293,
+        "skillIcon": "Skill_S_Heizo_01"
+    },
+    "10595": {
+        "nameTextMapHash": 3584687669,
+        "skillIcon": "Skill_E_Heizo_01"
+    },
     "10602": {
         "nameTextMapHash": 123614933,
         "skillIcon": "Skill_S_PlayerElectric_01"
@@ -1110,6 +1122,14 @@
     "20035": {
         "nameTextMapHash": 2400987205,
         "skillIcon": "Skill_S_LunaRiteQuest_BanSkill"
+    },
+    "20036": {
+        "nameTextMapHash": 772855381,
+        "skillIcon": "Skill_S_SummerTimeV2Quest_BanSkill"
+    },
+    "20037": {
+        "nameTextMapHash": 1636845245,
+        "skillIcon": "Skill_E_SummerTimeV2Quest_BanSkill"
     },
     "20040": {
         "nameTextMapHash": 3692781493,
@@ -1574,6 +1594,10 @@
     "5057010": {
         "nameTextMapHash": 752149869,
         "skillIcon": "Skill_A_04"
+    },
+    "5059010": {
+        "nameTextMapHash": 3825685805,
+        "skillIcon": "Skill_A_Catalyst_MD"
     },
     "5060010": {
         "nameTextMapHash": 289877085,

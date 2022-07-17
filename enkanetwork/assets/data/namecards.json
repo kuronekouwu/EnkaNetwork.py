@@ -1168,5 +1168,25 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210122": {
+        "nameTextMapHash": 1688417908,
+        "icon": "UI_NameCardIcon_Heizo",
+        "picPath": [
+            "UI_NameCardPic_Heizo_Alpha",
+            "UI_NameCardPic_Heizo_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210123": {
+        "nameTextMapHash": 2652433876,
+        "icon": "UI_NameCardIcon_Bp16",
+        "picPath": [
+            "UI_NameCardPic_Bp16_P_Alpha",
+            "UI_NameCardPic_Bp16_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }
