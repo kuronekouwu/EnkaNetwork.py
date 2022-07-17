@@ -44,6 +44,7 @@ class CharacterInfo(BaseModel):
         Custom data
     """
     name: str = "" # Get from name hash map 
+   
     element: ElementType = ElementType.Unknown
     image: CharacterIconAsset = CharacterIconAsset()
     skills: List[CharacterSkill] = []
@@ -54,6 +55,9 @@ class CharacterInfo(BaseModel):
     ascension: int = 0 # AKA. propMap 4001
     level: int = 0 # AKA. propMap 1002
 
+    # Other
+    max_level: int = 20
+
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
 
@@ -61,6 +65,9 @@ class CharacterInfo(BaseModel):
         __pydantic_self__.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0
         __pydantic_self__.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0
         __pydantic_self__.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0
+
+        # Get max character level
+        __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20
 
         # Get character
         LOGGER.debug(f"=== Character Data ===")
@@ -74,7 +81,7 @@ class CharacterInfo(BaseModel):
         __pydantic_self__.image = character.images
 
         # Get element
-        __pydantic_self__.element = character.element
+        __pydantic_self__.element = ElementType(character.element).name
 
         # Load constellation
         LOGGER.debug(f"=== Constellation ===")

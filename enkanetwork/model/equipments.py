@@ -61,7 +61,7 @@ class EquipmentsDetail(BaseModel):
         if data["itemType"] == "ITEM_RELIQUARY": # AKA. Artifact
             LOGGER.debug(f"=== Artifact ===")
             __pydantic_self__.icon = Assets.create_icon_path(data["icon"])
-            __pydantic_self__.artifactType = data["equipType"]
+            __pydantic_self__.artifactType = EquipType(data["equipType"]).name
             # Sub Stats
             for stats in data["reliquarySubstats"]:
                 __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
@@ -98,6 +98,7 @@ class Equipments(BaseModel):
     """
     level: int = 0 # Get form key "reliquary" and "weapon"
     type: EquipmentsType = EquipmentsType.UNKNOWN # Type of equipments (Ex. Artifact, Weapon)
+    refinement: int = 0 # Refinement  of equipments (Weapon only)
 
     class Config:
         use_enum_values = True
@@ -112,3 +113,5 @@ class Equipments(BaseModel):
         if data["flat"]["itemType"] == "ITEM_WEAPON": # AKA. Weapon
             __pydantic_self__.type = EquipmentsType.WEAPON
             __pydantic_self__.level = data["weapon"]["level"] - 1
+            if "affixMap" in data["weapon"]:
+                __pydantic_self__.refinement = data["weapon"]["affixMap"][list(data["weapon"]["affixMap"].keys())[0]] + 1 
