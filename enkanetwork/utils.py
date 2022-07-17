@@ -8,7 +8,7 @@ import sys
 LOGGER = logging.getLogger(__name__)
 
 # Info library
-VERSION = "1.2.2"
+VERSION = "1.2.6dev"
 AUTHOR = "M-307"
 
 # Base URL
