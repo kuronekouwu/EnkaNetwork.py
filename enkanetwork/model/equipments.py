@@ -40,16 +40,10 @@ class EquipmentsStats(BaseModel):
 
 class EquipmentsDetail(BaseModel):
     """
-        API Response
-    """
-    nameTextMapHash: str = ""
-    setnameTextMapHash: str = ""
-
-    """
         Custom data
     """
     name: str = "" # Get from name hash map
-    artifactType: EquipType = EquipType.Unknown # Type of artifact
+    artifact_type: EquipType = EquipType.Unknown # Type of artifact
     icon: str = "" 
     rarity: int = Field(0, alias="rankLevel")
     mainstats: EquipmentsStats = Field(None, alias="reliquaryMainstat")
