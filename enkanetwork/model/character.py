@@ -4,18 +4,14 @@ from pydantic import BaseModel, Field
 from typing import List, Any
 
 from .equipments import Equipments
-from .combats import CharacterCombat
+from .stats import CharacterStats
 from .assets import (
     CharacterIconAsset
 )
 from ..assets import Assets
-from ..utils import create_ui_path
 from ..enum import ElementType
 
 LOGGER = logging.getLogger(__name__)
-
-class ChatacterFriendshipLevel(BaseModel):
-    level: int = Field(0, alias="expLevel")
 
 class CharacterSkill(BaseModel):
     id: int = 0
@@ -34,9 +30,8 @@ class CharacterInfo(BaseModel):
         API Response data
     """
     id: int = Field(0, alias="avatarId")
-    friendship: ChatacterFriendshipLevel = Field({},alias="fetterInfo")
     equipments: List[Equipments] = Field([], alias="equipList")
-    combat: CharacterCombat = Field({}, alias="fightPropMap")
+    stats: CharacterStats = Field({}, alias="fightPropMap")
     skill_data: List[int] = Field([], alias="inherentProudSkillList")
     skill_id: int = Field(0, alias="skillDepotId")
 
@@ -44,7 +39,7 @@ class CharacterInfo(BaseModel):
         Custom data
     """
     name: str = "" # Get from name hash map 
-   
+    friendship_level: int = 1
     element: ElementType = ElementType.Unknown
     image: CharacterIconAsset = CharacterIconAsset()
     skills: List[CharacterSkill] = []
@@ -60,6 +55,9 @@ class CharacterInfo(BaseModel):
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
+
+        # Friendship level
+        __pydantic_self__.friendship_level = data["fetterInfo"]["expLevel"]
 
         # Get prop map
         __pydantic_self__.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0
@@ -115,7 +113,6 @@ class CharacterInfo(BaseModel):
             _name = Assets.get_hash_map(_skill.hash_id)
 
             if _name is None:
-                LOGGER.error(f"Name hash map not found.")
                 continue
 
             __pydantic_self__.skills.append(CharacterSkill(
