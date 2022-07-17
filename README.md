@@ -1,15 +1,37 @@
 # Enka Network Python
 EN | [TH](./README_TH.md)
 
-Library for fetching JSON data from site https://enka.network/
+Library for API wrapper data from site https://enka.network/
 
-# 💾 Installation
+# 🏓 Table of content
+## Table of Content
+- [💾 Installation](#installation)
+- [✨ Usage](#usage)
+- [👀 Example](#example)
+- [🚧 Structure](#structure)
+	- [Player](#player) 
+		- [Namecard](#namecard)
+        - [Character preview](#character-preview)
+    - [Characters](#characters)
+        - [Icon](#icon)
+        - [Constellation](#constellation)
+        - [Skill](#skill)
+    - [Equipments (Artifact, Weapon)](#equipments-artifact-weapon)
+        - [Equipments Info](#equipments-info)
+        - [Equipments Stats](#equipments-stats)
+    - [FIGHT_PROP Data](#fight_prop-data)
+- [🔧 Assets](#assets)
+	- [Character, constellations, skills, namecards](#assets-character-constellations-skills-namecards)
+    - [NameTextMapHash](#assets-nametextmaphash)
+- [🌎 Languages Supported](#languages-supported)
+- [📄 LICENSE](#license)
+	
+# Installation
 ```
 pip install enkanetwork.py
 ```
 
-
-# ✨ Usage
+# Usage
 ```py
 import asyncio
 
@@ -31,7 +53,7 @@ async def main():
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
-
+## Preview
 ```sh
 === Player Info ===
 Nickname: mrwan2546
@@ -43,9 +65,186 @@ Abyss floor: 8 - 3
 Cache timeout: 300
 ```
 
-If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
+## Example
+Please see in [example](./example/) folder.
 
-## 🌎 Languages Supported
+# Structure
+## Player
+| Wrapper         |  API            | Notes             |   
+|-----------------|-----------------|-------------------|
+| nickname        | nickname        | Please see [Namecard](#namecard) |
+| signature       | signature       |                   |
+| world_level     | worldLevel      |                   |
+| achievement     | finishAchievementNum |              |
+| namecard        | namecardId  |                       |
+| namecards       | showNameCardIdList -> id | Please see [Namecard](#namecard) | 
+| abyss_floor     | towerFloorIndex |                   |
+| abyss_room      | towerLevelIndex |                   |
+| characters_preview | showAvatarInfoList | Please see [Character Preview](#character-preview) |
+| icon.url        | profilePicture.avatarID |           |
+
+### Namecard
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| id              | -               | Namecard ID       |
+| name            | -               | Namecard name     | 
+| icon            | -               | Namecard icon (url) |
+| banner          | -               | Namecard banner (url) |
+| navbar          | -               | Namecard navbar (Alpha) (url) |
+
+### Character preview
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| id              | -               | Avatar ID         |
+| name            | -               | Avatar Name       |
+| level           | -               | Avatar Level      |
+| icon            | -               | Avatar Icon (url) |
+
+## Characters
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| id              | avatarId        |                   |
+| name            | -               | Avatar Name       |
+| element         | -               | Please see [Element Type](#element-type) |
+| image           | -               | Please see [Icon](#icon) |
+| xp              | propMap -> 1001 |                   |
+| ascension       | propMap -> 1002 |                   |
+| level           | propMap -> 4001 |                   |
+| max_level       | -               | Avatar max level (Like 50/60) |    
+| friendship_level| fetterInfo.level|                   |
+| equipments      | equipList       | Please see [Equipments](#equipments-artifact-weapon) |
+| stats           | fightPropMap    | Please see [FIGHT_PROP Data](#fight_prop-data) |
+| constellations  | talentIdList    | Please see [Constellation](#constellation) |
+| skill_data      | inherentProudSkillList |            |
+| skill_id        | skillDepotId    |                   |
+| skills          | -               | Please see [Skill](#skill) |
+
+### Icon
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| icon            | -               | Avatar icon (url) |
+| side            | -               | Avatar side icon (url) |
+| banner          | -               | Avatar wish banner (url) |
+
+### Constellation
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| id              | -               | Constellation ID |
+| name            | -               | Constellation Name |
+| icon            | -               | Constellation Icon (url) |
+| unlocked        | -               | Constellation has unlocked |
+
+### Skill
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| id              | -               | Skill ID          |
+| name            | -               | Skill Name        |
+| icon            | -               | Skill Icon (url)  |
+| level           | -               | Skill Level       |
+
+## Equipments (Artifact, Weapon)
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| id              | itemId          |                   |
+| level           | reliquary -> level,  weapon -> level| 
+| type            | -               | Type of equipment (Artifact or Weapon) |
+| refinement      | weapon -> affixMap |                |
+| ascension       | weapon -> promoteLevel |             |
+| detail          | flat            | Please see [Equipments Info](#equipments-info) |
+
+### Equipments Info
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| name            | -               | Equipment Name (Artifact name or Weapon name) |
+| icon            | icon            |                   |
+| artifact_type   | -               | Please see [Artifact Type](#artifact-type) |
+| rarity          | rankLevel       |                   |
+| mainstats       | reliquaryMainstat, weaponStats -> 0 | Please see [Equipments Stats](#equipments-stats) |
+| substats        | reliquarySubstats, weaponStats -> 1 | Please see [Equipments Stats](#equipments-stats) |
+
+### Equipments Stats
+| Wrapper         |  API            | Notes             |
+|-----------------|-----------------|-------------------|
+| prop_id         | prop_id         |                   |
+| type            | -               | Value type (NUMBER or PERCENT) |
+| name            | -               | Name of FIGHT_PROP|
+| value           | value           |                   |
+
+## FIGHT_PROP Data
+
+In FIGHT_PROP data. You can get the value from 4 ways.
+| Choice           |  Example                  | Output                     |
+|------------------|---------------------------|----------------------------|
+| Get raw value    | stats.FIGHT_PROP_HP.value | 15552.306640625            |
+| Get rounded value| stats.FIGHT_PROP_ATTACK.to_rounded() | 344             |
+| Get percentage  | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage() | 61.5   |
+| Get percentage and symbol | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage_symbol() | 61.5% |
+
+## Artifact Type
+| Key           | Value         |
+|---------------|---------------|
+| Flower        | EQUIP_BRACER  |
+| Feather       | EQUIP_NECKLACE|
+| Sands         | EQUIP_SHOES   |
+| Goblet        | EQUIP_RING    |
+| Circlet       | EQUIP_DRESS   |
+
+## Element Type
+| Key           | Value         |
+|---------------|---------------|
+| Cyro          | Ice           |
+| Hydro         | Water         |
+| Anemo         | Wind          |
+| Pyro          | Fire          |
+| Geo           | Rock          |
+| Electro       | Electric      |
+
+# Assets
+
+## Assets character, constellations, skills, namecards
+You can use avatarId to get the character, constellations, skills, namecards from assets.
+```py
+import asyncio
+
+from enkanetwork import Assets
+
+assets = Assets()
+
+async def main():
+    # Character
+    assets.character(10000046)
+    # Constellations
+    assets.constellations(2081199193)
+    # Skills
+    assets.constellations(10462)
+    # Namecards
+    assets.namecards(210059)
+    
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
+
+## Assets NameTextMapHash
+The `NameTextMapHash` is a hash map that contains the name text of the assets. You cane get `NameTextMapHash` from `hash_id` like this:
+
+```py
+import asyncio
+
+from enkanetwork import Assets
+
+assets = Assets(lang="th") # Set languege before get name (Ex. Thai)
+
+async def main():
+    print(assets.get_hash_map(1940919994)) # Hu tao
+    # OR you can get FIGHT_PROP name
+    print(assets.get_hash_map("FIGHT_PROP_BASE_ATTACK")) # พลังโจมตีพื้นฐาน (Base ATK)
+    
+loop = asyncio.get_event_loop()
+loop.run_until_complete(main())
+```
+
+
+## Languages Supported
 | Languege    |  Code   |
 |-------------|---------|
 |  English    |     en  |
@@ -63,10 +262,9 @@ If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.c
 |  Taiwan     |    cht  |
 |  Chinese    |    chs  |
 
-## 👀 Example
-Please see in [example](./example/) folder.
+If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
 
-# 📄 LICENSE
+# LICENSE
 [MIT License](./LICENSE)
 
 ![Keqing](https://c.tenor.com/MnkpnVCLcb0AAAAC/keqing-dance.gif)
