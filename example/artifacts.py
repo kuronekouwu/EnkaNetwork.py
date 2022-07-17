@@ -12,7 +12,7 @@ async def main():
         for artifact in filter(lambda x: x.type == EquipmentsType.ARTIFACT,character.equipments):
             print(f"ID: {artifact.id}")
             print(f"Name: {artifact.detail.name}")
-            print(f"Type: {artifact.detail.artifactType}")
+            print(f"Type: {artifact.detail.artifact_type}")
             print(f"Icon: {artifact.detail.icon}")
             print(f"Level: {artifact.level}")
             print("--- Main Stats ---")
