@@ -10,7 +10,7 @@ async def main():
     for character in data.characters:
         print(f"ID: {character.id}")
         print(f"Name: {character.name}")
-        print(f"Level: {character.level}")
+        print(f"Level: {character.level} / {character.max_level}")
         print(f"Element: {character.element}")
         print(f"Ascension: {'⭐'*character.ascension}")
         print(f"XP: {character.xp}")
