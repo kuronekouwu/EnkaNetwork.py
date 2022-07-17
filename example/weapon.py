@@ -15,6 +15,7 @@ async def main():
         print(f"Icon: {weapon.detail.icon}")
         print(f"Level: {weapon.level}")
         print(f"Refinement (R): {weapon.refinement}")
+        print(f"Ascension: {'⭐'*weapon.ascension}")
         print("--- Main Stats ---")
         print(f"Name: {weapon.detail.mainstats.name}")
         print(f"Value: {weapon.detail.mainstats.value}{'%' if weapon.detail.mainstats.type == DigitType.PERCENT else ''}")
