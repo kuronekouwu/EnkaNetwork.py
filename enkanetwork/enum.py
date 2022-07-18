@@ -33,7 +33,7 @@ class DigitType(int, Enum):
     
 class ElementType(str, Enum):
     Unknown = "Unknown"
-    Cyro = "Ice"
+    Cryo = "Ice"
     Hydro = "Water"
     Anemo = "Wind"
     Pyro = "Fire"
