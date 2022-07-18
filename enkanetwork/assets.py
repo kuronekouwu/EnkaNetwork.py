@@ -21,11 +21,11 @@ class Assets:
     HASH_MAP: Dict[str, dict] = {}
 
     # Language
-    LANGS: str = Language.EN
+    LANGS: Language = Language.EN
 
     def __init__(self, lang: Language = Language.EN) -> None:
         # Set language
-        self.__set_languege(lang)
+        self._set_language(lang)
         self.reload_assets()
 
     @classmethod
@@ -125,7 +125,7 @@ class Assets:
         return create_ui_path(path)
 
     @classmethod
-    def __set_languege(cls, lang: Language) -> None:
+    def _set_language(cls, lang: Language) -> None:
         # Check language
         if not lang.split("-")[0].lower() in list(Language):
             raise ValueError("Language not supported. Please check your language.")
