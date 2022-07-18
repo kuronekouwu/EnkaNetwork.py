@@ -8,6 +8,7 @@ from .model import EnkaNetworkResponse
 from .exception import VaildateUIDError, UIDNotFounded
 from .assets import Assets
 from .utils import create_path, validate_uid, request
+from .enum import Language
 
 class EnkaNetworkAPI:
     LOGGER = logging.getLogger(__name__)
@@ -25,6 +26,17 @@ class EnkaNetworkAPI:
 
         # Key
         self.__key = key
+
+    @property
+    def lang(self) -> Language:
+        return self.assets.LANGS
+
+    @lang.setter
+    def lang(self, lang: Language) -> None:
+        self.assets._set_language(lang)
+
+    async def set_language(self, lang: Language) -> None:
+        self.lang = lang
 
     async def fetch_user(self, uid: Union[str, int]) -> EnkaNetworkResponse:
         self.LOGGER.debug(f"Validating with UID {uid}...")
