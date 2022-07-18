@@ -232,7 +232,7 @@ loop.run_until_complete(main())
 ```
 
 ## Assets NameTextMapHash
-The `NameTextMapHash` is a hash map that contains the name text of the assets. You cane get `NameTextMapHash` from `hash_id` like this:
+The `NameTextMapHash` is a hash map that contains the name text of the assets. You can get `NameTextMapHash` from `hash_id` like this:
 
 ```py
 import asyncio
