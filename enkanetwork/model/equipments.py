@@ -70,10 +70,12 @@ class EquipmentsDetail(BaseModel):
                 __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
         _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
-        _set_name = Assets.get_hash_map(str(data["setNameTextMapHash"] if "setNameTextMapHash" in data else ""))
-
+        if "setNameTextMapHash" in data:
+            _set_name = Assets.get_hash_map(str(data["setNameTextMapHash"]))
+            __pydantic_self__.name = _set_name if not _set_name is None else ""
+            
         __pydantic_self__.name = _name if not _name is None else ""
-        __pydantic_self__.artifact_name_set = _set_name if not _set_name is None else ""
+        
 
     class Config:
         use_enum_values = True
