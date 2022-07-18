@@ -71,8 +71,8 @@ class EquipmentsDetail(BaseModel):
 
         _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
         if "setNameTextMapHash" in data:
-            _set_name = Assets.get_hash_map(str(data["setNameTextMapHash"]))
-            __pydantic_self__.name = _set_name if not _set_name is None else ""
+            _artifact_name_set = Assets.get_hash_map(str(data["setNameTextMapHash"]))
+            __pydantic_self__.artifact_name_set = _artifact_name_set or ""
             
         __pydantic_self__.name = _name if not _name is None else ""
         
