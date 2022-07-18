@@ -56,7 +56,7 @@ class CharacterInfo(BaseModel):
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
-
+        
         # Friendship level
         __pydantic_self__.friendship_level = data["fetterInfo"]["expLevel"]
 

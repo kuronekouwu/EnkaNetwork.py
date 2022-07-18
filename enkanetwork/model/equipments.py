@@ -37,12 +37,12 @@ class EquipmentsStats(BaseModel):
 
         __pydantic_self__.name = fight_prop
 
-
 class EquipmentsDetail(BaseModel):
     """
         Custom data
     """
     name: str = "" # Get from name hash map
+    artifact_name_set: str = "" # Name set artifacts
     artifact_type: EquipType = EquipType.Unknown # Type of artifact
     icon: str = "" 
     rarity: int = Field(0, alias="rankLevel")
@@ -70,12 +70,10 @@ class EquipmentsDetail(BaseModel):
                 __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
         _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
+        _set_name = Assets.get_hash_map(str(data["setNameTextMapHash"] if "setNameTextMapHash" in data else ""))
 
-        if _name is None:
-            return
-
-        __pydantic_self__.name = _name
-
+        __pydantic_self__.name = _name if not _name is None else ""
+        __pydantic_self__.artifact_name_set = _set_name if not _set_name is None else ""
 
     class Config:
         use_enum_values = True
