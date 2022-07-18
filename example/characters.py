@@ -14,6 +14,7 @@ async def main():
         print(f"Element: {character.element}")
         print(f"Friendship Level: {character.friendship_level}")
         print(f"Ascension: {'⭐'*character.ascension}")
+        print(f"Constellations unlocked: C{character.constellations_unlocked}")
         print(f"XP: {character.xp}")
         print(f"Icon: {character.image.icon}")
         print(f"Side icon: {character.image.side}")

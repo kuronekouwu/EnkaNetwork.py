@@ -52,6 +52,7 @@ class CharacterInfo(BaseModel):
 
     # Other
     max_level: int = 20
+    constellations_unlocked: int = 0 # Constellation is unlocked count
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
@@ -63,6 +64,9 @@ class CharacterInfo(BaseModel):
         __pydantic_self__.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0
         __pydantic_self__.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0
         __pydantic_self__.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0
+
+        # Constellation unlocked count
+        __pydantic_self__.constellations_unlocked = len(data["talentIdList"]) if "talentIdList" in data else 0
 
         # Get max character level
         __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20
