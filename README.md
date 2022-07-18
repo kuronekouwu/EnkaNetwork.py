@@ -1,13 +1,13 @@
 # Enka Network Python
-EN | [TH](./README_TH.md)
+EN | [TH](https://github.com/mrwan200/EnkaNetwork.py/blob/master/README_TH.md)
 
 Library for API wrapper data from site https://enka.network/
 
 # 🏓 Table of content
-## Table of Content
 - [💾 Installation](#installation)
 - [✨ Usage](#usage)
 - [👀 Example](#example)
+- [📗 Class Methods](#class-methods)
 - [🚧 Structure](#structure)
 	- [Player](#player) 
 		- [Namecard](#namecard)
@@ -67,6 +67,13 @@ Cache timeout: 300
 
 ## Example
 Please see in [example](./example/) folder.
+
+# Class Methods
+| Name       | Description     |
+|------------|-----------------|
+| fetch_user(uid) | Fetch user data |
+| set_language(lang) | Set new language <br> Please see [Languages Supported](#languages-supported) |
+| update_assets() | Update new assets from repo [Enkanetwork.py Data](https://github.com/mrwan200/enkanetwork.py-data/) |
 
 # Structure
 ## Player
@@ -192,7 +199,7 @@ In FIGHT_PROP data. You can get the value from 4 ways.
 ## Element Type
 | Key           | Value         |
 |---------------|---------------|
-| Cyro          | Ice           |
+| Cryo          | Ice           |
 | Hydro         | Water         |
 | Anemo         | Wind          |
 | Pyro          | Fire          |
@@ -232,12 +239,12 @@ import asyncio
 
 from enkanetwork import Assets
 
-assets = Assets(lang="th") # Set languege before get name (Ex. Thai)
+assets = Assets(lang="en") # Set languege before get name (Ex. English)
 
 async def main():
     print(assets.get_hash_map(1940919994)) # Hu tao
     # OR you can get FIGHT_PROP name
-    print(assets.get_hash_map("FIGHT_PROP_BASE_ATTACK")) # พลังโจมตีพื้นฐาน (Base ATK)
+    print(assets.get_hash_map("FIGHT_PROP_BASE_ATTACK")) # Base ATK
     
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
