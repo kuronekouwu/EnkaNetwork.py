@@ -119,4 +119,4 @@ class PlayerInfo(BaseModel):
         super().__init__(**data)
         
         __pydantic_self__.namecard = Namecard(id=data["nameCardId"])
-        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in data["showNameCardIdList"]]
+        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (data["showNameCardIdList"] if "showNameCardIdList" in data else [])]
