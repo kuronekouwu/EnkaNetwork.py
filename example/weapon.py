@@ -14,7 +14,7 @@ async def main():
         print(f"Name: {weapon.detail.name}")
         print(f"Icon: {weapon.detail.icon}")
         print(f"Level: {weapon.level}")
-        print(f"Refinement (R): {weapon.refinement}")
+        print(f"Refinement: R{weapon.refinement}")
         print(f"Ascension: {'⭐'*weapon.ascension}")
         print("--- Main Stats ---")
         print(f"Name: {weapon.detail.mainstats.name}")
