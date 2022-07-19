@@ -44,6 +44,21 @@
         "TH": "Defender's Will",
         "VI": "Trái Tim Thủ Hộ"
     },
+    "539533683": {
+        "CHS": "奇迹",
+        "CHT": "奇蹟",
+        "DE": "Wunder",
+        "EN": "Tiny Miracle",
+        "ES": "Milagro",
+        "FR": "Miracle",
+        "ID": "Tiny Miracle",
+        "JP": "奇跡",
+        "KR": "기적",
+        "PT": "Pequeno Milagre",
+        "RU": "Маленькое чудо",
+        "TH": "Tiny Miracle",
+        "VI": "Kỳ Tích"
+    },
     "1383639611": {
         "CHS": "奇迹",
         "CHT": "奇蹟",
@@ -74,6 +89,21 @@
         "TH": "Berserker",
         "VI": "Cuồng Chiến"
     },
+    "3685215283": {
+        "CHS": "武人",
+        "CHT": "武人",
+        "DE": "Kampfkünstler",
+        "EN": "Martial Artist",
+        "ES": "Artista Marcial",
+        "FR": "Artiste martial",
+        "ID": "Martial Artist",
+        "JP": "武人",
+        "KR": "무인",
+        "PT": "Artista Marcial",
+        "RU": "Воин",
+        "TH": "Martial Artist",
+        "VI": "Võ Nhân"
+    },
     "2890909531": {
         "CHS": "武人",
         "CHT": "武人",
@@ -103,6 +133,21 @@
         "RU": "Инструктор",
         "TH": "Instructor",
         "VI": "Giáo Quan"
+    },
+    "1543521331": {
+        "CHS": "赌徒",
+        "CHT": "賭徒",
+        "DE": "Glücksspieler",
+        "EN": "Gambler",
+        "ES": "Jugadora",
+        "FR": "Parieur",
+        "ID": "Gambler",
+        "JP": "博徒",
+        "KR": "노름꾼",
+        "PT": "Apostador",
+        "RU": "Азартный игрок",
+        "TH": "Gambler",
+        "VI": "Con Bạc"
     },
     "1186209435": {
         "CHS": "赌徒",
@@ -284,6 +329,21 @@
         "TH": "Viridescent Venerer",
         "VI": "Bóng Hình Màu Xanh"
     },
+    "147298547": {
+        "CHS": "流浪大地的乐团",
+        "CHT": "流浪大地的樂團",
+        "DE": "Wanderorchester",
+        "EN": "Wanderer's Troupe",
+        "ES": "Orquesta del Errante",
+        "FR": "Bande vagabonde",
+        "ID": "Wanderer's Troupe",
+        "JP": "大地を流浪する楽団",
+        "KR": "대지를 유랑하는 악단",
+        "PT": "Trupe Itinerante",
+        "RU": "Странствующий ансамбль",
+        "TH": "Wanderer's Troupe",
+        "VI": "Đoàn Hát Lang Thang Đại Lục"
+    },
     "729851187": {
         "CHS": "冰之川与雪之砂",
         "CHT": "冰之川與雪之砂",
@@ -328,6 +388,21 @@
         "RU": "Горящая алая ведьма",
         "TH": "Crimson Witch of Flames",
         "VI": "Diệm Liệt Ma Nữ Cháy Rực"
+    },
+    "1750139131": {
+        "CHS": "昔日宗室之仪",
+        "CHT": "昔日宗室之儀",
+        "DE": "Altes Hofritual",
+        "EN": "Noblesse Oblige",
+        "ES": "Ritual Antiguo de la Nobleza",
+        "FR": "Ancien rituel royal",
+        "ID": "Noblesse Oblige",
+        "JP": "旧貴族のしつけ",
+        "KR": "옛 왕실의 의식",
+        "PT": "Antigo Ritual Real",
+        "RU": "Церемония древней знати",
+        "TH": "Noblesse Oblige",
+        "VI": "Nghi Thức Tông Thất Cổ"
     },
     "1751039235": {
         "CHS": "昔日宗室之仪",
@@ -598,8 +673,5 @@
         "RU": "Отголоски подношения",
         "TH": "Echoes of an Offering",
         "VI": "Dư Âm Tế Lễ"
-    },
-    "147298547": {
-        "CHT": "流浪大地的樂團"
     }
 }
