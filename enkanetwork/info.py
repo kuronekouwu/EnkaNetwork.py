@@ -1,2 +1,2 @@
-VERSION = "1.2.9dev0"
+VERSION = "1.2.9dev1"
 AUTHOR = "M-307"
