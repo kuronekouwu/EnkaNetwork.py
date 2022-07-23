@@ -44,4 +44,4 @@ class CharacterAsset(BaseModel):
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
 
-        __pydantic_self__.element = ElementType(__pydantic_self__.element).name if data["costElemType"] != "" else ElementType.Unknown.name
+        __pydantic_self__.element = ElementType(data["costElemType"]) if data["costElemType"] != "" else ElementType.Unknown.name

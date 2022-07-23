@@ -84,7 +84,7 @@ class CharacterInfo(BaseModel):
 
         # Get element
         __pydantic_self__.element = ElementType(character.element).name
-
+        
         # Load constellation
         LOGGER.debug(f"=== Constellation ===")
         for constellation in character.constellations:
