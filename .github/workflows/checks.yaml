@@ -1,11 +1,11 @@
 name: "Check assets and verify"
 on: [push]
 jobs:
-  assests:
+  check-assests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-      with:
-        python-version: "3.10"
-      run: pip install -r requirements.txt
+      - uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+      - run: pip install -r requirements.txt
