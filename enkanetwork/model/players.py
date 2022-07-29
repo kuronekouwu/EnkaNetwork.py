@@ -1,7 +1,7 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import List, Any
+from typing import List, Any, Union
 
 from ..assets import Assets
 
@@ -17,19 +17,20 @@ class ProfilePicture(BaseModel):
     """
         Custom add data
     """
-    url: str = ""
+    url: Union[str, None] = None
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
 
         # Get character
         LOGGER.debug("=== Avatar ===")
-        icon = Assets.character_icon(str(data["avatarId"]))
+        if "avatarId" in data:
+            icon = Assets.character_icon(str(data["avatarId"]))
 
-        if not icon:
-            return
+            if not icon:
+                return
 
-        __pydantic_self__.url = icon.icon
+            __pydantic_self__.url = icon.icon
 
 
 class showAvatar(BaseModel):
