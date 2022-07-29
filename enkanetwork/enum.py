@@ -1,9 +1,10 @@
 from enum import Enum
 
+
 class Language(str, Enum):
     EN = "en"
-    RU = "ru" 
-    VI = "vi" 
+    RU = "ru"
+    VI = "vi"
     TH = "th"
     PT = "pt"
     KR = "kr"
@@ -12,7 +13,7 @@ class Language(str, Enum):
     FR = "fr"
     ES = "es"
     DE = "de"
-    
+
     """
         zh-CN: CHT
         zh-TW: CHS
@@ -22,15 +23,18 @@ class Language(str, Enum):
     CHT = "cht"
     CHS = "chs"
 
+
 class EquipmentsType(int, Enum):
     UNKNOWN = -1
     ARTIFACT = 0
     WEAPON = 1
 
+
 class DigitType(int, Enum):
     NUMBER = 0
     PERCENT = 1
-    
+
+
 class ElementType(str, Enum):
     Unknown = "Unknown"
     Cryo = "Ice"
@@ -39,6 +43,7 @@ class ElementType(str, Enum):
     Pyro = "Fire"
     Geo = "Rock"
     Electro = "Electric"
+
 
 class EquipType(str, Enum):
     Unknown = "UNKNOWN"

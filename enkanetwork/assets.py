@@ -13,14 +13,10 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 
 LOGGER = logging.getLogger(__name__)
 
+
 class Assets:
-    # Characters & Skills
     DATA: Dict[str, dict] = {}
-
-    # Hash Map
     HASH_MAP: Dict[str, dict] = {}
-
-    # Language
     LANGS: Language = Language.EN
 
     def __init__(self, lang: Language = Language.EN) -> None:
@@ -49,7 +45,7 @@ class Assets:
         })
 
     @classmethod
-    def constellations(cls, id: int) -> Union[assets.CharacterConstellationsAsset, None]:
+    def constellations(cls, id: int) -> Union[assets.CharacterConstellationsAsset, None]:  # noqa: E501
         LOGGER.debug(f"Getting character constellations assets with id: {id}")
         data = cls.DATA["constellations"].get(str(id))
         if not data:
@@ -68,7 +64,7 @@ class Assets:
         data = cls.DATA["skills"].get(str(id))
         if not data:
             LOGGER.error(f"Character skills not found with id: {id}")
-            return 
+            return
 
         return assets.CharacterSkillAsset.parse_obj({
             "id": id,
@@ -94,14 +90,14 @@ class Assets:
 
     @classmethod
     def get_hash_map(cls, hash_id: str) -> Union[str, None]:
-        LOGGER.debug(f"Getting nameTextMapHash {hash_id} with language: {cls.LANGS}")
+        LOGGER.debug(f"Getting nameTextMapHash {hash_id} with language: {cls.LANGS}")  # noqa: E501
         for key in cls.HASH_MAP:
             if str(hash_id) in cls.HASH_MAP[key]:
                 val = cls.HASH_MAP[key][str(hash_id)][cls.LANGS]
-                LOGGER.debug(f"Got nameTextMapHash {hash_id} with language: {key} (Value '{val}')")
+                LOGGER.debug(f"Got nameTextMapHash {hash_id} with language: {key} (Value '{val}')")  # noqa: E501
                 return val
 
-        LOGGER.error(f"nameTextMapHash {hash_id} not found with language: {cls.LANGS}")
+        LOGGER.error(f"nameTextMapHash {hash_id} not found with language: {cls.LANGS}")  # noqa: E501
         return
 
     @classmethod
@@ -117,7 +113,7 @@ class Assets:
         return assets.CharacterIconAsset(
             icon=create_ui_path(path.replace("_Side", "")),
             side=create_ui_path(path),
-            banner=create_ui_path(path.replace("AvatarIcon_Side", "Gacha_AvatarImg"))
+            banner=create_ui_path(path.replace("AvatarIcon_Side", "Gacha_AvatarImg"))  # noqa: E501
         )
 
     @staticmethod
@@ -128,7 +124,7 @@ class Assets:
     def _set_language(cls, lang: Language) -> None:
         # Check language
         if not lang.split("-")[0].lower() in list(Language):
-            raise ValueError("Language not supported. Please check your language.")
+            raise ValueError("Language not supported. Please check your language.")  # noqa: E501
 
         LOGGER.debug(f"Set language to {lang}.")
         cls.LANGS = lang.upper()
@@ -146,7 +142,7 @@ class Assets:
         FILE_LANG = os.listdir(_PATH)
         for FILENAME in FILE_LANG:
             LOGGER.debug(f"Loading language file {FILENAME}...")
-            cls.HASH_MAP[FILENAME.split(".")[0]] = json.load(cls.__load(os.path.join(_PATH, FILENAME)))
+            cls.HASH_MAP[FILENAME.split(".")[0]] = json.load(cls.__load(os.path.join(_PATH, FILENAME)))  # noqa: E501
 
     @classmethod
     def __load_assets_data(cls) -> None:
@@ -154,7 +150,7 @@ class Assets:
         FILE_DATA = os.listdir(_PATH)
         for FILENAME in FILE_DATA:
             LOGGER.debug(f"Loading data file {FILENAME}...")
-            cls.DATA[FILENAME.split(".")[0]] = json.load(cls.__load(os.path.join(_PATH, FILENAME)))
-    
+            cls.DATA[FILENAME.split(".")[0]] = json.load(cls.__load(os.path.join(_PATH, FILENAME)))  # noqa: E501
+
     def __load(path: str) -> TextIOWrapper:
         return open(path, "r", encoding="utf-8")

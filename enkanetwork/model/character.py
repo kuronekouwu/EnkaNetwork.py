@@ -13,17 +13,20 @@ from ..enum import ElementType
 
 LOGGER = logging.getLogger(__name__)
 
+
 class CharacterSkill(BaseModel):
     id: int = 0
     name: str = ""
     icon: str = ""
     level: int = 0
 
+
 class CharacterConstellations(BaseModel):
     id: int = 0
-    name: str  = ""
+    name: str = ""
     icon: str = ""
-    unlocked: bool = False # If character has this constellation.
+    unlocked: bool = False  # If character has this constellation.
+
 
 class CharacterInfo(BaseModel):
     """
@@ -38,7 +41,7 @@ class CharacterInfo(BaseModel):
     """
         Custom data
     """
-    name: str = "" # Get from name hash map 
+    name: str = ""  # Get from name hash map
     friendship_level: int = 1
     element: ElementType = ElementType.Unknown
     image: CharacterIconAsset = CharacterIconAsset()
@@ -46,33 +49,38 @@ class CharacterInfo(BaseModel):
     constellations: List[CharacterConstellations] = []
 
     # Prop Maps
-    xp: int = 0 # AKA. propMap 1001
-    ascension: int = 0 # AKA. propMap 4001
-    level: int = 0 # AKA. propMap 1002
+    xp: int = 0  # AKA. propMap 1001
+    ascension: int = 0  # AKA. propMap 4001
+    level: int = 0  # AKA. propMap 1002
 
     # Other
     max_level: int = 20
-    constellations_unlocked: int = 0 # Constellation is unlocked count
+    constellations_unlocked: int = 0  # Constellation is unlocked count
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
-        
+
         # Friendship level
         __pydantic_self__.friendship_level = data["fetterInfo"]["expLevel"]
 
         # Get prop map
-        __pydantic_self__.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0
-        __pydantic_self__.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0
-        __pydantic_self__.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0
+        __pydantic_self__.xp = int(
+            data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0  # noqa: E501
+        __pydantic_self__.ascension = int(
+            data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0  # noqa: E501
+        __pydantic_self__.level = int(
+            data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0  # noqa: E501
 
         # Constellation unlocked count
-        __pydantic_self__.constellations_unlocked = len(data["talentIdList"]) if "talentIdList" in data else 0
+        __pydantic_self__.constellations_unlocked = len(
+            data["talentIdList"]) if "talentIdList" in data else 0
 
         # Get max character level
-        __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20
+        __pydantic_self__.max_level = (
+            __pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20  # noqa: E501
 
         # Get character
-        LOGGER.debug(f"=== Character Data ===")
+        LOGGER.debug("=== Character Data ===")
         character = Assets.character(str(data["avatarId"]))
 
         # Check if character is founded
@@ -84,9 +92,9 @@ class CharacterInfo(BaseModel):
 
         # Get element
         __pydantic_self__.element = ElementType(character.element).name
-        
+
         # Load constellation
-        LOGGER.debug(f"=== Constellation ===")
+        LOGGER.debug("=== Constellation ===")
         for constellation in character.constellations:
             _constellation = Assets.constellations(constellation)
             if not _constellation:
@@ -102,11 +110,12 @@ class CharacterInfo(BaseModel):
                 id=int(constellation),
                 name=_name,
                 icon=_constellation.icon,
-                unlocked=int(constellation) in data["talentIdList"] if "talentIdList" in data else False
+                unlocked=int(
+                    constellation) in data["talentIdList"] if "talentIdList" in data else False  # noqa: E501
             ))
-        
-        # Load skills 
-        LOGGER.debug(f"=== Skills ===")
+
+        # Load skills
+        LOGGER.debug("=== Skills ===")
         for skill in character.skills:
             _skill = Assets.skills(skill)
 
@@ -126,7 +135,7 @@ class CharacterInfo(BaseModel):
                 level=data["skillLevelMap"].get(str(skill), 0)
             ))
 
-        LOGGER.debug(f"=== Character Name ===")
+        LOGGER.debug("=== Character Name ===")
         _name = Assets.get_hash_map(str(character.hash_id))
 
         if _name is None:
@@ -134,6 +143,6 @@ class CharacterInfo(BaseModel):
 
         # Get name from hash map
         __pydantic_self__.name = _name
-    
+
     class Config:
         use_enum_values = True

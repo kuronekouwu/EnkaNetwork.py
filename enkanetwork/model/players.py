@@ -4,9 +4,10 @@ from pydantic import BaseModel, Field
 from typing import List, Any
 
 from ..assets import Assets
-from ..utils import create_ui_path
 
 LOGGER = logging.getLogger(__name__)
+
+
 class ProfilePicture(BaseModel):
     """
         API Response data
@@ -22,13 +23,14 @@ class ProfilePicture(BaseModel):
         super().__init__(**data)
 
         # Get character
-        LOGGER.debug(f"=== Avatar ===")
+        LOGGER.debug("=== Avatar ===")
         icon = Assets.character_icon(str(data["avatarId"]))
 
         if not icon:
             return
-            
+
         __pydantic_self__.url = icon.icon
+
 
 class showAvatar(BaseModel):
     """
@@ -47,7 +49,7 @@ class showAvatar(BaseModel):
         super().__init__(**data)
 
         # Get character
-        LOGGER.debug(f"=== Character preview ===")
+        LOGGER.debug("=== Character preview ===")
         character_preview = Assets.character(str(data["avatarId"]))
 
         if not character_preview:
@@ -59,10 +61,10 @@ class showAvatar(BaseModel):
         _name = Assets.get_hash_map(str(character_preview.hash_id))
 
         if _name is None:
-            return 
+            return
 
         __pydantic_self__.name = _name
-        
+
 
 class Namecard(BaseModel):
     id: int = 0
@@ -75,7 +77,7 @@ class Namecard(BaseModel):
         super().__init__(**data)
 
         if __pydantic_self__.id > 0:
-            LOGGER.debug(f"=== Namecard ===")
+            LOGGER.debug("=== Namecard ===")
             # Get name card
             namecard = Assets.namecards(str(__pydantic_self__.id))
 
@@ -88,9 +90,10 @@ class Namecard(BaseModel):
 
             _name = Assets.get_hash_map(str(namecard.hash_id))
             if _name is None:
-                return 
+                return
 
             __pydantic_self__.name = _name
+
 
 class PlayerInfo(BaseModel):
     """
@@ -104,7 +107,8 @@ class PlayerInfo(BaseModel):
     world_level: int = Field(1, alias="worldLevel")
     icon: ProfilePicture = Field(None, alias="profilePicture")
     # Avatars
-    characters_preview: List[showAvatar] = Field([], alias="showAvatarInfoList")
+    characters_preview: List[showAvatar] = Field(
+        [], alias="showAvatarInfoList")
     # Abyss floor
     abyss_floor: int = Field(0, alias="towerFloorIndex")
     abyss_room: int = Field(0, alias="towerLevelIndex")
@@ -112,11 +116,12 @@ class PlayerInfo(BaseModel):
     """
         Custom data
     """
-    namecard: Namecard = Namecard() # Profile namecard
-    namecards: List[Namecard] = [] # List namecard preview in profile
+    namecard: Namecard = Namecard()  # Profile namecard
+    namecards: List[Namecard] = []  # List namecard preview in profile
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
-        
+
         __pydantic_self__.namecard = Namecard(id=data["nameCardId"])
-        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (data["showNameCardIdList"])] if "showNameCardIdList" in data else []
+        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (
+            data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501
