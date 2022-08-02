@@ -2,7 +2,7 @@ import json
 import os
 import logging
 
-from typing import Dict, Union
+from typing import Dict, Union, List
 from io import TextIOWrapper
 
 from .enum import Language
@@ -29,6 +29,10 @@ class Assets:
         # Load assets
         cls.__load_assets_lang()
         cls.__load_assets_data()
+
+    @property
+    def CHARACTERS_IDS(self) -> List[str]:
+        return [x for x in self.DATA["characters"]]
 
     @classmethod
     def character(cls, id: int) -> Union[assets.CharacterAsset, None]:
@@ -123,7 +127,7 @@ class Assets:
     @classmethod
     def _set_language(cls, lang: Language) -> None:
         # Check language
-        if not lang.split("-")[0].lower() in list(Language):
+        if lang is None or not lang.split("-")[0].lower() in list(Language):
             raise ValueError("Language not supported. Please check your language.")  # noqa: E501
 
         LOGGER.debug(f"Set language to {lang}.")
