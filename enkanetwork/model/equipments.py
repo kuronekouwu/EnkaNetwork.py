@@ -59,7 +59,7 @@ class EquipmentsDetail(BaseModel):
             __pydantic_self__.icon = Assets.create_icon_path(data["icon"])
             __pydantic_self__.artifact_type = EquipType(data["equipType"]).name
             # Sub Stats
-            for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:
+            for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:  # noqa: E501
                 __pydantic_self__.substats.append(
                     EquipmentsStats.parse_obj(stats))
 
