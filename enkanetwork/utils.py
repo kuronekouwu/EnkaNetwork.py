@@ -52,7 +52,7 @@ async def request(url: str, headers: dict = None) -> dict:
         headers = {}
 
     retry = 0
-    async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=30)) as session:
+    async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=30)) as session:  # noqa: E501
         """
             From https://gist.github.com/foobarna/19c132304e140bf5031c273f6dc27ece   # noqa: E501
         """

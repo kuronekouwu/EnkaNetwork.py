@@ -4,7 +4,6 @@ import json
 
 from typing import Union
 
-
 from .model import EnkaNetworkResponse
 from .exception import VaildateUIDError, UIDNotFounded
 from .assets import Assets
@@ -61,7 +60,7 @@ class EnkaNetworkAPI:
                 # Return data
                 self.LOGGER.debug("Parsing data...")
                 return EnkaNetworkResponse.parse_obj(data)
-                
+
         resp = await request(url=create_path(f"u/{uid}/__data.json" + ("?key={key}" if self.__key else "")))  # noqa: E501
 
         # Check if status code is not 200 (Ex. 500)
