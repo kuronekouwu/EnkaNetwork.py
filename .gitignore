@@ -3,3 +3,5 @@ enkanetwork.egg-info
 build
 enkanetwork.py.egg-info
 dist
+test/*.test.py
+.pytest_cache
