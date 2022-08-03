@@ -16,7 +16,7 @@ class EnkaNetworkAPI:
     LOGGER = logging.getLogger(__name__)
     RAWDATA = "https://raw.githubusercontent.com/mrwan200/enkanetwork.py-data/{PATH}"  # noqa: E501
 
-    def __init__(self, lang: str = "en", debug: bool = False, key: str = "", cache: bool = True) -> None:  # noqa: E501
+    def __init__(self, lang: str = "en", debug: bool = False, key: str = "", cache: bool = True, agent: str = "") -> None:  # noqa: E501
         # Logging
         logging.basicConfig()
         logging.getLogger("enkanetwork").setLevel(logging.DEBUG if debug else logging.ERROR)  # noqa: E501
@@ -27,6 +27,9 @@ class EnkaNetworkAPI:
         # Cache
         self._enable_cache = cache
         self.cache = Cache(1024, 60 * 3)
+
+        # Custom User-Agent
+        self.__agent = agent
 
         # Key
         self.__key = key
@@ -54,14 +57,18 @@ class EnkaNetworkAPI:
 
         if self._enable_cache:
             self.LOGGER.warn("Getting data from cache...")
-            data = self.cache.get(uid)
+            data = await self.cache.get(uid)
 
             if data is not None:
                 # Return data
                 self.LOGGER.debug("Parsing data...")
                 return EnkaNetworkResponse.parse_obj(data)
 
-        resp = await request(url=create_path(f"u/{uid}/__data.json" + ("?key={key}" if self.__key else "")))  # noqa: E501
+        headers = {}
+        if self.__agent != "":
+            headers["User-Agent"] = self.__agent
+
+        resp = await request(url=create_path(f"u/{uid}/__data.json" + ("?key={key}" if self.__key else "")), headers=headers)  # noqa: E501
 
         # Check if status code is not 200 (Ex. 500)
         if resp["status"] != 200:
@@ -78,7 +85,7 @@ class EnkaNetworkAPI:
 
         if self._enable_cache:
             self.LOGGER.debug("Caching data...")
-            self.cache.set(uid, data)
+            await self.cache.set(uid, data)
 
         # Return data
         self.LOGGER.debug("Parsing data...")
