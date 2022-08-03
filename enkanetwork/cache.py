@@ -7,8 +7,9 @@ class Cache:
     def __init__(self, maxsize, ttl):
         self.cache = TTLCache(maxsize, ttl)
 
-    def get(self, key):
-        return json.loads(self.cache.get(key))
+    async def get(self, key):
+        data = self.cache.get(key)
+        return json.loads(data) if data is not None else data
 
-    def set(self, key, value):
+    async def set(self, key, value):
         self.cache[key] = json.dumps(value)
