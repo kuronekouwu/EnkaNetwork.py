@@ -7,7 +7,7 @@ from enkanetwork.enum import ElementType, Language, EquipmentsType
 from enkanetwork.model.equipments import Equipments
 
 # Init enkanetwork client
-client = enkanetwork.client.EnkaNetworkAPI(lang=enkanetwork.Language.TH, debug=True)
+client = enkanetwork.client.EnkaNetworkAPI(lang=enkanetwork.Language.TH)
 
 with open("test.json", "r") as f:
     _j = json.load(f)
@@ -24,7 +24,12 @@ def test_get_asset_data() -> None:
 
             # Check character data
             assert data is not None  # Check data is None
-            assert data.id == int(ids)  # Check id is correct
+            if not data.id in [10000005, 10000007]:
+                assert data.id == int(ids)  # Check id is correct
+            else:
+                if data.skill_id > 0:
+                    assert f"{data.id}-{data.skill_id}" == ids # Check id is correct (Tarveler)
+
             assert str(data.id)[:2] != "11"  # Check id is not 11xx (Test character)
             assert data.element in list(ElementType)  # Check element is correct
 
@@ -113,3 +118,18 @@ def test_weapons():
         assert data.level == raw["weapon"]["level"]
         if "affixMap" in raw["weapon"]:
             assert data.refinement == raw["weapon"]["affixMap"][list(raw["weapon"]["affixMap"].keys())[0]] + 1
+
+def test_costumes() -> None:
+    """
+        Test case 4:
+            Test characters costumes
+    """
+
+    for costume in client.assets.COSTUMES_IDS:
+        _costume = client.assets.character_costume(costume)
+        assert _costume is not None
+        assert _costume.id == int(costume)
+        # Check icon filename
+        assert "_AvatarIcon_" in _costume.images.icon and \
+                "_AvatarIcon_Side_" in _costume.images.side and \
+                "_Costume_" in _costume.images.banner
