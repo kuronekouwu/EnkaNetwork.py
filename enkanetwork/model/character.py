@@ -44,6 +44,7 @@ class CharacterInfo(BaseModel):
     name: str = ""  # Get from name hash map
     friendship_level: int = 1
     element: ElementType = ElementType.Unknown
+    rarity: int = 0
     image: CharacterIconAsset = CharacterIconAsset()
     skills: List[CharacterSkill] = []
     constellations: List[CharacterConstellations] = []
@@ -81,17 +82,29 @@ class CharacterInfo(BaseModel):
 
         # Get character
         LOGGER.debug("=== Character Data ===")
-        character = Assets.character(str(data["avatarId"]))
+        avatarId = str(data["avatarId"])
+        avatarId += f"-{data['skillDepotId']}" if data["avatarId"] in [10000005, 10000007] else ""  # noqa: E501
+        character = Assets.character(avatarId)  # noqa: E501
 
         # Check if character is founded
         if not character:
             return
 
         # Load icon
-        __pydantic_self__.image = character.images
+        if "costumeId" in data:
+            _data = Assets.character_costume(str(data["costumeId"]))
+            if _data:
+                __pydantic_self__.image = _data.images
+            else:
+                __pydantic_self__.image = character.images
+        else:
+            __pydantic_self__.image = character.images
 
         # Get element
-        __pydantic_self__.element = ElementType(character.element).name
+        __pydantic_self__.element = ElementType(character.element)
+
+        # Check caulate rarity
+        __pydantic_self__.rarity = character.rarity
 
         # Load constellation
         LOGGER.debug("=== Constellation ===")

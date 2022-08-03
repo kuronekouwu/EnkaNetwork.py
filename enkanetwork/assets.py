@@ -34,18 +34,37 @@ class Assets:
     def CHARACTERS_IDS(self) -> List[str]:
         return [x for x in self.DATA["characters"]]
 
+    @property
+    def COSTUMES_IDS(self) -> List[str]:
+        return [x for x in self.DATA["costumes"]]
+
     @classmethod
-    def character(cls, id: int) -> Union[assets.CharacterAsset, None]:
+    def character(cls, id: Union[int, str]) -> Union[assets.CharacterAsset, None]:  # noqa: E501
         LOGGER.debug(f"Getting character assets with id: {id}")
+
         data = cls.DATA["characters"].get(str(id))
         if not data:
             LOGGER.error(f"Character not found with id: {id}")
             return
 
         return assets.CharacterAsset.parse_obj({
-            "id": id,
+            "id": id if id.isdigit() else id.split("-")[0],
+            "skill_id": str(id).split("-")[1] if not id.isdigit() else 0,
             "images": cls.create_character_icon(data["sideIconName"]),
             **data
+        })
+
+    @classmethod
+    def character_costume(cls, id: int):  # noqa: E501
+        LOGGER.debug(f"Getting costume assets with id: {id}")
+        data = cls.DATA["costumes"].get(str(id))
+        if not data:
+            LOGGER.error(f"Costume not found with id: {id}")
+            return
+
+        return assets.CharacterCostume.parse_obj({
+            "id": id,
+            "images": cls.create_chractar_costume_icon(data["sideIconName"])
         })
 
     @classmethod
@@ -66,6 +85,7 @@ class Assets:
     def skills(cls, id: int) -> Union[assets.CharacterSkillAsset, None]:
         LOGGER.debug(f"Getting character skills assets with id: {id}")
         data = cls.DATA["skills"].get(str(id))
+
         if not data:
             LOGGER.error(f"Character skills not found with id: {id}")
             return
@@ -119,6 +139,12 @@ class Assets:
             side=create_ui_path(path),
             banner=create_ui_path(path.replace("AvatarIcon_Side", "Gacha_AvatarImg"))  # noqa: E501
         )
+
+    @classmethod
+    def create_chractar_costume_icon(cls, path: str) -> assets.CharacterIconAsset:  # noqa: E501
+        _data = cls.create_character_icon(path)
+        _data.banner = _data.banner.replace("Gacha_AvatarImg", "Costume")
+        return _data
 
     @staticmethod
     def create_icon_path(path: str) -> str:

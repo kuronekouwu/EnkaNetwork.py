@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from typing import List, Any, Union
 
 from ..assets import Assets
+from ..enum import ElementType
 
 LOGGER = logging.getLogger(__name__)
 
@@ -25,7 +26,11 @@ class ProfilePicture(BaseModel):
         # Get character
         LOGGER.debug("=== Avatar ===")
         if "avatarId" in data:
-            icon = Assets.character_icon(str(data["avatarId"]))
+            if "costumeId" in data:
+                _data = Assets.character_costume(str(data["costumeId"]))
+                icon = _data.images if _data is not None else _data
+            else:
+                icon = Assets.character_icon(str(data["avatarId"]))
 
             if not icon:
                 return
@@ -44,19 +49,29 @@ class showAvatar(BaseModel):
         Custom data
     """
     name: str = ""
-    icon:  str = ""
+    icon: str = ""
+    element: ElementType = ElementType.Unknown
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
 
         # Get character
         LOGGER.debug("=== Character preview ===")
+
+        # Find tarveler
         character_preview = Assets.character(str(data["avatarId"]))
 
         if not character_preview:
             return
 
-        __pydantic_self__.icon = character_preview.images.icon
+        __pydantic_self__.element = character_preview.element
+
+        if "costumeId" in data:
+            _data = Assets.character_costume(str(data["costumeId"]))
+            if _data:
+                __pydantic_self__.icon = _data.images.icon
+        else:
+            __pydantic_self__.icon = character_preview.images.icon
 
         # Get name hash map
         _name = Assets.get_hash_map(str(character_preview.hash_id))
