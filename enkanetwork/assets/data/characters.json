@@ -40,7 +40,7 @@
             36
         ]
     },
-    "10000005": {
+    "10000005-501": {
         "nameTextMapHash": 1533656818,
         "iconName": "UI_AvatarIcon_PlayerBoy",
         "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
@@ -49,6 +49,108 @@
         "skills": [
             100540
         ],
+        "talents": []
+    },
+    "10000005-502": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "",
+        "skills": [
+            100541
+        ],
+        "talents": []
+    },
+    "10000005-503": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "",
+        "skills": [
+            100542
+        ],
+        "talents": []
+    },
+    "10000005-504": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Wind",
+        "skills": [
+            100543,
+            10067,
+            10068
+        ],
+        "talents": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76
+        ]
+    },
+    "10000005-505": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Wind",
+        "skills": [
+            100544
+        ],
+        "talents": []
+    },
+    "10000005-506": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Rock",
+        "skills": [
+            100545,
+            10077,
+            10078
+        ],
+        "talents": [
+            91,
+            92,
+            93,
+            94,
+            95,
+            96
+        ]
+    },
+    "10000005-507": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Electric",
+        "skills": [
+            100546,
+            10602,
+            10605
+        ],
+        "talents": [
+            101,
+            102,
+            103,
+            104,
+            105,
+            106
+        ]
+    },
+    "10000005": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "",
+        "skills": [],
         "talents": []
     },
     "10000006": {
@@ -71,7 +173,7 @@
             46
         ]
     },
-    "10000007": {
+    "10000007-701": {
         "nameTextMapHash": 3816664530,
         "iconName": "UI_AvatarIcon_PlayerGirl",
         "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
@@ -80,6 +182,108 @@
         "skills": [
             100550
         ],
+        "talents": []
+    },
+    "10000007-702": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "",
+        "skills": [
+            100551
+        ],
+        "talents": []
+    },
+    "10000007-703": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "",
+        "skills": [
+            100552
+        ],
+        "talents": []
+    },
+    "10000007-704": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Wind",
+        "skills": [
+            100553,
+            10067,
+            10068
+        ],
+        "talents": [
+            71,
+            72,
+            73,
+            74,
+            75,
+            76
+        ]
+    },
+    "10000007-705": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Wind",
+        "skills": [
+            100554
+        ],
+        "talents": []
+    },
+    "10000007-706": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Rock",
+        "skills": [
+            100555,
+            10077,
+            10078
+        ],
+        "talents": [
+            91,
+            92,
+            93,
+            94,
+            95,
+            96
+        ]
+    },
+    "10000007-707": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Electric",
+        "skills": [
+            100556,
+            10602,
+            10605
+        ],
+        "talents": [
+            101,
+            102,
+            103,
+            104,
+            105,
+            106
+        ]
+    },
+    "10000007": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "",
+        "skills": [],
         "talents": []
     },
     "10000014": {
