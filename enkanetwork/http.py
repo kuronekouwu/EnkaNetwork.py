@@ -76,7 +76,7 @@ class HTTPClient:
         uid = route.uid
 
         self.__headers.clear()
-        if not self.__agent != '':
+        if self.__agent != '':
             self.__headers['User-Agent'] = self.__agent
 
         kwargs['headers'] = {**utils.get_default_header(), **self.__headers}
