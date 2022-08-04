@@ -75,8 +75,8 @@ class EnkaNetworkAPI:
         self.LOGGER.debug(f"Fetching user with UID {uid}...")
 
         if self._enable_cache:
-            self.LOGGER.debug("Caching data...")
-            await self.cache.set(uid, data)
+            self.LOGGER.warn("Getting data from cache...")
+            await self.cache.set(uid)
 
             if data is not None:
                 # Return data
