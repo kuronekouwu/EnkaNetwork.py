@@ -2,6 +2,7 @@ import json
 
 from cachetools import TTLCache
 
+__all__ = ('Cache',)
 
 class Cache:
     def __init__(self, maxsize, ttl):

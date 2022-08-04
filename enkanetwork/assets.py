@@ -2,12 +2,13 @@ import json
 import os
 import logging
 
-from typing import Dict, Union, List
-from io import TextIOWrapper
+from typing import Dict, List, TextIO
 
 from .enum import Language
 from .model import assets
 from .utils import create_ui_path
+
+from typing import Union
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -19,7 +20,7 @@ class Assets:
     HASH_MAP: Dict[str, dict] = {}
     LANGS: Language = Language.EN
 
-    def __init__(self, lang: Language = Language.EN) -> None:
+    def __init__(self, lang: Union[str, Language] = Language.EN) -> None:
         # Set language
         self._set_language(lang)
         self.reload_assets()
@@ -180,7 +181,9 @@ class Assets:
         FILE_DATA = os.listdir(_PATH)
         for FILENAME in FILE_DATA:
             LOGGER.debug(f"Loading data file {FILENAME}...")
+
             cls.DATA[FILENAME.split(".")[0]] = json.load(cls.__load(os.path.join(_PATH, FILENAME)))  # noqa: E501
 
-    def __load(path: str) -> TextIOWrapper:
+    @staticmethod
+    def __load(path: str) -> TextIO:
         return open(path, "r", encoding="utf-8")
