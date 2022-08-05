@@ -1,7 +1,5 @@
 from __future__ import annotations
 
-import os
-import json
 import asyncio
 import aiohttp
 import logging
@@ -12,7 +10,6 @@ from typing import (
     Optional,
     TypeVar,
     Coroutine,
-    NoReturn,
     Dict,
     Union,
     TYPE_CHECKING
@@ -30,7 +27,11 @@ from .exception import (
 if TYPE_CHECKING:
     T = TypeVar('T')
     Response = Coroutine[Any, Any, T]
-    from .types.enkanetwork import EnkaNetwork as EnkaNetworkPayload
+    from .types.enkanetwork import (
+        EnkaNetwork as EnkaNetworkPayload,
+        Default as DefaultPayload,
+    )
+
 
 class Route:
 
@@ -136,11 +137,21 @@ class HTTPClient:
     def fetch_user(self, uid: Union[str, int]) -> Response[EnkaNetworkPayload]:
         if not utils.validate_uid(str(uid)):
             raise VaildateUIDError("Validate UID failed. Please check your UID.")
-        url = f'/u/{uid}/__data.json' + ("?key={key}" if self.__key else "")
-        return self.request(Route('GET', url, 'enka', uid))
 
-    def update_asset(self, folder: str, filename: str) -> NoReturn:
-        # get new assets
-        url = f"master/exports/{folder}/{filename}"
-        return self.request(Route('GET', url, 'assets'))
+        r = Route(
+            'GET',
+            f'/u/{uid}/__data.json' + (f"?key={self.__key}" if self.__key else ""),
+            'enka',
+            uid
+        )
+        return self.request(r)
+
+    def update_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
+        r = Route(
+            'GET',
+            f'master/exports/{folder}/{filename}'
+            'assets'
+        )
+
+        return self.request(r)
 
