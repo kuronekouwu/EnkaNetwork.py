@@ -137,7 +137,6 @@ class HTTPClient:
     def fetch_user(self, uid: Union[str, int]) -> Response[EnkaNetworkPayload]:
         if not utils.validate_uid(str(uid)):
             raise VaildateUIDError("Validate UID failed. Please check your UID.")
-
         r = Route(
             'GET',
             f'/u/{uid}/__data.json' + (f"?key={self.__key}" if self.__key else ""),
@@ -152,6 +151,5 @@ class HTTPClient:
             f'master/exports/{folder}/{filename}'
             'assets'
         )
-
         return self.request(r)
 
