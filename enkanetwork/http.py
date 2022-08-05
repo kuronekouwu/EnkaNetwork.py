@@ -48,6 +48,8 @@ class Route:
         self.method = method
         self.uid = uid
         self.url = ''
+        self.endpoint = endpoint
+        
         if endpoint == 'enka':
             self.url: str = self.BASE_URL.format(PATH=path)
         else:
@@ -140,16 +142,16 @@ class HTTPClient:
         r = Route(
             'GET',
             f'/u/{uid}/__data.json' + (f"?key={self.__key}" if self.__key else ""),
-            'enka',
-            uid
+            endpoint='enka',
+            uid=uid
         )
         return self.request(r)
 
     def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
-            f'master/exports/{folder}/{filename}'
-            'assets'
+            f'/master/exports/{folder}/{filename}',
+            endpoint='assets'
         )
         return self.request(r)
 
