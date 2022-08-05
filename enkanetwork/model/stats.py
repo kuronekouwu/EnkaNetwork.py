@@ -17,7 +17,7 @@ class StatsPercentage(BaseModel):
     id: int = 0
     value: float = 0.0
 
-    def to_percentage(self) -> int:
+    def to_percentage(self) -> float:
         return round((round(self.value, 3) * 100), 1)
 
     def to_percentage_symbol(self) -> str:

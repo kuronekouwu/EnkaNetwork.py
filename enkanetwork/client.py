@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import os
+import json
 import logging
+
 from .http import HTTPClient
 from .model import EnkaNetworkResponse
 from .assets import Assets
@@ -95,11 +98,18 @@ class EnkaNetworkAPI:
         print("Updating assets...")
         self.LOGGER.debug("Downloading new content...")
 
-        # get path
         path = Assets._get_path_assets()
+        for folder in path:
+            for filename in os.listdir(path[folder]):
+                self.LOGGER.debug(f"Downloading {folder} file {filename}...")
 
-        # update assets
-        await self.__http.update_asset(path)
+                data = await self.__http.update_asset(folder, filename)
+
+                self.LOGGER.debug(f"Writing {folder} file {filename}...")
+
+                # dumps to json file
+                with open(os.path.join(path[folder], filename), "w", encoding="utf-8") as f:
+                    json.dump(data["content"], f, ensure_ascii=False, indent=4)
 
         # Reload config
         self.assets.reload_assets()

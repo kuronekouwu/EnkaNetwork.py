@@ -43,7 +43,7 @@ class Route:
             path: str,
             endpoint: str = 'enka',
             uid: Optional[str] = None,
-    ):
+    ) -> None:
         self.method = method
         self.uid = uid
         self.url = ''
@@ -59,8 +59,8 @@ class HTTPClient:
     def __init__(self, *, key: str = '', agent: str = '') -> None:
         self.__session: aiohttp.ClientSession = MISSING
         self.__headers: Dict = {}
-        self.__agent = agent
-        self.__key = key
+        self.__agent: str = agent
+        self.__key: str = key
 
     async def close(self) -> None:
         if self.__session is not MISSING:
@@ -107,7 +107,7 @@ class HTTPClient:
                         self.LOGGER.warning(f"Failure to fetch {url} ({response.status}) Retry {tries} / {RETRY_MAX}")
                         if tries > RETRY_MAX:
                             raise HTTPException(f"Failed to download {url}")
-                        await asyncio.sleep(1 + tries * 2)  # 1 + tries * 2
+                        await asyncio.sleep(1)  # 1 + tries * 2
                         continue
 
                     if response.status == 403:
@@ -139,20 +139,8 @@ class HTTPClient:
         url = f'/u/{uid}/__data.json' + ("?key={key}" if self.__key else "")
         return self.request(Route('GET', url, 'enka', uid))
 
-    async def update_asset(self, path: dict) -> NoReturn:
+    def update_asset(self, folder: str, filename: str) -> NoReturn:
+        # get new assets
+        url = f"master/exports/{folder}/{filename}"
+        return self.request(Route('GET', url, 'assets'))
 
-        self.LOGGER.debug("Downloading new content...")
-
-        for folder in path:
-            for filename in os.listdir(path[folder]):
-                self.LOGGER.debug(f"Downloading {folder} file {filename}...")
-
-                # get new assets
-                url = f"master/exports/{folder}/{filename}"
-                data = await self.request(Route('GET', url, 'assets'))
-
-                self.LOGGER.debug(f"Writing {folder} file {filename}...")
-
-                # dumps to json file
-                with open(os.path.join(path[folder], filename), "w", encoding="utf-8") as f:
-                    json.dump(data["content"], f, ensure_ascii=False, indent=4)
