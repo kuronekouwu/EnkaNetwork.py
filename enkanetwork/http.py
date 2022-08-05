@@ -48,7 +48,6 @@ class Route:
         self.method = method
         self.uid = uid
         self.url = ''
-        self.endpoint = endpoint
         
         if endpoint == 'enka':
             self.url: str = self.BASE_URL.format(PATH=path)
