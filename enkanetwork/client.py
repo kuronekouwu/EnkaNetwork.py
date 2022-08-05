@@ -103,7 +103,7 @@ class EnkaNetworkAPI:
             for filename in os.listdir(path[folder]):
                 self.LOGGER.debug(f"Downloading {folder} file {filename}...")
 
-                data = await self.__http.update_asset(folder, filename)
+                data = await self.__http.fetch_asset(folder, filename)
 
                 self.LOGGER.debug(f"Writing {folder} file {filename}...")
 

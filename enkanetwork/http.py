@@ -146,7 +146,7 @@ class HTTPClient:
         )
         return self.request(r)
 
-    def update_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
+    def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
             f'master/exports/{folder}/{filename}'
