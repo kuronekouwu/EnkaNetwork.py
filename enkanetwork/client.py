@@ -68,6 +68,15 @@ class EnkaNetworkAPI:
     async def fetch_user(self, uid: Union[str, int]) -> EnkaNetworkResponse:
         self.LOGGER.debug(f"Validating with UID {uid}...")
 
+        if self._enable_cache:
+            self.LOGGER.warn("Getting data from cache...")
+            data = await self.cache.get(uid)
+
+            if data is not None:
+                # Return data
+                self.LOGGER.debug("Parsing data...")
+                return EnkaNetworkResponse.parse_obj(data)
+
         user = await self.__http.fetch_user(uid)
 
         data = user["content"]
@@ -75,13 +84,8 @@ class EnkaNetworkAPI:
         self.LOGGER.debug(f"Fetching user with UID {uid}...")
 
         if self._enable_cache:
-            self.LOGGER.warn("Getting data from cache...")
-            await self.cache.set(uid)
-
-            if data is not None:
-                # Return data
-                self.LOGGER.debug("Parsing data...")
-                return EnkaNetworkResponse.parse_obj(data)
+            self.LOGGER.debug("Caching data...")
+            await self.cache.set(uid, data)
 
         # Return data
         self.LOGGER.debug("Parsing data...")
