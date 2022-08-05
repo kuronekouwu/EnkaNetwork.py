@@ -1,11 +1,16 @@
+from __future__ import annotations
+
 import re
-import aiohttp
 import logging
-import asyncio
 import json
 import sys
 
+from typing import Any, Dict, TYPE_CHECKING
+
 from .info import VERSION
+
+if TYPE_CHECKING:
+    from aiohttp import ClientResponse
 
 LOGGER = logging.getLogger(__name__)
 
@@ -45,47 +50,43 @@ def get_default_header():
         ),
     }
 
+class _MissingSentinel:
+    __slots__ = ()
 
-async def request(url: str, headers: dict = None) -> dict:
-    _url = url.strip(" ")
-    if headers is None:
-        headers = {}
+    def __eq__(self, other):
+        return False
 
-    retry = 0
-    async with aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=30)) as session:  # noqa: E501
-        """
-            From https://gist.github.com/foobarna/19c132304e140bf5031c273f6dc27ece   # noqa: E501
-        """
+    def __bool__(self):
+        return False
 
-        while True:
-            response = await session.request("GET", _url, headers={**get_default_header(), **headers})  # noqa: E501
+    def __hash__(self):
+        return 0
 
-            if response.status >= 400:
-                LOGGER.warning(f"Failure to fetch {_url} ({response.status}) Retry {retry} / {RETRY_MAX}")  # noqa: E501
-                retry += 1
-                if retry > RETRY_MAX:
-                    raise Exception(f"Failed to download {url}")
+    def __repr__(self):
+        return '...'
 
-                await asyncio.sleep(1)
-                continue
 
-            break
+MISSING: Any = _MissingSentinel()
 
-        data = bytearray()
-        data_to_read = True
-        while data_to_read:
-            red = 0
-            while red < CHUNK_SIZE:
-                chunk = await response.content.read(CHUNK_SIZE - red)
+async def to_data(response: ClientResponse) -> Dict[str, Any]:
 
-                if not chunk:
-                    data_to_read = False
-                    break
+    data = bytearray()
+    data_to_read = True
+    while data_to_read:
+        red = 0
+        while red < CHUNK_SIZE:
+            chunk = await response.content.read(CHUNK_SIZE - red)
 
-                data.extend(chunk)
-                red += len(chunk)
+            if not chunk:
+                data_to_read = False
+                break
 
-        return {
-            "status": response.status,
-            "content": json.loads(data)
-        }
+            data.extend(chunk)
+            red += len(chunk)
+
+    content = {
+        "status": response.status,
+        "content": json.loads(data)
+    }
+    return content
+
