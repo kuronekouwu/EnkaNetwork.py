@@ -14,6 +14,7 @@ PATH = os.path.dirname(os.path.abspath(__file__))
 
 LOGGER = logging.getLogger(__name__)
 
+__all__ = ('Assets',)
 
 class Assets:
     DATA: Dict[str, dict] = {}
@@ -49,8 +50,8 @@ class Assets:
             return
 
         return assets.CharacterAsset.parse_obj({
-            "id": id if id.isdigit() else id.split("-")[0],
-            "skill_id": str(id).split("-")[1] if not id.isdigit() else 0,
+            "id": id if str(id).isdigit() else id.split("-")[0],
+            "skill_id": str(id).split("-")[1] if not str(id).isdigit() else 0,
             "images": cls.create_character_icon(data["sideIconName"]),
             **data
         })
