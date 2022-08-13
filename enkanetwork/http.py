@@ -36,14 +36,14 @@ if TYPE_CHECKING:
 class Route:
 
     BASE_URL: ClassVar[str] = "https://enka.network{PATH}"
-    RAW_DATA_URL = "https://raw.githubusercontent.com/mrwan200/enkanetwork.py-data/{PATH}"
+    RAW_DATA_URL: ClassVar[str] = "https://raw.githubusercontent.com/mrwan200/enkanetwork.py-data/{PATH}"
 
     def __init__(
-            self,
-            method: str,
-            path: str,
-            endpoint: str = 'enka',
-            uid: Optional[str] = None,
+        self,
+        method: str,
+        path: str,
+        endpoint: str = 'enka',
+        uid: Optional[str] = None,
     ) -> None:
         self.method = method
         self.uid = uid
