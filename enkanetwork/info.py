@@ -1,2 +1,0 @@
-VERSION = "1.2.10dev0"
-AUTHOR = "M-307"

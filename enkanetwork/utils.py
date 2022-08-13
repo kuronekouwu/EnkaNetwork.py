@@ -7,7 +7,7 @@ import sys
 
 from typing import Any, Dict, TYPE_CHECKING
 
-from .info import VERSION
+from . import VERSION
 
 if TYPE_CHECKING:
     from aiohttp import ClientResponse

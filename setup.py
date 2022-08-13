@@ -1,7 +1,7 @@
 import setuptools
 import re
 
-with open('enkanetwork/info.py') as f:
+with open('enkanetwork/__init__.py') as f:
 	"""
 		Get version from utils.py
 		Ref: https://github.com/Rapptz/discord.py/blob/52f3a3496bea13fefc08b38f9ed01641e565d0eb/setup.py#L9

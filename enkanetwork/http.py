@@ -85,7 +85,7 @@ class HTTPClient:
         kwargs['headers'] = {**utils.get_default_header(), **self.__headers}
 
         response: Optional[aiohttp.ClientResponse] = None
-        data: Optional[Union[Dict[str, Any]]] = None
+        data: Optional[Union[Dict[str, Any], str]] = None
 
         if self.__session is MISSING:
             self.__session = aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=self.__timeout))
