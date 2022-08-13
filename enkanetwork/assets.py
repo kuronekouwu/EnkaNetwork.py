@@ -39,7 +39,7 @@ class Assets:
         return [x for x in self.DATA["costumes"]]
 
     @classmethod
-    def character(cls, id: Union[int, str]) -> Optional[assets.CharacterAsset]:  # noqa: E501
+    def character(cls, id: Union[int, str]) -> Optional[assets.CharacterAsset]:
         LOGGER.debug(f"Getting character assets with id: {id}")
 
         data = cls.DATA["characters"].get(str(id))
@@ -55,7 +55,7 @@ class Assets:
         })
 
     @classmethod
-    def character_costume(cls, id: int):
+    def character_costume(cls, id: int) -> Optional[assets.CharacterCostume]:
         LOGGER.debug(f"Getting costume assets with id: {id}")
         data = cls.DATA["costumes"].get(str(id))
         if not data:
