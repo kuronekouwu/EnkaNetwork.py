@@ -1,5 +1,9 @@
-VERSION = "1.2.10dev0"
-AUTHOR = "M-307"
+__title__ = 'enkanetwork.py'
+__author__ = "M-307"
+__version__ = "1.2.10dev0"
+__license__ = 'MIT'
+__copyright__ = 'Copyright 2022-present xStacia'
+
 
 from .client import *
 from .exception import *
