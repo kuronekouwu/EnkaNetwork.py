@@ -3,6 +3,7 @@ from __future__ import annotations
 import os
 import json
 import logging
+from time import time
 
 from .http import HTTPClient
 from .model import EnkaNetworkResponse
@@ -22,7 +23,7 @@ class EnkaNetworkAPI:
 
     LOGGER = logging.getLogger(__name__)
 
-    def __init__(self, lang: str = "en", *, debug: bool = False, key: str = "", cache: bool = True, agent: str = "") -> None:  # noqa: E501
+    def __init__(self, lang: str = "en", *, debug: bool = False, key: str = "", cache: bool = True, agent: str = "", timeout: int = 10) -> None:  # noqa: E501
         # Logging
         logging.basicConfig()
         logging.getLogger("enkanetwork").setLevel(logging.DEBUG if debug else logging.ERROR)  # noqa: E501
@@ -35,7 +36,7 @@ class EnkaNetworkAPI:
         self.cache = Cache(1024, 60 * 3)
 
         # http client
-        self.__http = HTTPClient(key=key, agent=agent)
+        self.__http = HTTPClient(key=key, agent=agent, timeout=timeout)
         self._closed = False
 
     async def __aenter__(self) -> Self:

@@ -48,6 +48,7 @@ class Route:
         self.method = method
         self.uid = uid
         self.url = ''
+        
         if endpoint == 'enka':
             self.url: str = self.BASE_URL.format(PATH=path)
         else:
@@ -57,11 +58,12 @@ class HTTPClient:
 
     LOGGER = logging.getLogger(__name__)
 
-    def __init__(self, *, key: str = '', agent: str = '') -> None:
+    def __init__(self, *, key: str = '', agent: str = '', timeout: int = 5) -> None:
         self.__session: aiohttp.ClientSession = MISSING
         self.__headers: Dict = {}
         self.__agent: str = agent
         self.__key: str = key
+        self.__timeout = timeout or 10
 
     async def close(self) -> None:
         if self.__session is not MISSING:
@@ -86,7 +88,7 @@ class HTTPClient:
         data: Optional[Union[Dict[str, Any]]] = None
 
         if self.__session is MISSING:
-            self.__session = aiohttp.ClientSession()
+            self.__session = aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=self.__timeout))
 
         for tries in range(RETRY_MAX):
             try:
@@ -140,16 +142,16 @@ class HTTPClient:
         r = Route(
             'GET',
             f'/u/{uid}/__data.json' + (f"?key={self.__key}" if self.__key else ""),
-            'enka',
-            uid
+            endpoint='enka',
+            uid=uid
         )
         return self.request(r)
 
     def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
-            f'master/exports/{folder}/{filename}'
-            'assets'
+            f'/master/exports/{folder}/{filename}',
+            endpoint='assets'
         )
         return self.request(r)
 
