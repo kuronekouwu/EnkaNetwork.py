@@ -7,7 +7,7 @@ import sys
 
 from typing import Any, Dict, TYPE_CHECKING
 
-from .info import VERSION
+from . import __version__
 
 if TYPE_CHECKING:
     from aiohttp import ClientResponse
@@ -43,7 +43,7 @@ def get_default_header():
 
     return {
         "User-Agent": "EnkaNetwork.py/{version} (Python {major}.{minor}.{micro})".format(  # noqa: E501
-            version=VERSION,
+            version=__version__,
             major=python_version.major,
             minor=python_version.minor,
             micro=python_version.micro

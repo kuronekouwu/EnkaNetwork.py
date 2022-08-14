@@ -2,13 +2,11 @@ import json
 import os
 import logging
 
-from typing import Dict, List, TextIO
-
 from .enum import Language
 from .model import assets
 from .utils import create_ui_path
 
-from typing import Union
+from typing import Dict, List, TextIO, Optional, Union
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 
@@ -41,7 +39,7 @@ class Assets:
         return [x for x in self.DATA["costumes"]]
 
     @classmethod
-    def character(cls, id: Union[int, str]) -> Union[assets.CharacterAsset, None]:  # noqa: E501
+    def character(cls, id: Union[int, str]) -> Optional[assets.CharacterAsset]:
         LOGGER.debug(f"Getting character assets with id: {id}")
 
         data = cls.DATA["characters"].get(str(id))
@@ -57,7 +55,7 @@ class Assets:
         })
 
     @classmethod
-    def character_costume(cls, id: int):  # noqa: E501
+    def character_costume(cls, id: int) -> Optional[assets.CharacterCostume]:
         LOGGER.debug(f"Getting costume assets with id: {id}")
         data = cls.DATA["costumes"].get(str(id))
         if not data:
@@ -70,7 +68,7 @@ class Assets:
         })
 
     @classmethod
-    def constellations(cls, id: int) -> Union[assets.CharacterConstellationsAsset, None]:  # noqa: E501
+    def constellations(cls, id: int) -> Optional[assets.CharacterConstellationsAsset]:
         LOGGER.debug(f"Getting character constellations assets with id: {id}")
         data = cls.DATA["constellations"].get(str(id))
         if not data:
@@ -84,7 +82,7 @@ class Assets:
         })
 
     @classmethod
-    def skills(cls, id: int) -> Union[assets.CharacterSkillAsset, None]:
+    def skills(cls, id: int) -> Optional[assets.CharacterSkillAsset]:
         LOGGER.debug(f"Getting character skills assets with id: {id}")
         data = cls.DATA["skills"].get(str(id))
 
@@ -99,7 +97,7 @@ class Assets:
         })
 
     @classmethod
-    def namecards(cls, id: int) -> Union[assets.NamecardAsset, None]:
+    def namecards(cls, id: int) -> Optional[assets.NamecardAsset]:
         LOGGER.debug(f"Getting namecards assets with id: {id}")
         data = cls.DATA["namecards"].get(str(id))
         if not data:
@@ -115,7 +113,7 @@ class Assets:
         })
 
     @classmethod
-    def get_hash_map(cls, hash_id: str) -> Union[str, None]:
+    def get_hash_map(cls, hash_id: str) -> Optional[str]:
         LOGGER.debug(f"Getting nameTextMapHash {hash_id} with language: {cls.LANGS}")  # noqa: E501
         for key in cls.HASH_MAP:
             if str(hash_id) in cls.HASH_MAP[key]:
@@ -127,7 +125,7 @@ class Assets:
         return
 
     @classmethod
-    def character_icon(cls, id: int) -> Union[assets.CharacterIconAsset, None]:
+    def character_icon(cls, id: int) -> Optional[assets.CharacterIconAsset]:
         data = cls.character(id)
         if not data:
             return

@@ -73,7 +73,7 @@ class EnkaNetworkAPI:
         self.LOGGER.debug(f"Validating with UID {uid}...")
 
         if self._enable_cache:
-            self.LOGGER.warn("Getting data from cache...")
+            self.LOGGER.warning("Getting data from cache...")
             data = await self.cache.get(uid)
 
             if data is not None:

@@ -36,14 +36,14 @@ if TYPE_CHECKING:
 class Route:
 
     BASE_URL: ClassVar[str] = "https://enka.network{PATH}"
-    RAW_DATA_URL = "https://raw.githubusercontent.com/mrwan200/enkanetwork.py-data/{PATH}"
+    RAW_DATA_URL: ClassVar[str] = "https://raw.githubusercontent.com/mrwan200/enkanetwork.py-data/{PATH}"
 
     def __init__(
-            self,
-            method: str,
-            path: str,
-            endpoint: str = 'enka',
-            uid: Optional[str] = None,
+        self,
+        method: str,
+        path: str,
+        endpoint: str = 'enka',
+        uid: Optional[str] = None,
     ) -> None:
         self.method = method
         self.uid = uid
@@ -85,7 +85,7 @@ class HTTPClient:
         kwargs['headers'] = {**utils.get_default_header(), **self.__headers}
 
         response: Optional[aiohttp.ClientResponse] = None
-        data: Optional[Union[Dict[str, Any]]] = None
+        data: Optional[Union[Dict[str, Any], str]] = None
 
         if self.__session is MISSING:
             self.__session = aiohttp.ClientSession(timeout=aiohttp.ClientTimeout(total=self.__timeout))
