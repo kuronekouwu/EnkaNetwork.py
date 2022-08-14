@@ -1,7 +1,9 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import Any, List
+from typing import Any, List, Union
+
+from .utils import IconAsset
 
 from ..enum import EquipmentsType, DigitType, EquipType
 from ..assets import Assets
@@ -46,7 +48,7 @@ class EquipmentsDetail(BaseModel):
     name: str = ""  # Get from name hash map
     artifact_name_set: str = ""  # Name set artifacts
     artifact_type: EquipType = EquipType.Unknown  # Type of artifact
-    icon: str = ""
+    icon: Union[IconAsset, str] = None
     rarity: int = Field(0, alias="rankLevel")
     mainstats: EquipmentsStats = Field(None, alias="reliquaryMainstat")
     substats: List[EquipmentsStats] = []
@@ -56,23 +58,21 @@ class EquipmentsDetail(BaseModel):
 
         if data["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
             LOGGER.debug("=== Artifact ===")
-            __pydantic_self__.icon = Assets.create_icon_path(data["icon"])
+            __pydantic_self__.icon = IconAsset(filename=data["icon"])
             __pydantic_self__.artifact_type = EquipType(data["equipType"]).name
             # Sub Stats
             for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:  # noqa: E501
-                __pydantic_self__.substats.append(
-                    EquipmentsStats.parse_obj(stats))
+                __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
         if data["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             LOGGER.debug("=== Weapon ===")
-            __pydantic_self__.icon = create_ui_path(data["icon"])
+            __pydantic_self__.icon = IconAsset(filename=data["icon"])
 
             # Main and Sub Stats
             __pydantic_self__.mainstats = EquipmentsStats.parse_obj(
                 data["weaponStats"][0])
             for stats in data["weaponStats"][1:]:
-                __pydantic_self__.substats.append(
-                    EquipmentsStats.parse_obj(stats))
+                __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
         _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
         if "setNameTextMapHash" in data:

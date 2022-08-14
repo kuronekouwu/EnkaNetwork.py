@@ -3,6 +3,8 @@ import logging
 from pydantic import BaseModel, Field
 from typing import List, Any, Union
 
+from .utils import IconAsset
+
 from ..assets import Assets
 from ..enum import ElementType
 
@@ -84,10 +86,10 @@ class showAvatar(BaseModel):
 
 class Namecard(BaseModel):
     id: int = 0
-    icon: str = ""
-    banner: str = ""
-    navbar: str = ""
     name: str = ""
+    icon: IconAsset = None
+    banner: IconAsset = None
+    navbar: IconAsset = None
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
@@ -139,5 +141,4 @@ class PlayerInfo(BaseModel):
         super().__init__(**data)
 
         __pydantic_self__.namecard = Namecard(id=data["nameCardId"])
-        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (
-            data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501
+        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501
