@@ -12,7 +12,7 @@ async def main():
             for constellation in character.constellations:
                 print(f"ID: {constellation.id}")
                 print(f"Name: {constellation.name}")
-                print(f"Icon: {constellation.icon}")
+                print(f"Icon: {constellation.icon.url}")
                 print(f"Unlocked: {constellation.unlocked}")
                 print("="*18)
 

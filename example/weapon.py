@@ -13,7 +13,7 @@ async def main():
             weapon = character.equipments[-1]
             print(f"ID: {weapon.id}")
             print(f"Name: {weapon.detail.name}")
-            print(f"Icon: {weapon.detail.icon}")
+            print(f"Icon: {weapon.detail.icon.url}")
             print(f"Level: {weapon.level}")
             print(f"Refinement: R{weapon.refinement}")
             print(f"Ascension: {'⭐'*weapon.ascension}")
