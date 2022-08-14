@@ -6,3 +6,4 @@ dist
 test/*.test.py
 .pytest_cache
 .idea
+git-story_media
