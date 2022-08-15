@@ -20,7 +20,7 @@ class ProfilePicture(BaseModel):
     """
         Custom add data
     """
-    url: Union[str, None] = None
+    url: IconAsset = None
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
@@ -51,7 +51,7 @@ class showAvatar(BaseModel):
         Custom data
     """
     name: str = ""
-    icon: str = ""
+    icon: IconAsset = None
     element: ElementType = ElementType.Unknown
 
     def __init__(__pydantic_self__, **data: Any) -> None:
@@ -125,8 +125,7 @@ class PlayerInfo(BaseModel):
     world_level: int = Field(1, alias="worldLevel")
     icon: ProfilePicture = Field(None, alias="profilePicture")
     # Avatars
-    characters_preview: List[showAvatar] = Field(
-        [], alias="showAvatarInfoList")
+    characters_preview: List[showAvatar] = Field([], alias="showAvatarInfoList")
     # Abyss floor
     abyss_floor: int = Field(0, alias="towerFloorIndex")
     abyss_room: int = Field(0, alias="towerLevelIndex")
