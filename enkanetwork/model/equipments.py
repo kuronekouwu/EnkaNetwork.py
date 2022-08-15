@@ -59,7 +59,7 @@ class EquipmentsDetail(BaseModel):
         if data["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
             LOGGER.debug("=== Artifact ===")
             __pydantic_self__.icon = IconAsset(filename=data["icon"])
-            __pydantic_self__.artifact_type = EquipType(data["equipType"]).name
+            __pydantic_self__.artifact_type = EquipType(data["equipType"])
             # Sub Stats
             for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:  # noqa: E501
                 __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
@@ -97,9 +97,10 @@ class Equipments(BaseModel):
         Custom data
     """
     level: int = 0  # Get form key "reliquary" and "weapon"
+    max_level: int = 0
     # Type of equipments (Ex. Artifact, Weapon)
     type: EquipmentsType = EquipmentsType.UNKNOWN
-    refinement: int = 0  # Refinement  of equipments (Weapon only)
+    refinement: int = 1 # Refinement  of equipments (Weapon only)
     ascension: int = 0  # Ascension (Weapon only)
 
     class Config:
@@ -111,12 +112,15 @@ class Equipments(BaseModel):
         if data["flat"]["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
             __pydantic_self__.type = EquipmentsType.ARTIFACT
             __pydantic_self__.level = data["reliquary"]["level"] - 1
+            __pydantic_self__.max_level = 4 * data["flat"]["rankLevel"]
 
         if data["flat"]["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             __pydantic_self__.type = EquipmentsType.WEAPON
             __pydantic_self__.level = data["weapon"]["level"]
+
             if "affixMap" in data["weapon"]:
-                __pydantic_self__.refinement = data["weapon"]["affixMap"][list(
-                    data["weapon"]["affixMap"].keys())[0]] + 1
+                __pydantic_self__.refinement = data["weapon"]["affixMap"][list(data["weapon"]["affixMap"].keys())[0]] + 1
+
             if "promoteLevel" in data["weapon"]:
                 __pydantic_self__.ascension = data["weapon"]["promoteLevel"]
+                __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20  # noqa: E501
