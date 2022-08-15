@@ -19,7 +19,7 @@ async def main():
         for charactersPreview in data.player.characters_preview:
             print("ID:", charactersPreview.id)
             print("Name:", charactersPreview.name)
-            print("Icon:", charactersPreview.icon)
+            print("Icon:", charactersPreview.icon.url)
             print("Level:", charactersPreview.level)
             print("="*18)
 
