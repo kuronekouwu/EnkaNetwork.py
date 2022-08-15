@@ -84,6 +84,7 @@ class EnkaNetworkAPI:
         user = await self.__http.fetch_user(uid)
 
         data = user["content"]
+        data = json.loads(data)
 
         self.LOGGER.debug(f"Fetching user with UID {uid}...")
 
@@ -110,7 +111,7 @@ class EnkaNetworkAPI:
 
                 # dumps to json file
                 with open(os.path.join(path[folder], filename), "w", encoding="utf-8") as f:
-                    json.dump(data["content"], f, ensure_ascii=False, indent=4)
+                    json.dump(json.loads(data["content"]), f, ensure_ascii=False, indent=4)
 
         # Reload config
         self.assets.reload_assets()

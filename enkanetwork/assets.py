@@ -97,7 +97,7 @@ class Assets:
         return assets.CharacterSkillAsset.parse_obj({
             "id": id,
             **data,
-            "skillIcon": utils.IconAsset(filename=data["skillIcon"])
+            "icon": utils.IconAsset(filename=data["skillIcon"])
         })
 
     @classmethod

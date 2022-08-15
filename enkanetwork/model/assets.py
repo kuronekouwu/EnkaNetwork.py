@@ -22,14 +22,13 @@ class CharacterIconAsset(BaseModel):
 class CharacterSkillAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: IconAsset = Field(None, alias="skillIcon")
+    icon: IconAsset = None
 
 
 class CharacterConstellationsAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: IconAsset = Field(None, alias="icon")
-
+    icon: IconAsset = None
 
 class CharacterCostume(BaseModel):
     id: int = 0
