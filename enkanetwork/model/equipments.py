@@ -21,9 +21,6 @@ class EquipmentsStats(BaseModel):
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
 
-        if isinstance(data["statValue"], float):
-            __pydantic_self__.type = DigitType.PERCENT
-
         __pydantic_self__.value = data["statValue"]
 
         LOGGER.debug("=== Fight prop ===")
@@ -34,6 +31,12 @@ class EquipmentsStats(BaseModel):
         else:
             __pydantic_self__.prop_id = str(data["appendPropId"])
             fight_prop = Assets.get_hash_map(str(data["appendPropId"]))
+        
+
+
+        if isinstance(__pydantic_self__.value, float) or \
+            __pydantic_self__.prop_id.split("_")[-1] in ["HURT","CRITICAL","EFFICIENCY", "PERCENT", "ADD"]:
+            __pydantic_self__.type = DigitType.PERCENT
 
         if not fight_prop:
             return
@@ -76,8 +79,7 @@ class EquipmentsDetail(BaseModel):
 
         _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
         if "setNameTextMapHash" in data:
-            _artifact_name_set = Assets.get_hash_map(
-                str(data["setNameTextMapHash"]))
+            _artifact_name_set = Assets.get_hash_map(str(data["setNameTextMapHash"]))
             __pydantic_self__.artifact_name_set = _artifact_name_set or ""
 
         __pydantic_self__.name = _name if _name is not None else ""
