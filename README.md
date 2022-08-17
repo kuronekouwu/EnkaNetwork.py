@@ -51,8 +51,7 @@ async def main():
         print(f"Abyss floor: {data.player.abyss_floor} - {data.player.abyss_room}")
         print(f"Cache timeout: {data.ttl}")
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())
 ```
 ## Preview
 ```sh

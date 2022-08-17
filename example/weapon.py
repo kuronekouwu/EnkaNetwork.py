@@ -26,5 +26,4 @@ async def main():
                 print(f"Value: {substate.value}{'%' if substate.type == DigitType.PERCENT else ''}")
                 print("-"*18)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

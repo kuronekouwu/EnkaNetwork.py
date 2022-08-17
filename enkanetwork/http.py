@@ -154,3 +154,14 @@ class HTTPClient:
             endpoint='assets'
         )
         return self.request(r)
+
+    async def read_from_url(self, url: str) -> bytes:
+        async with self.__session.get(url) as resp:
+            if resp.status == 200:
+                return await resp.read()
+            elif resp.status == 404:
+                raise HTTPException(resp, 'asset not found')
+            elif resp.status == 403:
+                raise Forbidden(resp, 'cannot retrieve asset')
+            else:
+                raise HTTPException(resp, 'failed to get asset')

@@ -34,5 +34,4 @@ async def main():
         print(f"Icon URL: {constellation_info.icon}")
 
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

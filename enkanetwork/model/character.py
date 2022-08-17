@@ -15,6 +15,11 @@ from ..enum import ElementType
 
 LOGGER = logging.getLogger(__name__)
 
+__all__ = (
+    'CharacterSkill',
+    'CharacterConstellations',
+    'CharacterInfo'
+)
 
 class CharacterSkill(BaseModel):
     id: int = 0
@@ -60,28 +65,28 @@ class CharacterInfo(BaseModel):
     max_level: int = 20
     constellations_unlocked: int = 0  # Constellation is unlocked count
 
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
         # Friendship level
-        __pydantic_self__.friendship_level = data["fetterInfo"]["expLevel"]
+        self.friendship_level = data["fetterInfo"]["expLevel"]
 
         # Get prop map
-        __pydantic_self__.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0  # noqa: E501
-        __pydantic_self__.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0  # noqa: E501
-        __pydantic_self__.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0  # noqa: E501
+        self.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0
+        self.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0
+        self.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0
 
         # Constellation unlocked count
-        __pydantic_self__.constellations_unlocked = len(data["talentIdList"]) if "talentIdList" in data else 0
+        self.constellations_unlocked = len(data["talentIdList"]) if "talentIdList" in data else 0
 
         # Get max character level
-        __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20  # noqa: E501
+        self.max_level = (self.ascension * 10) + (10 if self.ascension > 0 else 0) + 20
 
         # Get character
         LOGGER.debug("=== Character Data ===")
         avatarId = str(data["avatarId"])
-        avatarId += f"-{data['skillDepotId']}" if data["avatarId"] in [10000005, 10000007] else ""  # noqa: E501
-        character = Assets.character(avatarId)  # noqa: E501
+        avatarId += f"-{data['skillDepotId']}" if data["avatarId"] in [10000005, 10000007] else ""
+        character = Assets.character(avatarId)
 
         # Check if character is founded
         if not character:
@@ -91,17 +96,17 @@ class CharacterInfo(BaseModel):
         if "costumeId" in data:
             _data = Assets.character_costume(str(data["costumeId"]))
             if _data:
-                __pydantic_self__.image = _data.images
+                self.image = _data.images
             else:
-                __pydantic_self__.image = character.images
+                self.image = character.images
         else:
-            __pydantic_self__.image = character.images
+            self.image = character.images
 
         # Get element
-        __pydantic_self__.element = ElementType(character.element)
+        self.element = ElementType(character.element)
 
-        # Check caulate rarity
-        __pydantic_self__.rarity = character.rarity
+        # Check calculate rarity
+        self.rarity = character.rarity
 
         # Load constellation
         LOGGER.debug("=== Constellation ===")
@@ -116,12 +121,12 @@ class CharacterInfo(BaseModel):
             if _name is None:
                 continue
 
-            __pydantic_self__.constellations.append(CharacterConstellations(
+            self.constellations.append(CharacterConstellations(
                 id=int(constellation),
                 name=_name,
                 icon=_constellation.icon,
                 unlocked=int(
-                    constellation) in data["talentIdList"] if "talentIdList" in data else False  # noqa: E501
+                    constellation) in data["talentIdList"] if "talentIdList" in data else False
             ))
 
         # Load skills
@@ -138,7 +143,7 @@ class CharacterInfo(BaseModel):
             if _name is None:
                 continue
 
-            __pydantic_self__.skills.append(CharacterSkill(
+            self.skills.append(CharacterSkill(
                 id=skill,
                 name=_name,
                 icon=_skill.icon,
@@ -152,7 +157,7 @@ class CharacterInfo(BaseModel):
             return
 
         # Get name from hash map
-        __pydantic_self__.name = _name
+        self.name = _name
 
     class Config:
         use_enum_values = True

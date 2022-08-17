@@ -24,5 +24,4 @@ async def main():
             print(f"Card icon: {character.image.card.url}")
             print("="*18)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

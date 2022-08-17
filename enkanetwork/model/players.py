@@ -10,6 +10,12 @@ from ..enum import ElementType
 
 LOGGER = logging.getLogger(__name__)
 
+__all__ = (
+    'ProfilePicture',
+    'showAvatar',
+    'Namecard',
+    'PlayerInfo'
+)
 
 class ProfilePicture(BaseModel):
     """
@@ -22,7 +28,7 @@ class ProfilePicture(BaseModel):
     """
     url: IconAsset = None
 
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
         # Get character
@@ -37,7 +43,7 @@ class ProfilePicture(BaseModel):
             if not icon:
                 return
 
-            __pydantic_self__.url = icon.icon
+            self.url = icon.icon
 
 
 class showAvatar(BaseModel):
@@ -54,26 +60,26 @@ class showAvatar(BaseModel):
     icon: IconAsset = None
     element: ElementType = ElementType.Unknown
 
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
         # Get character
         LOGGER.debug("=== Character preview ===")
 
-        # Find tarveler
+        # Find traveler
         character_preview = Assets.character(str(data["avatarId"]))
 
         if not character_preview:
             return
 
-        __pydantic_self__.element = character_preview.element
+        self.element = character_preview.element
 
         if "costumeId" in data:
             _data = Assets.character_costume(str(data["costumeId"]))
             if _data:
-                __pydantic_self__.icon = _data.images.icon
+                self.icon = _data.images.icon
         else:
-            __pydantic_self__.icon = character_preview.images.icon
+            self.icon = character_preview.images.icon
 
         # Get name hash map
         _name = Assets.get_hash_map(str(character_preview.hash_id))
@@ -81,7 +87,7 @@ class showAvatar(BaseModel):
         if _name is None:
             return
 
-        __pydantic_self__.name = _name
+        self.name = _name
 
 
 class Namecard(BaseModel):
@@ -91,26 +97,26 @@ class Namecard(BaseModel):
     banner: IconAsset = None
     navbar: IconAsset = None
 
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
-        if __pydantic_self__.id > 0:
+        if self.id > 0:
             LOGGER.debug("=== Namecard ===")
             # Get name card
-            namecard = Assets.namecards(str(__pydantic_self__.id))
+            namecard = Assets.namecards(str(self.id))
 
             if not namecard:
                 return
 
-            __pydantic_self__.icon = namecard.icon
-            __pydantic_self__.banner = namecard.banner
-            __pydantic_self__.navbar = namecard.navbar
+            self.icon = namecard.icon
+            self.banner = namecard.banner
+            self.navbar = namecard.navbar
 
             _name = Assets.get_hash_map(str(namecard.hash_id))
             if _name is None:
                 return
 
-            __pydantic_self__.name = _name
+            self.name = _name
 
 
 class PlayerInfo(BaseModel):
@@ -133,11 +139,11 @@ class PlayerInfo(BaseModel):
     """
         Custom data
     """
-    namecard: Namecard = Namecard()  # Profile namecard
-    namecards: List[Namecard] = []  # List namecard preview in profile
+    namecard: Namecard = Namecard()  # Profile name-card
+    namecards: List[Namecard] = []  # List name-card preview in profile
 
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
-        __pydantic_self__.namecard = Namecard(id=data["nameCardId"])
-        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501
+        self.namecard = Namecard(id=data["nameCardId"])
+        self.namecards = [Namecard(id=namecard) for namecard in (data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501

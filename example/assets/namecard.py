@@ -16,5 +16,4 @@ async def main():
     print(f"Banner URL: {namecard.banner}")
     print(f"Navbar (Alpha) URL: {namecard.navbar}")
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

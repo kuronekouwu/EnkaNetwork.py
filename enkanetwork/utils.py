@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import re
 import logging
-import json
 import sys
 
 from typing import Any, Dict, TYPE_CHECKING
@@ -34,7 +33,7 @@ def validate_uid(uid: str) -> bool:
     """
         Validate UID
     """
-    return len(uid) == 9 and uid.isdigit() and re.match(r"([1,2,5-9])\d{8}", uid)  # noqa: E501
+    return len(uid) == 9 and uid.isdigit() and re.match(r"([1,2,5-9])\d{8}", uid)
 
 
 def get_default_header():
@@ -42,7 +41,7 @@ def get_default_header():
     python_version = sys.version_info
 
     return {
-        "User-Agent": "EnkaNetwork.py/{version} (Python {major}.{minor}.{micro})".format(  # noqa: E501
+        "User-Agent": "EnkaNetwork.py/{version} (Python {major}.{minor}.{micro})".format(
             version=__version__,
             major=python_version.major,
             minor=python_version.minor,

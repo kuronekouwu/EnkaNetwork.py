@@ -9,5 +9,4 @@ async def main():
         await client.fetch_user(843715177)
         # You can see the debug log in console.
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())
