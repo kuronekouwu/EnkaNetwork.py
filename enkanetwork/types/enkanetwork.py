@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from typing import Any, Dict, List, TypedDict, Union
 
-__all__ = ('EnkaNetwork',)
+__all__ = ('EnkaNetwork', 'Default')
 
 class profile_picture(TypedDict):
     avatarId: int

@@ -23,5 +23,4 @@ async def main():
             print("Level:", charactersPreview.level)
             print("="*18)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

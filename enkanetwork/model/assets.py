@@ -4,6 +4,15 @@ from typing import List, Any
 from ..enum import ElementType
 from .utils import IconAsset
 
+__all__ = (
+    'NamecardAsset',
+    'CharacterIconAsset',
+    'CharacterSkillAsset',
+    'CharacterConstellationsAsset',
+    'CharacterCostume',
+    'CharacterAsset'
+)
+
 class NamecardAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
@@ -48,8 +57,8 @@ class CharacterAsset(BaseModel):
     class Config:
         use_enum_values = True
 
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
-        __pydantic_self__.element = ElementType(data["costElemType"]) if data["costElemType"] != "" else ElementType.Unknown  # noqa: E501
-        __pydantic_self__.rarity = 5 if data["qualityType"].endswith("_ORANGE") else 4  # noqa: E501
+        self.element = ElementType(data["costElemType"]) if data["costElemType"] != "" else ElementType.Unknown
+        self.rarity = 5 if data["qualityType"].endswith("_ORANGE") else 4

@@ -7,7 +7,7 @@ class IconAsset(BaseModel):
     filename: str = ""
     url: str = ""
     
-    def __init__(__pydantic_self__, **data: Any) -> None:
+    def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
-        __pydantic_self__.url = create_ui_path(__pydantic_self__.filename)
+        self.url = create_ui_path(self.filename)

@@ -11,5 +11,4 @@ async def main():
         # Or you can use set_language() function (EN -> TW)
         await client.set_language("cht")
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

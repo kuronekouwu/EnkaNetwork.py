@@ -16,5 +16,4 @@ async def main():
                 print(f"Level: {skill.level}")
                 print("="*18)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())

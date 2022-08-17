@@ -12,5 +12,4 @@ async def main():
         data_catched = await client.fetch_user(843715177)
         print("TTL: %s" % data_catched.ttl)
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(main())
+asyncio.run(main())
