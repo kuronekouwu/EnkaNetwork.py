@@ -96,9 +96,9 @@ Please see in [example](./example/) folder.
 |-----------------|-----------------|-------------------|
 | id              | -               | Namecard ID       |
 | name            | -               | Namecard name     | 
-| icon            | -               | Namecard icon (url) |
-| banner          | -               | Namecard banner (url) |
-| navbar          | -               | Namecard navbar (Alpha) (url) |
+| icon            | -               | Namecard icon, Please see [Icon Data](#icon-data) |
+| banner          | -               | Namecard banner, Please see [Icon Data](#icon-data) |
+| navbar          | -               | Namecard navbar (Alpha), Please see [Icon Data](#icon-data) |
 
 ### Character preview
 | Wrapper         |  API            | Notes             |
@@ -106,7 +106,7 @@ Please see in [example](./example/) folder.
 | id              | -               | Avatar ID         |
 | name            | -               | Avatar Name       |
 | level           | -               | Avatar Level      |
-| icon            | -               | Avatar Icon (url) |
+| icon            | -               | Avatar Icon, Please see [Icon Data](#icon-data) |
 
 ## Characters
 | Wrapper         |  API            | Notes             |
@@ -114,6 +114,7 @@ Please see in [example](./example/) folder.
 | id              | avatarId        |                   |
 | name            | -               | Avatar Name       |
 | element         | -               | Please see [Element Type](#element-type) |
+| rarity          | -               | Rarity            |
 | image           | -               | Please see [Icon](#icon) |
 | xp              | propMap -> 1001 |                   |
 | ascension       | propMap -> 1002 |                   |
@@ -123,6 +124,7 @@ Please see in [example](./example/) folder.
 | equipments      | equipList       | Please see [Equipments](#equipments-artifact-weapon) |
 | stats           | fightPropMap    | Please see [FIGHT_PROP Data](#fight_prop-data) |
 | constellations  | talentIdList    | Please see [Constellation](#constellation) |
+| constellations_unlocked | -       | Constellation unlocked |
 | skill_data      | inherentProudSkillList |            |
 | skill_id        | skillDepotId    |                   |
 | skills          | -               | Please see [Skill](#skill) |
@@ -130,16 +132,16 @@ Please see in [example](./example/) folder.
 ### Icon
 | Wrapper         |  API            | Notes             |
 |-----------------|-----------------|-------------------|
-| icon            | -               | Avatar icon (url) |
-| side            | -               | Avatar side icon (url) |
-| banner          | -               | Avatar wish banner (url) |
+| icon            | -               | Avatar icon, Please see [Icon Data](#icon-data) |
+| side            | -               | Avatar side icon, Please see [Icon Data](#icon-data) |
+| banner          | -               | Avatar wish banner, Please see [Icon Data](#icon-data) |
 
 ### Constellation
 | Wrapper         |  API            | Notes             |
 |-----------------|-----------------|-------------------|
 | id              | -               | Constellation ID |
 | name            | -               | Constellation Name |
-| icon            | -               | Constellation Icon (url) |
+| icon            | -               | Constellation Icon (URL) |
 | unlocked        | -               | Constellation has unlocked |
 
 ### Skill
@@ -147,7 +149,7 @@ Please see in [example](./example/) folder.
 |-----------------|-----------------|-------------------|
 | id              | -               | Skill ID          |
 | name            | -               | Skill Name        |
-| icon            | -               | Skill Icon (url)  |
+| icon            | -               | Skill Icon (URL)  |
 | level           | -               | Skill Level       |
 
 ## Equipments (Artifact, Weapon)
@@ -164,7 +166,7 @@ Please see in [example](./example/) folder.
 | Wrapper         |  API            | Notes             |
 |-----------------|-----------------|-------------------|
 | name            | -               | Equipment Name (Artifact name or Weapon name) |
-| icon            | icon            |                   |
+| icon            | icon            | Please see [Icon Data](#icon-data)                 |
 | artifact_type   | -               | Please see [Artifact Type](#artifact-type) |
 | rarity          | rankLevel       |                   |
 | mainstats       | reliquaryMainstat, weaponStats -> 0 | Please see [Equipments Stats](#equipments-stats) |
@@ -180,13 +182,20 @@ Please see in [example](./example/) folder.
 
 ## FIGHT_PROP Data
 
-In FIGHT_PROP data. You can get the value from 4 ways.
+In FIGHT_PROP data. You can get the value from 4 methods.
 | Choice           |  Example                  | Output                     |
 |------------------|---------------------------|----------------------------|
 | Get raw value    | stats.FIGHT_PROP_HP.value | 15552.306640625            |
 | Get rounded value| stats.FIGHT_PROP_ATTACK.to_rounded() | 344             |
 | Get percentage  | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage() | 61.5   |
 | Get percentage and symbol | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage_symbol() | 61.5% |
+
+# Icon Data
+In icon data. You can get the value from 2 methods.
+| Choice           |  Example                  | Output                         |
+|------------------|---------------------------|--------------------------------|
+| Get filename     | icon.filename             | UI_AvatarIcon_Kazuha_Card.png  |
+| Get URL          | icon.url                  | https://enka.network/ui/UI_AvatarIcon_Kazuha_Card.png |
 
 ## Artifact Type
 | Key           | Value         |

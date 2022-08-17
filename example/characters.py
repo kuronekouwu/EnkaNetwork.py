@@ -18,9 +18,10 @@ async def main():
             print(f"Ascension: {'⭐'*character.ascension}")
             print(f"Constellations unlocked: C{character.constellations_unlocked}")
             print(f"XP: {character.xp}")
-            print(f"Icon: {character.image.icon}")
-            print(f"Side icon: {character.image.side}")
-            print(f"Wish banner: {character.image.banner}")
+            print(f"Icon: {character.image.icon.url}")
+            print(f"Side icon: {character.image.side.url}")
+            print(f"Wish banner: {character.image.banner.url}")
+            print(f"Card icon: {character.image.card.url}")
             print("="*18)
 
 loop = asyncio.get_event_loop()

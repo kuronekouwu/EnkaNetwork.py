@@ -3,6 +3,8 @@ import logging
 from pydantic import BaseModel, Field
 from typing import List, Any, Union
 
+from .utils import IconAsset
+
 from ..assets import Assets
 from ..enum import ElementType
 
@@ -18,7 +20,7 @@ class ProfilePicture(BaseModel):
     """
         Custom add data
     """
-    url: Union[str, None] = None
+    url: IconAsset = None
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
@@ -49,7 +51,7 @@ class showAvatar(BaseModel):
         Custom data
     """
     name: str = ""
-    icon: str = ""
+    icon: IconAsset = None
     element: ElementType = ElementType.Unknown
 
     def __init__(__pydantic_self__, **data: Any) -> None:
@@ -84,10 +86,10 @@ class showAvatar(BaseModel):
 
 class Namecard(BaseModel):
     id: int = 0
-    icon: str = ""
-    banner: str = ""
-    navbar: str = ""
     name: str = ""
+    icon: IconAsset = None
+    banner: IconAsset = None
+    navbar: IconAsset = None
 
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
@@ -123,8 +125,7 @@ class PlayerInfo(BaseModel):
     world_level: int = Field(1, alias="worldLevel")
     icon: ProfilePicture = Field(None, alias="profilePicture")
     # Avatars
-    characters_preview: List[showAvatar] = Field(
-        [], alias="showAvatarInfoList")
+    characters_preview: List[showAvatar] = Field([], alias="showAvatarInfoList")
     # Abyss floor
     abyss_floor: int = Field(0, alias="towerFloorIndex")
     abyss_room: int = Field(0, alias="towerLevelIndex")
@@ -139,5 +140,4 @@ class PlayerInfo(BaseModel):
         super().__init__(**data)
 
         __pydantic_self__.namecard = Namecard(id=data["nameCardId"])
-        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (
-            data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501
+        __pydantic_self__.namecards = [Namecard(id=namecard) for namecard in (data["showNameCardIdList"])] if "showNameCardIdList" in data else []  # noqa: E501

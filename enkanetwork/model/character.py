@@ -6,8 +6,10 @@ from typing import List, Any
 from .equipments import Equipments
 from .stats import CharacterStats
 from .assets import (
-    CharacterIconAsset
+    CharacterIconAsset,
 )
+from .utils import IconAsset
+
 from ..assets import Assets
 from ..enum import ElementType
 
@@ -17,14 +19,14 @@ LOGGER = logging.getLogger(__name__)
 class CharacterSkill(BaseModel):
     id: int = 0
     name: str = ""
-    icon: str = ""
+    icon: IconAsset = None
     level: int = 0
 
 
 class CharacterConstellations(BaseModel):
     id: int = 0
     name: str = ""
-    icon: str = ""
+    icon: IconAsset = None
     unlocked: bool = False  # If character has this constellation.
 
 
@@ -45,7 +47,7 @@ class CharacterInfo(BaseModel):
     friendship_level: int = 1
     element: ElementType = ElementType.Unknown
     rarity: int = 0
-    image: CharacterIconAsset = CharacterIconAsset()
+    image: CharacterIconAsset = None
     skills: List[CharacterSkill] = []
     constellations: List[CharacterConstellations] = []
 
@@ -65,20 +67,15 @@ class CharacterInfo(BaseModel):
         __pydantic_self__.friendship_level = data["fetterInfo"]["expLevel"]
 
         # Get prop map
-        __pydantic_self__.xp = int(
-            data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0  # noqa: E501
-        __pydantic_self__.ascension = int(
-            data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0  # noqa: E501
-        __pydantic_self__.level = int(
-            data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0  # noqa: E501
+        __pydantic_self__.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0  # noqa: E501
+        __pydantic_self__.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0  # noqa: E501
+        __pydantic_self__.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0  # noqa: E501
 
         # Constellation unlocked count
-        __pydantic_self__.constellations_unlocked = len(
-            data["talentIdList"]) if "talentIdList" in data else 0
+        __pydantic_self__.constellations_unlocked = len(data["talentIdList"]) if "talentIdList" in data else 0
 
         # Get max character level
-        __pydantic_self__.max_level = (
-            __pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20  # noqa: E501
+        __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20  # noqa: E501
 
         # Get character
         LOGGER.debug("=== Character Data ===")

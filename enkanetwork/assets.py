@@ -3,7 +3,7 @@ import os
 import logging
 
 from .enum import Language
-from .model import assets
+from .model import assets, utils
 from .utils import create_ui_path
 
 from typing import Dict, List, TextIO, Optional, Union
@@ -37,6 +37,10 @@ class Assets:
     @property
     def COSTUMES_IDS(self) -> List[str]:
         return [x for x in self.DATA["costumes"]]
+
+    @property
+    def NAMECARD_IDS(self) -> List[str]:
+        return [x for x in self.DATA["namecards"]]
 
     @classmethod
     def character(cls, id: Union[int, str]) -> Optional[assets.CharacterAsset]:
@@ -78,7 +82,7 @@ class Assets:
         return assets.CharacterConstellationsAsset.parse_obj({
             "id": id,
             **data,
-            "icon": cls.create_icon_path(data["icon"])
+            "icon": utils.IconAsset(filename=data["icon"])
         })
 
     @classmethod
@@ -93,7 +97,7 @@ class Assets:
         return assets.CharacterSkillAsset.parse_obj({
             "id": id,
             **data,
-            "skillIcon": cls.create_icon_path(data["skillIcon"])
+            "icon": utils.IconAsset(filename=data["skillIcon"])
         })
 
     @classmethod
@@ -107,9 +111,9 @@ class Assets:
         return assets.NamecardAsset.parse_obj({
             "id": id,
             **data,
-            "icon": cls.create_icon_path(data["icon"]),
-            "banner": cls.create_icon_path(data["picPath"][1]),
-            "navbar": cls.create_icon_path(data["picPath"][0])
+            "icon": utils.IconAsset(filename=data["icon"]),
+            "banner": utils.IconAsset(filename=data["picPath"][1]),
+            "navbar": utils.IconAsset(filename=data["picPath"][0]),
         })
 
     @classmethod
@@ -135,15 +139,16 @@ class Assets:
     @staticmethod
     def create_character_icon(path: str) -> assets.CharacterIconAsset:
         return assets.CharacterIconAsset(
-            icon=create_ui_path(path.replace("_Side", "")),
-            side=create_ui_path(path),
-            banner=create_ui_path(path.replace("AvatarIcon_Side", "Gacha_AvatarImg"))  # noqa: E501
+            icon=utils.IconAsset(filename=path.replace("_Side", "")),
+            side=utils.IconAsset(filename=path),
+            banner=utils.IconAsset(filename=path.replace("AvatarIcon_Side", "Gacha_AvatarImg")),  # noqa: E501
+            card=utils.IconAsset(filename=path.replace("_Side", "") + "_Card")
         )
 
     @classmethod
     def create_chractar_costume_icon(cls, path: str) -> assets.CharacterIconAsset:  # noqa: E501
         _data = cls.create_character_icon(path)
-        _data.banner = _data.banner.replace("Gacha_AvatarImg", "Costume")
+        _data.banner = utils.IconAsset(filename=_data.banner.filename.replace("Gacha_AvatarImg", "Costume"))  # noqa: E501
         return _data
 
     @staticmethod

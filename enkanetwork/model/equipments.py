@@ -1,7 +1,9 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import Any, List
+from typing import Any, List, Union
+
+from .utils import IconAsset
 
 from ..enum import EquipmentsType, DigitType, EquipType
 from ..assets import Assets
@@ -19,9 +21,6 @@ class EquipmentsStats(BaseModel):
     def __init__(__pydantic_self__, **data: Any) -> None:
         super().__init__(**data)
 
-        if isinstance(data["statValue"], float):
-            __pydantic_self__.type = DigitType.PERCENT
-
         __pydantic_self__.value = data["statValue"]
 
         LOGGER.debug("=== Fight prop ===")
@@ -32,6 +31,12 @@ class EquipmentsStats(BaseModel):
         else:
             __pydantic_self__.prop_id = str(data["appendPropId"])
             fight_prop = Assets.get_hash_map(str(data["appendPropId"]))
+        
+
+
+        if isinstance(__pydantic_self__.value, float) or \
+            __pydantic_self__.prop_id.split("_")[-1] in ["HURT","CRITICAL","EFFICIENCY", "PERCENT", "ADD"]:
+            __pydantic_self__.type = DigitType.PERCENT
 
         if not fight_prop:
             return
@@ -46,7 +51,7 @@ class EquipmentsDetail(BaseModel):
     name: str = ""  # Get from name hash map
     artifact_name_set: str = ""  # Name set artifacts
     artifact_type: EquipType = EquipType.Unknown  # Type of artifact
-    icon: str = ""
+    icon: Union[IconAsset, str] = None
     rarity: int = Field(0, alias="rankLevel")
     mainstats: EquipmentsStats = Field(None, alias="reliquaryMainstat")
     substats: List[EquipmentsStats] = []
@@ -56,28 +61,25 @@ class EquipmentsDetail(BaseModel):
 
         if data["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
             LOGGER.debug("=== Artifact ===")
-            __pydantic_self__.icon = Assets.create_icon_path(data["icon"])
-            __pydantic_self__.artifact_type = EquipType(data["equipType"]).name
+            __pydantic_self__.icon = IconAsset(filename=data["icon"])
+            __pydantic_self__.artifact_type = EquipType(data["equipType"])
             # Sub Stats
             for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:  # noqa: E501
-                __pydantic_self__.substats.append(
-                    EquipmentsStats.parse_obj(stats))
+                __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
         if data["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             LOGGER.debug("=== Weapon ===")
-            __pydantic_self__.icon = create_ui_path(data["icon"])
+            __pydantic_self__.icon = IconAsset(filename=data["icon"])
 
             # Main and Sub Stats
             __pydantic_self__.mainstats = EquipmentsStats.parse_obj(
                 data["weaponStats"][0])
             for stats in data["weaponStats"][1:]:
-                __pydantic_self__.substats.append(
-                    EquipmentsStats.parse_obj(stats))
+                __pydantic_self__.substats.append(EquipmentsStats.parse_obj(stats))
 
         _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
         if "setNameTextMapHash" in data:
-            _artifact_name_set = Assets.get_hash_map(
-                str(data["setNameTextMapHash"]))
+            _artifact_name_set = Assets.get_hash_map(str(data["setNameTextMapHash"]))
             __pydantic_self__.artifact_name_set = _artifact_name_set or ""
 
         __pydantic_self__.name = _name if _name is not None else ""
@@ -97,9 +99,10 @@ class Equipments(BaseModel):
         Custom data
     """
     level: int = 0  # Get form key "reliquary" and "weapon"
+    max_level: int = 0
     # Type of equipments (Ex. Artifact, Weapon)
     type: EquipmentsType = EquipmentsType.UNKNOWN
-    refinement: int = 0  # Refinement  of equipments (Weapon only)
+    refinement: int = 1 # Refinement  of equipments (Weapon only)
     ascension: int = 0  # Ascension (Weapon only)
 
     class Config:
@@ -111,12 +114,15 @@ class Equipments(BaseModel):
         if data["flat"]["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
             __pydantic_self__.type = EquipmentsType.ARTIFACT
             __pydantic_self__.level = data["reliquary"]["level"] - 1
+            __pydantic_self__.max_level = 4 * data["flat"]["rankLevel"]
 
         if data["flat"]["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             __pydantic_self__.type = EquipmentsType.WEAPON
             __pydantic_self__.level = data["weapon"]["level"]
+
             if "affixMap" in data["weapon"]:
-                __pydantic_self__.refinement = data["weapon"]["affixMap"][list(
-                    data["weapon"]["affixMap"].keys())[0]] + 1
+                __pydantic_self__.refinement = data["weapon"]["affixMap"][list(data["weapon"]["affixMap"].keys())[0]] + 1
+
             if "promoteLevel" in data["weapon"]:
                 __pydantic_self__.ascension = data["weapon"]["promoteLevel"]
+                __pydantic_self__.max_level = (__pydantic_self__.ascension * 10) + (10 if __pydantic_self__.ascension > 0 else 0) + 20  # noqa: E501

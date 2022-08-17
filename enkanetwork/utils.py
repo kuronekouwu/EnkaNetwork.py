@@ -86,7 +86,7 @@ async def to_data(response: ClientResponse) -> Dict[str, Any]:
 
     content = {
         "status": response.status,
-        "content": json.loads(data)
+        "content": data
     }
     return content
 

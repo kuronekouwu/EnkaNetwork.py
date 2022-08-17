@@ -154,4 +154,3 @@ class HTTPClient:
             endpoint='assets'
         )
         return self.request(r)
-

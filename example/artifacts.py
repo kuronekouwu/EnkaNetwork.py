@@ -15,7 +15,7 @@ async def main():
                 print(f"Name: {artifact.detail.name}")
                 print(f"Type: {artifact.detail.artifact_type}")
                 print(f"Set artifact: {artifact.detail.artifact_name_set}")
-                print(f"Icon: {artifact.detail.icon}")
+                print(f"Icon: {artifact.detail.icon.url}")
                 print(f"Level: {artifact.level}")
                 print("--- Main Stats ---")
                 print(f"Name: {artifact.detail.mainstats.name}")

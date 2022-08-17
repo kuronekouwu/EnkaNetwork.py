@@ -12,7 +12,7 @@ async def main():
             for skill in character.skills:
                 print(f"ID: {skill.id}")
                 print(f"Name: {skill.name}")
-                print(f"Icon: {skill.icon}")
+                print(f"Icon: {skill.icon.url}")
                 print(f"Level: {skill.level}")
                 print("="*18)
 

@@ -2,33 +2,33 @@ from pydantic import BaseModel, Field
 from typing import List, Any
 
 from ..enum import ElementType
-
+from .utils import IconAsset
 
 class NamecardAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: str = Field("", alias="icon")
-    banner: str = ""
-    navbar: str = ""
+    icon: IconAsset
+    banner: IconAsset
+    navbar: IconAsset
 
 
 class CharacterIconAsset(BaseModel):
-    icon: str = ""
-    side: str = ""
-    banner: str = ""
+    icon: IconAsset
+    side: IconAsset 
+    banner: IconAsset
+    card: IconAsset
 
 
 class CharacterSkillAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: str = Field(None, alias="skillIcon")
+    icon: IconAsset = None
 
 
 class CharacterConstellationsAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: str = Field(None, alias="icon")
-
+    icon: IconAsset = None
 
 class CharacterCostume(BaseModel):
     id: int = 0

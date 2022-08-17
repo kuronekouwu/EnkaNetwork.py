@@ -34,9 +34,15 @@ def test_get_asset_data() -> None:
             assert data.element in list(ElementType)  # Check element is correct
 
             # Check icon filename
-            assert "_AvatarIcon_" in data.images.icon and \
-                "_AvatarIcon_Side_" in data.images.side and \
-                "_Gacha_AvatarImg_" in data.images.banner
+            assert "_AvatarIcon_" in data.images.icon.filename and \
+                "_AvatarIcon_Side_" in data.images.side.filename and \
+                "_Gacha_AvatarImg_" in data.images.banner.filename and \
+                "_Card" in data.images.card.filename
+            
+            assert data.images.icon.url.startswith("https://") and \
+                data.images.side.url.startswith("https://") and \
+                data.images.banner.url.startswith("https://") and \
+                data.images.card.url.startswith("https://")
 
             # Get name hash map
             name = client.assets.get_hash_map(data.hash_id)
@@ -46,7 +52,8 @@ def test_get_asset_data() -> None:
             for constellations in data.constellations:
                 _constellations = client.assets.constellations(constellations)
                 assert _constellations is not None
-                assert "UI_Talent_" in _constellations.icon
+                assert "UI_Talent_" in _constellations.icon.filename
+                assert _constellations.icon.url.startswith("https://")
 
                 # Get name hash map
                 name = client.assets.get_hash_map(_constellations.hash_id)
@@ -56,7 +63,8 @@ def test_get_asset_data() -> None:
             for skill in data.skills:
                 _skill = client.assets.skills(skill)
                 assert _skill is not None
-                assert "Skill_" in _skill.icon
+                assert "Skill_" in _skill.icon.filename
+                assert _skill.icon.url.startswith("https://")
 
                 # Get name hash map
                 name = client.assets.get_hash_map(_skill.hash_id)
@@ -75,6 +83,7 @@ def test_artifacts() -> None:
         assert data.type in list(EquipmentsType)
         assert data.detail.name is not None
         assert data.detail.icon is not None
+        assert data.detail.icon.url.startswith("https://")
         assert data.detail.rarity != 0
         assert data.level == raw["reliquary"]["level"] - 1
 
@@ -102,6 +111,7 @@ def test_weapons():
         assert data.type in list(EquipmentsType)
         assert data.detail.name is not None
         assert data.detail.icon is not None
+        assert data.detail.icon.url.startswith("https://")
         assert data.detail.rarity != 0
         assert data.level == raw["weapon"]["level"]
 
@@ -130,6 +140,31 @@ def test_costumes() -> None:
         assert _costume is not None
         assert _costume.id == int(costume)
         # Check icon filename
-        assert "_AvatarIcon_" in _costume.images.icon and \
-                "_AvatarIcon_Side_" in _costume.images.side and \
-                "_Costume_" in _costume.images.banner
+        assert "_AvatarIcon_" in _costume.images.icon.filename and \
+                "_AvatarIcon_Side_" in _costume.images.side.filename and \
+                "_Costume_" in _costume.images.banner.filename and \
+                "_Card" in _costume.images.card.filename
+
+        assert _costume.images.icon.url.startswith("https://") and \
+                _costume.images.side.url.startswith("https://") and \
+                _costume.images.banner.url.startswith("https://") and \
+                _costume.images.card.url.startswith("https://")
+
+def test_namecards() -> None:
+    """
+        Test case 5:
+            Test namecards
+    """
+
+    for costume in client.assets.NAMECARD_IDS:
+        _namecard = client.assets.namecards(costume)
+        assert _namecard is not None
+        assert _namecard.id == int(costume)
+        # Check icon filename
+        assert  _namecard.icon.url.startswith("https://") and \
+                _namecard.banner.url.startswith("https://") and \
+                _namecard.navbar.url.startswith("https://")
+
+        # Get name hash map
+        name = client.assets.get_hash_map(_namecard.hash_id)
+        assert name is not None
