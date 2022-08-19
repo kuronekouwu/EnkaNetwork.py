@@ -17,7 +17,7 @@ LOGGER = logging.getLogger(__name__)
 BASE_URL = "https://enka.network/{PATH}"
 
 # Request
-CHUNK_SIZE = 1024 * 1024 * 1
+CHUNK_SIZE = 5 * 2**20
 RETRY_MAX = 10
 
 
