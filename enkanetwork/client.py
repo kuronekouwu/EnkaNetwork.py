@@ -56,6 +56,14 @@ class EnkaNetworkAPI:
         return self._closed
 
     @property
+    def http(self) -> HTTPClient:
+        return self.__http
+
+    @http.setter
+    def http(self, http: HTTPClient) -> None:
+        self.__http = http
+
+    @property
     def lang(self) -> Language:
         return self.assets.LANGS
 
