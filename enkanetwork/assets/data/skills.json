@@ -239,6 +239,14 @@
         "nameTextMapHash": 2350480557,
         "skillIcon": "Skill_E_Kate"
     },
+    "10117": {
+        "nameTextMapHash": 2178570213,
+        "skillIcon": "Skill_E_PlayerGrass_01"
+    },
+    "10118": {
+        "nameTextMapHash": 2504837493,
+        "skillIcon": "Skill_S_PlayerGrass_01"
+    },
     "10160": {
         "nameTextMapHash": 2878874285,
         "skillIcon": "Skill_A_04"
@@ -1051,6 +1059,50 @@
         "nameTextMapHash": 2907386981,
         "skillIcon": "Skill_E_Ayato_01"
     },
+    "10671": {
+        "nameTextMapHash": 3768859965,
+        "skillIcon": "Skill_A_02"
+    },
+    "10672": {
+        "nameTextMapHash": 2943851901,
+        "skillIcon": "Skill_S_Collei_01"
+    },
+    "10675": {
+        "nameTextMapHash": 1430301637,
+        "skillIcon": "Skill_E_Collei_01"
+    },
+    "10674": {
+        "nameTextMapHash": 3984738037,
+        "skillIcon": "Skill_A_02"
+    },
+    "10681": {
+        "nameTextMapHash": 3134128957,
+        "skillIcon": "Skill_A_04"
+    },
+    "10682": {
+        "nameTextMapHash": 2851422357,
+        "skillIcon": "Skill_S_Dori_01"
+    },
+    "10685": {
+        "nameTextMapHash": 4155943733,
+        "skillIcon": "Skill_E_Dori_01"
+    },
+    "10691": {
+        "nameTextMapHash": 3409522557,
+        "skillIcon": "Skill_A_02"
+    },
+    "10692": {
+        "nameTextMapHash": 3726986301,
+        "skillIcon": "Skill_S_Tighnari_01"
+    },
+    "10693": {
+        "nameTextMapHash": 1376683245,
+        "skillIcon": "Skill_A_02"
+    },
+    "10695": {
+        "nameTextMapHash": 3822928381,
+        "skillIcon": "Skill_E_Tighnari_01"
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun"
@@ -1299,6 +1351,14 @@
         "nameTextMapHash": 4091597733,
         "skillIcon": "Btn_Blocking"
     },
+    "20330": {
+        "nameTextMapHash": 1226553101,
+        "skillIcon": "Btn_Arana_Shoot"
+    },
+    "20331": {
+        "nameTextMapHash": 77403669,
+        "skillIcon": "Btn_Arana_Exchange"
+    },
     "10384": {
         "nameTextMapHash": 1543775045,
         "skillIcon": "Btn_Recon_Bait"
@@ -1331,6 +1391,10 @@
         "nameTextMapHash": 1660121349,
         "skillIcon": "Skill_A_01"
     },
+    "100547": {
+        "nameTextMapHash": 3401752693,
+        "skillIcon": "Skill_A_01"
+    },
     "100550": {
         "nameTextMapHash": 3538369725,
         "skillIcon": "Skill_A_01"
@@ -1357,6 +1421,10 @@
     },
     "100556": {
         "nameTextMapHash": 3021322565,
+        "skillIcon": "Skill_A_01"
+    },
+    "100557": {
+        "nameTextMapHash": 1727970205,
         "skillIcon": "Skill_A_01"
     },
     "5002010": {
@@ -1622,5 +1690,17 @@
     "5066010": {
         "nameTextMapHash": 2509253013,
         "skillIcon": "Skill_A_01"
+    },
+    "5067010": {
+        "nameTextMapHash": 1232154725,
+        "skillIcon": "Skill_A_02"
+    },
+    "5068010": {
+        "nameTextMapHash": 2106573173,
+        "skillIcon": "Skill_A_04"
+    },
+    "5069010": {
+        "nameTextMapHash": 19903157,
+        "skillIcon": "Skill_A_02"
     }
 }

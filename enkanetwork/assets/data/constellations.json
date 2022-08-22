@@ -143,6 +143,30 @@
         "nameTextMapHash": 1885207465,
         "icon": "UI_Talent_S_PlayerElectric_04"
     },
+    "111": {
+        "nameTextMapHash": 1600504857,
+        "icon": "UI_Talent_S_PlayerGrass_01"
+    },
+    "112": {
+        "nameTextMapHash": 3553177833,
+        "icon": "UI_Talent_S_PlayerGrass_02"
+    },
+    "113": {
+        "nameTextMapHash": 2493239665,
+        "icon": "UI_Talent_S_PlayerGrass_03"
+    },
+    "114": {
+        "nameTextMapHash": 997796193,
+        "icon": "UI_Talent_S_PlayerGrass_04"
+    },
+    "115": {
+        "nameTextMapHash": 2090706953,
+        "icon": "UI_Talent_S_PlayerGrass_05"
+    },
+    "116": {
+        "nameTextMapHash": 712474025,
+        "icon": "UI_Talent_S_PlayerGrass_06"
+    },
     "141": {
         "nameTextMapHash": 696499609,
         "icon": "UI_Talent_S_Barbara_01"
@@ -1270,5 +1294,77 @@
     "666": {
         "nameTextMapHash": 1168376425,
         "icon": "UI_Talent_S_Ayato_04"
+    },
+    "671": {
+        "nameTextMapHash": 2655987137,
+        "icon": "UI_Talent_S_Collei_01"
+    },
+    "672": {
+        "nameTextMapHash": 3472492497,
+        "icon": "UI_Talent_S_Collei_02"
+    },
+    "673": {
+        "nameTextMapHash": 1426971073,
+        "icon": "UI_Talent_U_Collei_02"
+    },
+    "674": {
+        "nameTextMapHash": 3753636729,
+        "icon": "UI_Talent_S_Collei_03"
+    },
+    "675": {
+        "nameTextMapHash": 2500538945,
+        "icon": "UI_Talent_U_Collei_01"
+    },
+    "676": {
+        "nameTextMapHash": 1091837217,
+        "icon": "UI_Talent_S_Collei_04"
+    },
+    "681": {
+        "nameTextMapHash": 1156598585,
+        "icon": "UI_Talent_S_Dori_01"
+    },
+    "682": {
+        "nameTextMapHash": 3136137929,
+        "icon": "UI_Talent_S_Dori_02"
+    },
+    "683": {
+        "nameTextMapHash": 4285795529,
+        "icon": "UI_Talent_U_Dori_02"
+    },
+    "684": {
+        "nameTextMapHash": 3498425217,
+        "icon": "UI_Talent_S_Dori_03"
+    },
+    "685": {
+        "nameTextMapHash": 3715110481,
+        "icon": "UI_Talent_U_Dori_01"
+    },
+    "686": {
+        "nameTextMapHash": 1782869129,
+        "icon": "UI_Talent_S_Dori_04"
+    },
+    "691": {
+        "nameTextMapHash": 3505971089,
+        "icon": "UI_Talent_S_Tighnari_01"
+    },
+    "692": {
+        "nameTextMapHash": 2309081673,
+        "icon": "UI_Talent_S_Tighnari_02"
+    },
+    "693": {
+        "nameTextMapHash": 3708646913,
+        "icon": "UI_Talent_U_Tighnari_01"
+    },
+    "694": {
+        "nameTextMapHash": 376580577,
+        "icon": "UI_Talent_S_Tighnari_03"
+    },
+    "695": {
+        "nameTextMapHash": 3499024713,
+        "icon": "UI_Talent_U_Tighnari_02"
+    },
+    "696": {
+        "nameTextMapHash": 2750929897,
+        "icon": "UI_Talent_S_Tighnari_04"
     }
 }

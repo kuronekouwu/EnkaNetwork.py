@@ -778,5 +778,50 @@
         "RU": "Аято",
         "TH": "Kamisato Ayato",
         "VI": "Kamisato Ayato"
+    },
+    "2948362178": {
+        "CHS": "柯莱",
+        "CHT": "柯萊",
+        "DE": "Collei",
+        "EN": "Collei",
+        "ES": "Collei",
+        "FR": "Collei",
+        "ID": "Collei",
+        "JP": "コレイ",
+        "KR": "콜레이",
+        "PT": "Collei",
+        "RU": "Коллеи",
+        "TH": "Collei",
+        "VI": "Collei"
+    },
+    "388272194": {
+        "CHS": "多莉",
+        "CHT": "多莉",
+        "DE": "Dori",
+        "EN": "Dori",
+        "ES": "Dori",
+        "FR": "Dori",
+        "ID": "Dori",
+        "JP": "ドリー",
+        "KR": "도리",
+        "PT": "Dori",
+        "RU": "Дори",
+        "TH": "Dori",
+        "VI": "Dori"
+    },
+    "2506955778": {
+        "CHS": "提纳里",
+        "CHT": "提納里",
+        "DE": "Tighnari",
+        "EN": "Tighnari",
+        "ES": "Tignari",
+        "FR": "Tighnari",
+        "ID": "Tighnari",
+        "JP": "ティナリ",
+        "KR": "타이나리",
+        "PT": "Tighnari",
+        "RU": "Тигнари",
+        "TH": "Tighnari",
+        "VI": "Tighnari"
     }
 }

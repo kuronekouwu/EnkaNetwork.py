@@ -673,5 +673,35 @@
         "RU": "Отголоски подношения",
         "TH": "Echoes of an Offering",
         "VI": "Dư Âm Tế Lễ"
+    },
+    "1675079283": {
+        "CHS": "深林的记忆",
+        "CHT": "深林的記憶",
+        "DE": "Erinnerungen des tiefen Waldes",
+        "EN": "Deepwood Memories",
+        "ES": "Recuerdos del Bosque",
+        "FR": "Souvenir de forêt",
+        "ID": "Deepwood Memories",
+        "JP": "深林の記憶",
+        "KR": "숲의 기억",
+        "PT": "Memórias da Floresta",
+        "RU": "Воспоминания дремучего леса",
+        "TH": "Deepwood Memories",
+        "VI": "Ký Ức Rừng Sâu"
+    },
+    "4145306051": {
+        "CHS": "饰金之梦",
+        "CHT": "飾金之夢",
+        "DE": "Vergoldeter Traum",
+        "EN": "Gilded Dreams",
+        "ES": "Sueños Áureos",
+        "FR": "Rêve doré",
+        "ID": "Gilded Dreams",
+        "JP": "金メッキの夢",
+        "KR": "도금된 꿈",
+        "PT": "Sonhos Dourados",
+        "RU": "Позолоченные сны",
+        "TH": "Gilded Dreams",
+        "VI": "Giấc Mộng Hoàng Kim"
     }
 }

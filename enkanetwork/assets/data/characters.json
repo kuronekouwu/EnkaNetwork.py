@@ -144,12 +144,32 @@
             106
         ]
     },
+    "10000005-508": {
+        "nameTextMapHash": 1533656818,
+        "iconName": "UI_AvatarIcon_PlayerBoy",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Grass",
+        "skills": [
+            100547,
+            10117,
+            10118
+        ],
+        "talents": [
+            111,
+            112,
+            113,
+            114,
+            115,
+            116
+        ]
+    },
     "10000005": {
         "nameTextMapHash": 1533656818,
         "iconName": "UI_AvatarIcon_PlayerBoy",
         "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
         "qualityType": "QUALITY_ORANGE",
-        "costElemType": "",
+        "costElemType": "Grass",
         "skills": [],
         "talents": []
     },
@@ -277,12 +297,32 @@
             106
         ]
     },
+    "10000007-708": {
+        "nameTextMapHash": 3816664530,
+        "iconName": "UI_AvatarIcon_PlayerGirl",
+        "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Grass",
+        "skills": [
+            100557,
+            10117,
+            10118
+        ],
+        "talents": [
+            111,
+            112,
+            113,
+            114,
+            115,
+            116
+        ]
+    },
     "10000007": {
         "nameTextMapHash": 3816664530,
         "iconName": "UI_AvatarIcon_PlayerGirl",
         "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
         "qualityType": "QUALITY_ORANGE",
-        "costElemType": "",
+        "costElemType": "Grass",
         "skills": [],
         "talents": []
     },
@@ -1225,6 +1265,66 @@
             664,
             665,
             666
+        ]
+    },
+    "10000067": {
+        "nameTextMapHash": 2948362178,
+        "iconName": "UI_AvatarIcon_Collei",
+        "sideIconName": "UI_AvatarIcon_Side_Collei",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Grass",
+        "skills": [
+            10671,
+            10672,
+            10675
+        ],
+        "talents": [
+            671,
+            672,
+            673,
+            674,
+            675,
+            676
+        ]
+    },
+    "10000068": {
+        "nameTextMapHash": 388272194,
+        "iconName": "UI_AvatarIcon_Dori",
+        "sideIconName": "UI_AvatarIcon_Side_Dori",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Electric",
+        "skills": [
+            10681,
+            10682,
+            10685
+        ],
+        "talents": [
+            681,
+            682,
+            683,
+            684,
+            685,
+            686
+        ]
+    },
+    "10000069": {
+        "nameTextMapHash": 2506955778,
+        "iconName": "UI_AvatarIcon_Tighnari",
+        "sideIconName": "UI_AvatarIcon_Side_Tighnari",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Grass",
+        "skills": [
+            10691,
+            10692,
+            10695
+        ],
+        "talents": [
+            691,
+            692,
+            693,
+            694,
+            695,
+            696
         ]
     }
 }

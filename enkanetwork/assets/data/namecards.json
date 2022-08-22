@@ -1188,5 +1188,95 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210124": {
+        "nameTextMapHash": 705455564,
+        "icon": "UI_NameCardIcon_Tighnari",
+        "picPath": [
+            "UI_NameCardPic_Tighnari_Alpha",
+            "UI_NameCardPic_Tighnari_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210125": {
+        "nameTextMapHash": 485055372,
+        "icon": "UI_NameCardIcon_Collei",
+        "picPath": [
+            "UI_NameCardPic_Collei_Alpha",
+            "UI_NameCardPic_Collei_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210126": {
+        "nameTextMapHash": 3477892188,
+        "icon": "UI_NameCardIcon_Dori",
+        "picPath": [
+            "UI_NameCardPic_Dori_Alpha",
+            "UI_NameCardPic_Dori_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210127": {
+        "nameTextMapHash": 4155038212,
+        "icon": "UI_NameCardIcon_Bp17",
+        "picPath": [
+            "UI_NameCardPic_Bp17_P_Alpha",
+            "UI_NameCardPic_Bp17_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210128": {
+        "nameTextMapHash": 4269297340,
+        "icon": "UI_NameCardIcon_Csxy3",
+        "picPath": [
+            "UI_NameCardPic_Csxy3_Alpha",
+            "UI_NameCardPic_Csxy3_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210129": {
+        "nameTextMapHash": 1698005228,
+        "icon": "UI_NameCardIcon_Ysxf3",
+        "picPath": [
+            "UI_NameCardPic_Ysxf3_Alpha",
+            "UI_NameCardPic_Ysxf3_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210130": {
+        "nameTextMapHash": 1375881172,
+        "icon": "UI_NameCardIcon_Xm1",
+        "picPath": [
+            "UI_NameCardPic_Xm1_Alpha",
+            "UI_NameCardPic_Xm1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210131": {
+        "nameTextMapHash": 3231725428,
+        "icon": "UI_NameCardIcon_Xumi1",
+        "picPath": [
+            "UI_NameCardPic_Xumi1_Alpha",
+            "UI_NameCardPic_Xumi1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210132": {
+        "nameTextMapHash": 1447772932,
+        "icon": "UI_NameCardIcon_Xumi2",
+        "picPath": [
+            "UI_NameCardPic_Xumi2_Alpha",
+            "UI_NameCardPic_Xumi2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }
