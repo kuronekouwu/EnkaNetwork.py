@@ -21,12 +21,10 @@ class EquipmentsStats(BaseModel):
     prop_id: str = ""
     type: DigitType = DigitType.NUMBER
     name: str = ""
-    value: int = 0
+    value: Union[int, float] = Field(0, alias="statValue")
 
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
-
-        self.value = data["statValue"]
 
         LOGGER.debug("=== Fight prop ===")
 
@@ -39,7 +37,8 @@ class EquipmentsStats(BaseModel):
 
         prod_id = ["HURT", "CRITICAL", "EFFICIENCY", "PERCENT", "ADD"]
 
-        if isinstance(self.value, float) or self.prop_id.split("_")[-1] in prod_id:
+        if self.prop_id.split("_")[-1] in prod_id:
+            self.value = float(data["statValue"])
             self.type = DigitType.PERCENT
 
         if not fight_prop:
