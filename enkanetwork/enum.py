@@ -50,7 +50,7 @@ class ElementType(str, Enum):
     Pyro = "Fire"
     Geo = "Rock"
     Electro = "Electric"
-
+    Dendro = "Grass"
 
 class EquipType(str, Enum):
     Unknown = "UNKNOWN"
