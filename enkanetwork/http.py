@@ -100,6 +100,7 @@ class HTTPClient:
                             raise UIDNotFounded(f"UID {uid} not found.")
 
                         self.LOGGER.debug('%s %s has received %s', method, url, data)
+                        await self.__session.close()
                         return data
 
                     # we are being rate limited
