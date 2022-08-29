@@ -102,6 +102,9 @@ class HTTPClient:
                         self.LOGGER.debug('%s %s has received %s', method, url, data)
                         return data
 
+                    if response.status == 500:
+                        raise UIDNotFounded(f"UID {uid} not found or Genshin server broken.")
+
                     # we are being rate limited
                     # if response.status == 429:
                     # Banned by Cloudflare more than likely.
@@ -115,10 +118,8 @@ class HTTPClient:
 
                     if response.status == 403:
                         raise Forbidden("Forbidden 403")  # TODO: คิดไม่ออกจะพิมพ์อะไร
-                    elif response.status >= 500:
-                        raise EnkaServerError("Server error")
-                    else:
-                        raise HTTPException("Unknown error")
+
+                    raise HTTPException("Unknown error")
 
             except OSError as e:
                 # Connection reset by peer
