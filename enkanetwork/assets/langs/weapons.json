@@ -374,6 +374,21 @@
         "TH": "Sapwood Blade",
         "VI": "Kiếm Gỗ"
     },
+    "143051931": {
+        "CHS": "西福斯的月光",
+        "CHT": "西福斯的月光",
+        "DE": "Mondlicht von Xiphos",
+        "EN": "Xiphos' Moonlight",
+        "ES": "Luz Lunar de Xifos",
+        "FR": "Clair de lune de Xiphos",
+        "ID": "Xiphos' Moonlight",
+        "JP": "サイフォスの月明かり",
+        "KR": "크시포스의 달빛",
+        "PT": "Luz Lunar de Xiphos",
+        "RU": "Лунное сияние ксифоса",
+        "TH": "Xiphos' Moonlight",
+        "VI": "Ánh Trăng Xiphos"
+    },
     "1499745907": {
         "CHS": "「一心传」名刀",
         "CHT": "「一心傳」名刀",
@@ -568,6 +583,21 @@
         "RU": "Харан гэппаку фуцу",
         "TH": "Haran Geppaku Futsu",
         "VI": "Haran Geppaku Futsu"
+    },
+    "454086795": {
+        "CHS": "圣显之钥",
+        "CHT": "聖顯之鑰",
+        "DE": "Khaj-Nisut-Schlüssel",
+        "EN": "Key of Khaj-Nisut",
+        "ES": "Llave de la Coronación",
+        "FR": "Clé de Khaj-Nisut",
+        "ID": "Key of Khaj-Nisut",
+        "JP": "聖顕の鍵",
+        "KR": "성현의 열쇠",
+        "PT": "Chave de Hierofania",
+        "RU": "Ключ Хадж-нисут",
+        "TH": "Key of Khaj-Nisut",
+        "VI": "Chìa Khóa Khaj-Nisut"
     },
     "2666951267": {
         "CHS": "训练大剑",
@@ -883,6 +913,21 @@
         "RU": "Кацурагикири Нагамаса",
         "TH": "Katsuragikiri Nagamasa",
         "VI": "Trường Đao Katsuragi"
+    },
+    "3073454867": {
+        "CHS": "玛海菈的水色",
+        "CHT": "瑪海菈的水色",
+        "DE": "Makhaira-Aquamarin",
+        "EN": "Makhaira Aquamarine",
+        "ES": "Májaira Aguamarina",
+        "FR": "Aigue-marine de Makhaira",
+        "ID": "Makhaira Aquamarine",
+        "JP": "マカイラの水色",
+        "KR": "물빛 마카이라",
+        "PT": "Água-marinha de Mahara",
+        "RU": "Аквамарин Махайры",
+        "TH": "Makhaira Aquamarine",
+        "VI": "Sắc Nước Makhaira"
     },
     "2359799475": {
         "CHS": "恶王丸",
@@ -1334,6 +1379,21 @@
         "TH": "Moonpiercer",
         "VI": "Quán Nguyệt Thương"
     },
+    "1470442731": {
+        "CHS": "风信之锋",
+        "CHT": "風信之鋒",
+        "DE": "Spitze der klingenden Winde",
+        "EN": "Missive Windspear",
+        "ES": "Alabarda del Viento Epistolar",
+        "FR": "Lance du vent saisonnier",
+        "ID": "Missive Windspear",
+        "JP": "風信の矛",
+        "KR": "날카로운 바람의 서신",
+        "PT": "Lâmina do Vento Mensageiro",
+        "RU": "Копьё послания ветров",
+        "TH": "Missive Windspear",
+        "VI": "Mũi Nhọn Của Gió"
+    },
     "3235324891": {
         "CHS": "护摩之杖",
         "CHT": "護摩之杖",
@@ -1453,6 +1513,21 @@
         "RU": "Сияющая жатва",
         "TH": "Engulfing Lightning",
         "VI": "Đoạn Thảo Trường Đao"
+    },
+    "4238339131": {
+        "CHS": "赤沙之杖",
+        "CHT": "赤沙之杖",
+        "DE": "Stab der roten Sande",
+        "EN": "Staff of the Scarlet Sands",
+        "ES": "Báculo de las Arenas Escarlatas",
+        "FR": "Bâton des sables écarlates",
+        "ID": "Staff of the Scarlet Sands",
+        "JP": "赤砂の杖",
+        "KR": "적색 사막의 지팡이",
+        "PT": "Báculo das Areias Escarlates",
+        "RU": "Посох алых песков",
+        "TH": "Staff of the Scarlet Sands",
+        "VI": "Quyền Trượng Cát Đỏ"
     },
     "3584825427": {
         "CHS": "学徒笔记",
@@ -1798,6 +1873,21 @@
         "RU": "Око клятвы",
         "TH": "Oathsworn Eye",
         "VI": "Con Ngươi Tuyên Thệ"
+    },
+    "426363739": {
+        "CHS": "流浪的晚星",
+        "CHT": "流浪的晚星",
+        "DE": "Wandernder Abendstern",
+        "EN": "Wandering Evenstar",
+        "ES": "Estrella Errabunda",
+        "FR": "Étoile du soir errante",
+        "ID": "Wandering Evenstar",
+        "JP": "彷徨える星",
+        "KR": "방랑하는 저녁별",
+        "PT": "Estrela Itinerante",
+        "RU": "Скитающаяся звезда",
+        "TH": "Wandering Evenstar",
+        "VI": "Sao Đêm Rong Ruổi"
     },
     "2267978875": {
         "CHS": "盈满之实",

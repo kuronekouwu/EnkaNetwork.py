@@ -823,5 +823,50 @@
         "RU": "Тигнари",
         "TH": "Tighnari",
         "VI": "Tighnari"
+    },
+    "3850149970": {
+        "CHS": "妮露",
+        "CHT": "妮露",
+        "DE": "Nilou",
+        "EN": "Nilou",
+        "ES": "Nilou",
+        "FR": "Nilou",
+        "ID": "Nilou",
+        "JP": "ニィロウ",
+        "KR": "닐루",
+        "PT": "Nilou",
+        "RU": "Нилу",
+        "TH": "Nilou",
+        "VI": "Nilou"
+    },
+    "1049891906": {
+        "CHS": "赛诺",
+        "CHT": "賽諾",
+        "DE": "Cyno",
+        "EN": "Cyno",
+        "ES": "Cyno",
+        "FR": "Cyno",
+        "ID": "Cyno",
+        "JP": "セノ",
+        "KR": "사이노",
+        "PT": "Cyno",
+        "RU": "Сайно",
+        "TH": "Cyno",
+        "VI": "Cyno"
+    },
+    "3092975658": {
+        "CHS": "坎蒂丝",
+        "CHT": "坎蒂絲",
+        "DE": "Candace",
+        "EN": "Candace",
+        "ES": "Candace",
+        "FR": "Candace",
+        "ID": "Candace",
+        "JP": "キャンディス",
+        "KR": "캔디스",
+        "PT": "Candace",
+        "RU": "Кандакия",
+        "TH": "Candace",
+        "VI": "Candace"
     }
 }

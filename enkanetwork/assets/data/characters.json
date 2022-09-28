@@ -1326,5 +1326,65 @@
             695,
             696
         ]
+    },
+    "10000070": {
+        "nameTextMapHash": 3850149970,
+        "iconName": "UI_AvatarIcon_Nilou",
+        "sideIconName": "UI_AvatarIcon_Side_Nilou",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Water",
+        "skills": [
+            10701,
+            10702,
+            10705
+        ],
+        "talents": [
+            701,
+            702,
+            703,
+            704,
+            705,
+            706
+        ]
+    },
+    "10000071": {
+        "nameTextMapHash": 1049891906,
+        "iconName": "UI_AvatarIcon_Cyno",
+        "sideIconName": "UI_AvatarIcon_Side_Cyno",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Electric",
+        "skills": [
+            10711,
+            10712,
+            10715
+        ],
+        "talents": [
+            711,
+            712,
+            713,
+            714,
+            715,
+            716
+        ]
+    },
+    "10000072": {
+        "nameTextMapHash": 3092975658,
+        "iconName": "UI_AvatarIcon_Candace",
+        "sideIconName": "UI_AvatarIcon_Side_Candace",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Water",
+        "skills": [
+            10721,
+            10722,
+            10725
+        ],
+        "talents": [
+            721,
+            722,
+            723,
+            724,
+            725,
+            726
+        ]
     }
 }
