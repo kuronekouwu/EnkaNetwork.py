@@ -11,10 +11,6 @@
         "nameTextMapHash": 3276358165,
         "skillIcon": "Skill_S_Kate_01"
     },
-    "10013": {
-        "nameTextMapHash": 2687935733,
-        "skillIcon": "Skill_S_Ayaka_02"
-    },
     "10014": {
         "nameTextMapHash": 3173933501,
         "skillIcon": "Skill_E_Kate"
@@ -678,10 +674,6 @@
     "10412": {
         "nameTextMapHash": 1125648053,
         "skillIcon": "Skill_S_Mona_01"
-    },
-    "10413": {
-        "nameTextMapHash": 1057341493,
-        "skillIcon": "Skill_S_Mona_02"
     },
     "10415": {
         "nameTextMapHash": 3616116589,
