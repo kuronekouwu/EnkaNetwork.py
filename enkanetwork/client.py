@@ -3,7 +3,7 @@ from __future__ import annotations
 import os
 import json
 import logging
-from time import time
+import warnings
 
 from .http import HTTPClient
 from .model import EnkaNetworkResponse
@@ -105,6 +105,7 @@ class EnkaNetworkAPI:
         return EnkaNetworkResponse.parse_obj(data)
 
     async def update_assets(self) -> None:
+        warnings.warn("enkanetwork.py-data will be public archived and will not update util found new source. Please read reason in https://github.com/mrwan200/enkanetwork.py-data#attemption")
         print("Updating assets...")
         self.LOGGER.debug("Downloading new content...")
 
