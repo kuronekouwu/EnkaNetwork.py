@@ -8,6 +8,7 @@
         "skills": [
             10024,
             10018,
+            10013,
             10019
         ],
         "talents": [
@@ -774,6 +775,7 @@
         "skills": [
             10411,
             10412,
+            10413,
             10415
         ],
         "talents": [
@@ -1383,6 +1385,46 @@
             724,
             725,
             726
+        ]
+    },
+    "10000073": {
+        "nameTextMapHash": 712501082,
+        "iconName": "UI_AvatarIcon_Nahida",
+        "sideIconName": "UI_AvatarIcon_Side_Nahida",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Grass",
+        "skills": [
+            10731,
+            10732,
+            10735
+        ],
+        "talents": [
+            731,
+            732,
+            733,
+            734,
+            735,
+            736
+        ]
+    },
+    "10000074": {
+        "nameTextMapHash": 2889777514,
+        "iconName": "UI_AvatarIcon_Layla",
+        "sideIconName": "UI_AvatarIcon_Side_Layla",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Ice",
+        "skills": [
+            10741,
+            10742,
+            10745
+        ],
+        "talents": [
+            741,
+            742,
+            743,
+            744,
+            745,
+            746
         ]
     }
 }

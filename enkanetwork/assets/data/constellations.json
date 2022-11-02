@@ -1438,5 +1438,53 @@
     "726": {
         "nameTextMapHash": 955051961,
         "icon": "UI_Talent_S_Candace_04"
+    },
+    "731": {
+        "nameTextMapHash": 552761193,
+        "icon": "UI_Talent_S_Nahida_01"
+    },
+    "732": {
+        "nameTextMapHash": 3200237953,
+        "icon": "UI_Talent_S_Nahida_02"
+    },
+    "733": {
+        "nameTextMapHash": 2629291377,
+        "icon": "UI_Talent_U_Nahida_01"
+    },
+    "734": {
+        "nameTextMapHash": 2649754961,
+        "icon": "UI_Talent_S_Nahida_03"
+    },
+    "735": {
+        "nameTextMapHash": 762504897,
+        "icon": "UI_Talent_U_Nahida_02"
+    },
+    "736": {
+        "nameTextMapHash": 2904102233,
+        "icon": "UI_Talent_S_Nahida_04"
+    },
+    "741": {
+        "nameTextMapHash": 624034681,
+        "icon": "UI_Talent_S_Layla_01"
+    },
+    "742": {
+        "nameTextMapHash": 1108627585,
+        "icon": "UI_Talent_S_Layla_02"
+    },
+    "743": {
+        "nameTextMapHash": 1578144217,
+        "icon": "UI_Talent_U_Layla_01"
+    },
+    "744": {
+        "nameTextMapHash": 886256817,
+        "icon": "UI_Talent_S_Layla_03"
+    },
+    "745": {
+        "nameTextMapHash": 1129381953,
+        "icon": "UI_Talent_U_Layla_02"
+    },
+    "746": {
+        "nameTextMapHash": 1961053441,
+        "icon": "UI_Talent_S_Layla_04"
     }
 }

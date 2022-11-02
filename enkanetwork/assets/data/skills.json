@@ -11,6 +11,10 @@
         "nameTextMapHash": 3276358165,
         "skillIcon": "Skill_S_Kate_01"
     },
+    "10013": {
+        "nameTextMapHash": 2687935733,
+        "skillIcon": "Skill_S_Ayaka_02"
+    },
     "10014": {
         "nameTextMapHash": 3173933501,
         "skillIcon": "Skill_E_Kate"
@@ -675,6 +679,10 @@
         "nameTextMapHash": 1125648053,
         "skillIcon": "Skill_S_Mona_01"
     },
+    "10413": {
+        "nameTextMapHash": 1057341493,
+        "skillIcon": "Skill_S_Mona_02"
+    },
     "10415": {
         "nameTextMapHash": 3616116589,
         "skillIcon": "Skill_E_Mona_01"
@@ -1155,6 +1163,30 @@
         "nameTextMapHash": 2669120029,
         "skillIcon": "Skill_E_Candace_01"
     },
+    "10731": {
+        "nameTextMapHash": 48372133,
+        "skillIcon": "Skill_A_Catalyst_MD"
+    },
+    "10732": {
+        "nameTextMapHash": 3592193965,
+        "skillIcon": "Skill_S_Nahida_01"
+    },
+    "10735": {
+        "nameTextMapHash": 3862968797,
+        "skillIcon": "Skill_E_Nahida_01"
+    },
+    "10741": {
+        "nameTextMapHash": 1078955685,
+        "skillIcon": "Skill_A_01"
+    },
+    "10742": {
+        "nameTextMapHash": 3200711933,
+        "skillIcon": "Skill_S_Layla_01"
+    },
+    "10745": {
+        "nameTextMapHash": 64091533,
+        "skillIcon": "Skill_E_Layla_01"
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun"
@@ -1250,6 +1282,18 @@
     "20045": {
         "nameTextMapHash": 1562204677,
         "skillIcon": "Btn_CatchAnimal_Shoot"
+    },
+    "20049": {
+        "nameTextMapHash": 1068626397,
+        "skillIcon": "Btn_CatchAnimal_Shoot"
+    },
+    "20051": {
+        "nameTextMapHash": 1486834421,
+        "skillIcon": "Btn_FungusFighter_Aim"
+    },
+    "20054": {
+        "nameTextMapHash": 4262868373,
+        "skillIcon": "Skill_E_Gagana_AimShoot"
     },
     "20100": {
         "nameTextMapHash": 4176490093,
@@ -1770,5 +1814,17 @@
     "5072010": {
         "nameTextMapHash": 3497260069,
         "skillIcon": "Skill_A_03"
+    },
+    "5073010": {
+        "nameTextMapHash": 286439061,
+        "skillIcon": "Skill_A_Catalyst_MD"
+    },
+    "5074010": {
+        "nameTextMapHash": 1942178429,
+        "skillIcon": "Skill_A_01"
+    },
+    "5076010": {
+        "nameTextMapHash": 405719917,
+        "skillIcon": "Skill_A_02"
     }
 }
