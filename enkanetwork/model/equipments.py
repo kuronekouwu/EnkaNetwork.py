@@ -54,7 +54,7 @@ class EquipmentsDetail(BaseModel):
     name: str = ""  # Get from name hash map
     artifact_name_set: str = ""  # Name set artifacts
     artifact_type: EquipType = EquipType.Unknown  # Type of artifact
-    icon: Union[IconAsset, str] = None
+    icon: IconAsset = None
     rarity: int = Field(0, alias="rankLevel")
     mainstats: EquipmentsStats = Field(None, alias="reliquaryMainstat")
     substats: List[EquipmentsStats] = []
