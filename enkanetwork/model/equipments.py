@@ -64,7 +64,6 @@ class EquipmentsDetail(BaseModel):
 
         if data["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
             LOGGER.debug("=== Artifact ===")
-            self.icon = IconAsset(filename=data["icon"])
             self.artifact_type = EquipType(data["equipType"])
             # Sub Stats
             for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:
@@ -72,7 +71,6 @@ class EquipmentsDetail(BaseModel):
 
         if data["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             LOGGER.debug("=== Weapon ===")
-            self.icon = IconAsset(filename=data["icon"])
 
             # Main and Sub Stats
             self.mainstats = EquipmentsStats.parse_obj(
@@ -80,7 +78,7 @@ class EquipmentsDetail(BaseModel):
             for stats in data["weaponStats"][1:]:
                 self.substats.append(EquipmentsStats.parse_obj(stats))
 
-        _name = Assets.get_hash_map(str(data["nameTextMapHash"]))
+        _name = Assets.get_hash_map(data.get("nameTextMapHash"))
         if "setNameTextMapHash" in data:
             _artifact_name_set = Assets.get_hash_map(str(data["setNameTextMapHash"]))
             self.artifact_name_set = _artifact_name_set or ""
@@ -112,6 +110,7 @@ class Equipments(BaseModel):
         use_enum_values = True
 
     def __init__(self, **data: Any) -> None:
+        data["flat"]["icon"] = IconAsset(filename=data["flat"]["icon"])
         super().__init__(**data)
 
         if data["flat"]["itemType"] == "ITEM_RELIQUARY":  # AKA. Artifact
