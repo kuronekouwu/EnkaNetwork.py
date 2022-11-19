@@ -88,7 +88,13 @@ Please see in [example](./example/) folder.
 | abyss_floor     | towerFloorIndex |                   |
 | abyss_room      | towerLevelIndex |                   |
 | characters_preview | showAvatarInfoList | Please see [Character Preview](#character-preview) |
-| icon.url        | profilePicture.avatarID |           |
+| avatar        | profilePicture   | Please see [Avatar Icon](#avatar-icon)          |
+
+## Avatar icon
+| Wrapper         |  API            | Notes             |   
+|-----------------|-----------------|-------------------|
+| id              | avatarId        |                   |
+| icon            |                 |  Please see [Icon Data](#icon-data) |
 
 ### Namecard
 | Wrapper         |  API            | Notes             |
