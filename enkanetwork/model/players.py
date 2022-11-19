@@ -26,7 +26,7 @@ class ProfilePicture(BaseModel):
     """
         Custom add data
     """
-    url: IconAsset = None
+    icon: IconAsset = None
 
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
@@ -43,7 +43,7 @@ class ProfilePicture(BaseModel):
             if not icon:
                 return
 
-            self.url = icon.icon
+            self.icon = icon.icon
 
 
 class showAvatar(BaseModel):
@@ -129,7 +129,7 @@ class PlayerInfo(BaseModel):
     nickname: str = ""
     signature: str = ""
     world_level: int = Field(1, alias="worldLevel")
-    icon: ProfilePicture = Field(None, alias="profilePicture")
+    avatar: ProfilePicture = Field(None, alias="profilePicture")
     # Avatars
     characters_preview: List[showAvatar] = Field([], alias="showAvatarInfoList")
     # Abyss floor
