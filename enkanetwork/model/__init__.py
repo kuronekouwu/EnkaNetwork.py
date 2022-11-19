@@ -6,8 +6,3 @@ from .character import *
 from .equipments import *
 from .players import *
 from .stats import *
-
-class EnkaNetworkResponse(BaseModel):
-    player: PlayerInfo = Field(None, alias="playerInfo")
-    characters: List[CharacterInfo] = Field(None, alias="avatarInfoList")
-    ttl: int = 0

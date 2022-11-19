@@ -6,7 +6,7 @@ import logging
 import warnings
 
 from .http import HTTPClient
-from .model import EnkaNetworkResponse
+from .model.base import EnkaNetworkResponse
 from .assets import Assets
 from .enum import Language
 from .cache import Cache
