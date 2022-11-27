@@ -11,6 +11,7 @@ Library for API wrapper data from site https://enka.network/
 - [🚧 Structure](#structure)
 	- [Player](#player) 
 		- [Namecard](#namecard)
+        - [Avatar Icon](#avatar-icon)
         - [Character preview](#character-preview)
     - [Characters](#characters)
         - [Icon](#icon)
@@ -24,6 +25,7 @@ Library for API wrapper data from site https://enka.network/
 	- [Character, constellations, skills, namecards](#assets-character-constellations-skills-namecards)
     - [NameTextMapHash](#assets-nametextmaphash)
 - [🌎 Languages Supported](#languages-supported)
+- [🙋 Support & Question](#languages-supported)
 - [📄 LICENSE](#license)
 	
 # Installation
@@ -90,7 +92,7 @@ Please see in [example](./example/) folder.
 | characters_preview | showAvatarInfoList | Please see [Character Preview](#character-preview) |
 | avatar        | profilePicture   | Please see [Avatar Icon](#avatar-icon)          |
 
-## Avatar icon
+### Avatar icon
 | Wrapper         |  API            | Notes             |   
 |-----------------|-----------------|-------------------|
 | id              | avatarId        |                   |
@@ -285,6 +287,9 @@ loop.run_until_complete(main())
 |  Chinese    |    chs  |
 
 If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
+
+## Support & Question
+If you need support or some question about EnkaNetwokt.py. You can feel free contact to me in [Enka.network discord server](https://discord.gg/G3m7CWkssY) in [𝖯𝖸┃enkanetwork․py](https://discord.com/channels/840335525621268520/1046281445049647104) channel and mention (Ping) to **@M-307** for support and help
 
 # LICENSE
 [MIT License](./LICENSE)
