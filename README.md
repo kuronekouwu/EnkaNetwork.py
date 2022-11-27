@@ -25,7 +25,7 @@ Library for API wrapper data from site https://enka.network/
 	- [Character, constellations, skills, namecards](#assets-character-constellations-skills-namecards)
     - [NameTextMapHash](#assets-nametextmaphash)
 - [🌎 Languages Supported](#languages-supported)
-- [🙋 Support & Question](#languages-supported)
+- [🙋 Support & Question](#support--question)
 - [📄 LICENSE](#license)
 	
 # Installation
