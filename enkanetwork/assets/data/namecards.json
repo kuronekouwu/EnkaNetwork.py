@@ -1378,5 +1378,45 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210143": {
+        "nameTextMapHash": 3043367508,
+        "icon": "UI_NameCardIcon_Wanderer",
+        "picPath": [
+            "UI_NameCardPic_Wanderer_Alpha",
+            "UI_NameCardPic_Wanderer_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210144": {
+        "nameTextMapHash": 1032682012,
+        "icon": "UI_NameCardIcon_Faruzan",
+        "picPath": [
+            "UI_NameCardPic_Faruzan_Alpha",
+            "UI_NameCardPic_Faruzan_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210145": {
+        "nameTextMapHash": 3106010580,
+        "icon": "UI_NameCardIcon_Gcg1",
+        "picPath": [
+            "UI_NameCardPic_Gcg1_Alpha",
+            "UI_NameCardPic_Gcg1_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210146": {
+        "nameTextMapHash": 30950492,
+        "icon": "UI_NameCardIcon_Bp20",
+        "picPath": [
+            "UI_NameCardPic_Bp20_Alpha",
+            "UI_NameCardPic_Bp20_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }
