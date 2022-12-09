@@ -8,6 +8,7 @@
         "skills": [
             10024,
             10018,
+            10013,
             10019
         ],
         "talents": [
@@ -774,6 +775,7 @@
         "skills": [
             10411,
             10412,
+            10413,
             10415
         ],
         "talents": [
@@ -1423,6 +1425,46 @@
             744,
             745,
             746
+        ]
+    },
+    "10000075": {
+        "nameTextMapHash": 3230559562,
+        "iconName": "UI_AvatarIcon_Wanderer",
+        "sideIconName": "UI_AvatarIcon_Side_Wanderer",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Wind",
+        "skills": [
+            10751,
+            10752,
+            10755
+        ],
+        "talents": [
+            751,
+            752,
+            753,
+            754,
+            755,
+            756
+        ]
+    },
+    "10000076": {
+        "nameTextMapHash": 2387711994,
+        "iconName": "UI_AvatarIcon_Faruzan",
+        "sideIconName": "UI_AvatarIcon_Side_Faruzan",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Wind",
+        "skills": [
+            10761,
+            10762,
+            10765
+        ],
+        "talents": [
+            761,
+            762,
+            763,
+            764,
+            765,
+            766
         ]
     }
 }
