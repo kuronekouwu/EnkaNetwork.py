@@ -1,7 +1,7 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import List, Any
+from typing import List, Any, Dict
 
 from .equipments import Equipments
 from .stats import CharacterStats
@@ -25,6 +25,7 @@ class CharacterSkill(BaseModel):
     id: int = 0
     name: str = ""
     icon: IconAsset = None
+    is_boosted: bool = False
     level: int = 0
 
 
@@ -132,6 +133,8 @@ class CharacterInfo(BaseModel):
         # Load skills
         LOGGER.debug("=== Skills ===")
         for skill in character.skills:
+            _lvl = data["skillLevelMap"].get(str(skill), 0)
+            _is_boosted = False
             _skill = Assets.skills(skill)
 
             if not _skill:
@@ -143,11 +146,18 @@ class CharacterInfo(BaseModel):
             if _name is None:
                 continue
 
+            if "proudSkillExtraLevelMap" in data:
+                boost_level = data["proudSkillExtraLevelMap"].get(str(_skill.pround_map), None)
+                if not boost_level is None:
+                    _is_boosted = True 
+                    _lvl += boost_level
+
             self.skills.append(CharacterSkill(
                 id=skill,
                 name=_name,
                 icon=_skill.icon,
-                level=data["skillLevelMap"].get(str(skill), 0)
+                is_boosted=_is_boosted,
+                level=_lvl
             ))
 
         LOGGER.debug("=== Character Name ===")

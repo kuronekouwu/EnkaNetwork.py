@@ -97,6 +97,7 @@ class Assets:
         return assets.CharacterSkillAsset.parse_obj({
             "id": id,
             **data,
+            "pround_map": data.get("proudSkillGroupId", 0),
             "icon": utils.IconAsset(filename=data["skillIcon"])
         })
 

@@ -29,7 +29,8 @@ class CharacterIconAsset(BaseModel):
 
 
 class CharacterSkillAsset(BaseModel):
-    id: int = 0
+    id: int = 0,
+    pround_map: int = 0,
     hash_id: str = Field("", alias="nameTextMapHash")
     icon: IconAsset = None
 
