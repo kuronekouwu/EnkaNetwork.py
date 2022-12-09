@@ -6,13 +6,26 @@ from .enum import Language
 from .model import assets, utils
 from .utils import create_ui_path
 
-from typing import Dict, List, TextIO, Optional, Union
+from typing import Dict, List, TextIO, Optional, Union, Callable
 
 PATH = os.path.dirname(os.path.abspath(__file__))
 
 LOGGER = logging.getLogger(__name__)
 
 __all__ = ('Assets',)
+
+
+def check_assets(f: Callable):
+    def decorator(*args):
+        if not args[0].DATA or \
+           not args[0].HASH_MAP:
+           args[0]._set_language("EN")
+           args[0].reload_assets()
+        
+        return f(*args)
+
+    return decorator
+
 
 class Assets:
     DATA: Dict[str, dict] = {}
@@ -43,6 +56,7 @@ class Assets:
         return [x for x in self.DATA["namecards"]]
 
     @classmethod
+    @check_assets
     def character(cls, id: Union[int, str]) -> Optional[assets.CharacterAsset]:
         LOGGER.debug(f"Getting character assets with id: {id}")
 
