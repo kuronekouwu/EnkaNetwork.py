@@ -108,10 +108,12 @@ class Assets:
             LOGGER.error(f"Character skills not found with id: {id}")
             return
 
+
+        pround = data.get("proudSkillGroupId", 0)
         return assets.CharacterSkillAsset.parse_obj({
             "id": id,
             **data,
-            "pround_map": data.get("proudSkillGroupId", 0),
+            "pround_map": pround if not pround is None and pround != "" else 0,
             "icon": utils.IconAsset(filename=data["skillIcon"])
         })
 
