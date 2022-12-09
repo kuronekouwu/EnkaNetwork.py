@@ -1,1191 +1,1553 @@
 {
     "10011": {
         "nameTextMapHash": 2749847941,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10111": {
         "nameTextMapHash": 1707104125,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10012": {
         "nameTextMapHash": 3276358165,
-        "skillIcon": "Skill_S_Kate_01"
+        "skillIcon": "Skill_S_Kate_01",
+        "proudSkillGroupId": ""
     },
     "10013": {
         "nameTextMapHash": 2687935733,
-        "skillIcon": "Skill_S_Ayaka_02"
+        "skillIcon": "Skill_S_Ayaka_02",
+        "proudSkillGroupId": 233
     },
     "10014": {
         "nameTextMapHash": 3173933501,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10015": {
         "nameTextMapHash": 3857388709,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10016": {
         "nameTextMapHash": 4018326997,
-        "skillIcon": "Skill_E_Qin"
+        "skillIcon": "Skill_E_Qin",
+        "proudSkillGroupId": ""
     },
     "10017": {
         "nameTextMapHash": 4246808797,
-        "skillIcon": "Skill_E_Ambor"
+        "skillIcon": "Skill_E_Ambor",
+        "proudSkillGroupId": 2139
     },
     "10018": {
         "nameTextMapHash": 682887613,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": 232
     },
     "10019": {
         "nameTextMapHash": 81399925,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": 239
     },
     "10020": {
         "nameTextMapHash": 328228597,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10021": {
         "nameTextMapHash": 1098937701,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10022": {
         "nameTextMapHash": 2000442733,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10023": {
         "nameTextMapHash": 1555859989,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10024": {
         "nameTextMapHash": 813430205,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 231
     },
     "10031": {
         "nameTextMapHash": 3128535397,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 331
     },
     "10032": {
         "nameTextMapHash": 3667697773,
-        "skillIcon": "Skill_S_Ambor_01"
+        "skillIcon": "Skill_S_Ambor_01",
+        "proudSkillGroupId": 2132
     },
     "10033": {
         "nameTextMapHash": 1433276421,
-        "skillIcon": "Skill_S_Qin_02"
+        "skillIcon": "Skill_S_Qin_02",
+        "proudSkillGroupId": 332
     },
     "10034": {
         "nameTextMapHash": 1586562613,
-        "skillIcon": "Skill_E_Qin_01"
+        "skillIcon": "Skill_E_Qin_01",
+        "proudSkillGroupId": 339
     },
     "10035": {
         "nameTextMapHash": 583200773,
-        "skillIcon": "Btn_Recon_Bait"
+        "skillIcon": "Btn_Recon_Bait",
+        "proudSkillGroupId": ""
     },
     "10036": {
         "nameTextMapHash": 3749906165,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10037": {
         "nameTextMapHash": 4139817517,
-        "skillIcon": "Btn_Recon_Bait"
+        "skillIcon": "Btn_Recon_Bait",
+        "proudSkillGroupId": ""
     },
     "10038": {
         "nameTextMapHash": 4076045861,
-        "skillIcon": "Btn_Recon_Bait_Beans"
+        "skillIcon": "Btn_Recon_Bait_Beans",
+        "proudSkillGroupId": ""
     },
     "10041": {
         "nameTextMapHash": 1422444957,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 2131
     },
     "10042": {
         "nameTextMapHash": 1423809501,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10043": {
         "nameTextMapHash": 3408079909,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10044": {
         "nameTextMapHash": 2920773085,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10051": {
         "nameTextMapHash": 355609901,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10052": {
         "nameTextMapHash": 1337443333,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10053": {
         "nameTextMapHash": 4264864229,
-        "skillIcon": "Skill_S_Ayaka_02"
+        "skillIcon": "Skill_S_Ayaka_02",
+        "proudSkillGroupId": ""
     },
     "10054": {
         "nameTextMapHash": 3282423005,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10055": {
         "nameTextMapHash": 2474303229,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10056": {
         "nameTextMapHash": 4043949413,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10057": {
         "nameTextMapHash": 2359717149,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10058": {
         "nameTextMapHash": 4157484933,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10059": {
         "nameTextMapHash": 2060938949,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10060": {
         "nameTextMapHash": 2499144501,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 431
     },
     "10061": {
         "nameTextMapHash": 3342928733,
-        "skillIcon": "Skill_S_Lisa_01"
+        "skillIcon": "Skill_S_Lisa_01",
+        "proudSkillGroupId": 432
     },
     "10062": {
         "nameTextMapHash": 3387608453,
-        "skillIcon": "Skill_E_Lisa_01"
+        "skillIcon": "Skill_E_Lisa_01",
+        "proudSkillGroupId": 439
     },
     "10063": {
         "nameTextMapHash": 2586290485,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10064": {
         "nameTextMapHash": 525869677,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10065": {
         "nameTextMapHash": 1490087445,
-        "skillIcon": "Skill_S_Ambor_01"
+        "skillIcon": "Skill_S_Ambor_01",
+        "proudSkillGroupId": ""
     },
     "10066": {
         "nameTextMapHash": 3115053829,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10067": {
         "nameTextMapHash": 2639384229,
-        "skillIcon": "Skill_S_PlayerWind_01"
+        "skillIcon": "Skill_S_PlayerWind_01",
+        "proudSkillGroupId": 732
     },
     "10068": {
         "nameTextMapHash": 565740677,
-        "skillIcon": "Skill_E_PlayerWind_01"
+        "skillIcon": "Skill_E_PlayerWind_01",
+        "proudSkillGroupId": 739
     },
     "10069": {
         "nameTextMapHash": 1982944773,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10070": {
         "nameTextMapHash": 1555695317,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 1431
     },
     "10071": {
         "nameTextMapHash": 645814357,
-        "skillIcon": "Skill_S_Barbara_01"
+        "skillIcon": "Skill_S_Barbara_01",
+        "proudSkillGroupId": 1432
     },
     "10072": {
         "nameTextMapHash": 3238780589,
-        "skillIcon": "Skill_E_Barbara_01"
+        "skillIcon": "Skill_E_Barbara_01",
+        "proudSkillGroupId": 1439
     },
     "10073": {
         "nameTextMapHash": 3795823997,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 1531
     },
     "10074": {
         "nameTextMapHash": 1067425573,
-        "skillIcon": "Skill_S_Kaeya_01"
+        "skillIcon": "Skill_S_Kaeya_01",
+        "proudSkillGroupId": 1532
     },
     "10075": {
         "nameTextMapHash": 2486277181,
-        "skillIcon": "Skill_E_Kaeya_01"
+        "skillIcon": "Skill_E_Kaeya_01",
+        "proudSkillGroupId": 1539
     },
     "10076": {
         "nameTextMapHash": 2500956509,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10077": {
         "nameTextMapHash": 65936957,
-        "skillIcon": "Skill_S_PlayerRock_01"
+        "skillIcon": "Skill_S_PlayerRock_01",
+        "proudSkillGroupId": 932
     },
     "10078": {
         "nameTextMapHash": 1608625765,
-        "skillIcon": "Skill_E_PlayerRock_01"
+        "skillIcon": "Skill_E_PlayerRock_01",
+        "proudSkillGroupId": 939
     },
     "10079": {
         "nameTextMapHash": 2082103149,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10080": {
         "nameTextMapHash": 3119510045,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10081": {
         "nameTextMapHash": 1904017997,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10082": {
         "nameTextMapHash": 421173349,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10083": {
         "nameTextMapHash": 2350480557,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10117": {
         "nameTextMapHash": 2178570213,
-        "skillIcon": "Skill_E_PlayerGrass_01"
+        "skillIcon": "Skill_E_PlayerGrass_01",
+        "proudSkillGroupId": 1132
     },
     "10118": {
         "nameTextMapHash": 2504837493,
-        "skillIcon": "Skill_S_PlayerGrass_01"
+        "skillIcon": "Skill_S_PlayerGrass_01",
+        "proudSkillGroupId": 1139
     },
     "10160": {
         "nameTextMapHash": 2878874285,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 1631
     },
     "10161": {
         "nameTextMapHash": 2979035429,
-        "skillIcon": "Skill_S_Diluc_01_01"
+        "skillIcon": "Skill_S_Diluc_01_01",
+        "proudSkillGroupId": 1632
     },
     "10162": {
         "nameTextMapHash": 3312056637,
-        "skillIcon": "Skill_S_Diluc_01_02"
+        "skillIcon": "Skill_S_Diluc_01_02",
+        "proudSkillGroupId": ""
     },
     "10163": {
         "nameTextMapHash": 4175685277,
-        "skillIcon": "Skill_S_Diluc_01_03"
+        "skillIcon": "Skill_S_Diluc_01_03",
+        "proudSkillGroupId": ""
     },
     "10165": {
         "nameTextMapHash": 2772119557,
-        "skillIcon": "Skill_E_Diluc_01"
+        "skillIcon": "Skill_E_Diluc_01",
+        "proudSkillGroupId": 1639
     },
     "10166": {
         "nameTextMapHash": 533094517,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10201": {
         "nameTextMapHash": 3392494725,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 2031
     },
     "10202": {
         "nameTextMapHash": 2720517437,
-        "skillIcon": "Skill_S_Razor_01"
+        "skillIcon": "Skill_S_Razor_01",
+        "proudSkillGroupId": 2032
     },
     "10203": {
         "nameTextMapHash": 1752405213,
-        "skillIcon": "Skill_E_Razor_01"
+        "skillIcon": "Skill_E_Razor_01",
+        "proudSkillGroupId": 2039
     },
     "10204": {
         "nameTextMapHash": 4072488965,
-        "skillIcon": "Skill_S_Ayaka_02"
+        "skillIcon": "Skill_S_Ayaka_02",
+        "proudSkillGroupId": ""
     },
     "10211": {
         "nameTextMapHash": 2104569853,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10221": {
         "nameTextMapHash": 4043029317,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 2231
     },
     "10222": {
         "nameTextMapHash": 2037043829,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10223": {
         "nameTextMapHash": 3736134253,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10224": {
         "nameTextMapHash": 2470093149,
-        "skillIcon": "Skill_S_Venti_01"
+        "skillIcon": "Skill_S_Venti_01",
+        "proudSkillGroupId": 2232
     },
     "10225": {
         "nameTextMapHash": 1181756941,
-        "skillIcon": "Skill_E_Venti_01"
+        "skillIcon": "Skill_E_Venti_01",
+        "proudSkillGroupId": 2239
     },
     "10231": {
         "nameTextMapHash": 2921789333,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 2331
     },
     "10232": {
         "nameTextMapHash": 1925269741,
-        "skillIcon": "Skill_S_Xiangling_01"
+        "skillIcon": "Skill_S_Xiangling_01",
+        "proudSkillGroupId": 2332
     },
     "10235": {
         "nameTextMapHash": 3051726149,
-        "skillIcon": "Skill_E_Xiangling_01"
+        "skillIcon": "Skill_E_Xiangling_01",
+        "proudSkillGroupId": 2339
     },
     "10241": {
         "nameTextMapHash": 3770302877,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 2431
     },
     "10242": {
         "nameTextMapHash": 3028116765,
-        "skillIcon": "Skill_S_Beidou_01"
+        "skillIcon": "Skill_S_Beidou_01",
+        "proudSkillGroupId": 2432
     },
     "10245": {
         "nameTextMapHash": 2874294485,
-        "skillIcon": "Skill_E_Beidou_01"
+        "skillIcon": "Skill_E_Beidou_01",
+        "proudSkillGroupId": 2439
     },
     "20000": {
         "nameTextMapHash": 3786268365,
-        "skillIcon": "Main_AimActive"
+        "skillIcon": "Main_AimActive",
+        "proudSkillGroupId": ""
     },
     "10251": {
         "nameTextMapHash": 2739745653,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10252": {
         "nameTextMapHash": 1214405501,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10253": {
         "nameTextMapHash": 2244025589,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10254": {
         "nameTextMapHash": 2086557645,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10255": {
         "nameTextMapHash": 2223041389,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10261": {
         "nameTextMapHash": 232048445,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 2631
     },
     "10262": {
         "nameTextMapHash": 45357229,
-        "skillIcon": "Skill_S_Xiao_01"
+        "skillIcon": "Skill_S_Xiao_01",
+        "proudSkillGroupId": 2632
     },
     "10263": {
         "nameTextMapHash": 4121034669,
-        "skillIcon": "Skill_S_Xiao_01"
+        "skillIcon": "Skill_S_Xiao_01",
+        "proudSkillGroupId": ""
     },
     "10264": {
         "nameTextMapHash": 1846272605,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "10265": {
         "nameTextMapHash": 2396025797,
-        "skillIcon": "Skill_E_Xiao_01"
+        "skillIcon": "Skill_E_Xiao_01",
+        "proudSkillGroupId": 2639
     },
     "10271": {
         "nameTextMapHash": 2745030989,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 2731
     },
     "10272": {
         "nameTextMapHash": 2863733197,
-        "skillIcon": "Skill_S_Ningguang_01"
+        "skillIcon": "Skill_S_Ningguang_01",
+        "proudSkillGroupId": 2732
     },
     "10273": {
         "nameTextMapHash": 3585226285,
-        "skillIcon": "Skill_S_Ningguang_02"
+        "skillIcon": "Skill_S_Ningguang_02",
+        "proudSkillGroupId": ""
     },
     "10274": {
         "nameTextMapHash": 3719617877,
-        "skillIcon": "Skill_E_Ningguang_01"
+        "skillIcon": "Skill_E_Ningguang_01",
+        "proudSkillGroupId": 2739
     },
     "10275": {
         "nameTextMapHash": 1679764893,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10281": {
         "nameTextMapHash": 1174655621,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10282": {
         "nameTextMapHash": 2731359549,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10283": {
         "nameTextMapHash": 172556125,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10291": {
         "nameTextMapHash": 161160581,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 2931
     },
     "10292": {
         "nameTextMapHash": 3723743117,
-        "skillIcon": "Skill_S_Klee_01"
+        "skillIcon": "Skill_S_Klee_01",
+        "proudSkillGroupId": 2932
     },
     "10295": {
         "nameTextMapHash": 1371192733,
-        "skillIcon": "Skill_E_Klee_01"
+        "skillIcon": "Skill_E_Klee_01",
+        "proudSkillGroupId": 2939
     },
     "10300": {
         "nameTextMapHash": 2269097229,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10301": {
         "nameTextMapHash": 2119081949,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 3031
     },
     "10302": {
         "nameTextMapHash": 3426814373,
-        "skillIcon": "Skill_S_Zhongli_01"
+        "skillIcon": "Skill_S_Zhongli_01",
+        "proudSkillGroupId": 3032
     },
     "10303": {
         "nameTextMapHash": 3055197325,
-        "skillIcon": "Skill_E_Zhongli_01"
+        "skillIcon": "Skill_E_Zhongli_01",
+        "proudSkillGroupId": 3039
     },
     "10311": {
         "nameTextMapHash": 3733168437,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 3131
     },
     "10312": {
         "nameTextMapHash": 2390005205,
-        "skillIcon": "Skill_S_Fischl_01"
+        "skillIcon": "Skill_S_Fischl_01",
+        "proudSkillGroupId": 3132
     },
     "10313": {
         "nameTextMapHash": 1386345573,
-        "skillIcon": "Skill_E_Fischl_01"
+        "skillIcon": "Skill_E_Fischl_01",
+        "proudSkillGroupId": 3139
     },
     "10314": {
         "nameTextMapHash": 3301569901,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10315": {
         "nameTextMapHash": 1197592453,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10316": {
         "nameTextMapHash": 3957763109,
-        "skillIcon": "Skill_S_Fischl_02"
+        "skillIcon": "Skill_S_Fischl_02",
+        "proudSkillGroupId": ""
     },
     "10321": {
         "nameTextMapHash": 422353221,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 3231
     },
     "10322": {
         "nameTextMapHash": 1809314813,
-        "skillIcon": "Skill_S_Bennett_01"
+        "skillIcon": "Skill_S_Bennett_01",
+        "proudSkillGroupId": 3232
     },
     "10323": {
         "nameTextMapHash": 3528607669,
-        "skillIcon": "Skill_E_Bennett_01"
+        "skillIcon": "Skill_E_Bennett_01",
+        "proudSkillGroupId": 3239
     },
     "10331": {
         "nameTextMapHash": 2900039733,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 3331
     },
     "10332": {
         "nameTextMapHash": 863456805,
-        "skillIcon": "Skill_S_Tartaglia_01"
+        "skillIcon": "Skill_S_Tartaglia_01",
+        "proudSkillGroupId": 3332
     },
     "10333": {
         "nameTextMapHash": 2804759909,
-        "skillIcon": "Skill_E_Tartaglia_01"
+        "skillIcon": "Skill_E_Tartaglia_01",
+        "proudSkillGroupId": 3339
     },
     "10334": {
         "nameTextMapHash": 359566701,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10335": {
         "nameTextMapHash": 2864617109,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10336": {
         "nameTextMapHash": 3093740965,
-        "skillIcon": "Skill_S_Tartaglia_02"
+        "skillIcon": "Skill_S_Tartaglia_02",
+        "proudSkillGroupId": ""
     },
     "10337": {
         "nameTextMapHash": 2810970837,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10341": {
         "nameTextMapHash": 1521716213,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 3431
     },
     "10342": {
         "nameTextMapHash": 737506901,
-        "skillIcon": "Skill_S_Noel_01"
+        "skillIcon": "Skill_S_Noel_01",
+        "proudSkillGroupId": 3432
     },
     "10343": {
         "nameTextMapHash": 1615963973,
-        "skillIcon": "Skill_E_Noel_01"
+        "skillIcon": "Skill_E_Noel_01",
+        "proudSkillGroupId": 3439
     },
     "10344": {
         "nameTextMapHash": 2455313621,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10351": {
         "nameTextMapHash": 1361102277,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 3531
     },
     "10352": {
         "nameTextMapHash": 2328467573,
-        "skillIcon": "Skill_S_Qiqi_01"
+        "skillIcon": "Skill_S_Qiqi_01",
+        "proudSkillGroupId": 3532
     },
     "10353": {
         "nameTextMapHash": 2926659693,
-        "skillIcon": "Skill_E_Qiqi_01"
+        "skillIcon": "Skill_E_Qiqi_01",
+        "proudSkillGroupId": 3539
     },
     "10355": {
         "nameTextMapHash": 443303565,
-        "skillIcon": "Skill_E_Kate"
+        "skillIcon": "Skill_E_Kate",
+        "proudSkillGroupId": ""
     },
     "10371": {
         "nameTextMapHash": 798389461,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 3731
     },
     "10372": {
         "nameTextMapHash": 1812426093,
-        "skillIcon": "Skill_S_Ganyu_01"
+        "skillIcon": "Skill_S_Ganyu_01",
+        "proudSkillGroupId": 3732
     },
     "10373": {
         "nameTextMapHash": 683098317,
-        "skillIcon": "Skill_E_Ganyu_01"
+        "skillIcon": "Skill_E_Ganyu_01",
+        "proudSkillGroupId": 3739
     },
     "10374": {
         "nameTextMapHash": 1660440365,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "11301": {
         "nameTextMapHash": 3802462781,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "11302": {
         "nameTextMapHash": 2467360621,
-        "skillIcon": "Skill_S_Ambor_01"
+        "skillIcon": "Skill_S_Ambor_01",
+        "proudSkillGroupId": ""
     },
     "11305": {
         "nameTextMapHash": 3542308085,
-        "skillIcon": "Skill_E_Beidou_01"
+        "skillIcon": "Skill_E_Beidou_01",
+        "proudSkillGroupId": ""
     },
     "10256": {
         "nameTextMapHash": 2869756949,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10257": {
         "nameTextMapHash": 638400197,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10258": {
         "nameTextMapHash": 1765614717,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10259": {
         "nameTextMapHash": 1588300309,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10362": {
         "nameTextMapHash": 911388717,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10363": {
         "nameTextMapHash": 3877347189,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "10364": {
         "nameTextMapHash": 389819541,
-        "skillIcon": "Skill_S_Ayaka_01"
+        "skillIcon": "Skill_S_Ayaka_01",
+        "proudSkillGroupId": ""
     },
     "10365": {
         "nameTextMapHash": 3238405613,
-        "skillIcon": "Skill_E_Ayaka"
+        "skillIcon": "Skill_E_Ayaka",
+        "proudSkillGroupId": ""
     },
     "11371": {
         "nameTextMapHash": 3471617741,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "11372": {
         "nameTextMapHash": 887901653,
-        "skillIcon": "Skill_S_Razor_01"
+        "skillIcon": "Skill_S_Razor_01",
+        "proudSkillGroupId": ""
     },
     "11373": {
         "nameTextMapHash": 2373915949,
-        "skillIcon": "Skill_E_Razor_01"
+        "skillIcon": "Skill_E_Razor_01",
+        "proudSkillGroupId": ""
     },
     "11374": {
         "nameTextMapHash": 3115055061,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "11375": {
         "nameTextMapHash": 1184917301,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10381": {
         "nameTextMapHash": 3909984477,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 2531
     },
     "10382": {
         "nameTextMapHash": 4213665965,
-        "skillIcon": "Skill_S_Xingqiu_01"
+        "skillIcon": "Skill_S_Xingqiu_01",
+        "proudSkillGroupId": 2532
     },
     "10385": {
         "nameTextMapHash": 3014291477,
-        "skillIcon": "Skill_E_Xingqiu_01"
+        "skillIcon": "Skill_E_Xingqiu_01",
+        "proudSkillGroupId": 2539
     },
     "10386": {
         "nameTextMapHash": 1763139317,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 3831
     },
     "10387": {
         "nameTextMapHash": 4277075117,
-        "skillIcon": "Skill_S_Albedo_01"
+        "skillIcon": "Skill_S_Albedo_01",
+        "proudSkillGroupId": 3832
     },
     "10388": {
         "nameTextMapHash": 1170150789,
-        "skillIcon": "Skill_E_Albedo_01"
+        "skillIcon": "Skill_E_Albedo_01",
+        "proudSkillGroupId": 3839
     },
     "10391": {
         "nameTextMapHash": 3860542709,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 3931
     },
     "10392": {
         "nameTextMapHash": 3942666181,
-        "skillIcon": "Skill_S_Diona_01"
+        "skillIcon": "Skill_S_Diona_01",
+        "proudSkillGroupId": 3932
     },
     "10393": {
         "nameTextMapHash": 1792093821,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10394": {
         "nameTextMapHash": 723718077,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10395": {
         "nameTextMapHash": 948563965,
-        "skillIcon": "Skill_E_Diona_01"
+        "skillIcon": "Skill_E_Diona_01",
+        "proudSkillGroupId": 3939
     },
     "10401": {
         "nameTextMapHash": 1917853333,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 3631
     },
     "10402": {
         "nameTextMapHash": 1241562797,
-        "skillIcon": "Skill_S_Chongyun_01"
+        "skillIcon": "Skill_S_Chongyun_01",
+        "proudSkillGroupId": 3632
     },
     "10403": {
         "nameTextMapHash": 514253413,
-        "skillIcon": "Skill_E_Chongyun_01"
+        "skillIcon": "Skill_E_Chongyun_01",
+        "proudSkillGroupId": 3639
     },
     "10411": {
         "nameTextMapHash": 2512572181,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 4131
     },
     "10412": {
         "nameTextMapHash": 1125648053,
-        "skillIcon": "Skill_S_Mona_01"
+        "skillIcon": "Skill_S_Mona_01",
+        "proudSkillGroupId": 4132
     },
     "10413": {
         "nameTextMapHash": 1057341493,
-        "skillIcon": "Skill_S_Mona_02"
+        "skillIcon": "Skill_S_Mona_02",
+        "proudSkillGroupId": 4133
     },
     "10415": {
         "nameTextMapHash": 3616116589,
-        "skillIcon": "Skill_E_Mona_01"
+        "skillIcon": "Skill_E_Mona_01",
+        "proudSkillGroupId": 4139
     },
     "10421": {
         "nameTextMapHash": 1732155229,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 4231
     },
     "10422": {
         "nameTextMapHash": 2146753981,
-        "skillIcon": "Skill_S_Keqing_01"
+        "skillIcon": "Skill_S_Keqing_01",
+        "proudSkillGroupId": 4232
     },
     "10423": {
         "nameTextMapHash": 3841583165,
-        "skillIcon": "Skill_S_Keqing_02"
+        "skillIcon": "Skill_S_Keqing_02",
+        "proudSkillGroupId": ""
     },
     "10425": {
         "nameTextMapHash": 535180037,
-        "skillIcon": "Skill_E_Keqing_01"
+        "skillIcon": "Skill_E_Keqing_01",
+        "proudSkillGroupId": 4239
     },
     "10431": {
         "nameTextMapHash": 3941337549,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 4331
     },
     "10432": {
         "nameTextMapHash": 159360653,
-        "skillIcon": "Skill_S_Sucrose_01"
+        "skillIcon": "Skill_S_Sucrose_01",
+        "proudSkillGroupId": 4332
     },
     "10433": {
         "nameTextMapHash": 4220161669,
-        "skillIcon": "Skill_S_Sucrose_02"
+        "skillIcon": "Skill_S_Sucrose_02",
+        "proudSkillGroupId": ""
     },
     "10434": {
         "nameTextMapHash": 1745727853,
-        "skillIcon": "Skill_S_Sucrose_02"
+        "skillIcon": "Skill_S_Sucrose_02",
+        "proudSkillGroupId": ""
     },
     "10435": {
         "nameTextMapHash": 234765309,
-        "skillIcon": "Skill_E_Sucrose_01"
+        "skillIcon": "Skill_E_Sucrose_01",
+        "proudSkillGroupId": 4339
     },
     "10441": {
         "nameTextMapHash": 327566445,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 4431
     },
     "10442": {
         "nameTextMapHash": 980327173,
-        "skillIcon": "Skill_S_Xinyan_01"
+        "skillIcon": "Skill_S_Xinyan_01",
+        "proudSkillGroupId": 4432
     },
     "10443": {
         "nameTextMapHash": 405900781,
-        "skillIcon": "Skill_E_Xinyan_01"
+        "skillIcon": "Skill_E_Xinyan_01",
+        "proudSkillGroupId": 4439
     },
     "10451": {
         "nameTextMapHash": 37074469,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 4531
     },
     "10452": {
         "nameTextMapHash": 2398605029,
-        "skillIcon": "Skill_S_Rosaria_01"
+        "skillIcon": "Skill_S_Rosaria_01",
+        "proudSkillGroupId": 4532
     },
     "10453": {
         "nameTextMapHash": 3067800421,
-        "skillIcon": "Skill_E_Rosaria_01"
+        "skillIcon": "Skill_E_Rosaria_01",
+        "proudSkillGroupId": 4539
     },
     "10461": {
         "nameTextMapHash": 2345944629,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 4631
     },
     "10462": {
         "nameTextMapHash": 214248165,
-        "skillIcon": "Skill_S_Hutao_01"
+        "skillIcon": "Skill_S_Hutao_01",
+        "proudSkillGroupId": 4632
     },
     "10463": {
         "nameTextMapHash": 1115787101,
-        "skillIcon": "Skill_E_Hutao_01"
+        "skillIcon": "Skill_E_Hutao_01",
+        "proudSkillGroupId": 4639
     },
     "10464": {
         "nameTextMapHash": 268015821,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "10471": {
         "nameTextMapHash": 137786925,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 4731
     },
     "10472": {
         "nameTextMapHash": 3645237197,
-        "skillIcon": "Skill_S_Kazuha_01"
+        "skillIcon": "Skill_S_Kazuha_01",
+        "proudSkillGroupId": 4732
     },
     "10473": {
         "nameTextMapHash": 1245826445,
-        "skillIcon": "Skill_S_Kazuha_01"
+        "skillIcon": "Skill_S_Kazuha_01",
+        "proudSkillGroupId": ""
     },
     "10474": {
         "nameTextMapHash": 738388789,
-        "skillIcon": "Skill_S_Kazuha_02"
+        "skillIcon": "Skill_S_Kazuha_02",
+        "proudSkillGroupId": ""
     },
     "10475": {
         "nameTextMapHash": 2015878197,
-        "skillIcon": "Skill_E_Kazuha_01"
+        "skillIcon": "Skill_E_Kazuha_01",
+        "proudSkillGroupId": 4739
     },
     "10481": {
         "nameTextMapHash": 2553270533,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 4831
     },
     "10482": {
         "nameTextMapHash": 4230930285,
-        "skillIcon": "Skill_S_Feiyan_01"
+        "skillIcon": "Skill_S_Feiyan_01",
+        "proudSkillGroupId": 4832
     },
     "10485": {
         "nameTextMapHash": 3041237813,
-        "skillIcon": "Skill_E_Feiyan_01"
+        "skillIcon": "Skill_E_Feiyan_01",
+        "proudSkillGroupId": 4839
     },
     "10491": {
         "nameTextMapHash": 1887244733,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 4931
     },
     "10492": {
         "nameTextMapHash": 3119836125,
-        "skillIcon": "Skill_S_Yoimiya_01"
+        "skillIcon": "Skill_S_Yoimiya_01",
+        "proudSkillGroupId": 4932
     },
     "10493": {
         "nameTextMapHash": 3811849605,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10495": {
         "nameTextMapHash": 4251575685,
-        "skillIcon": "Skill_E_Yoimiya_01"
+        "skillIcon": "Skill_E_Yoimiya_01",
+        "proudSkillGroupId": 4939
     },
     "10501": {
         "nameTextMapHash": 3651752365,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 5031
     },
     "10502": {
         "nameTextMapHash": 3732507581,
-        "skillIcon": "Skill_S_Tohma_01"
+        "skillIcon": "Skill_S_Tohma_01",
+        "proudSkillGroupId": 5032
     },
     "10505": {
         "nameTextMapHash": 3548079181,
-        "skillIcon": "Skill_E_Tohma_01"
+        "skillIcon": "Skill_E_Tohma_01",
+        "proudSkillGroupId": 5039
     },
     "10511": {
         "nameTextMapHash": 242311157,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 5131
     },
     "10512": {
         "nameTextMapHash": 741315613,
-        "skillIcon": "Skill_S_Eula_01"
+        "skillIcon": "Skill_S_Eula_01",
+        "proudSkillGroupId": 5132
     },
     "10515": {
         "nameTextMapHash": 3521320029,
-        "skillIcon": "Skill_E_Eula_01"
+        "skillIcon": "Skill_E_Eula_01",
+        "proudSkillGroupId": 5139
     },
     "10521": {
         "nameTextMapHash": 1302153717,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 5231
     },
     "10522": {
         "nameTextMapHash": 1312969485,
-        "skillIcon": "Skill_S_Shougun_01"
+        "skillIcon": "Skill_S_Shougun_01",
+        "proudSkillGroupId": 5232
     },
     "10525": {
         "nameTextMapHash": 725251661,
-        "skillIcon": "Skill_E_Shougun_01"
+        "skillIcon": "Skill_E_Shougun_01",
+        "proudSkillGroupId": 5239
     },
     "10531": {
         "nameTextMapHash": 1631640581,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 5331
     },
     "10532": {
         "nameTextMapHash": 866970125,
-        "skillIcon": "Skill_S_Sayu_01"
+        "skillIcon": "Skill_S_Sayu_01",
+        "proudSkillGroupId": 5332
     },
     "10533": {
         "nameTextMapHash": 2724434029,
-        "skillIcon": "Skill_S_Sayu_02"
+        "skillIcon": "Skill_S_Sayu_02",
+        "proudSkillGroupId": ""
     },
     "10535": {
         "nameTextMapHash": 3632447629,
-        "skillIcon": "Skill_E_Sayu_01"
+        "skillIcon": "Skill_E_Sayu_01",
+        "proudSkillGroupId": 5339
     },
     "10541": {
         "nameTextMapHash": 3150512989,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 5431
     },
     "10542": {
         "nameTextMapHash": 369441117,
-        "skillIcon": "Skill_S_Kokomi_01"
+        "skillIcon": "Skill_S_Kokomi_01",
+        "proudSkillGroupId": 5432
     },
     "10545": {
         "nameTextMapHash": 2835602565,
-        "skillIcon": "Skill_E_Kokomi_01"
+        "skillIcon": "Skill_E_Kokomi_01",
+        "proudSkillGroupId": 5439
     },
     "10551": {
         "nameTextMapHash": 527760517,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 5531
     },
     "10552": {
         "nameTextMapHash": 2527853093,
-        "skillIcon": "Skill_S_Gorou_01"
+        "skillIcon": "Skill_S_Gorou_01",
+        "proudSkillGroupId": 5532
     },
     "10553": {
         "nameTextMapHash": 3165585093,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10554": {
         "nameTextMapHash": 2798026229,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10555": {
         "nameTextMapHash": 406282597,
-        "skillIcon": "Skill_E_Gorou_01"
+        "skillIcon": "Skill_E_Gorou_01",
+        "proudSkillGroupId": 5539
     },
     "10561": {
         "nameTextMapHash": 1547762373,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 5631
     },
     "10562": {
         "nameTextMapHash": 2752568269,
-        "skillIcon": "Skill_S_Sara_01"
+        "skillIcon": "Skill_S_Sara_01",
+        "proudSkillGroupId": 5632
     },
     "10563": {
         "nameTextMapHash": 4243606493,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10564": {
         "nameTextMapHash": 1162004437,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10565": {
         "nameTextMapHash": 2275338309,
-        "skillIcon": "Skill_E_Sara_01"
+        "skillIcon": "Skill_E_Sara_01",
+        "proudSkillGroupId": 5639
     },
     "10571": {
         "nameTextMapHash": 1791467005,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 5731
     },
     "10572": {
         "nameTextMapHash": 1142785501,
-        "skillIcon": "Skill_S_Itto_01"
+        "skillIcon": "Skill_S_Itto_01",
+        "proudSkillGroupId": 5732
     },
     "10575": {
         "nameTextMapHash": 3385637213,
-        "skillIcon": "Skill_E_Itto_01"
+        "skillIcon": "Skill_E_Itto_01",
+        "proudSkillGroupId": 5739
     },
     "10581": {
         "nameTextMapHash": 3966360853,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 5831
     },
     "10582": {
         "nameTextMapHash": 823035501,
-        "skillIcon": "Skill_S_Yae_01"
+        "skillIcon": "Skill_S_Yae_01",
+        "proudSkillGroupId": 5832
     },
     "10585": {
         "nameTextMapHash": 3675029365,
-        "skillIcon": "Skill_E_Yae_01"
+        "skillIcon": "Skill_E_Yae_01",
+        "proudSkillGroupId": 5839
     },
     "10591": {
         "nameTextMapHash": 2195671413,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 5931
     },
     "10592": {
         "nameTextMapHash": 3012298293,
-        "skillIcon": "Skill_S_Heizo_01"
+        "skillIcon": "Skill_S_Heizo_01",
+        "proudSkillGroupId": 5932
     },
     "10595": {
         "nameTextMapHash": 3584687669,
-        "skillIcon": "Skill_E_Heizo_01"
+        "skillIcon": "Skill_E_Heizo_01",
+        "proudSkillGroupId": 5939
     },
     "10602": {
         "nameTextMapHash": 123614933,
-        "skillIcon": "Skill_S_PlayerElectric_01"
+        "skillIcon": "Skill_S_PlayerElectric_01",
+        "proudSkillGroupId": 1032
     },
     "10605": {
         "nameTextMapHash": 1169939717,
-        "skillIcon": "Skill_E_PlayerElectric_01"
+        "skillIcon": "Skill_E_PlayerElectric_01",
+        "proudSkillGroupId": 1039
     },
     "10606": {
         "nameTextMapHash": 1713742645,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 6031
     },
     "10607": {
         "nameTextMapHash": 890827533,
-        "skillIcon": "Skill_S_Yelan_01"
+        "skillIcon": "Skill_S_Yelan_01",
+        "proudSkillGroupId": 6032
     },
     "10608": {
         "nameTextMapHash": 682555157,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10609": {
         "nameTextMapHash": 2743164485,
-        "skillIcon": "Skill_S_Yelan_02"
+        "skillIcon": "Skill_S_Yelan_02",
+        "proudSkillGroupId": ""
     },
     "10610": {
         "nameTextMapHash": 4098371861,
-        "skillIcon": "Skill_E_Yelan_01"
+        "skillIcon": "Skill_E_Yelan_01",
+        "proudSkillGroupId": 6039
     },
     "10621": {
         "nameTextMapHash": 2994648485,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 6231
     },
     "10622": {
         "nameTextMapHash": 1871687965,
-        "skillIcon": "Skill_S_Aloy_01"
+        "skillIcon": "Skill_S_Aloy_01",
+        "proudSkillGroupId": 6232
     },
     "10623": {
         "nameTextMapHash": 2840824533,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10624": {
         "nameTextMapHash": 3778025661,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10631": {
         "nameTextMapHash": 2933047013,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 6331
     },
     "10632": {
         "nameTextMapHash": 3028595085,
-        "skillIcon": "Skill_S_Shenhe_01"
+        "skillIcon": "Skill_S_Shenhe_01",
+        "proudSkillGroupId": 6332
     },
     "10635": {
         "nameTextMapHash": 207401861,
-        "skillIcon": "Skill_E_Shenhe_01"
+        "skillIcon": "Skill_E_Shenhe_01",
+        "proudSkillGroupId": 6339
     },
     "10625": {
         "nameTextMapHash": 902219717,
-        "skillIcon": "Skill_E_Aloy_01"
+        "skillIcon": "Skill_E_Aloy_01",
+        "proudSkillGroupId": 6239
     },
     "10641": {
         "nameTextMapHash": 4286587805,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 6431
     },
     "10642": {
         "nameTextMapHash": 2178272253,
-        "skillIcon": "Skill_S_Yunjin_01"
+        "skillIcon": "Skill_S_Yunjin_01",
+        "proudSkillGroupId": 6432
     },
     "10643": {
         "nameTextMapHash": 3248431565,
-        "skillIcon": "Skill_E_Yunjin_01"
+        "skillIcon": "Skill_E_Yunjin_01",
+        "proudSkillGroupId": 6439
     },
     "10651": {
         "nameTextMapHash": 2013854373,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 6531
     },
     "10652": {
         "nameTextMapHash": 1345666909,
-        "skillIcon": "Skill_S_Shinobu_01"
+        "skillIcon": "Skill_S_Shinobu_01",
+        "proudSkillGroupId": 6532
     },
     "10655": {
         "nameTextMapHash": 1690703909,
-        "skillIcon": "Skill_E_Shinobu_01"
+        "skillIcon": "Skill_E_Shinobu_01",
+        "proudSkillGroupId": 6539
     },
     "10656": {
         "nameTextMapHash": 3057382629,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "10657": {
         "nameTextMapHash": 3552450509,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "10661": {
         "nameTextMapHash": 3116393605,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 6631
     },
     "10662": {
         "nameTextMapHash": 856237685,
-        "skillIcon": "Skill_S_Ayato_01"
+        "skillIcon": "Skill_S_Ayato_01",
+        "proudSkillGroupId": 6632
     },
     "10663": {
         "nameTextMapHash": 433582069,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "10665": {
         "nameTextMapHash": 2907386981,
-        "skillIcon": "Skill_E_Ayato_01"
+        "skillIcon": "Skill_E_Ayato_01",
+        "proudSkillGroupId": 6639
     },
     "10671": {
         "nameTextMapHash": 3768859965,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 6731
     },
     "10672": {
         "nameTextMapHash": 2943851901,
-        "skillIcon": "Skill_S_Collei_01"
+        "skillIcon": "Skill_S_Collei_01",
+        "proudSkillGroupId": 6732
     },
     "10675": {
         "nameTextMapHash": 1430301637,
-        "skillIcon": "Skill_E_Collei_01"
+        "skillIcon": "Skill_E_Collei_01",
+        "proudSkillGroupId": 6739
     },
     "10674": {
         "nameTextMapHash": 3984738037,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10681": {
         "nameTextMapHash": 3134128957,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 6831
     },
     "10682": {
         "nameTextMapHash": 2851422357,
-        "skillIcon": "Skill_S_Dori_01"
+        "skillIcon": "Skill_S_Dori_01",
+        "proudSkillGroupId": 6832
     },
     "10685": {
         "nameTextMapHash": 4155943733,
-        "skillIcon": "Skill_E_Dori_01"
+        "skillIcon": "Skill_E_Dori_01",
+        "proudSkillGroupId": 6839
     },
     "10691": {
         "nameTextMapHash": 3409522557,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 6931
     },
     "10692": {
         "nameTextMapHash": 3726986301,
-        "skillIcon": "Skill_S_Tighnari_01"
+        "skillIcon": "Skill_S_Tighnari_01",
+        "proudSkillGroupId": 6932
     },
     "10693": {
         "nameTextMapHash": 1376683245,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10695": {
         "nameTextMapHash": 3822928381,
-        "skillIcon": "Skill_E_Tighnari_01"
+        "skillIcon": "Skill_E_Tighnari_01",
+        "proudSkillGroupId": 6939
     },
     "10701": {
         "nameTextMapHash": 1390577909,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 7031
     },
     "10702": {
         "nameTextMapHash": 2640547533,
-        "skillIcon": "Skill_S_Nilou_01"
+        "skillIcon": "Skill_S_Nilou_01",
+        "proudSkillGroupId": 7032
     },
     "10703": {
         "nameTextMapHash": 509298485,
-        "skillIcon": "Skill_S_Nilou_01"
+        "skillIcon": "Skill_S_Nilou_01",
+        "proudSkillGroupId": ""
     },
     "10704": {
         "nameTextMapHash": 3085221333,
-        "skillIcon": "Skill_S_Nilou_01"
+        "skillIcon": "Skill_S_Nilou_01",
+        "proudSkillGroupId": ""
     },
     "10706": {
         "nameTextMapHash": 2642188701,
-        "skillIcon": "Skill_S_Nilou_04"
+        "skillIcon": "Skill_S_Nilou_04",
+        "proudSkillGroupId": ""
     },
     "10707": {
         "nameTextMapHash": 2011484461,
-        "skillIcon": "Skill_S_Nilou_02"
+        "skillIcon": "Skill_S_Nilou_02",
+        "proudSkillGroupId": ""
     },
     "10705": {
         "nameTextMapHash": 1967463157,
-        "skillIcon": "Skill_E_Nilou_01"
+        "skillIcon": "Skill_E_Nilou_01",
+        "proudSkillGroupId": 7039
     },
     "10708": {
         "nameTextMapHash": 3729293421,
-        "skillIcon": "Skill_S_Nilou_01"
+        "skillIcon": "Skill_S_Nilou_01",
+        "proudSkillGroupId": ""
     },
     "10711": {
         "nameTextMapHash": 2262721981,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 7131
     },
     "10712": {
         "nameTextMapHash": 584952661,
-        "skillIcon": "Skill_S_Cyno_01"
+        "skillIcon": "Skill_S_Cyno_01",
+        "proudSkillGroupId": 7132
     },
     "10713": {
         "nameTextMapHash": 1069392805,
-        "skillIcon": "Skill_S_Cyno_02"
+        "skillIcon": "Skill_S_Cyno_02",
+        "proudSkillGroupId": ""
     },
     "10715": {
         "nameTextMapHash": 2604847405,
-        "skillIcon": "Skill_E_Cyno_01"
+        "skillIcon": "Skill_E_Cyno_01",
+        "proudSkillGroupId": 7139
     },
     "10721": {
         "nameTextMapHash": 2594921261,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 7231
     },
     "10722": {
         "nameTextMapHash": 2160740245,
-        "skillIcon": "Skill_S_Candace_01"
+        "skillIcon": "Skill_S_Candace_01",
+        "proudSkillGroupId": 7232
     },
     "10725": {
         "nameTextMapHash": 2669120029,
-        "skillIcon": "Skill_E_Candace_01"
+        "skillIcon": "Skill_E_Candace_01",
+        "proudSkillGroupId": 7239
     },
     "10731": {
         "nameTextMapHash": 48372133,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 7331
     },
     "10732": {
         "nameTextMapHash": 3592193965,
-        "skillIcon": "Skill_S_Nahida_01"
+        "skillIcon": "Skill_S_Nahida_01",
+        "proudSkillGroupId": 7332
     },
     "10735": {
         "nameTextMapHash": 3862968797,
-        "skillIcon": "Skill_E_Nahida_01"
+        "skillIcon": "Skill_E_Nahida_01",
+        "proudSkillGroupId": 7339
     },
     "10741": {
         "nameTextMapHash": 1078955685,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 7431
     },
     "10742": {
         "nameTextMapHash": 3200711933,
-        "skillIcon": "Skill_S_Layla_01"
+        "skillIcon": "Skill_S_Layla_01",
+        "proudSkillGroupId": 7432
     },
     "10745": {
         "nameTextMapHash": 64091533,
-        "skillIcon": "Skill_E_Layla_01"
+        "skillIcon": "Skill_E_Layla_01",
+        "proudSkillGroupId": 7439
+    },
+    "10751": {
+        "nameTextMapHash": 668478821,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 7531
+    },
+    "10752": {
+        "nameTextMapHash": 3563341277,
+        "skillIcon": "Skill_S_Wanderer_01",
+        "proudSkillGroupId": 7532
+    },
+    "10753": {
+        "nameTextMapHash": 3444173733,
+        "skillIcon": "Skill_E_Wanderer_01",
+        "proudSkillGroupId": ""
+    },
+    "10755": {
+        "nameTextMapHash": 778366677,
+        "skillIcon": "Skill_E_Wanderer_01",
+        "proudSkillGroupId": 7539
+    },
+    "10756": {
+        "nameTextMapHash": 816641229,
+        "skillIcon": "Skill_S_Wanderer_04",
+        "proudSkillGroupId": ""
+    },
+    "10757": {
+        "nameTextMapHash": 1485938005,
+        "skillIcon": "Skill_S_Wanderer_01",
+        "proudSkillGroupId": ""
+    },
+    "10758": {
+        "nameTextMapHash": 3915592581,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
+    },
+    "10759": {
+        "nameTextMapHash": 33306749,
+        "skillIcon": "Skill_S_Wanderer_02",
+        "proudSkillGroupId": ""
+    },
+    "10750": {
+        "nameTextMapHash": 92557693,
+        "skillIcon": "Skill_S_Wanderer_03",
+        "proudSkillGroupId": ""
+    },
+    "10761": {
+        "nameTextMapHash": 47732325,
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 7631
+    },
+    "10762": {
+        "nameTextMapHash": 593897829,
+        "skillIcon": "Skill_S_Faruzan_01",
+        "proudSkillGroupId": 7632
+    },
+    "10764": {
+        "nameTextMapHash": 4203849629,
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
+    },
+    "10765": {
+        "nameTextMapHash": 2294046741,
+        "skillIcon": "Skill_E_Faruzan_01",
+        "proudSkillGroupId": 7639
     },
     "10751": {
         "nameTextMapHash": 668478821,
@@ -1241,239 +1603,328 @@
     },
     "20001": {
         "nameTextMapHash": 1936482797,
-        "skillIcon": "Skill_A_Dvalin_AirGun"
+        "skillIcon": "Skill_A_Dvalin_AirGun",
+        "proudSkillGroupId": ""
     },
     "20002": {
         "nameTextMapHash": 828925397,
-        "skillIcon": "Skill_A_Dvalin_AirGun"
+        "skillIcon": "Skill_A_Dvalin_AirGun",
+        "proudSkillGroupId": ""
     },
     "20011": {
         "nameTextMapHash": 2656825093,
-        "skillIcon": "Btn_FlightSprint"
+        "skillIcon": "Btn_FlightSprint",
+        "proudSkillGroupId": ""
     },
     "20012": {
         "nameTextMapHash": 1189226013,
-        "skillIcon": "Btn_Rises"
+        "skillIcon": "Btn_Rises",
+        "proudSkillGroupId": ""
     },
     "20020": {
         "nameTextMapHash": 1456454701,
-        "skillIcon": "Btn_WaterSpirit_Skill"
+        "skillIcon": "Btn_WaterSpirit_Skill",
+        "proudSkillGroupId": ""
     },
     "20021": {
         "nameTextMapHash": 1236244093,
-        "skillIcon": "Btn_BounceConjuring_Serve_S_01"
+        "skillIcon": "Btn_BounceConjuring_Serve_S_01",
+        "proudSkillGroupId": ""
     },
     "20022": {
         "nameTextMapHash": 3529333157,
-        "skillIcon": "Btn_BounceConjuring_Hit_A_01"
+        "skillIcon": "Btn_BounceConjuring_Hit_A_01",
+        "proudSkillGroupId": ""
     },
     "20023": {
         "nameTextMapHash": 756850077,
-        "skillIcon": "Btn_BounceConjuring_Bomb_S_01"
+        "skillIcon": "Btn_BounceConjuring_Bomb_S_01",
+        "proudSkillGroupId": ""
     },
     "20024": {
         "nameTextMapHash": 4106180333,
-        "skillIcon": "Btn_BounceConjuring_Bomb_S_02"
+        "skillIcon": "Btn_BounceConjuring_Bomb_S_02",
+        "proudSkillGroupId": ""
     },
     "20025": {
         "nameTextMapHash": 1213295293,
-        "skillIcon": "Btn_BounceConjuring_Bomb_S_03"
+        "skillIcon": "Btn_BounceConjuring_Bomb_S_03",
+        "proudSkillGroupId": ""
     },
     "20026": {
         "nameTextMapHash": 3859238781,
-        "skillIcon": "Btn_BounceConjuring_Bomb_S_01"
+        "skillIcon": "Btn_BounceConjuring_Bomb_S_01",
+        "proudSkillGroupId": ""
     },
     "20027": {
         "nameTextMapHash": 2759617589,
-        "skillIcon": "Btn_BounceConjuring_Bomb_S_02"
+        "skillIcon": "Btn_BounceConjuring_Bomb_S_02",
+        "proudSkillGroupId": ""
     },
     "20028": {
         "nameTextMapHash": 4108891997,
-        "skillIcon": "Btn_BounceConjuring_Bomb_S_03"
+        "skillIcon": "Btn_BounceConjuring_Bomb_S_03",
+        "proudSkillGroupId": ""
     },
     "20029": {
         "nameTextMapHash": 1774915893,
-        "skillIcon": "Btn_BounceConjuring_Hit_A_01"
+        "skillIcon": "Btn_BounceConjuring_Hit_A_01",
+        "proudSkillGroupId": ""
     },
     "20030": {
         "nameTextMapHash": 908300285,
-        "skillIcon": "Skill_S_Monster_Shougun_EyeStrip"
+        "skillIcon": "Skill_S_Monster_Shougun_EyeStrip",
+        "proudSkillGroupId": ""
     },
     "20031": {
         "nameTextMapHash": 3398003357,
-        "skillIcon": "Skill_E_Monster_Shougun_EyeStrip"
+        "skillIcon": "Skill_E_Monster_Shougun_EyeStrip",
+        "proudSkillGroupId": ""
     },
     "20032": {
         "nameTextMapHash": 147099245,
-        "skillIcon": "Btn_Temari_S_01"
+        "skillIcon": "Btn_Temari_S_01",
+        "proudSkillGroupId": ""
     },
     "20035": {
         "nameTextMapHash": 2400987205,
-        "skillIcon": "Skill_S_LunaRiteQuest_BanSkill"
+        "skillIcon": "Skill_S_LunaRiteQuest_BanSkill",
+        "proudSkillGroupId": ""
     },
     "20036": {
         "nameTextMapHash": 772855381,
-        "skillIcon": "Skill_S_SummerTimeV2Quest_BanSkill"
+        "skillIcon": "Skill_S_SummerTimeV2Quest_BanSkill",
+        "proudSkillGroupId": ""
     },
     "20037": {
         "nameTextMapHash": 1636845245,
-        "skillIcon": "Skill_E_SummerTimeV2Quest_BanSkill"
+        "skillIcon": "Skill_E_SummerTimeV2Quest_BanSkill",
+        "proudSkillGroupId": ""
     },
     "20040": {
         "nameTextMapHash": 3692781493,
-        "skillIcon": "Btn_CatchAnimal_Shoot"
+        "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
     },
     "20041": {
         "nameTextMapHash": 1531349133,
-        "skillIcon": "Btn_CatchAnimal_Shoot"
+        "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
     },
     "20042": {
         "nameTextMapHash": 3598437797,
-        "skillIcon": "Btn_CatchAnimal_Shoot"
+        "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
     },
     "20045": {
         "nameTextMapHash": 1562204677,
-        "skillIcon": "Btn_CatchAnimal_Shoot"
+        "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
     },
     "20049": {
         "nameTextMapHash": 1068626397,
-        "skillIcon": "Btn_CatchAnimal_Shoot"
+        "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
     },
     "20051": {
         "nameTextMapHash": 1486834421,
-        "skillIcon": "Btn_FungusFighter_Aim"
+        "skillIcon": "Btn_FungusFighter_Aim",
+        "proudSkillGroupId": ""
     },
     "20054": {
         "nameTextMapHash": 4262868373,
-        "skillIcon": "Skill_E_Gagana_AimShoot"
+        "skillIcon": "Skill_E_Gagana_AimShoot",
+        "proudSkillGroupId": ""
     },
     "20100": {
         "nameTextMapHash": 4176490093,
-        "skillIcon": "Btn_HideAndSeek_Seeker_A_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_A_01",
+        "proudSkillGroupId": ""
     },
     "20101": {
         "nameTextMapHash": 2129541325,
-        "skillIcon": "Btn_HideAndSeek_Seeker_A_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_A_01",
+        "proudSkillGroupId": ""
     },
     "20110": {
         "nameTextMapHash": 459126589,
-        "skillIcon": "Btn_HideAndSeek_Seeker_S_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_01",
+        "proudSkillGroupId": ""
     },
     "20111": {
         "nameTextMapHash": 2696259549,
-        "skillIcon": "Btn_HideAndSeek_Seeker_S_02"
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_02",
+        "proudSkillGroupId": ""
     },
     "20120": {
         "nameTextMapHash": 1169112125,
-        "skillIcon": "Btn_HideAndSeek_Seeker_E_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_E_01",
+        "proudSkillGroupId": ""
     },
     "20121": {
         "nameTextMapHash": 1942430565,
-        "skillIcon": "Btn_HideAndSeek_Seeker_E_02"
+        "skillIcon": "Btn_HideAndSeek_Seeker_E_02",
+        "proudSkillGroupId": ""
     },
     "20122": {
         "nameTextMapHash": 2720235117,
-        "skillIcon": "Btn_HideAndSeek_Seeker_E_03"
+        "skillIcon": "Btn_HideAndSeek_Seeker_E_03",
+        "proudSkillGroupId": ""
     },
     "20200": {
         "nameTextMapHash": 626062253,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_01",
+        "proudSkillGroupId": ""
     },
     "20201": {
         "nameTextMapHash": 2687337709,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_03"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_03",
+        "proudSkillGroupId": ""
     },
     "20210": {
         "nameTextMapHash": 1443145165,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_01",
+        "proudSkillGroupId": ""
     },
     "20212": {
         "nameTextMapHash": 1163162717,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_01_Borbid"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_01_Borbid",
+        "proudSkillGroupId": ""
     },
     "20211": {
         "nameTextMapHash": 2752819013,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02",
+        "proudSkillGroupId": ""
     },
     "20213": {
         "nameTextMapHash": 1821490277,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02_Borbid"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02_Borbid",
+        "proudSkillGroupId": ""
     },
     "20220": {
         "nameTextMapHash": 7564629,
-        "skillIcon": "Btn_HideAndSeek_Hider_E_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_E_01",
+        "proudSkillGroupId": ""
     },
     "20202": {
         "nameTextMapHash": 644125541,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_01",
+        "proudSkillGroupId": ""
     },
     "20203": {
         "nameTextMapHash": 1774818781,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_03"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_03",
+        "proudSkillGroupId": ""
     },
     "20214": {
         "nameTextMapHash": 2370875301,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02",
+        "proudSkillGroupId": ""
     },
     "20215": {
         "nameTextMapHash": 2814338565,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02_Borbid"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02_Borbid",
+        "proudSkillGroupId": ""
     },
     "20400": {
         "nameTextMapHash": 2657714069,
-        "skillIcon": "Btn_HideAndSeek_Seeker_A_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_A_01",
+        "proudSkillGroupId": ""
     },
     "20401": {
         "nameTextMapHash": 66214933,
-        "skillIcon": "Btn_HideAndSeek_Seeker_A_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_A_01",
+        "proudSkillGroupId": ""
     },
     "20410": {
         "nameTextMapHash": 169502221,
-        "skillIcon": "Btn_HideAndSeek_Seeker_S_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_01",
+        "proudSkillGroupId": ""
     },
     "20411": {
         "nameTextMapHash": 1752388581,
-        "skillIcon": "Btn_HideAndSeek_Seeker_S_02"
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_02",
+        "proudSkillGroupId": ""
     },
     "20420": {
         "nameTextMapHash": 816489501,
-        "skillIcon": "Btn_HideAndSeek_Seeker_E_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_E_01",
+        "proudSkillGroupId": ""
     },
     "20421": {
         "nameTextMapHash": 1050865533,
-        "skillIcon": "Btn_HideAndSeek_Seeker_E_02"
+        "skillIcon": "Btn_HideAndSeek_Seeker_E_02",
+        "proudSkillGroupId": ""
     },
     "20422": {
         "nameTextMapHash": 2689008917,
-        "skillIcon": "Btn_HideAndSeek_Seeker_E_03"
+        "skillIcon": "Btn_HideAndSeek_Seeker_E_03",
+        "proudSkillGroupId": ""
     },
     "20500": {
         "nameTextMapHash": 902040061,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_01",
+        "proudSkillGroupId": ""
     },
     "20501": {
         "nameTextMapHash": 1233705669,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_03"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_03",
+        "proudSkillGroupId": ""
     },
     "20510": {
         "nameTextMapHash": 2713313077,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_01",
+        "proudSkillGroupId": ""
     },
     "20512": {
         "nameTextMapHash": 815001853,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_01_Borbid"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_01_Borbid",
+        "proudSkillGroupId": ""
     },
     "20511": {
         "nameTextMapHash": 1882966981,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02",
+        "proudSkillGroupId": ""
     },
     "20513": {
         "nameTextMapHash": 1833806357,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02_Borbid"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02_Borbid",
+        "proudSkillGroupId": ""
     },
     "20520": {
         "nameTextMapHash": 2680677653,
-        "skillIcon": "Btn_HideAndSeek_Hider_E_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_E_01",
+        "proudSkillGroupId": ""
+    },
+    "20521": {
+        "nameTextMapHash": 2973812453,
+        "skillIcon": "UI_Icon_Skill_Hunter_Net",
+        "proudSkillGroupId": ""
+    },
+    "20522": {
+        "nameTextMapHash": 3495989125,
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02",
+        "proudSkillGroupId": ""
+    },
+    "20523": {
+        "nameTextMapHash": 2450340517,
+        "skillIcon": "UI_Icon_Skill_Prey_Invisible_Bait",
+        "proudSkillGroupId": ""
+    },
+    "20524": {
+        "nameTextMapHash": 1356540013,
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_01",
+        "proudSkillGroupId": ""
+    },
+    "20525": {
+        "nameTextMapHash": 3710444509,
+        "skillIcon": "Btn_HideAndSeek_Hider_A_01",
+        "proudSkillGroupId": ""
+    },
+    "20526": {
+        "nameTextMapHash": 1656473773,
+        "skillIcon": "Btn_HideAndSeek_Hider_A_03",
+        "proudSkillGroupId": ""
     },
     "20521": {
         "nameTextMapHash": 2973812453,
@@ -1501,39 +1952,53 @@
     },
     "20311": {
         "nameTextMapHash": 467388069,
-        "skillIcon": "Btn_Fishing_Cast"
+        "skillIcon": "Btn_Fishing_Cast",
+        "proudSkillGroupId": ""
     },
     "20312": {
         "nameTextMapHash": 3754566189,
-        "skillIcon": "Btn_Fishing_Battle"
+        "skillIcon": "Btn_Fishing_Battle",
+        "proudSkillGroupId": ""
     },
     "20313": {
         "nameTextMapHash": 3826517485,
-        "skillIcon": "Btn_Fishing_Battle"
+        "skillIcon": "Btn_Fishing_Battle",
+        "proudSkillGroupId": ""
     },
     "20314": {
         "nameTextMapHash": 3875153725,
-        "skillIcon": "Btn_Fishing_Pull"
+        "skillIcon": "Btn_Fishing_Pull",
+        "proudSkillGroupId": ""
     },
     "20315": {
         "nameTextMapHash": 2615366341,
-        "skillIcon": "Btn_Fishing_Exit"
+        "skillIcon": "Btn_Fishing_Exit",
+        "proudSkillGroupId": ""
     },
     "20316": {
         "nameTextMapHash": 2392743845,
-        "skillIcon": "Btn_Fishing_Bait"
+        "skillIcon": "Btn_Fishing_Bait",
+        "proudSkillGroupId": ""
     },
     "20320": {
         "nameTextMapHash": 4091597733,
-        "skillIcon": "Btn_Blocking"
+        "skillIcon": "Btn_Blocking",
+        "proudSkillGroupId": ""
     },
     "20330": {
         "nameTextMapHash": 1226553101,
-        "skillIcon": "Btn_Arana_Shoot"
+        "skillIcon": "Btn_Arana_Shoot",
+        "proudSkillGroupId": ""
     },
     "20331": {
         "nameTextMapHash": 77403669,
-        "skillIcon": "Btn_Arana_Exchange"
+        "skillIcon": "Btn_Arana_Exchange",
+        "proudSkillGroupId": ""
+    },
+    "20340": {
+        "nameTextMapHash": 3940661125,
+        "skillIcon": "Btn_BrickBreaker_Launch",
+        "proudSkillGroupId": ""
     },
     "20340": {
         "nameTextMapHash": 3940661125,
@@ -1541,367 +2006,463 @@
     },
     "10384": {
         "nameTextMapHash": 1543775045,
-        "skillIcon": "Btn_Recon_Bait"
+        "skillIcon": "Btn_Recon_Bait",
+        "proudSkillGroupId": ""
     },
     "100540": {
         "nameTextMapHash": 1952055533,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 730
     },
     "100541": {
         "nameTextMapHash": 3198281757,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "100542": {
         "nameTextMapHash": 3565118517,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "100543": {
         "nameTextMapHash": 3283214237,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 730
     },
     "100544": {
         "nameTextMapHash": 895313525,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "100545": {
         "nameTextMapHash": 379244133,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 730
     },
     "100546": {
         "nameTextMapHash": 1660121349,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 1030
     },
     "100547": {
         "nameTextMapHash": 3401752693,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 1130
     },
     "100550": {
         "nameTextMapHash": 3538369725,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 731
     },
     "100551": {
         "nameTextMapHash": 2463434149,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "100552": {
         "nameTextMapHash": 299520933,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "100553": {
         "nameTextMapHash": 2182891949,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 731
     },
     "100554": {
         "nameTextMapHash": 1522492485,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "100555": {
         "nameTextMapHash": 1063935965,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 731
     },
     "100556": {
         "nameTextMapHash": 3021322565,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 1031
     },
     "100557": {
         "nameTextMapHash": 1727970205,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 1131
     },
     "5002010": {
         "nameTextMapHash": 1113979477,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5003010": {
         "nameTextMapHash": 2743040301,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005010": {
         "nameTextMapHash": 222670213,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005020": {
         "nameTextMapHash": 599206293,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005030": {
         "nameTextMapHash": 3869306797,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005040": {
         "nameTextMapHash": 537185229,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005050": {
         "nameTextMapHash": 458080989,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005060": {
         "nameTextMapHash": 3662398749,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005070": {
         "nameTextMapHash": 2768383149,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5005080": {
         "nameTextMapHash": 2048192477,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5006010": {
         "nameTextMapHash": 1861301005,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5007010": {
         "nameTextMapHash": 4224921045,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007020": {
         "nameTextMapHash": 900526901,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007030": {
         "nameTextMapHash": 811245917,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007040": {
         "nameTextMapHash": 2422927957,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007050": {
         "nameTextMapHash": 3923422245,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007060": {
         "nameTextMapHash": 3851684133,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007070": {
         "nameTextMapHash": 2772749133,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5007080": {
         "nameTextMapHash": 2138619645,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5014010": {
         "nameTextMapHash": 3673252189,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5015010": {
         "nameTextMapHash": 146347653,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5016010": {
         "nameTextMapHash": 1059884597,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5020010": {
         "nameTextMapHash": 2307867765,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5021010": {
         "nameTextMapHash": 2465177213,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5022010": {
         "nameTextMapHash": 1880336189,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5023010": {
         "nameTextMapHash": 2947930693,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5024010": {
         "nameTextMapHash": 1202874949,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5025010": {
         "nameTextMapHash": 2555769645,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5026010": {
         "nameTextMapHash": 2718102949,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5027010": {
         "nameTextMapHash": 3736001053,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5029010": {
         "nameTextMapHash": 1277261805,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5030010": {
         "nameTextMapHash": 1444388789,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5031010": {
         "nameTextMapHash": 4251380141,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5032010": {
         "nameTextMapHash": 807465973,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5033010": {
         "nameTextMapHash": 2269716989,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5034010": {
         "nameTextMapHash": 120782533,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5035010": {
         "nameTextMapHash": 3686145989,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5036010": {
         "nameTextMapHash": 641926669,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5037010": {
         "nameTextMapHash": 2828744293,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5038010": {
         "nameTextMapHash": 2495101917,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5039010": {
         "nameTextMapHash": 562318989,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5041010": {
         "nameTextMapHash": 1558817893,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5042010": {
         "nameTextMapHash": 2442023485,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5043010": {
         "nameTextMapHash": 3753429733,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5044010": {
         "nameTextMapHash": 1747345901,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5045010": {
         "nameTextMapHash": 3381185701,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5046010": {
         "nameTextMapHash": 1471470213,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5047010": {
         "nameTextMapHash": 7068229,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5048010": {
         "nameTextMapHash": 1054428893,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5049010": {
         "nameTextMapHash": 534393685,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5050010": {
         "nameTextMapHash": 889413773,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5051010": {
         "nameTextMapHash": 3123794733,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5052010": {
         "nameTextMapHash": 2761964765,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5053010": {
         "nameTextMapHash": 3251301293,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5054010": {
         "nameTextMapHash": 2462540765,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5055010": {
         "nameTextMapHash": 1061636741,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5056010": {
         "nameTextMapHash": 1602190341,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5058010": {
         "nameTextMapHash": 2500225021,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5057010": {
         "nameTextMapHash": 752149869,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5059010": {
         "nameTextMapHash": 3825685805,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5060010": {
         "nameTextMapHash": 289877085,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5062010": {
         "nameTextMapHash": 1225242717,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5063010": {
         "nameTextMapHash": 1461236069,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5064010": {
         "nameTextMapHash": 4228672181,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5065010": {
         "nameTextMapHash": 3189479301,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5066010": {
         "nameTextMapHash": 2509253013,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5067010": {
         "nameTextMapHash": 1232154725,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5068010": {
         "nameTextMapHash": 2106573173,
-        "skillIcon": "Skill_A_04"
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
     },
     "5069010": {
         "nameTextMapHash": 19903157,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "5070010": {
         "nameTextMapHash": 280269733,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
     },
     "5071010": {
         "nameTextMapHash": 2022718829,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5072010": {
         "nameTextMapHash": 3497260069,
-        "skillIcon": "Skill_A_03"
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
     },
     "5073010": {
         "nameTextMapHash": 286439061,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5074010": {
         "nameTextMapHash": 1942178429,
-        "skillIcon": "Skill_A_01"
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
+    },
+    "5075010": {
+        "nameTextMapHash": 1285477197,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "5075010": {
         "nameTextMapHash": 1285477197,
@@ -1909,6 +2470,7 @@
     },
     "5076010": {
         "nameTextMapHash": 405719917,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     }
 }

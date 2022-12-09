@@ -158,6 +158,7 @@ Please see in [example](./example/) folder.
 | name            | -               | Skill Name        |
 | icon            | -               | Skill Icon (URL)  |
 | level           | -               | Skill Level       |
+| is_boosted      | -               | Skill level has boosted |
 
 ## Equipments (Artifact, Weapon)
 | Wrapper         |  API            | Notes             |
