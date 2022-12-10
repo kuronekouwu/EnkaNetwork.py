@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import List, Any
+from typing import List, Any, Optional
 
 from ..enum import ElementType
 from .utils import IconAsset
@@ -29,20 +29,20 @@ class CharacterIconAsset(BaseModel):
 
 
 class CharacterSkillAsset(BaseModel):
-    id: int = 0,
-    pround_map: int = 0,
+    id: int = 0
+    pround_map: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
 
 
 class CharacterConstellationsAsset(BaseModel):
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
 
 class CharacterCostume(BaseModel):
     id: int = 0
-    images: CharacterIconAsset = None
+    images: Optional[CharacterIconAsset] = None
 
 
 class CharacterAsset(BaseModel):
@@ -50,7 +50,7 @@ class CharacterAsset(BaseModel):
     rarity: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
     element: ElementType = ElementType.Unknown
-    images: CharacterIconAsset = None
+    images: Optional[CharacterIconAsset] = None
     skill_id: int = 0
     skills: List[int] = []
     constellations: List[int] = Field([], alias="talents")

@@ -30,7 +30,7 @@ def check_assets(f: Callable):
 class Assets:
     DATA: Dict[str, dict] = {}
     HASH_MAP: Dict[str, dict] = {}
-    LANGS: Language = Language.EN
+    LANGS: Union[Language, str] = Language.EN
 
     def __init__(self, lang: Union[str, Language] = Language.EN) -> None:
         # Set language
@@ -63,10 +63,10 @@ class Assets:
         data = cls.DATA["characters"].get(str(id))
         if not data:
             LOGGER.error(f"Character not found with id: {id}")
-            return
+            return None
 
         return assets.CharacterAsset.parse_obj({
-            "id": id if str(id).isdigit() else id.split("-")[0],
+            "id": id if str(id).isdigit() else str(id).split("-")[0],
             "skill_id": str(id).split("-")[1] if not str(id).isdigit() else 0,
             "images": cls.create_character_icon(data["sideIconName"]),
             **data
@@ -78,7 +78,7 @@ class Assets:
         data = cls.DATA["costumes"].get(str(id))
         if not data:
             LOGGER.error(f"Costume not found with id: {id}")
-            return
+            return None
 
         return assets.CharacterCostume.parse_obj({
             "id": id,
@@ -91,7 +91,7 @@ class Assets:
         data = cls.DATA["constellations"].get(str(id))
         if not data:
             LOGGER.error(f"Character constellations not found with id: {id}")
-            return
+            return None
 
         return assets.CharacterConstellationsAsset.parse_obj({
             "id": id,
@@ -106,7 +106,7 @@ class Assets:
 
         if not data:
             LOGGER.error(f"Character skills not found with id: {id}")
-            return
+            return None
 
 
         pround = data.get("proudSkillGroupId", 0)
@@ -123,7 +123,7 @@ class Assets:
         data = cls.DATA["namecards"].get(str(id))
         if not data:
             LOGGER.error(f"Namecards not found with id: {id}")
-            return
+            return None
 
         return assets.NamecardAsset.parse_obj({
             "id": id,
@@ -143,13 +143,13 @@ class Assets:
                 return val
 
         LOGGER.error(f"nameTextMapHash {hash_id} not found with language: {cls.LANGS}")  # noqa: E501
-        return
+        return None
 
     @classmethod
     def character_icon(cls, id: int) -> Optional[assets.CharacterIconAsset]:
         data = cls.character(id)
         if not data:
-            return
+            return None
 
         return data.images
 
@@ -173,7 +173,7 @@ class Assets:
         return create_ui_path(path)
 
     @classmethod
-    def _set_language(cls, lang: Language) -> None:
+    def _set_language(cls, lang: Union[str, Language]) -> None:
         # Check language
         if lang is None or not lang.split("-")[0].lower() in list(Language):
             raise ValueError("Language not supported. Please check your language.")  # noqa: E501

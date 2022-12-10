@@ -1,7 +1,7 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import Any, List, Union
+from typing import Any, List, Union, Optional
 
 from .utils import IconAsset
 
@@ -54,9 +54,9 @@ class EquipmentsDetail(BaseModel):
     name: str = ""  # Get from name hash map
     artifact_name_set: str = ""  # Name set artifacts
     artifact_type: EquipType = EquipType.Unknown  # Type of artifact
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
     rarity: int = Field(0, alias="rankLevel")
-    mainstats: EquipmentsStats = Field(None, alias="reliquaryMainstat")
+    mainstats: Optional[EquipmentsStats] = Field(None, alias="reliquaryMainstat")
     substats: List[EquipmentsStats] = []
 
     def __init__(self, **data: Any) -> None:
@@ -78,7 +78,7 @@ class EquipmentsDetail(BaseModel):
             for stats in data["weaponStats"][1:]:
                 self.substats.append(EquipmentsStats.parse_obj(stats))
 
-        _name = Assets.get_hash_map(data.get("nameTextMapHash"))
+        _name = Assets.get_hash_map(str(data.get("nameTextMapHash")))
         if "setNameTextMapHash" in data:
             _artifact_name_set = Assets.get_hash_map(str(data["setNameTextMapHash"]))
             self.artifact_name_set = _artifact_name_set or ""

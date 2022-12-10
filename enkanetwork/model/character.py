@@ -1,7 +1,7 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import List, Any, Dict
+from typing import List, Any, Optional
 
 from .equipments import Equipments
 from .stats import CharacterStats
@@ -24,7 +24,7 @@ __all__ = (
 class CharacterSkill(BaseModel):
     id: int = 0
     name: str = ""
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
     is_boosted: bool = False
     level: int = 0
 
@@ -32,7 +32,7 @@ class CharacterSkill(BaseModel):
 class CharacterConstellations(BaseModel):
     id: int = 0
     name: str = ""
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
     unlocked: bool = False  # If character has this constellation.
 
 
@@ -53,7 +53,7 @@ class CharacterInfo(BaseModel):
     friendship_level: int = 1
     element: ElementType = ElementType.Unknown
     rarity: int = 0
-    image: CharacterIconAsset = None
+    image: Optional[CharacterIconAsset] = None
     skills: List[CharacterSkill] = []
     constellations: List[CharacterConstellations] = []
 
@@ -95,7 +95,7 @@ class CharacterInfo(BaseModel):
 
         # Load icon
         if "costumeId" in data:
-            _data = Assets.character_costume(str(data["costumeId"]))
+            _data = Assets.character_costume(int(data["costumeId"]))
             if _data:
                 self.image = _data.images
             else:
