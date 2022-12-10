@@ -1484,6 +1484,58 @@
         "skillIcon": "Skill_E_Layla_01",
         "proudSkillGroupId": 7439
     },
+    "10751": {
+        "nameTextMapHash": 668478821,
+        "skillIcon": "Skill_A_Catalyst_MD"
+    },
+    "10752": {
+        "nameTextMapHash": 3563341277,
+        "skillIcon": "Skill_S_Wanderer_01"
+    },
+    "10753": {
+        "nameTextMapHash": 3444173733,
+        "skillIcon": "Skill_E_Wanderer_01"
+    },
+    "10755": {
+        "nameTextMapHash": 778366677,
+        "skillIcon": "Skill_E_Wanderer_01"
+    },
+    "10756": {
+        "nameTextMapHash": 816641229,
+        "skillIcon": "Skill_S_Wanderer_04"
+    },
+    "10757": {
+        "nameTextMapHash": 1485938005,
+        "skillIcon": "Skill_S_Wanderer_01"
+    },
+    "10758": {
+        "nameTextMapHash": 3915592581,
+        "skillIcon": "Skill_A_Catalyst_MD"
+    },
+    "10759": {
+        "nameTextMapHash": 33306749,
+        "skillIcon": "Skill_S_Wanderer_02"
+    },
+    "10750": {
+        "nameTextMapHash": 92557693,
+        "skillIcon": "Skill_S_Wanderer_03"
+    },
+    "10761": {
+        "nameTextMapHash": 47732325,
+        "skillIcon": "Skill_A_02"
+    },
+    "10762": {
+        "nameTextMapHash": 593897829,
+        "skillIcon": "Skill_S_Faruzan_01"
+    },
+    "10764": {
+        "nameTextMapHash": 4203849629,
+        "skillIcon": "Skill_A_02"
+    },
+    "10765": {
+        "nameTextMapHash": 2294046741,
+        "skillIcon": "Skill_E_Faruzan_01"
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun",
@@ -1779,6 +1831,30 @@
         "skillIcon": "Btn_HideAndSeek_Hider_E_01",
         "proudSkillGroupId": ""
     },
+    "20521": {
+        "nameTextMapHash": 2973812453,
+        "skillIcon": "UI_Icon_Skill_Hunter_Net"
+    },
+    "20522": {
+        "nameTextMapHash": 3495989125,
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02"
+    },
+    "20523": {
+        "nameTextMapHash": 2450340517,
+        "skillIcon": "UI_Icon_Skill_Prey_Invisible_Bait"
+    },
+    "20524": {
+        "nameTextMapHash": 1356540013,
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_01"
+    },
+    "20525": {
+        "nameTextMapHash": 3710444509,
+        "skillIcon": "Btn_HideAndSeek_Hider_A_01"
+    },
+    "20526": {
+        "nameTextMapHash": 1656473773,
+        "skillIcon": "Btn_HideAndSeek_Hider_A_03"
+    },
     "20311": {
         "nameTextMapHash": 467388069,
         "skillIcon": "Btn_Fishing_Cast",
@@ -1822,6 +1898,11 @@
     "20331": {
         "nameTextMapHash": 77403669,
         "skillIcon": "Btn_Arana_Exchange",
+        "proudSkillGroupId": ""
+    },
+    "20340": {
+        "nameTextMapHash": 3940661125,
+        "skillIcon": "Btn_BrickBreaker_Launch",
         "proudSkillGroupId": ""
     },
     "10384": {
@@ -2277,6 +2358,11 @@
     "5074010": {
         "nameTextMapHash": 1942178429,
         "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
+    },
+    "5075010": {
+        "nameTextMapHash": 1285477197,
+        "skillIcon": "Skill_A_Catalyst_MD",
         "proudSkillGroupId": ""
     },
     "5076010": {
