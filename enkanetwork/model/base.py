@@ -1,5 +1,5 @@
 from pydantic import BaseModel, Field
-from typing import List
+from typing import List, Optional
 
 from .players import PlayerInfo
 from .character import CharacterInfo
@@ -7,6 +7,6 @@ from .character import CharacterInfo
 __all__ = ("EnkaNetworkResponse",)
 
 class EnkaNetworkResponse(BaseModel):
-    player: PlayerInfo = Field(None, alias="playerInfo")
-    characters: List[CharacterInfo] = Field(None, alias="avatarInfoList")
+    player: Optional[PlayerInfo] = Field(None, alias="playerInfo")
+    characters: Optional[List[CharacterInfo]] = Field(None, alias="avatarInfoList")
     ttl: int = 0

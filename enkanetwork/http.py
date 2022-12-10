@@ -71,12 +71,12 @@ class Route:
     ) -> None:
         self.method = method
         self.uid = uid
-        self.url = ''
+        self.url: str = ''
         
         if endpoint == 'enka':
-            self.url: str = self.BASE_URL.format(PATH=path)
+            self.url = self.BASE_URL.format(PATH=path)
         else:
-            self.url: str = self.RAW_DATA_URL.format(PATH=path)
+            self.url = self.RAW_DATA_URL.format(PATH=path)
 
 class HTTPClient:
 
@@ -168,7 +168,7 @@ class HTTPClient:
             'GET',
             f'/u/{uid}/__data.json' + (f"?key={self.__key}" if self.__key else ""),
             endpoint='enka',
-            uid=uid
+            uid=str(uid)
         )
         return self.request(r)
 

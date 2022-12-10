@@ -1,7 +1,7 @@
 import logging
 
 from pydantic import BaseModel, Field
-from typing import List, Any, Union
+from typing import List, Any, Optional
 
 from .utils import IconAsset
 
@@ -26,7 +26,7 @@ class ProfilePicture(BaseModel):
     """
         Custom add data
     """
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
 
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
@@ -35,10 +35,10 @@ class ProfilePicture(BaseModel):
         LOGGER.debug("=== Avatar ===")
         if "avatarId" in data:
             if "costumeId" in data:
-                _data = Assets.character_costume(str(data["costumeId"]))
+                _data = Assets.character_costume(int(data["costumeId"]))
                 icon = _data.images if _data is not None else _data
             else:
-                icon = Assets.character_icon(str(data["avatarId"]))
+                icon = Assets.character_icon(int(data["avatarId"]))
 
             if not icon:
                 return
@@ -57,7 +57,7 @@ class showAvatar(BaseModel):
         Custom data
     """
     name: str = ""
-    icon: IconAsset = None
+    icon: Optional[IconAsset] = None
     element: ElementType = ElementType.Unknown
 
     def __init__(self, **data: Any) -> None:
@@ -75,8 +75,8 @@ class showAvatar(BaseModel):
         self.element = character_preview.element
 
         if "costumeId" in data:
-            _data = Assets.character_costume(str(data["costumeId"]))
-            if _data:
+            _data = Assets.character_costume(int(data["costumeId"]))
+            if _data and _data.images:
                 self.icon = _data.images.icon
         else:
             self.icon = character_preview.images.icon
@@ -93,9 +93,9 @@ class showAvatar(BaseModel):
 class Namecard(BaseModel):
     id: int = 0
     name: str = ""
-    icon: IconAsset = None
-    banner: IconAsset = None
-    navbar: IconAsset = None
+    icon: Optional[IconAsset] = None
+    banner: Optional[IconAsset] = None
+    navbar: Optional[IconAsset] = None
 
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
@@ -103,7 +103,7 @@ class Namecard(BaseModel):
         if self.id > 0:
             LOGGER.debug("=== Namecard ===")
             # Get name card
-            namecard = Assets.namecards(str(self.id))
+            namecard = Assets.namecards(self.id)
 
             if not namecard:
                 return
@@ -129,7 +129,7 @@ class PlayerInfo(BaseModel):
     nickname: str = ""
     signature: str = ""
     world_level: int = Field(1, alias="worldLevel")
-    avatar: ProfilePicture = Field(None, alias="profilePicture")
+    avatar: Optional[ProfilePicture] = Field(None, alias="profilePicture")
     # Avatars
     characters_preview: List[showAvatar] = Field([], alias="showAvatarInfoList")
     # Abyss floor
