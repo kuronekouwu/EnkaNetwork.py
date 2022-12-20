@@ -26,7 +26,8 @@ setuptools.setup(
 	],
 	install_requires=[
 		"pydantic",
-		"aiohttp"
+		"aiohttp",
+		"cachetools"
 	],
 	python_requires=">=3.6",
 	include_package_data=True
