@@ -20,6 +20,8 @@ class Language(str, Enum):
     FR = "fr"
     ES = "es"
     DE = "de"
+    IT = "it"
+    TR = "tr"
 
     """
         zh-CN: CHT
