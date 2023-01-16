@@ -1418,5 +1418,55 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210147": {
+        "nameTextMapHash": 2958088124,
+        "icon": "UI_NameCardIcon_Alhatham",
+        "picPath": [
+            "UI_NameCardPic_Alhatham_Alpha",
+            "UI_NameCardPic_Alhatham_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210148": {
+        "nameTextMapHash": 2049099756,
+        "icon": "UI_NameCardIcon_Yaoyao",
+        "picPath": [
+            "UI_NameCardPic_Yaoyao_Alpha",
+            "UI_NameCardPic_Yaoyao_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210149": {
+        "nameTextMapHash": 3236464132,
+        "icon": "UI_NameCardIcon_Cadillac",
+        "picPath": [
+            "UI_NameCardPic_Cadillac_Alpha",
+            "UI_NameCardPic_Cadillac_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210150": {
+        "nameTextMapHash": 2673900508,
+        "icon": "UI_NameCardIcon_Bp21",
+        "picPath": [
+            "UI_NameCardPic_Bp21_P_Alpha",
+            "UI_NameCardPic_Bp21_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210151": {
+        "nameTextMapHash": 3778817588,
+        "icon": "UI_NameCardIcon_Xm3",
+        "picPath": [
+            "UI_NameCardPic_Xm3_Alpha",
+            "UI_NameCardPic_Xm3_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }

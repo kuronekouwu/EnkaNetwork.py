@@ -1486,55 +1486,98 @@
     },
     "10751": {
         "nameTextMapHash": 668478821,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 7531
     },
     "10752": {
         "nameTextMapHash": 3563341277,
-        "skillIcon": "Skill_S_Wanderer_01"
+        "skillIcon": "Skill_S_Wanderer_01",
+        "proudSkillGroupId": 7532
     },
     "10753": {
         "nameTextMapHash": 3444173733,
-        "skillIcon": "Skill_E_Wanderer_01"
+        "skillIcon": "Skill_E_Wanderer_01",
+        "proudSkillGroupId": ""
     },
     "10755": {
         "nameTextMapHash": 778366677,
-        "skillIcon": "Skill_E_Wanderer_01"
+        "skillIcon": "Skill_E_Wanderer_01",
+        "proudSkillGroupId": 7539
     },
     "10756": {
         "nameTextMapHash": 816641229,
-        "skillIcon": "Skill_S_Wanderer_04"
+        "skillIcon": "Skill_S_Wanderer_04",
+        "proudSkillGroupId": ""
     },
     "10757": {
         "nameTextMapHash": 1485938005,
-        "skillIcon": "Skill_S_Wanderer_01"
+        "skillIcon": "Skill_S_Wanderer_01",
+        "proudSkillGroupId": ""
     },
     "10758": {
         "nameTextMapHash": 3915592581,
-        "skillIcon": "Skill_A_Catalyst_MD"
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
     },
     "10759": {
         "nameTextMapHash": 33306749,
-        "skillIcon": "Skill_S_Wanderer_02"
+        "skillIcon": "Skill_S_Wanderer_02",
+        "proudSkillGroupId": ""
     },
     "10750": {
         "nameTextMapHash": 92557693,
-        "skillIcon": "Skill_S_Wanderer_03"
+        "skillIcon": "Skill_S_Wanderer_03",
+        "proudSkillGroupId": ""
     },
     "10761": {
         "nameTextMapHash": 47732325,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 7631
     },
     "10762": {
         "nameTextMapHash": 593897829,
-        "skillIcon": "Skill_S_Faruzan_01"
+        "skillIcon": "Skill_S_Faruzan_01",
+        "proudSkillGroupId": 7632
     },
     "10764": {
         "nameTextMapHash": 4203849629,
-        "skillIcon": "Skill_A_02"
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
     },
     "10765": {
         "nameTextMapHash": 2294046741,
-        "skillIcon": "Skill_E_Faruzan_01"
+        "skillIcon": "Skill_E_Faruzan_01",
+        "proudSkillGroupId": 7639
+    },
+    "10771": {
+        "nameTextMapHash": 403331797,
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 7731
+    },
+    "10772": {
+        "nameTextMapHash": 3738045221,
+        "skillIcon": "Skill_S_Yaoyao_01",
+        "proudSkillGroupId": 7732
+    },
+    "10775": {
+        "nameTextMapHash": 312209645,
+        "skillIcon": "Skill_E_Yaoyao_01",
+        "proudSkillGroupId": 7739
+    },
+    "10781": {
+        "nameTextMapHash": 4231831917,
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 7831
+    },
+    "10782": {
+        "nameTextMapHash": 1674438605,
+        "skillIcon": "Skill_S_Alhatham_01",
+        "proudSkillGroupId": 7832
+    },
+    "10785": {
+        "nameTextMapHash": 52057253,
+        "skillIcon": "Skill_E_Alhatham_01",
+        "proudSkillGroupId": 7839
     },
     "20001": {
         "nameTextMapHash": 1936482797,
@@ -1833,27 +1876,33 @@
     },
     "20521": {
         "nameTextMapHash": 2973812453,
-        "skillIcon": "UI_Icon_Skill_Hunter_Net"
+        "skillIcon": "UI_Icon_Skill_Hunter_Net",
+        "proudSkillGroupId": ""
     },
     "20522": {
         "nameTextMapHash": 3495989125,
-        "skillIcon": "Btn_HideAndSeek_Hider_S_02"
+        "skillIcon": "Btn_HideAndSeek_Hider_S_02",
+        "proudSkillGroupId": ""
     },
     "20523": {
         "nameTextMapHash": 2450340517,
-        "skillIcon": "UI_Icon_Skill_Prey_Invisible_Bait"
+        "skillIcon": "UI_Icon_Skill_Prey_Invisible_Bait",
+        "proudSkillGroupId": ""
     },
     "20524": {
         "nameTextMapHash": 1356540013,
-        "skillIcon": "Btn_HideAndSeek_Seeker_S_01"
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_01",
+        "proudSkillGroupId": ""
     },
     "20525": {
         "nameTextMapHash": 3710444509,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_01"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_01",
+        "proudSkillGroupId": ""
     },
     "20526": {
         "nameTextMapHash": 1656473773,
-        "skillIcon": "Btn_HideAndSeek_Hider_A_03"
+        "skillIcon": "Btn_HideAndSeek_Hider_A_03",
+        "proudSkillGroupId": ""
     },
     "20311": {
         "nameTextMapHash": 467388069,
@@ -1890,6 +1939,21 @@
         "skillIcon": "Btn_Blocking",
         "proudSkillGroupId": ""
     },
+    "20321": {
+        "nameTextMapHash": 4127841325,
+        "skillIcon": "Btn_Blocking_Burst01",
+        "proudSkillGroupId": ""
+    },
+    "20322": {
+        "nameTextMapHash": 4042028325,
+        "skillIcon": "Btn_Blocking_Burst02",
+        "proudSkillGroupId": ""
+    },
+    "20323": {
+        "nameTextMapHash": 638351709,
+        "skillIcon": "Btn_Blocking_Burst03",
+        "proudSkillGroupId": ""
+    },
     "20330": {
         "nameTextMapHash": 1226553101,
         "skillIcon": "Btn_Arana_Shoot",
@@ -1903,6 +1967,16 @@
     "20340": {
         "nameTextMapHash": 3940661125,
         "skillIcon": "Btn_BrickBreaker_Launch",
+        "proudSkillGroupId": ""
+    },
+    "20341": {
+        "nameTextMapHash": 1126378797,
+        "skillIcon": "Skill_LanV3_Icon05",
+        "proudSkillGroupId": ""
+    },
+    "20342": {
+        "nameTextMapHash": 994561205,
+        "skillIcon": "Skill_LanV3_Icon05",
         "proudSkillGroupId": ""
     },
     "10384": {
@@ -2368,6 +2442,16 @@
     "5076010": {
         "nameTextMapHash": 405719917,
         "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
+    },
+    "5077010": {
+        "nameTextMapHash": 755450445,
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
+    },
+    "5078010": {
+        "nameTextMapHash": 788864381,
+        "skillIcon": "Skill_A_01",
         "proudSkillGroupId": ""
     }
 }

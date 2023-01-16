@@ -8,7 +8,6 @@
         "skills": [
             10024,
             10018,
-            10013,
             10019
         ],
         "talents": [
@@ -775,7 +774,6 @@
         "skills": [
             10411,
             10412,
-            10413,
             10415
         ],
         "talents": [
@@ -1465,6 +1463,46 @@
             764,
             765,
             766
+        ]
+    },
+    "10000077": {
+        "nameTextMapHash": 1732418482,
+        "iconName": "UI_AvatarIcon_Yaoyao",
+        "sideIconName": "UI_AvatarIcon_Side_Yaoyao",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Grass",
+        "skills": [
+            10771,
+            10772,
+            10775
+        ],
+        "talents": [
+            771,
+            772,
+            773,
+            774,
+            775,
+            776
+        ]
+    },
+    "10000078": {
+        "nameTextMapHash": 4002157418,
+        "iconName": "UI_AvatarIcon_Alhatham",
+        "sideIconName": "UI_AvatarIcon_Side_Alhatham",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Grass",
+        "skills": [
+            10781,
+            10782,
+            10785
+        ],
+        "talents": [
+            781,
+            782,
+            783,
+            784,
+            785,
+            786
         ]
     }
 }

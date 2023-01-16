@@ -1534,5 +1534,53 @@
     "766": {
         "nameTextMapHash": 1813996249,
         "icon": "UI_Talent_S_Faruzan_04"
+    },
+    "771": {
+        "nameTextMapHash": 2088049169,
+        "icon": "UI_Talent_S_Yaoyao_01"
+    },
+    "772": {
+        "nameTextMapHash": 1185801489,
+        "icon": "UI_Talent_S_Yaoyao_02"
+    },
+    "773": {
+        "nameTextMapHash": 1513031537,
+        "icon": "UI_Talent_U_Yaoyao_01"
+    },
+    "774": {
+        "nameTextMapHash": 2674638561,
+        "icon": "UI_Talent_S_Yaoyao_03"
+    },
+    "775": {
+        "nameTextMapHash": 738869801,
+        "icon": "UI_Talent_U_Yaoyao_02"
+    },
+    "776": {
+        "nameTextMapHash": 4046679753,
+        "icon": "UI_Talent_S_Yaoyao_04"
+    },
+    "781": {
+        "nameTextMapHash": 1459644873,
+        "icon": "UI_Talent_S_Alhatham_02"
+    },
+    "782": {
+        "nameTextMapHash": 3637950009,
+        "icon": "UI_Talent_S_Alhatham_01"
+    },
+    "783": {
+        "nameTextMapHash": 2621846313,
+        "icon": "UI_Talent_U_Alhatham_01"
+    },
+    "784": {
+        "nameTextMapHash": 1055939881,
+        "icon": "UI_Talent_S_Alhatham_03"
+    },
+    "785": {
+        "nameTextMapHash": 3387153385,
+        "icon": "UI_Talent_U_Alhatham_02"
+    },
+    "786": {
+        "nameTextMapHash": 540494281,
+        "icon": "UI_Talent_S_Alhatham_04"
     }
 }

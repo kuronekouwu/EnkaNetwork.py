@@ -48,5 +48,15 @@
         "iconName": "UI_AvatarIcon_FischlCostumeHighness",
         "sideIconName": "UI_AvatarIcon_Side_FischlCostumeHighness",
         "nameTextMapHash": 3162794298
+    },
+    "200201": {
+        "iconName": "UI_AvatarIcon_AyakaCostumeFruhling",
+        "sideIconName": "UI_AvatarIcon_Side_AyakaCostumeFruhling",
+        "nameTextMapHash": 2768521498
+    },
+    "200601": {
+        "iconName": "UI_AvatarIcon_LisaCostumeStudentin",
+        "sideIconName": "UI_AvatarIcon_Side_LisaCostumeStudentin",
+        "nameTextMapHash": 2255412906
     }
 }
