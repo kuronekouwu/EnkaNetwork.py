@@ -17,3 +17,6 @@ class Forbidden(HTTPException):
 class EnkaServerError(HTTPException):
     """ Exception that's raised for when status code 500 occurs."""
     pass
+
+class EnkaServerMaintanance(HTTPException):
+    """ Exception that's raised when status code 424 occurs. """
