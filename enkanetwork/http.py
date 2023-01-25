@@ -174,7 +174,7 @@ class HTTPClient:
             raise VaildateUIDError("Validate UID failed. Please check your UID.")
         r = Route(
             'GET',
-            f'/u/{uid}/__data.json' + (f"?key={self.__key}" if self.__key else ""),
+            f'/api/uid/{uid}' + (f"?key={self.__key}" if self.__key else ""),
             endpoint='enka',
             uid=uid
         )
