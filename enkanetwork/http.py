@@ -27,10 +27,10 @@ from __future__ import annotations
 import asyncio
 import aiohttp
 import logging
+import warnings
 
 from typing import (
     Any,
-    ClassVar,
     Optional,
     TypeVar,
     Coroutine,
@@ -39,14 +39,15 @@ from typing import (
     TYPE_CHECKING
 )
 from . import utils
+from .config import Config
 from .utils import MISSING, RETRY_MAX
 from .exception import (
     VaildateUIDError,
-    UIDNotFounded,
     HTTPException,
-    Forbidden,
     EnkaServerError,
-    EnkaServerMaintanance
+    EnkaServerMaintanance,
+    ProfileNotFounded,
+    ERROR_ENKA
 )
 
 if TYPE_CHECKING:
@@ -59,36 +60,37 @@ if TYPE_CHECKING:
 
 
 class Route:
-
-    BASE_URL: ClassVar[str] = "https://enka.network{PATH}"
-    RAW_DATA_URL: ClassVar[str] = "https://raw.githubusercontent.com/mrwan200/enkanetwork.py-data/{PATH}"
-
     def __init__(
         self,
         method: str,
         path: str,
         endpoint: str = 'enka',
-        uid: Optional[str] = None,
+        username: Optional[str] = None
     ) -> None:
         self.method = method
-        self.uid = uid
         self.url = ''
+        self.username = username
         
         if endpoint == 'enka':
-            self.url: str = self.BASE_URL.format(PATH=path)
+            self.url: str = Config.ENKA_PROTOCOL + "://" + Config.ENKA_URL + path
         else:
-            self.url: str = self.RAW_DATA_URL.format(PATH=path)
+            self.url: str = Config.ASSETS_PROTOCOL + "://" + Config.ASSETS_URL + path
 
 class HTTPClient:
-
     LOGGER = logging.getLogger(__name__)
 
     def __init__(self, *, key: str = '', agent: str = '', timeout: int = 5) -> None:
         self.__session: aiohttp.ClientSession = MISSING
         self.__headers: Dict = {}
-        self.__agent: str = agent
-        self.__key: str = key
         self.__timeout = timeout or 10
+
+        # Init User Agent
+        if agent != '':
+            Config.init_user_agent(agent)
+
+
+        if key != '':
+            warnings.warn("'key' has depercated.")
 
     async def close(self) -> None:
         if self.__session is not MISSING:
@@ -101,13 +103,13 @@ class HTTPClient:
     async def request(self, route: Route, **kwargs: Any) -> Any:
         method = route.method
         url = route.url
-        uid = route.uid
+        username = route.username
 
         self.__headers.clear()
-        if self.__agent != '':
-            self.__headers['User-Agent'] = self.__agent
+        if Config.USER_AGENT != '':
+            self.__headers['User-Agent'] = Config.USER_AGENT
 
-        kwargs['headers'] = {**utils.get_default_header(), **self.__headers}
+        kwargs['headers'] = self.__headers
 
         response: Optional[aiohttp.ClientResponse] = None
         data: Optional[Union[Dict[str, Any], str]] = None
@@ -122,24 +124,13 @@ class HTTPClient:
                     _host = response.host
                     if 300 > response.status >= 200:
                         data = await utils.to_data(response)
-
-                        if not data['content'] or response.status != 200:
-                            raise UIDNotFounded(f"UID {uid} not found.")
-
+                        
                         self.LOGGER.debug('%s %s has received %s', method, url, data)
                         return data
 
-                    
-                    if _host == "enka.network":
-                        if response.status == 500:
-                            raise UIDNotFounded(f"UID {uid} not found or Genshin server broken.")
-
-                        if response.status == 424:
-                            raise EnkaServerMaintanance("Enka.Network doing maintenance server. Please wait took 5-8 hours or 1 day")
-                        
-                    # we are being rate limited
-                    # if response.status == 429:
-                    # Banned by Cloudflare more than likely.
+                    if _host == Config.ENKA_URL:
+                        err = ERROR_ENKA[response.status]
+                        raise err[0](err[1].format(uid=username))
                     
                     if response.status >= 400:
                         self.LOGGER.warning(f"Failure to fetch {url} ({response.status}) Retry {tries} / {RETRY_MAX}")
@@ -147,9 +138,6 @@ class HTTPClient:
                             raise HTTPException(f"Failed to download {url}")
                         await asyncio.sleep(1)  # 1 + tries * 2
                         continue
-
-                    if response.status == 403:
-                        raise Forbidden("Forbidden 403")  # TODO: คิดไม่ออกจะพิมพ์อะไร
 
                     raise HTTPException("Unknown error")
 
@@ -169,21 +157,56 @@ class HTTPClient:
 
         raise RuntimeError('Unreachable code in HTTP handling')
 
-    def fetch_user(self, uid: Union[str, int]) -> Response[EnkaNetworkPayload]:
+    def fetch_user_by_uid(
+        self, 
+        uid: Union[str, int],
+        *,
+        info: bool = False
+    ) -> Response[EnkaNetworkPayload]:
         if not utils.validate_uid(str(uid)):
             raise VaildateUIDError("Validate UID failed. Please check your UID.")
+
         r = Route(
             'GET',
-            f'/api/uid/{uid}' + (f"?key={self.__key}" if self.__key else ""),
+            f'/api/uid/{uid}' + (f"?info" if info else ""),
             endpoint='enka',
-            uid=uid
+            username=uid
         )
         return self.request(r)
+
+    def fetch_user_by_username(
+        self, 
+        username: Union[str, int]
+    ) -> Response[EnkaNetworkPayload]:
+        r = Route(
+            'GET',
+            f'/api/profile/{username}',
+            endpoint='enka',
+            username=username
+        )
+        return self.request(r)
+
+    def fetch_hoyos_by_username(
+        self, 
+        username: Union[str, int], 
+        metaname: str = "",
+        show_build: bool = False
+    ):
+        r = Route(
+            'GET',
+            f'/api/profile/{username}/hoyos' 
+            + (f"/{metaname}" if metaname != '' else '')
+            + ('/builds' if (show_build and metaname != '') else ''),
+            endpoint='enka',
+            username=username
+        )
+        return self.request(r)
+
 
     def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
-            f'/master/exports/{folder}/{filename}',
+            f'/mrwan200/enkanetwork.py-data/master/exports/{folder}/{filename}',
             endpoint='assets'
         )
         return self.request(r)
@@ -194,7 +217,5 @@ class HTTPClient:
                 return await resp.read()
             elif resp.status == 404:
                 raise HTTPException(resp, 'asset not found')
-            elif resp.status == 403:
-                raise Forbidden(resp, 'cannot retrieve asset')
             else:
                 raise HTTPException(resp, 'failed to get asset')

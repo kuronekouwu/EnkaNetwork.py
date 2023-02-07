@@ -66,13 +66,21 @@ def get_default_header():
     python_version = sys.version_info
 
     return {
-        "User-Agent": "EnkaNetwork.py/{version} (Python {major}.{minor}.{micro})".format(
-            version=__version__,
-            major=python_version.major,
-            minor=python_version.minor,
-            micro=python_version.micro
-        ),
+        "User-Agent": get_user_agent(),
     }
+
+
+def get_user_agent():
+    # Get python version
+    python_version = sys.version_info
+
+    return "EnkaNetwork.py/{version} (Python {major}.{minor}.{micro})".format(
+        version=__version__,
+        major=python_version.major,
+        minor=python_version.minor,
+        micro=python_version.micro
+    )
+
 
 class _MissingSentinel:
     __slots__ = ()
@@ -91,6 +99,7 @@ class _MissingSentinel:
 
 
 MISSING: Any = _MissingSentinel()
+
 
 async def to_data(response: ClientResponse) -> Dict[str, Any]:
 
@@ -113,4 +122,3 @@ async def to_data(response: ClientResponse) -> Dict[str, Any]:
         "content": data
     }
     return content
-

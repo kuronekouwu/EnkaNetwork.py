@@ -61,3 +61,8 @@ class EquipType(str, Enum):
     Sands = "EQUIP_SHOES"
     Goblet = "EQUIP_RING"
     Circlet = "EQUIP_DRESS"
+
+class ProfileRank(int, Enum):
+    TIER_1 = 1
+    TIER_2 = 2
+    TIER_3 = 3

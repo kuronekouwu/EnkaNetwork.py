@@ -73,9 +73,9 @@ class CharacterInfo(BaseModel):
         self.friendship_level = data["fetterInfo"]["expLevel"]
 
         # Get prop map
-        self.xp = int(data["propMap"]["1001"]["ival"]) if "1001" in data["propMap"] else 0
-        self.ascension = int(data["propMap"]["1002"]["ival"]) if "1002" in data["propMap"] else 0
-        self.level = int(data["propMap"]["4001"]["ival"]) if "4001" in data["propMap"] else 0
+        self.xp = int(data["propMap"]["1001"].get("ival", 0)) if "1001" in data["propMap"] else 0
+        self.ascension = int(data["propMap"]["1002"].get("ival", 0)) if "1002" in data["propMap"] else 0
+        self.level = int(data["propMap"]["4001"].get("ival", 0)) if "4001" in data["propMap"] else 0
 
         # Constellation unlocked count
         self.constellations_unlocked = len(data["talentIdList"]) if "talentIdList" in data else 0
