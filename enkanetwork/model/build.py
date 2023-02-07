@@ -41,3 +41,6 @@ class Builds(BaseModel):
 
     def get_character(self, avatar_id: str):
         return self.raw.get(str(avatar_id), None)
+
+    def get_avatar_list(self):
+        return [avatar_id for avatar_id in self.raw]
