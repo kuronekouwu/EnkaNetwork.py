@@ -7,7 +7,7 @@ from .cache import Cache
 class Config:
     # HTTP Config
     ENKA_PROTOCOL: ClassVar[str] = "https"
-    ENKA_URL: ClassVar[str] = "dev.enka.network"
+    ENKA_URL: ClassVar[str] = "enka.network"
     # Assets
     ASSETS_PROTOCOL: ClassVar[str] = "https"
     ASSETS_URL: ClassVar[str] = "raw.githubusercontent.com"

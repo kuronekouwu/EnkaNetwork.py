@@ -17,7 +17,7 @@ from .enum import Language
 from .cache import Cache
 from .config import Config
 
-from typing import Union, Optional, Type, TYPE_CHECKING, List, Any
+from typing import Union, Optional, Type, TYPE_CHECKING, List, Any, Callable
 
 if TYPE_CHECKING:
     from typing_extensions import Self
@@ -27,9 +27,52 @@ __all__ = ("EnkaNetworkAPI",)
 
 
 class EnkaNetworkAPI:
+    """ A library for API wrapper player by UID / Username from https://enka.network
+
+    Parameters
+    ------------
+    lang: :class:`str`
+        Init default language
+    debug: :class:`bool`
+        If set to `True`. In request data or get assets. It's will be shown log processing
+    key: :class:`str`
+        Depercated 
+    cache: :class:`bool`
+        If set to `True`. In response data will be cache data
+    user_agent: :class:`str`
+        User-Agent for speical to request Enka.Network
+    timeout: :class:`int`
+        Request timeout to Enka.Network
+
+    Attributes
+    ------------
+    assets: :class:`Assets`
+        Assets character / artifact / namecards / language / etc. data
+    http: :class:`HTTPClient`
+        HTTP for request and handle data
+    lang: :class:`Language`
+        A default language 
+
+    Example
+    ------------
+    ```py
+    import asyncio
+
+    from enkanetwork import EnkaNetworkAPI
+
+    client = EnkaNetworkAPI(lang="th",user_agent="SpeicalAgent/1.0")
+
+    async def main():
+        async with client:
+            data = await client.fetch_user(843715177)
+            print(data.player.nickname)
+
+    asyncio.run(main())
+    ```
+    """
     LOGGER = logging.getLogger(__name__)
 
-    def __init__(self, lang: str = "en", *, debug: bool = False, key: str = "", cache: bool = True, user_agent: str = "", timeout: int = 10) -> None:  # noqa: E501
+    def __init__(self, *, lang: str = "en", debug: bool = False, key: str = "", cache: bool = True, user_agent: str = "", timeout: int = 10) -> None:  # noqa: E501
         # Logging
         logging.basicConfig()
         logging.getLogger("enkanetwork").setLevel(logging.DEBUG if debug else logging.ERROR)  # noqa: E501
@@ -40,7 +83,7 @@ class EnkaNetworkAPI:
         # Cache
         self._enable_cache = cache
         if self._enable_cache:
-            Config.init_cache(Cache(1024, 60 * 3))
+            Config.init_cache(Cache(1024, 60 * 1))
 
         # http client
         self.__http = HTTPClient(key=key, agent=user_agent, timeout=timeout)
@@ -90,32 +133,45 @@ class EnkaNetworkAPI:
         *,
         info: bool = False
     ) -> EnkaNetworkResponse:
-        if self._enable_cache:
-            self.LOGGER.warning("Getting data from cache...")
-            data = await Config.CACHE.get(uid)
+        """ Fetch user profile by UID
 
-            if data is not None:
-                # Return data
-                self.LOGGER.debug("Parsing data...")
-                return EnkaNetworkResponse.parse_obj(data)
+        Parameters
+        ------------
+        uid: Union[:class:`str`,:class:`int`]
+            UID player in-game
+        info: :class:`bool`
+            If set to `True`. It's will response player info only
 
-        self.LOGGER.debug(f"Fetching user with UID {uid}...")
-        user = await self.__http.fetch_user_by_uid(uid, info=info)
+        Raises
+        ------------
+        VaildateUIDError
+            Player UID empty/format has incorrect.
+        EnkaPlayerNotFound
+            Player UID doesn't not exists in-game
+        EnkaServerRateLimit
+            Enka.Network has been rate limit
+        EnkaServerMaintanance
+            Enka.Network has maintenance server
+        EnkaServerError
+            Enka.Network has server error (The reason normal is `general`)
+        EnkaServerUnknown
+            Enka.Network has error another
 
-        data = user["content"]
-        data = json.loads(data)
-
-        if self._enable_cache:
-            self.LOGGER.debug("Caching data...")
-            await Config.CACHE.set(uid, data)
-
+        Returns
+        ------------
+        :class:`EnkaNetworkResponse`
+            The response player data
+        """
+        func = self.__http.fetch_user_by_uid(uid, info=info)
+        data = await self.request_enka(func, uid)
+        self.LOGGER.debug("Parsing data...")
         # Return data
         self.LOGGER.debug("Parsing data...")
         if "owner" in data:
             data["owner"] = {
                 **data["owner"],
                 "builds": await self.fetch_builds(
-                    profile_id=data["owner"]["username"], 
+                    profile_id=data["owner"]["username"],
                     metaname=data["owner"]["hash"]
                 )
             }
@@ -124,29 +180,37 @@ class EnkaNetworkAPI:
 
     async def fetch_user_by_username(
         self,
-        profile_id: Union[str, int]
+        profile_id: Optional[str]
     ) -> EnkaNetworkProfileResponse:
-        if self._enable_cache:
-            self.LOGGER.warning("Getting data from cache...")
-            data = await Config.CACHE.get(profile_id)
+        """ Fetch user profile by Username / patreon ID
 
-            if data is not None:
-                # Return data
-                self.LOGGER.debug("Parsing data...")
-                return EnkaNetworkProfileResponse.parse_obj(data)
+        Parameters
+        ------------
+        profile_id: Optional[:class:`str`]
+            Username / patreon ID has subscriptions in Enka.Network
 
-        self.LOGGER.debug(f"Fetching user with profile {profile_id}...")
+        Raises
+        ------------
+        EnkaPlayerNotFound
+            Player UID doesn't not exists in-game
+        EnkaServerRateLimit
+            Enka.Network has been rate limit
+        EnkaServerMaintanance
+            Enka.Network has maintenance server
+        EnkaServerError
+            Enka.Network has server error (The reason normal is `general`)
+        EnkaServerUnknown
+            Enka.Network has error another
 
-        user = await self.__http.fetch_user_by_username(profile_id)
-        data = user["content"]
-        data = json.loads(data)
-
-        if self._enable_cache:
-            self.LOGGER.debug("Caching data...")
-            await Config.CACHE.set(profile_id, data)
-
-        # Return data
+        Returns
+        ------------
+        :class:`EnkaNetworkProfileResponse`
+            The response profile / hoyos and builds data
+        """
+        func = self.__http.fetch_user_by_username(profile_id)
+        data = await self.request_enka(func, profile_id)
         self.LOGGER.debug("Parsing data...")
+
         return EnkaNetworkProfileResponse.parse_obj({
             **data,
             "hoyos": await self.fetch_hoyos_by_username(profile_id)
@@ -154,60 +218,104 @@ class EnkaNetworkAPI:
 
     async def fetch_hoyos_by_username(
         self,
-        profile_id: Union[str, int]
+        profile_id: Optional[str]
     ) -> List[PlayerHoyos]:
+        """ Fetch hoyos user data by Username / patreon ID
+
+        Parameters
+        ------------
+        profile_id: Optional[:class:`str`]
+            Username / patreon ID has subscriptions in Enka.Network
+
+        Raises
+        ------------
+        EnkaPlayerNotFound
+            Player UID doesn't not exists in-game
+        EnkaServerRateLimit
+            Enka.Network has been rate limit
+        EnkaServerMaintanance
+            Enka.Network has maintenance server
+        EnkaServerError
+            Enka.Network has server error (The reason normal is `general`)
+        EnkaServerUnknown
+            Enka.Network has error another
+
+        Returns
+        ------------
+        List[:class:`PlayerHoyos`]
+            A response hoyos player data
+        """
         key = profile_id + ":hoyos"
-        # Check config
-        if Config.CACHE_ENABLED:
-            self.LOGGER.warning("Getting data from cache...")
-            data = await Config.CACHE.get(key)
-
-            if data is not None:
-                self.LOGGER.debug("Parsing data...")
-                return await self.__format_hoyos(profile_id, data)
-
-        self.LOGGER.debug(f"Fetching user hoyos with profile {profile_id}...")
-        user = await self.__http.fetch_hoyos_by_username(profile_id)
-        data = user["content"]
-        data = json.loads(data)
-
-        if Config.CACHE_ENABLED:
-            self.LOGGER.debug("Caching data...")
-            await Config.CACHE.set(key, data)
-
+        func = self.__http.fetch_hoyos_by_username(key)
+        data = await self.request_enka(func, profile_id)
         self.LOGGER.debug("Parsing data...")
+
         return await self.__format_hoyos(profile_id, data)
 
     async def fetch_builds(
         self,
         *,
-        profile_id: Union[str, int],
-        metaname: Union[str, int]
-    ) -> PlayerHoyos:
+        profile_id: Optional[str],
+        metaname: Optional[str]
+    ) -> Builds:
+        """ Fetch hoyos build(s) data
+
+        Parameters
+        ------------
+        profile_id: Optional[:class:`str`]
+            Username / patreon ID has subscriptions in Enka.Network
+        metaname: Optional[:class:`str`]
+            Metaname from hoyos data or owner tag in hash field 
+
+        Raises
+        ------------
+        EnkaPlayerNotFound
+            Player UID doesn't not exists in-game
+        EnkaServerRateLimit
+            Enka.Network has been rate limit
+        EnkaServerMaintanance
+            Enka.Network has maintenance server
+        EnkaServerError
+            Enka.Network has server error (The reason normal is `general`)
+        EnkaServerUnknown
+            Enka.Network has error another
+
+        Returns
+        ------------
+        :class:`Builds`
+            A response builds data
+        """
         key = profile_id + ":hoyos:" + metaname + ":builds"
+        func = self.__http.fetch_hoyos_by_username(profile_id, metaname, True)
+        data = await self.request_enka(func, key)
+        self.LOGGER.debug("Parsing data...")
+
+        return Builds.parse_obj(data)
+
+    async def request_enka(
+        self,
+        func: Callable,
+        cache_key: str,
+    ):
+        key = cache_key
         # Check config
         if Config.CACHE_ENABLED:
-            self.LOGGER.warning("Getting data from cache...")
+            self.LOGGER.warning(f"Getting data {key} from cache...")
             data = await Config.CACHE.get(key)
 
             if data is not None:
                 self.LOGGER.debug("Parsing data...")
-                return await self.__format_hoyos(profile_id, data)
+                return data
 
-        # Request data first
-        user = await self.__http.fetch_hoyos_by_username(profile_id,metaname,True)
+        user = await func
         data = user["content"]
         data = json.loads(data)
 
         if Config.CACHE_ENABLED:
-            self.LOGGER.debug("Caching data...")
+            self.LOGGER.debug(f"Caching data {key}...")
             await Config.CACHE.set(key, data)
 
-        self.LOGGER.debug("Parsing data...")
-        return Builds.parse_obj(data)
-
-    async def request_enka():
-        pass
+        return data
 
     async def update_assets(self) -> None:
         print("Updating assets...")
@@ -229,7 +337,7 @@ class EnkaNetworkAPI:
 
         # Reload config
         self.assets.reload_assets()
-    
+
     async def __format_hoyos(self, username: str, data: List[Any]) -> List[PlayerHoyos]:
         return [PlayerHoyos.parse_obj({
             "builds": await self.fetch_builds(profile_id=username, metaname=data[key]["hash"]),

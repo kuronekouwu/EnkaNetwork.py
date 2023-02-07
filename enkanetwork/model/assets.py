@@ -13,7 +13,24 @@ __all__ = (
     'CharacterAsset'
 )
 
+
 class NamecardAsset(BaseModel):
+    """ Namecards (Assets)
+
+    Attributes
+    ------------
+    id: :class:`int`
+        Namecard ID
+    hash_id: :class:`str`
+        Namecard hash id
+    icon: :class:`IconAsset`
+        A icon assets. Please refers in `IconAsset` class
+    banner: :class:`IconAsset`
+        A banner assets. Please refers in `IconAsset` class
+    navbar: :class:`IconAsset`
+        A navbar assets. Please refers in `IconAsset` class
+    """
+
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
     icon: IconAsset
@@ -22,13 +39,39 @@ class NamecardAsset(BaseModel):
 
 
 class CharacterIconAsset(BaseModel):
+    """ Character Icon (Assets)
+
+    Attributes
+    ------------
+    icon: :class:`IconAsset`
+        A icon assets. Please refers in `IconAsset` class
+    side: :class:`IconAsset`
+        A navbar assets. Please refers in `IconAsset` class
+    banner: :class:`IconAsset`
+        A banner assets. Please refers in `IconAsset` class
+    card: :class:`IconAsset`
+        A navbar assets. Please refers in `IconAsset` class
+    """
     icon: IconAsset
-    side: IconAsset 
+    side: IconAsset
     banner: IconAsset
     card: IconAsset
 
 
 class CharacterSkillAsset(BaseModel):
+    """ Character Skill(s) (Assets)
+
+    Attributes
+    ------------
+    id: :class:`int`
+        Character skill(s) ID
+    pround_map: :class:`int`
+        pround map for a booest skill by constellation
+    hash_id: :class:`str`
+        Skill(s) hash id
+    icon: :class:`IconAsset`
+        A icon assets. Please refers in `IconAsset` class
+    """
     id: int = 0,
     pround_map: int = 0,
     hash_id: str = Field("", alias="nameTextMapHash")
@@ -36,16 +79,60 @@ class CharacterSkillAsset(BaseModel):
 
 
 class CharacterConstellationsAsset(BaseModel):
+    """ Character Constellations (Assets)
+
+    Attributes
+    ------------
+    id: :class:`int`
+        Character constellations ID
+    hash_id: :class:`str`
+        Constellations hash id
+    icon: :class:`IconAsset`
+        A icon assets. Please refers in `IconAsset` class
+    """
     id: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
     icon: IconAsset = None
 
+
 class CharacterCostume(BaseModel):
+    """ Character Costume (Assets)
+
+    Attributes
+    ------------
+    id: :class:`int`
+        Costume ID
+    hash_id: :class:`str`
+        Costume hash id
+    icon: :class:`IconAsset`
+        A icon assets. Please refers in `IconAsset` class
+    """
     id: int = 0
     images: CharacterIconAsset = None
 
 
 class CharacterAsset(BaseModel):
+    """ Character (Assets)
+
+    Attributes
+    ------------
+    id: :class:`int`
+        Avatar ID
+    rarity: :class:`int`
+        Character rarity (5 stars or 4stars)
+    hash_id: :class:`str`
+        Character hash id
+    element: :class:`ElementType`
+        Character element type
+    images: :class:`CharacterIconAsset`
+        Character image data. Please refers in `CharacterIconAsset`
+    skill_id: :class:`int`
+        Character skill ID
+    skills: List[:class:`int`]
+        Character skill data list
+    constellations:  List[:class:`int`]
+        Character constellations data list
+    """
     id: int = 0
     rarity: int = 0
     hash_id: str = Field("", alias="nameTextMapHash")
@@ -61,5 +148,6 @@ class CharacterAsset(BaseModel):
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
 
-        self.element = ElementType(data["costElemType"]) if data["costElemType"] != "" else ElementType.Unknown
+        self.element = ElementType(
+            data["costElemType"]) if data["costElemType"] != "" else ElementType.Unknown
         self.rarity = 5 if data["qualityType"].endswith("_ORANGE") else 4

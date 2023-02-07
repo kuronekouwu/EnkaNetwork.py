@@ -13,7 +13,7 @@ class HTTPException(Exception):
 class EnkaValidateFailed(HTTPException):
     """ Exception that's raised for when status code 400 occurs."""
 
-class EnkaUIDNotFound(Exception):
+class EnkaPlayerNotFound(Exception):
     """ Raised when the UID is not found. """
 
 class EnkaServerError(HTTPException):
@@ -30,7 +30,7 @@ class EnkaServerUnknown(HTTPException):
 
 ERROR_ENKA = {
     400: [VaildateUIDError, "Validate UID {uid} failed."],
-    404: [EnkaUIDNotFound, "UID {uid} not found. Please check your UID"],
+    404: [EnkaPlayerNotFound, "Player ID {uid} not found. Please check your UID / Username"],
     429: [EnkaServerRateLimit, "Enka.network has been rate limit this path"],
     424: [EnkaServerMaintanance, "Enka.Network doing maintenance server. Please wait took 5-8 hours or 1 day"],
     500: [EnkaServerError, "Enka.network server has down or Genshin server broken."],

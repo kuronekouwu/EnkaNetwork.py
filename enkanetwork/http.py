@@ -124,28 +124,13 @@ class HTTPClient:
                     _host = response.host
                     if 300 > response.status >= 200:
                         data = await utils.to_data(response)
-
-                        # if not data['content'] or response.status != 200:
-                        #     raise UIDNotFounded(f"UID {username} not found.")
-
+                        
                         self.LOGGER.debug('%s %s has received %s', method, url, data)
                         return data
 
                     if _host == Config.ENKA_URL:
                         err = ERROR_ENKA[response.status]
                         raise err[0](err[1].format(uid=username))
-                        # if response.status == 500: # UID not found or Genshin broken 
-                        #     raise UIDNotFounded(f"UID {username} not found or Genshin server broken.")
-
-                        # if response.status == 404: # Profile UID not found
-                        #     raise ProfileNotFounded(f"Profile {username} not found. Please check username has subscription?")
-
-                        # if response.status == 424:
-                        #     raise EnkaServerMaintanance("Enka.Network doing maintenance server. Please wait took 5-8 hours or 1 day")
-                        
-                    # we are being rate limited
-                    # if response.status == 429:
-                    # Banned by Cloudflare more than likely.
                     
                     if response.status >= 400:
                         self.LOGGER.warning(f"Failure to fetch {url} ({response.status}) Retry {tries} / {RETRY_MAX}")
@@ -221,7 +206,7 @@ class HTTPClient:
     def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
-            f'/master/exports/{folder}/{filename}',
+            f'/mrwan200/enkanetwork.py-data/master/exports/{folder}/{filename}',
             endpoint='assets'
         )
         return self.request(r)
