@@ -164,7 +164,6 @@ class EnkaNetworkAPI:
         """
         func = self.__http.fetch_user_by_uid(uid, info=info)
         data = await self.request_enka(func, uid)
-        self.LOGGER.debug("Parsing data...")
         # Return data
         self.LOGGER.debug("Parsing data...")
         if "owner" in data:
@@ -246,8 +245,8 @@ class EnkaNetworkAPI:
             A response hoyos player data
         """
         key = profile_id + ":hoyos"
-        func = self.__http.fetch_hoyos_by_username(key)
-        data = await self.request_enka(func, profile_id)
+        func = self.__http.fetch_hoyos_by_username(profile_id)
+        data = await self.request_enka(func, key)
         self.LOGGER.debug("Parsing data...")
 
         return await self.__format_hoyos(profile_id, data)
