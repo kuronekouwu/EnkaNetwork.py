@@ -241,7 +241,7 @@ class EnkaNetworkAPI:
 
         Returns
         ------------
-        List[:class:`PlayerHoyos`]
+        List[:class:`PlayerHoyos`
             A response hoyos player data
         """
         key = profile_id + ":hoyos"
