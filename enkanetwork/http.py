@@ -45,8 +45,7 @@ from .exception import (
     VaildateUIDError,
     HTTPException,
     EnkaServerError,
-    EnkaServerMaintanance,
-    ProfileNotFounded,
+    EnkaServerUnknown,
     ERROR_ENKA
 )
 
@@ -129,8 +128,11 @@ class HTTPClient:
                         return data
 
                     if _host == Config.ENKA_URL:
-                        err = ERROR_ENKA[response.status]
-                        raise err[0](err[1].format(uid=username))
+                        err = ERROR_ENKA.get(response.status, None)
+                        if err:
+                            raise err[0](err[1].format(uid=username))
+
+                        raise EnkaServerUnknown(f"Unknow error HTTP status: {response.status}")
                     
                     if response.status >= 400:
                         self.LOGGER.warning(f"Failure to fetch {url} ({response.status}) Retry {tries} / {RETRY_MAX}")
