@@ -3,7 +3,7 @@ from typing import List
 
 from .players import PlayerInfo
 from .character import CharacterInfo
-from .profile import ProfilePatreon, ProfileOwner
+from .profile import EnkaProfile, ProfileOwner
 from .hoyos import PlayerHoyos
 
 from ..utils import BASE_URL
@@ -61,5 +61,5 @@ class EnkaNetworkResponse(BaseModel):
 
 class EnkaNetworkProfileResponse(BaseModel):
     username: str
-    profile: ProfilePatreon
+    profile: EnkaProfile
     hoyos: List[PlayerHoyos] = []

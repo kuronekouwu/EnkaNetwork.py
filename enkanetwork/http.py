@@ -45,8 +45,7 @@ from .exception import (
     VaildateUIDError,
     HTTPException,
     EnkaServerError,
-    EnkaServerMaintanance,
-    ProfileNotFounded,
+    EnkaServerUnknown,
     ERROR_ENKA
 )
 
@@ -129,8 +128,11 @@ class HTTPClient:
                         return data
 
                     if _host == Config.ENKA_URL:
-                        err = ERROR_ENKA[response.status]
-                        raise err[0](err[1].format(uid=username))
+                        err = ERROR_ENKA.get(response.status, None)
+                        if err:
+                            raise err[0](err[1].format(uid=username))
+
+                        raise EnkaServerUnknown(f"Unknow error HTTP status: {response.status}")
                     
                     if response.status >= 400:
                         self.LOGGER.warning(f"Failure to fetch {url} ({response.status}) Retry {tries} / {RETRY_MAX}")
@@ -157,7 +159,7 @@ class HTTPClient:
 
         raise RuntimeError('Unreachable code in HTTP handling')
 
-    def fetch_user_by_uid(
+    async def fetch_user_by_uid(
         self, 
         uid: Union[str, int],
         *,
@@ -172,9 +174,9 @@ class HTTPClient:
             endpoint='enka',
             username=uid
         )
-        return self.request(r)
+        return await self.request(r)
 
-    def fetch_user_by_username(
+    async def fetch_user_by_username(
         self, 
         username: Union[str, int]
     ) -> Response[EnkaNetworkPayload]:
@@ -184,9 +186,9 @@ class HTTPClient:
             endpoint='enka',
             username=username
         )
-        return self.request(r)
+        return await self.request(r)
 
-    def fetch_hoyos_by_username(
+    async def fetch_hoyos_by_username(
         self, 
         username: Union[str, int], 
         metaname: str = "",
@@ -200,16 +202,16 @@ class HTTPClient:
             endpoint='enka',
             username=username
         )
-        return self.request(r)
+        return await self.request(r)
 
 
-    def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
+    async def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
             f'/mrwan200/enkanetwork.py-data/master/exports/{folder}/{filename}',
             endpoint='assets'
         )
-        return self.request(r)
+        return await self.request(r)
 
     async def read_from_url(self, url: str) -> bytes:
         async with self.__session.get(url) as resp:

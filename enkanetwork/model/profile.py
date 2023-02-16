@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from ..enum import ProfileRank
 from .build import Builds
 
-class ProfilePatreon(BaseModel):
+class EnkaProfile(BaseModel):
     bio: str = ''
     level: ProfileRank = ProfileRank.TIER_1
     signup_state: int = 0
@@ -12,5 +12,5 @@ class ProfilePatreon(BaseModel):
 class ProfileOwner(BaseModel):
     hash: str
     username: str
-    profile: ProfilePatreon
+    profile: EnkaProfile
     builds: Builds = None
