@@ -157,7 +157,7 @@ class HTTPClient:
 
         raise RuntimeError('Unreachable code in HTTP handling')
 
-    def fetch_user_by_uid(
+    async def fetch_user_by_uid(
         self, 
         uid: Union[str, int],
         *,
@@ -172,9 +172,9 @@ class HTTPClient:
             endpoint='enka',
             username=uid
         )
-        return self.request(r)
+        return await self.request(r)
 
-    def fetch_user_by_username(
+    async def fetch_user_by_username(
         self, 
         username: Union[str, int]
     ) -> Response[EnkaNetworkPayload]:
@@ -184,9 +184,9 @@ class HTTPClient:
             endpoint='enka',
             username=username
         )
-        return self.request(r)
+        return await self.request(r)
 
-    def fetch_hoyos_by_username(
+    async def fetch_hoyos_by_username(
         self, 
         username: Union[str, int], 
         metaname: str = "",
@@ -200,16 +200,16 @@ class HTTPClient:
             endpoint='enka',
             username=username
         )
-        return self.request(r)
+        return await self.request(r)
 
 
-    def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
+    async def fetch_asset(self, folder: str, filename: str) -> Response[DefaultPayload]:
         r = Route(
             'GET',
             f'/mrwan200/enkanetwork.py-data/master/exports/{folder}/{filename}',
             endpoint='assets'
         )
-        return self.request(r)
+        return await self.request(r)
 
     async def read_from_url(self, url: str) -> bytes:
         async with self.__session.get(url) as resp:
