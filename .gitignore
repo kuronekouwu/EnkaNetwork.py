@@ -8,3 +8,4 @@ test/*.test.py
 .idea
 git-story_media
 env
+export.json
