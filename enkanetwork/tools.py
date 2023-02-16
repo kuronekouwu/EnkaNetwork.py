@@ -34,7 +34,7 @@ async def merge_raw_data(
             cache_data["playerInfo"]["showAvatarInfoList"],
         )
 
-     if "avatarInfoList" in cache_data:
+    if "avatarInfoList" in cache_data:
         new_data.setdefault("avatarInfoList", [])
         await combine_lists(
             new_data["avatarInfoList"], cache_data["avatarInfoList"]
