@@ -16,7 +16,7 @@ from .model.build import Builds
 
 from .assets import Assets
 from .enum import Language
-from .cache import Cache
+from .cache import Cache, StaticCache
 from .config import Config
 from .tools import (
     merge_raw_data
@@ -83,7 +83,7 @@ class EnkaNetworkAPI:
         key: str = "",
         cache: bool = True,
         user_agent: str = "",
-        timeout: int = 1
+        timeout: int = 10
     ) -> None:  # noqa: E501
         # Logging
         logging.basicConfig()
@@ -95,7 +95,7 @@ class EnkaNetworkAPI:
         # Cache
         self._enable_cache = cache
         if self._enable_cache:
-            Config.init_cache(Cache(1024, 60 * 1))
+            Config.init_cache(StaticCache(1024, 60 * 1))
 
         # http client
         self.__http = HTTPClient(key=key, agent=user_agent, timeout=timeout)
@@ -362,8 +362,8 @@ class EnkaNetworkAPI:
 
         return data
 
-    async def update_build(self, uid: Union[str, int], old_data: Dict[str, Any]) -> Dict[str, Any]:
-        """ Update build (Sync build character data)
+    async def sync_build(self, uid: Union[str, int], old_data: Dict[str, Any]) -> Dict[str, Any]:
+        """ Sync build data 
 
         Parameters
         ----------
@@ -377,7 +377,7 @@ class EnkaNetworkAPI:
             A dictionary containing the merged data.
         """
 
-        new_data = self.fetch_raw_data(uid)
+        new_data = await self.fetch_raw_data(uid)
         return await merge_raw_data(new_data, old_data)
 
     async def update_assets(self) -> None:
