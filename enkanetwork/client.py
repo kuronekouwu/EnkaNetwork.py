@@ -17,7 +17,7 @@ from .enum import Language
 from .cache import Cache
 from .config import Config
 
-from typing import Union, Optional, Type, TYPE_CHECKING, List, Any, Callable
+from typing import Union, Optional, Type, TYPE_CHECKING, List, Any, Callable, Dict
 
 if TYPE_CHECKING:
     from typing_extensions import Self
@@ -342,6 +342,62 @@ class EnkaNetworkAPI:
             "builds": await self.fetch_builds(profile_id=username, metaname=data[key]["hash"]),
             **data[key]
         }) for key in data]
+
+    async def fetch_raw_data(self, uid: int) -> Dict[str, Any]:
+        """Fetches raw data for a user with the given UID.
+
+        Parameters
+        ----------
+            uid: The UID of the user to fetch data for.
+            
+        Returns
+        ------
+            A dictionary containing the raw data for the user.
+        """
+        func = self.__http.fetch_user_by_uid(uid)
+        data = await self.request_enka(func, uid)
+        return data
+
+    @staticmethod
+    async def merge_raw_data(
+        new_data: Dict[str, Any], cache_data: Dict[str, Any]
+    ) -> Dict[str, Any]:
+        """
+        Merge cached data into newly fetched data.
+
+        Parameters
+        ----------
+            new_data: The newly fetched data as a dictionary.
+            cache_data: The cached data as a dictionary.
+
+        Returns
+        -------
+            A dictionary containing the merged data.
+        """
+
+        async def combine_lists(
+            new_list: List[Dict[str, Any]], cache_list: List[Dict[str, Any]]
+        ):
+            new_ids = {item["avatarId"] for item in new_list}
+            unique_cache_items = [
+                item for item in cache_list if item["avatarId"] not in new_ids
+            ]
+            new_list.extend(unique_cache_items)
+
+        if "showAvatarInfoList" in cache_data["playerInfo"]:
+            new_data.setdefault("playerInfo", {}).setdefault("showAvatarInfoList", [])
+            await combine_lists(
+                new_data["playerInfo"]["showAvatarInfoList"],
+                cache_data["playerInfo"]["showAvatarInfoList"],
+            )
+
+        if "avatarInfoList" in cache_data:
+            new_data.setdefault("avatarInfoList", [])
+            await combine_lists(
+                new_data["avatarInfoList"], cache_data["avatarInfoList"]
+            )
+
+        return new_data
 
     # Concept by genshin.py python library
     fetch_user = fetch_user_by_uid
