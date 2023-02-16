@@ -2,7 +2,7 @@ from typing import (
     ClassVar
 )
 from .utils import get_user_agent
-from .cache import Cache
+from .cache import Cache, StaticCache
 
 class Config:
     # HTTP Config
@@ -15,7 +15,7 @@ class Config:
     USER_AGENT: ClassVar[str] = get_user_agent()
     # Client config
     CACHE_ENABLED: ClassVar[bool] = True
-    CACHE: ClassVar[Cache] = Cache(1024, 60 * 3)
+    CACHE: ClassVar[Cache] = StaticCache(1024, 60 * 3)
 
     @classmethod
     def init_cache(
