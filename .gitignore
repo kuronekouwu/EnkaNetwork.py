@@ -1,6 +1,6 @@
 __pycache__
 enkanetwork.egg-info
-build
+./build
 enkanetwork.py.egg-info
 dist
 test/*.test.py
@@ -9,3 +9,4 @@ test/*.test.py
 git-story_media
 env
 export.json
+843715177.json
