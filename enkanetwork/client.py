@@ -359,7 +359,7 @@ class EnkaNetworkAPI:
         return data
 
     @staticmethod
-    async def combineCacheData(
+    async def merge_raw_data(
         new_data: Dict[str, Any], cache_data: Dict[str, Any]
     ) -> Dict[str, Any]:
         """
