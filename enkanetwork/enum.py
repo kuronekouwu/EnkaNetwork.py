@@ -63,6 +63,6 @@ class EquipType(str, Enum):
     Circlet = "EQUIP_DRESS"
 
 class ProfileRank(int, Enum):
-    TIER_1 = 1
-    TIER_2 = 2
-    TIER_3 = 3
+    TIER_1 = 0
+    TIER_2 = 1
+    TIER_3 = 2
