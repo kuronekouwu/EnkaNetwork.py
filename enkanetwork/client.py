@@ -344,15 +344,12 @@ class EnkaNetworkAPI:
         return Builds.parse_obj(data)
 
     async def fetch_raw_data(self, uid: Union[str, int], *, info: bool = False) -> Dict[str, Any]:
-        """Fetches raw data for a user with the given UID.
-
-        c
-        """
+        """Fetches raw data for a user with the given UID. """
 
         # Loda cache 
         cache = await self.__get_cache(uid)
         if cache:
-            return EnkaNetworkResponse.parse_obj(cache)
+            return cache
             
         data = await self.__http.fetch_user_by_uid(uid, info=info)
         data = self.__format_json(data)
