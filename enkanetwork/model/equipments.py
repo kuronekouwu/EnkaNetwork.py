@@ -130,3 +130,7 @@ class Equipments(BaseModel):
                 self.ascension = data["weapon"]["promoteLevel"]
                 self.max_level = (self.ascension * 10) + (
                     10 if self.ascension > 0 else 0) + 20
+                
+                if self.ascension >= 2:
+                    self.detail.icon = IconAsset(filename=self.detail.icon.filename + "_Awaken")
+                
