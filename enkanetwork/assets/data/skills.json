@@ -1579,6 +1579,46 @@
         "skillIcon": "Skill_E_Alhatham_01",
         "proudSkillGroupId": 7839
     },
+    "10791": {
+        "nameTextMapHash": 804739701,
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 7931
+    },
+    "10792": {
+        "nameTextMapHash": 588248229,
+        "skillIcon": "Skill_S_Dehya_01",
+        "proudSkillGroupId": 7932
+    },
+    "10793": {
+        "nameTextMapHash": 2706644389,
+        "skillIcon": "Skill_S_Dehya_02",
+        "proudSkillGroupId": ""
+    },
+    "10794": {
+        "nameTextMapHash": 3699125269,
+        "skillIcon": "Skill_E_Dehya_02",
+        "proudSkillGroupId": ""
+    },
+    "10795": {
+        "nameTextMapHash": 594609117,
+        "skillIcon": "Skill_E_Dehya_01",
+        "proudSkillGroupId": 7939
+    },
+    "10801": {
+        "nameTextMapHash": 2556517,
+        "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": 8031
+    },
+    "10802": {
+        "nameTextMapHash": 3335717533,
+        "skillIcon": "Skill_S_Mika_01",
+        "proudSkillGroupId": 8032
+    },
+    "10805": {
+        "nameTextMapHash": 3170404421,
+        "skillIcon": "Skill_E_Mika_01",
+        "proudSkillGroupId": 8039
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun",
@@ -1977,6 +2017,11 @@
     "20342": {
         "nameTextMapHash": 994561205,
         "skillIcon": "Skill_LanV3_Icon05",
+        "proudSkillGroupId": ""
+    },
+    "20345": {
+        "nameTextMapHash": 1316655253,
+        "skillIcon": "Btn_PacMan",
         "proudSkillGroupId": ""
     },
     "10384": {
@@ -2452,6 +2497,16 @@
     "5078010": {
         "nameTextMapHash": 788864381,
         "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
+    },
+    "5079010": {
+        "nameTextMapHash": 2895358061,
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
+    },
+    "5080010": {
+        "nameTextMapHash": 886703661,
+        "skillIcon": "Skill_A_03",
         "proudSkillGroupId": ""
     }
 }

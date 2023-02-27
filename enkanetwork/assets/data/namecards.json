@@ -1468,5 +1468,35 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210152": {
+        "nameTextMapHash": 3153965316,
+        "icon": "UI_NameCardIcon_Dehya",
+        "picPath": [
+            "UI_NameCardPic_Dehya_Alpha",
+            "UI_NameCardPic_Dehya_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210153": {
+        "nameTextMapHash": 3025228532,
+        "icon": "UI_NameCardIcon_Mika",
+        "picPath": [
+            "UI_NameCardPic_Mika_Alpha",
+            "UI_NameCardPic_Mika_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210154": {
+        "nameTextMapHash": 893197700,
+        "icon": "UI_NameCardIcon_Bp22",
+        "picPath": [
+            "UI_NameCardPic_Bp22_P_Alpha",
+            "UI_NameCardPic_Bp22_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }

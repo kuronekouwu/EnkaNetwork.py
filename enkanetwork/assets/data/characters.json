@@ -1504,5 +1504,45 @@
             785,
             786
         ]
+    },
+    "10000079": {
+        "nameTextMapHash": 2360533154,
+        "iconName": "UI_AvatarIcon_Dehya",
+        "sideIconName": "UI_AvatarIcon_Side_Dehya",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Fire",
+        "skills": [
+            10791,
+            10792,
+            10795
+        ],
+        "talents": [
+            791,
+            792,
+            793,
+            794,
+            795,
+            796
+        ]
+    },
+    "10000080": {
+        "nameTextMapHash": 231911858,
+        "iconName": "UI_AvatarIcon_Mika",
+        "sideIconName": "UI_AvatarIcon_Side_Mika",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Ice",
+        "skills": [
+            10801,
+            10802,
+            10805
+        ],
+        "talents": [
+            801,
+            802,
+            803,
+            804,
+            805,
+            806
+        ]
     }
 }

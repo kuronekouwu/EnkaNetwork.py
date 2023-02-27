@@ -1582,5 +1582,53 @@
     "786": {
         "nameTextMapHash": 540494281,
         "icon": "UI_Talent_S_Alhatham_04"
+    },
+    "791": {
+        "nameTextMapHash": 975929929,
+        "icon": "UI_Talent_S_Dehya_01"
+    },
+    "792": {
+        "nameTextMapHash": 1063269113,
+        "icon": "UI_Talent_S_Dehya_02"
+    },
+    "793": {
+        "nameTextMapHash": 3309645225,
+        "icon": "UI_Talent_U_Dehya_01"
+    },
+    "794": {
+        "nameTextMapHash": 1318685825,
+        "icon": "UI_Talent_S_Dehya_03"
+    },
+    "795": {
+        "nameTextMapHash": 2001862177,
+        "icon": "UI_Talent_U_Dehya_02"
+    },
+    "796": {
+        "nameTextMapHash": 2802373841,
+        "icon": "UI_Talent_S_Dehya_04"
+    },
+    "801": {
+        "nameTextMapHash": 896455753,
+        "icon": "UI_Talent_S_Mika_01"
+    },
+    "802": {
+        "nameTextMapHash": 1491617321,
+        "icon": "UI_Talent_S_Mika_02"
+    },
+    "803": {
+        "nameTextMapHash": 973254489,
+        "icon": "UI_Talent_U_Mika_01"
+    },
+    "804": {
+        "nameTextMapHash": 3408467449,
+        "icon": "UI_Talent_S_Mika_03"
+    },
+    "805": {
+        "nameTextMapHash": 101621505,
+        "icon": "UI_Talent_U_Mika_02"
+    },
+    "806": {
+        "nameTextMapHash": 1784924817,
+        "icon": "UI_Talent_S_Mika_04"
     }
 }
