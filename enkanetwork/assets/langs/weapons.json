@@ -1121,6 +1121,23 @@
         "EN": "Forest Regalia",
         "PT": "Espada Real da Floresta"
     },
+    "1200948859": {
+        "FR": "Fleur de mailles",
+        "JP": "鉄彩の花",
+        "CHT": "飾鐵之花",
+        "ID": "Mailed Flower",
+        "CHS": "饰铁之花",
+        "VI": "Đóa Hoa Tôn Màu Thép",
+        "ES": "Fierro Floriorlado",
+        "TH": "Mailed Flower",
+        "TR": "Zırhlı Çiçek",
+        "KR": "꽃 장식 대검",
+        "DE": "Eiserne Blume",
+        "RU": "Цветок в латах",
+        "IT": "Fiore corazzato",
+        "EN": "Mailed Flower",
+        "PT": "Flor de Aço"
+    },
     "1089950259": {
         "FR": "Fierté de la Voûte d'Azur",
         "JP": "天空の傲",
@@ -1273,6 +1290,23 @@
         "IT": "Spaccarocce Cornorosso",
         "EN": "Redhorn Stonethresher",
         "PT": "Chifres Vermelhos Destruidores de Pedras"
+    },
+    "2834063555": {
+        "FR": "Balise de la mer de roseaux",
+        "JP": "葦海の標",
+        "CHT": "葦海信標",
+        "ID": "Beacon of the Reed Sea",
+        "CHS": "苇海信标",
+        "VI": "Hải Đăng Bờ Biển Lau",
+        "ES": "Emblema del Mar de Juncos",
+        "TH": "Beacon of the Reed Sea",
+        "TR": "Kızıl Çölün İradesi",
+        "KR": "갈대 바다의 등대",
+        "DE": "Schilfmeer-Bake",
+        "RU": "Маяк тростникового моря",
+        "IT": "Faro del Mare dei Giunchi",
+        "EN": "Beacon of the Reed Sea",
+        "PT": "Sinal dos Mares"
     },
     "2796697027": {
         "FR": "Lance du débutant",

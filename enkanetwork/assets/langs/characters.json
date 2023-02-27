@@ -1086,5 +1086,39 @@
         "IT": "Alhaitham",
         "EN": "Alhaitham",
         "PT": "Alhaitham"
+    },
+    "2360533154": {
+        "FR": "Dehya",
+        "JP": "ディシア",
+        "CHT": "迪希雅",
+        "ID": "Dehya",
+        "CHS": "迪希雅",
+        "VI": "Dehya",
+        "ES": "Dehya",
+        "TH": "Dehya",
+        "TR": "Dehya",
+        "KR": "데히야",
+        "DE": "Dehya",
+        "RU": "Дэхья",
+        "IT": "Dehya",
+        "EN": "Dehya",
+        "PT": "Dehya"
+    },
+    "231911858": {
+        "FR": "Mika",
+        "JP": "ミカ",
+        "CHT": "米卡",
+        "ID": "Mika",
+        "CHS": "米卡",
+        "VI": "Mika",
+        "ES": "Mika",
+        "TH": "Mika",
+        "TR": "Mika",
+        "KR": "미카",
+        "DE": "Mika",
+        "RU": "Мика",
+        "IT": "Mika",
+        "EN": "Mika",
+        "PT": "Mika"
     }
 }
