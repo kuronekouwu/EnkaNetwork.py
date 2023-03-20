@@ -139,7 +139,6 @@ class Equipments(BaseModel):
             for props in data["reliquary"].get("appendPropIdList", []):
                 props_info = Assets.artifact_props(props)
                 if props_info: 
-                    # print(props_info)
                     self.props.append(EquipmentsProps(**{
                         "id": props_info.id,
                         "prop_id": props_info.type,
