@@ -88,6 +88,23 @@ class EquipmentsDetail(BaseModel):
     class Config:
         use_enum_values = True
 
+class EquipmentsProps(BaseModel):
+    id: int = 0
+    prop_id: str = ''
+    name: str = ''
+    digit: DigitType = DigitType.NUMBER
+    value: int = 0
+    
+    def __init__(self, **data: Any) -> None:
+        super().__init__(**data)
+        self.name = Assets.get_hash_map(self.prop_id)
+
+    def get_value_symbol(self):
+        return f"{self.value}{'%' if self.digit == DigitType.PERCENT else ''}"
+
+    def get_full_name(self):
+        raw = self.value
+        return f"{self.name}{str(raw) if raw < 0 else '+'+str(raw)}{'%' if self.digit == DigitType.PERCENT else ''}"
 
 class Equipments(BaseModel):
     """
@@ -105,6 +122,7 @@ class Equipments(BaseModel):
     type: EquipmentsType = EquipmentsType.UNKNOWN
     refinement: int = 1  # Refinement  of equipments (Weapon only)
     ascension: int = 0  # Ascension (Weapon only)
+    props: List[EquipmentsProps] = []
 
     class Config:
         use_enum_values = True
@@ -117,6 +135,17 @@ class Equipments(BaseModel):
             self.type = EquipmentsType.ARTIFACT
             self.level = data["reliquary"]["level"] - 1
             self.max_level = 4 * data["flat"]["rankLevel"]
+
+            for props in data["reliquary"].get("appendPropIdList", []):
+                props_info = Assets.artifact_props(props)
+                if props_info: 
+                    # print(props_info)
+                    self.props.append(EquipmentsProps(**{
+                        "id": props_info.id,
+                        "prop_id": props_info.type,
+                        "digit": DigitType.PERCENT if props_info.digit == 'PERCENT' else DigitType.NUMBER,
+                        "value": props_info.value
+                    }))
 
         if data["flat"]["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             self.type = EquipmentsType.WEAPON
@@ -133,4 +162,4 @@ class Equipments(BaseModel):
                 
                 if self.ascension >= 2:
                     self.detail.icon = IconAsset(filename=self.detail.icon.filename + "_Awaken")
-                
+            

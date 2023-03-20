@@ -110,6 +110,12 @@ class CharacterCostume(BaseModel):
     id: int = 0
     images: CharacterIconAsset = None
 
+class AritfactProps(BaseModel):
+    id: int = 0
+    type: str = Field('', alias='propType')
+    digit: str = Field('DIGIT', alias='propDigit')
+    value: int = Field(0, alias='propValue')
+
 
 class CharacterAsset(BaseModel):
     """ Character (Assets)

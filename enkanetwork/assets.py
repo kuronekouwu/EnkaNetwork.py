@@ -132,6 +132,19 @@ class Assets:
             "banner": utils.IconAsset(filename=data["picPath"][1]),
             "navbar": utils.IconAsset(filename=data["picPath"][0]),
         })
+    
+    @classmethod
+    def artifact_props(cls, id: int):
+        LOGGER.debug(f"Getting artifact props assets with id: {id}")
+        data = cls.DATA["artifact_props"].get(str(id))
+        if not data:
+            LOGGER.error(f"Artifact props not found with id: {id}")
+            return
+        
+        return assets.AritfactProps.parse_obj({
+            "id": id,
+            **data
+        })
 
     @classmethod
     def get_hash_map(cls, hash_id: str) -> Optional[str]:
