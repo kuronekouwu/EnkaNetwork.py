@@ -1630,5 +1630,53 @@
     "806": {
         "nameTextMapHash": 1784924817,
         "icon": "UI_Talent_S_Mika_04"
+    },
+    "811": {
+        "nameTextMapHash": 3110332641,
+        "icon": "UI_Talent_S_Kaveh_01"
+    },
+    "812": {
+        "nameTextMapHash": 20172977,
+        "icon": "UI_Talent_S_Kaveh_02"
+    },
+    "813": {
+        "nameTextMapHash": 2730015409,
+        "icon": "UI_Talent_U_Kaveh_02"
+    },
+    "814": {
+        "nameTextMapHash": 2860814489,
+        "icon": "UI_Talent_S_Kaveh_03"
+    },
+    "815": {
+        "nameTextMapHash": 1755584449,
+        "icon": "UI_Talent_U_Kaveh_01"
+    },
+    "816": {
+        "nameTextMapHash": 2892000521,
+        "icon": "UI_Talent_S_Kaveh_04"
+    },
+    "821": {
+        "nameTextMapHash": 858748369,
+        "icon": "UI_Talent_S_Baizhuer_01"
+    },
+    "822": {
+        "nameTextMapHash": 1849398401,
+        "icon": "UI_Talent_S_Baizhuer_02"
+    },
+    "823": {
+        "nameTextMapHash": 2410139081,
+        "icon": "UI_Talent_U_Baizhuer_01"
+    },
+    "824": {
+        "nameTextMapHash": 4262913073,
+        "icon": "UI_Talent_S_Baizhuer_03"
+    },
+    "825": {
+        "nameTextMapHash": 63855777,
+        "icon": "UI_Talent_U_Baizhuer_02"
+    },
+    "826": {
+        "nameTextMapHash": 1293460177,
+        "icon": "UI_Talent_S_Baizhuer_04"
     }
 }

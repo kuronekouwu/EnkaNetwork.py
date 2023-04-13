@@ -1498,5 +1498,75 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210155": {
+        "nameTextMapHash": 2816803308,
+        "icon": "UI_NameCardIcon_Baizhuer",
+        "picPath": [
+            "UI_NameCardPic_Baizhuer_Alpha",
+            "UI_NameCardPic_Baizhuer_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210156": {
+        "nameTextMapHash": 2684456012,
+        "icon": "UI_NameCardIcon_Kaveh",
+        "picPath": [
+            "UI_NameCardPic_Kaveh_Alpha",
+            "UI_NameCardPic_Kaveh_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210157": {
+        "nameTextMapHash": 370573972,
+        "icon": "UI_NameCardIcon_Xm4",
+        "picPath": [
+            "UI_NameCardPic_Xm4_Alpha",
+            "UI_NameCardPic_Xm4_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210158": {
+        "nameTextMapHash": 110943356,
+        "icon": "UI_NameCardIcon_Tzz7",
+        "picPath": [
+            "UI_NameCardPic_Tzz7_Alpha",
+            "UI_NameCardPic_Tzz7_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210159": {
+        "nameTextMapHash": 1790614036,
+        "icon": "UI_NameCardIcon_Vasara",
+        "picPath": [
+            "UI_NameCardPic_Vasara_Alpha",
+            "UI_NameCardPic_Vasara_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210160": {
+        "nameTextMapHash": 3159539884,
+        "icon": "UI_NameCardIcon_OfferingPari",
+        "picPath": [
+            "UI_NameCardPic_OfferingPari_Alpha",
+            "UI_NameCardPic_OfferingPari_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210161": {
+        "nameTextMapHash": 641457676,
+        "icon": "UI_NameCardIcon_Bp23",
+        "picPath": [
+            "UI_NameCardPic_Bp23_Alpha",
+            "UI_NameCardPic_Bp23_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }

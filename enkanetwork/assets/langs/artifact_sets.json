@@ -677,7 +677,7 @@
         "RU": "Воспоминания Симэнавы",
         "IT": "Reminiscenza di Shimenawa",
         "EN": "Shimenawa's Reminiscence",
-        "PT": "Reminescência Nostálgica"
+        "PT": "Reminiscência Nostálgica"
     },
     "2276480763": {
         "FR": "Emblème du destin brisé",
@@ -831,5 +831,39 @@
         "IT": "Fiore del paradiso perduto",
         "EN": "Flower of Paradise Lost",
         "PT": "Flor do Paraíso Perdido"
+    },
+    "1925210475": {
+        "FR": "Rêve de la nymphe",
+        "JP": "水仙の夢",
+        "CHT": "水仙之夢",
+        "ID": "Nymph's Dream",
+        "CHS": "水仙之梦",
+        "VI": "Giấc Mộng Thủy Tiên",
+        "ES": "Sueño de la Ninfa",
+        "TH": "Nymph's Dream",
+        "TR": "Nergisin Rüyası",
+        "KR": "님프의 꿈",
+        "DE": "Traum der Narzisse",
+        "RU": "Сон нимфы",
+        "IT": "Sogno della ninfa",
+        "EN": "Nymph's Dream",
+        "PT": "Sonho da Ninfa"
+    },
+    "235897163": {
+        "FR": "Lueur du vourukasha",
+        "JP": "花海甘露の光",
+        "CHT": "花海甘露之光",
+        "ID": "Vourukasha's Glow",
+        "CHS": "花海甘露之光",
+        "VI": "Vầng Sáng Vourukasha",
+        "ES": "Fulgor de Vurukasha",
+        "TH": "Vourukasha's Glow",
+        "TR": "Vourukasha'nın Parıltısı",
+        "KR": "감로빛 꽃바다",
+        "DE": "Licht der Vourukasha-Oase",
+        "RU": "Сияние Вурукаши",
+        "IT": "Bagliore della Vourukasha",
+        "EN": "Vourukasha's Glow",
+        "PT": "Brilho Vourukasha"
     }
 }

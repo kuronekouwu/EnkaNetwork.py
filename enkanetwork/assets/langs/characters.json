@@ -1120,5 +1120,39 @@
         "IT": "Mika",
         "EN": "Mika",
         "PT": "Mika"
+    },
+    "466355514": {
+        "FR": "Kaveh",
+        "JP": "カーヴェ",
+        "CHT": "卡維",
+        "ID": "Kaveh",
+        "CHS": "卡维",
+        "VI": "Kaveh",
+        "ES": "Kaveh",
+        "TH": "Kaveh",
+        "TR": "Kaveh",
+        "KR": "카베",
+        "DE": "Kaveh",
+        "RU": "Кавех",
+        "IT": "Kaveh",
+        "EN": "Kaveh",
+        "PT": "Kaveh"
+    },
+    "2984815066": {
+        "FR": "Baizhu",
+        "JP": "白朮",
+        "CHT": "白朮",
+        "ID": "Baizhu",
+        "CHS": "白术",
+        "VI": "Baizhu",
+        "ES": "Baizhu",
+        "TH": "Baizhu",
+        "TR": "Baizhu",
+        "KR": "백출",
+        "DE": "Baizhu",
+        "RU": "Бай Чжу",
+        "IT": "Baizhu",
+        "EN": "Baizhu",
+        "PT": "Baizhu"
     }
 }

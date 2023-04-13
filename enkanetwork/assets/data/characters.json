@@ -1544,5 +1544,45 @@
             805,
             806
         ]
+    },
+    "10000081": {
+        "nameTextMapHash": 466355514,
+        "iconName": "UI_AvatarIcon_Kaveh",
+        "sideIconName": "UI_AvatarIcon_Side_Kaveh",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Grass",
+        "skills": [
+            10811,
+            10812,
+            10815
+        ],
+        "talents": [
+            811,
+            812,
+            813,
+            814,
+            815,
+            816
+        ]
+    },
+    "10000082": {
+        "nameTextMapHash": 2984815066,
+        "iconName": "UI_AvatarIcon_Baizhuer",
+        "sideIconName": "UI_AvatarIcon_Side_Baizhuer",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Grass",
+        "skills": [
+            10821,
+            10822,
+            10825
+        ],
+        "talents": [
+            821,
+            822,
+            823,
+            824,
+            825,
+            826
+        ]
     }
 }

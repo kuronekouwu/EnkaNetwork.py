@@ -1619,6 +1619,36 @@
         "skillIcon": "Skill_E_Mika_01",
         "proudSkillGroupId": 8039
     },
+    "10811": {
+        "nameTextMapHash": 2101931541,
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 8131
+    },
+    "10812": {
+        "nameTextMapHash": 4260508917,
+        "skillIcon": "Skill_S_Kaveh_01",
+        "proudSkillGroupId": 8132
+    },
+    "10815": {
+        "nameTextMapHash": 1210107733,
+        "skillIcon": "Skill_E_Kaveh_01",
+        "proudSkillGroupId": 8139
+    },
+    "10821": {
+        "nameTextMapHash": 2662918965,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 8231
+    },
+    "10822": {
+        "nameTextMapHash": 2409917,
+        "skillIcon": "Skill_S_Baizhuer_01",
+        "proudSkillGroupId": 8232
+    },
+    "10825": {
+        "nameTextMapHash": 3249611093,
+        "skillIcon": "Skill_E_Baizhuer_01",
+        "proudSkillGroupId": 8239
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun",
@@ -2039,11 +2069,6 @@
         "skillIcon": "Skill_A_01",
         "proudSkillGroupId": ""
     },
-    "100542": {
-        "nameTextMapHash": 3565118517,
-        "skillIcon": "Skill_A_01",
-        "proudSkillGroupId": ""
-    },
     "100543": {
         "nameTextMapHash": 3283214237,
         "skillIcon": "Skill_A_01",
@@ -2076,11 +2101,6 @@
     },
     "100551": {
         "nameTextMapHash": 2463434149,
-        "skillIcon": "Skill_A_01",
-        "proudSkillGroupId": ""
-    },
-    "100552": {
-        "nameTextMapHash": 299520933,
         "skillIcon": "Skill_A_01",
         "proudSkillGroupId": ""
     },
@@ -2507,6 +2527,16 @@
     "5080010": {
         "nameTextMapHash": 886703661,
         "skillIcon": "Skill_A_03",
+        "proudSkillGroupId": ""
+    },
+    "5081010": {
+        "nameTextMapHash": 331663653,
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
+    },
+    "5082010": {
+        "nameTextMapHash": 3734682949,
+        "skillIcon": "Skill_A_Catalyst_MD",
         "proudSkillGroupId": ""
     }
 }
