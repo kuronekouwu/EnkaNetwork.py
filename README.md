@@ -60,7 +60,7 @@ async def main():
         print("=== Player Info ===")
         print(f"Nickname: {data.player.nickname}")
         print(f"Level: {data.player.level}")
-        print(f"Icon: {data.player.icon.url}")
+        print(f"Icon: {data.player.avatar.icon.url}")
         print(f"Signature: {data.player.signature}")
         print(f"Achievement: {data.player.achievement}")
         print(f"Abyss floor: {data.player.abyss_floor} - {data.player.abyss_room}")
