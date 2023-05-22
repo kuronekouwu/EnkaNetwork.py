@@ -815,8 +815,25 @@
         "EN": "Shield Strength",
         "PT": "Força do Escudo"
     },
+    "FIGHT_PROP_ELEMENT_ADD_HURT": {
+        "FR": "Augmentation des DGT élémentaires infligés",
+        "JP": "元素ダメージアップ",
+        "CHT": "造成元素傷害提升",
+        "ID": "Meningkatkan Elemental DMG yang diakibatkan",
+        "CHS": "造成元素伤害提升",
+        "VI": "Tăng sát thương nguyên tố gây ra",
+        "ES": "Aumento del Daño Elemental",
+        "TH": "ความเสียหายธาตุจะเพิ่มขึ้น",
+        "TR": "Verilen Element Hasarını artırır",
+        "KR": "가하는 원소 피해 증가",
+        "DE": "Erhöht den verursachten Elementar-SCH.",
+        "RU": "Увеличивает элементальный урон",
+        "IT": "Aumenta i DAN elementali inflitti",
+        "EN": "Increases Elemental DMG dealt",
+        "PT": "Aumenta o Dano Elemental causado"
+    },
     "FIGHT_PROP_ATTACK_PERCENT_A": {
-        "FR": "Pourcentage ATQ",
+        "FR": "Pourcentage d'ATQ",
         "JP": "攻撃力パーセンテージ",
         "CHT": "攻擊力百分比",
         "ID": "ATK%",
@@ -833,7 +850,7 @@
         "PT": "Porcentagem de ATQ"
     },
     "FIGHT_PROP_DEFENSE_PERCENT_A": {
-        "FR": "Pourcentage DÉF",
+        "FR": "Pourcentage de DÉF",
         "JP": "防御力パーセンテージ",
         "CHT": "防禦力百分比",
         "ID": "DEF%",
@@ -850,7 +867,7 @@
         "PT": "Porcentagem de DEF"
     },
     "FIGHT_PROP_HP_PERCENT_A": {
-        "FR": "Pourcentage PV",
+        "FR": "Pourcentage de PV",
         "JP": "HPパーセンテージ",
         "CHT": "生命值百分比",
         "ID": "HP%",

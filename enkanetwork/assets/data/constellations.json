@@ -1678,5 +1678,29 @@
     "826": {
         "nameTextMapHash": 1293460177,
         "icon": "UI_Talent_S_Baizhuer_04"
+    },
+    "611": {
+        "nameTextMapHash": 3502158873,
+        "icon": "UI_Talent_S_Momoka_01"
+    },
+    "612": {
+        "nameTextMapHash": 3954516065,
+        "icon": "UI_Talent_S_Momoka_02"
+    },
+    "613": {
+        "nameTextMapHash": 3397892401,
+        "icon": "UI_Talent_U_Momoka_01"
+    },
+    "614": {
+        "nameTextMapHash": 3551684865,
+        "icon": "UI_Talent_S_Momoka_04"
+    },
+    "615": {
+        "nameTextMapHash": 34942769,
+        "icon": "UI_Talent_U_Momoka_02"
+    },
+    "616": {
+        "nameTextMapHash": 2439940993,
+        "icon": "UI_Talent_S_Momoka_03"
     }
 }

@@ -1568,5 +1568,25 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210162": {
+        "nameTextMapHash": 2371279924,
+        "icon": "UI_NameCardIcon_Kirara",
+        "picPath": [
+            "UI_NameCardPic_Kirara_Alpha",
+            "UI_NameCardPic_Kirara_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210163": {
+        "nameTextMapHash": 252168660,
+        "icon": "UI_NameCardIcon_Bp24",
+        "picPath": [
+            "UI_NameCardPic_Bp24_Alpha",
+            "UI_NameCardPic_Bp24_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }

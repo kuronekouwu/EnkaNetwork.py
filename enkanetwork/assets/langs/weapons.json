@@ -1085,7 +1085,7 @@
         "RU": "Аквамарин Махайры",
         "IT": "Acquamarina di Makhaira",
         "EN": "Makhaira Aquamarine",
-        "PT": "Água-marinha de Mahara"
+        "PT": "Água-Marinha de Mahara"
     },
     "2359799475": {
         "FR": "Akuoumaru",
@@ -2837,6 +2837,23 @@
         "IT": "Pesce da lenza",
         "EN": "End of the Line",
         "PT": "Águas Secas"
+    },
+    "316078811": {
+        "FR": "Perceur d'ibis",
+        "JP": "トキの嘴",
+        "CHT": "䴉穿之喙",
+        "ID": "Ibis Piercer",
+        "CHS": "鹮穿之喙",
+        "VI": "Mỏ Cò Xuyên Thấu",
+        "ES": "Perforaibis",
+        "TH": "Ibis Piercer",
+        "TR": "Telli Turna",
+        "KR": "꿰뚫는 따오기 부리",
+        "DE": "Durchdringer der Ibisse",
+        "RU": "Клюв ибиса",
+        "IT": "Becco d'ibis",
+        "EN": "Ibis Piercer",
+        "PT": "Bico de Íbis"
     },
     "3933622347": {
         "FR": "Ailes de la Voûte d'Azur",

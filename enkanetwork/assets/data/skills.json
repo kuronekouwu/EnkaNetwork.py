@@ -1224,6 +1224,26 @@
         "skillIcon": "Skill_E_Yelan_01",
         "proudSkillGroupId": 6039
     },
+    "10611": {
+        "nameTextMapHash": 2089915453,
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 6131
+    },
+    "10612": {
+        "nameTextMapHash": 3512914781,
+        "skillIcon": "Skill_S_Momoka_01",
+        "proudSkillGroupId": 6132
+    },
+    "10613": {
+        "nameTextMapHash": 451737061,
+        "skillIcon": "Skill_S_Momoka_02",
+        "proudSkillGroupId": ""
+    },
+    "10615": {
+        "nameTextMapHash": 2543392221,
+        "skillIcon": "Skill_E_Momoka_01",
+        "proudSkillGroupId": 6139
+    },
     "10621": {
         "nameTextMapHash": 2994648485,
         "skillIcon": "Skill_A_02",
@@ -2054,6 +2074,21 @@
         "skillIcon": "Btn_PacMan",
         "proudSkillGroupId": ""
     },
+    "20350": {
+        "nameTextMapHash": 3206240077,
+        "skillIcon": "Skill_E_Klee_01",
+        "proudSkillGroupId": ""
+    },
+    "20351": {
+        "nameTextMapHash": 2174036525,
+        "skillIcon": "Skill_E_Klee_01",
+        "proudSkillGroupId": ""
+    },
+    "20352": {
+        "nameTextMapHash": 1538181693,
+        "skillIcon": "Btn_Fishing_Bait",
+        "proudSkillGroupId": ""
+    },
     "10384": {
         "nameTextMapHash": 1543775045,
         "skillIcon": "Btn_Recon_Bait",
@@ -2432,6 +2467,11 @@
     "5060010": {
         "nameTextMapHash": 289877085,
         "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
+    },
+    "5061010": {
+        "nameTextMapHash": 1011789509,
+        "skillIcon": "Skill_A_01",
         "proudSkillGroupId": ""
     },
     "5062010": {

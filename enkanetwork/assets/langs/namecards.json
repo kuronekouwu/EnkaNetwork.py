@@ -2223,7 +2223,7 @@
         "DE": "Candace – Graureiher",
         "RU": "Серая цапля",
         "IT": "Candace: Airone grigio",
-        "EN": "Candace: Grey Heron",
+        "EN": "Candace: Gray Heron",
         "PT": "Candace — Garça Cinza"
     },
     "106635948": {
@@ -2667,5 +2667,39 @@
         "IT": "Appunti di viaggio: Corona gloriosa",
         "EN": "Travel Notes: Crown of Glory",
         "PT": "Passe de Batalha: Coroa Gloriosa"
+    },
+    "2371279924": {
+        "FR": "Kirara - Neko-colis",
+        "JP": "綺良々·猫箱",
+        "CHT": "綺良良·貓箱",
+        "ID": "Kirara: Neko Box",
+        "CHS": "绮良良·猫箱",
+        "VI": "Kirara - Bưu Kiện Mèo",
+        "ES": "Kirara - Paquete minino",
+        "TH": "Kirara - กล่องแมว",
+        "TR": "Kirara: Neko Kutusu",
+        "KR": "키라라·냥냥 상자",
+        "DE": "Kirara – Neko-Kiste",
+        "RU": "Посылка нэко",
+        "IT": "Kirara: Nekoscatola",
+        "EN": "Kirara: Neko Box",
+        "PT": "Kirara - Caixa para Gatos"
+    },
+    "252168660": {
+        "FR": "PB - Secret d'invoqueur",
+        "JP": "紀行·秘典",
+        "CHT": "紀行·秘典",
+        "ID": "Catatan Perjalanan: Rahasia Pemanggil",
+        "CHS": "纪行·秘典",
+        "VI": "Nhật Ký Hành Trình - Triệu Hồi",
+        "ES": "#PB{NON_BREAK_SPACE}-{NON_BREAK_SPACE}As de la invocación",
+        "TH": "บันทึก - ความลับ",
+        "TR": "Gezi Notları: Sırlar",
+        "KR": "기행·비전",
+        "DE": "Erlebnispass – Kodex",
+        "RU": "Секреты",
+        "IT": "Appunti di viaggio: Segreti",
+        "EN": "Travel Notes: Secrets",
+        "PT": "Passe de Batalha: Segredo do Invocador"
     }
 }
