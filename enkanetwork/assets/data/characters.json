@@ -1165,6 +1165,26 @@
             606
         ]
     },
+    "10000061": {
+        "nameTextMapHash": 1456643042,
+        "iconName": "UI_AvatarIcon_Momoka",
+        "sideIconName": "UI_AvatarIcon_Side_Momoka",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Grass",
+        "skills": [
+            10611,
+            10612,
+            10615
+        ],
+        "talents": [
+            611,
+            612,
+            613,
+            614,
+            615,
+            616
+        ]
+    },
     "10000062": {
         "nameTextMapHash": 3689108098,
         "iconName": "UI_AvatarIcon_Aloy",
