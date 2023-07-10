@@ -19,7 +19,7 @@ https://enka.network/ のAPIラッパーライブラリ
   - [Hoyosプロフィール](#Hoyosプロフィール)
   - [ビルド情報](#ビルド情報)
   - [プロフィール情報](#プロフィール情報)
-  - [Player](#プレイヤー)
+  - [プレイヤー](#プレイヤー)
     - [名刺](#名刺)
       - [アバターアイコン](#アバターアイコン)
       - [展示キャラクター一覧](#展示キャラクター一覧)
@@ -221,13 +221,13 @@ Cache timeout: 300
 | ----------------------- | ---------------------- | ------------------------------------------------------ |
 | id                      | avatarId               |                                                        |
 | name                    | -                      | アバター名                                              |
-| element                 | -                      | [Element Type](#element-type) を参照                   |
+| element                 | -                      | [元素タイプ](#元素タイプ) を参照                   |
 | rarity                  | -                      | レア度                                                 |
 | image                   | -                      | [アイコン](#アイコン) を参照                             |
 | xp                      | propMap -> 1001        |                                                        |
 | ascension               | propMap -> 1002        |                                                        |
 | level                   | propMap -> 4001        |                                                        |
-| max_level               | -                      | Avatar max level (Like 50/60)                          |
+| max_level               | -                      | アバターの最大レベル ( 50/60 等)                          |
 | friendship_level        | fetterInfo.level       |                                                        |
 | equipments              | equipList              | [装備](#装備-聖遺物-武器) を参照                         |
 | stats                   | fightPropMap           | [FIGHT_PROPデータ](#fight_propデータ) を参照            |
