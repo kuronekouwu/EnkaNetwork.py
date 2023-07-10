@@ -15,29 +15,29 @@ https://enka.network/ のAPIラッパーライブラリ
   - [プロフィール](#プロフィール)
 - [🚧 データ構造](#データ構造)
   - [プレイヤーオーナー](#プレイヤーオーナー)
-  - [Profile patreon](#profile-patreon)
-  - [Profile Hoyos](#profile-hoyos)
-  - [Build(s) info](#avatar-builds-info)
-  - [Profile info](#profile-info)
+  - [Patreonプロフィール](#Patreonプロフィール)
+  - [Hoyosプロフィール](#Hoyosプロフィール)
+  - [ビルド情報](#ビルド情報)
+  - [プロフィール情報](#プロフィール情報)
   - [Player](#プレイヤー)
-    - [Namecard](#namecard)
-      - [Avatar Icon](#avatar-icon)
-      - [Character preview](#character-preview)
-    - [Characters](#characters)
-      - [Icon](#icon)
-      - [Constellation](#constellation)
-      - [Skill](#skill)
-    - [Equipments (Artifact, Weapon)](#equipments-artifact-weapon)
-      - [Equipments Info](#equipments-info)
-      - [Equipments Stats](#equipments-stats)
-    - [FIGHT_PROP Data](#fight_prop-data)
-    - [Build(s)](#build)
-- [🔧 Assets](#assets)
-  - [Character, constellations, skills, namecards](#assets-character-constellations-skills-namecards)
-    - [NameTextMapHash](#assets-nametextmaphash)
+    - [名刺](#名刺)
+      - [アバターアイコン](#アバターアイコン)
+      - [展示キャラクター一覧](#展示キャラクター一覧)
+    - [キャラクター](#キャラクター)
+      - [アイコン](#アイコン)
+      - [命ノ星座](#命ノ星座)
+      - [スキル](#スキル)
+    - [装備 (聖遺物, 武器)](#装備-聖遺物-武器)
+      - [装備情報](#装備情報)
+      - [装備ステータス](#装備ステータス)
+    - [FIGHT_PROPデータ](#fight_propデータ)
+    - [ビルド](#ビルド)
+- [🔧 アセット](#アセット)
+  - [キャラクター, 命ノ星座, スキル, 名刺](#キャラクター-命ノ星座-スキル-名刺)
+    - [NameTextMapHash](#nametextmaphash)
 - [🌎 言語のサポート](#言語のサポート)
-- [🙋 Support & Question](#support--question)
-- [📄 LICENSE](#license)
+- [🙋 サポートと質問](#サポートと質問)
+- [📄 ライセンス](#ライセンス)
 
 # インストール
 
@@ -84,7 +84,7 @@ Cache timeout: 300
 
 ## 使用例
 
-[example](./example/) 参照
+[example](./example/) を参照
 
 # メソッド一覧
 
@@ -92,10 +92,10 @@ Cache timeout: 300
 | ----------------------------------- | --------------------------------------------------------------------------------------------------- |
 | fetch_user(uid)                     | ユーザーデータの取得 (UID) **(まもなく廃止されます)**                                                 |
 | fetch_user_by_uid(uid)              | ユーザーデータの取得 (UID)                                                                               |
-| fetch_user_by_username(profile_id)  | ユーザーデータの取得 (プロフィールID) **(For subscriptions in Enka.Network)**                                |
-| fetch_hoyos_by_username(profile_id) | hoyosのユーザーデータの取得 (プロフィールID) **(For subscriptions in Enka.Network)**                        |
-| fetch_builds(profile_id, metaname)  | ビルドデータの取得 (プロフィールID) **(For subscriptions in Enka.Network)**                               |
-| set_language(lang)                  | 言語の設定 <br> [言語のサポート](#言語のサポート) 参照                      |
+| fetch_user_by_username(profile_id)  | ユーザーデータの取得 (プロフィールID) **(Enka.Networkのサブスクライバー向け)**                                |
+| fetch_hoyos_by_username(profile_id) | hoyosのユーザーデータの取得 (プロフィールID) **(Enka.Networkのサブスクライバー向け)**                        |
+| fetch_builds(profile_id, metaname)  | ビルドデータの取得 (プロフィールID) **(Enka.Networkのサブスクライバー向け)**                               |
+| set_language(lang)                  | 言語の設定 <br> [言語のサポート](#言語のサポート) を参照                      |
 | update_assets()                     |  [Enkanetwork.py Data](https://github.com/mrwan200/enkanetwork.py-data/) からアセットを更新します。 |
 
 # レスポンス
@@ -106,7 +106,7 @@ Cache timeout: 300
 | ラッパー | API | 備考 |
 | ---------- | -------------- | ------------------------------------------ |
 | player | playerInfo | [プレイヤー](#プレイヤー) を参照 |
-| characters | avatarInfoList | [キャラクター](#characters) を参照 |
+| characters | avatarInfoList | [キャラクター](#キャラクター) を参照 |
 | profile | - | [プロフィール情報](#プロフィール情報) を参照 |
 | owner | owner | [プレイヤーオーナー](#プレイヤーオーナー) を参照 |
 | ttl | ttl | |
@@ -118,7 +118,7 @@ Cache timeout: 300
 | ラッパー | API | 備考 |
 | -------- | ---------- | --------------------------------------------------- |
 | username | playerInfo | [プレイヤー](#プレイヤー) を参照 |
-| profile | profile | [Patreonプロフィール](#profile-patreon) を参照 |
+| profile | profile | [Patreonプロフィール](#Patreonプロフィール) を参照 |
 | hoyos | hoyos | [hoyosプロフィール](#hoyosプロフィール) を参照 |
 
 # データ構造
@@ -130,7 +130,7 @@ Cache timeout: 300
 | hash     | hash     |                                                     |
 | username | username | [Tier](#tier) を参照                          |
 | profile  | profile  | [Patreonプロフィール](#Patreonプロフィール) を参照 |
-| builds   | -        | [ビルド情報](#avatar-builds-info) を参照   |
+| builds   | -        | [ビルド情報](#ビルド情報) を参照   |
 
 ## Patreonプロフィール
 
@@ -153,7 +153,7 @@ Cache timeout: 300
 | signup_state | signup_state |                                                  |
 | signup_state | signup_state |                                                  |
 
-## アバタービルド情報
+## ビルド情報
 
 | ラッパー     | API         | 備考                                  |
 | ----------- | ----------- | -------------------------------------- |
@@ -186,15 +186,15 @@ Cache timeout: 300
 | namecards          | showNameCardIdList -> id | [名刺](#名刺) を参照                   |
 | abyss_floor        | towerFloorIndex          |                                                      |
 | abyss_room         | towerLevelIndex          |                                                      |
-| characters_preview | showAvatarInfoList       | [Character Preview](#character-preview) を参照 |
-| avatar             | profilePicture           | [Avatar Icon](#avatar-icon) を参照             |
+| characters_preview | showAvatarInfoList       | [展示キャラクター一覧](#展示キャラクター一覧) を参照 |
+| avatar             | profilePicture           | [アバターアイコン](#アバターアイコン) を参照             |
 
-### Avatar icon
+### アバターアイコン
 
 | ラッパー | API      | 備考                                |
 | ------- | -------- | ------------------------------------ |
 | id      | avatarId |                                      |
-| icon    |          | Please refer [Icon Data](#icon-data) |
+| icon    |          | [アイコン情報](#アイコン情報) を参照 |
 
 ### 名刺
 
@@ -202,129 +202,129 @@ Cache timeout: 300
 | ------- | --- | ------------------------------------------------------------- |
 | id      | -   | 名刺ID                                                   |
 | name    | -   | 名刺の名前                                                 |
-| icon    | -   | 名刺アイコン, [Icon Data](#icon-data) を参照           |
-| banner  | -   | 名刺のバナー, [Icon Data](#icon-data) を参照         |
-| navbar  | -   | Namecard navbar (Alpha), Please refer [Icon Data](#icon-data) |
+| icon    | -   | 名刺アイコン, [アイコン情報](#アイコン情報) を参照           |
+| banner  | -   | 名刺のバナー, [アイコン情報](#アイコン情報) を参照         |
+| navbar  | -   | 名刺(横長), [アイコン情報](#アイコン情報) を参照 |
 
-### キャラクタープレビュー
+### 展示キャラクター一覧
 
 | ラッパー | API | 備考                                             |
 | ------- | --- | ------------------------------------------------- |
 | id      | -   | アバターID                                         |
 | name    | -   | アバター名                                       |
 | level   | -   | アバターのレベル                                      |
-| icon    | -   | アバターアイコン, [Icon Data](#icon-data) を参照 |
+| icon    | -   | アバターアイコン, [アイコン情報](#アイコン情報) を参照 |
 
-## Characters
+## キャラクター
 
 | ラッパー                 | API                    | 備考                                                  |
 | ----------------------- | ---------------------- | ------------------------------------------------------ |
 | id                      | avatarId               |                                                        |
-| name                    | -                      | Avatar Name                                            |
-| element                 | -                      | Please refer [Element Type](#element-type)             |
-| rarity                  | -                      | Rarity                                                 |
-| image                   | -                      | Please refer [Icon](#icon)                             |
+| name                    | -                      | アバター名                                              |
+| element                 | -                      | [Element Type](#element-type) を参照                   |
+| rarity                  | -                      | レア度                                                 |
+| image                   | -                      | [アイコン](#アイコン) を参照                             |
 | xp                      | propMap -> 1001        |                                                        |
 | ascension               | propMap -> 1002        |                                                        |
 | level                   | propMap -> 4001        |                                                        |
 | max_level               | -                      | Avatar max level (Like 50/60)                          |
 | friendship_level        | fetterInfo.level       |                                                        |
-| equipments              | equipList              | Please refer [Equipments](#equipments-artifact-weapon) |
-| stats                   | fightPropMap           | Please refer [FIGHT_PROP Data](#fight_prop-data)       |
-| constellations          | talentIdList           | Please refer [Constellation](#constellation)           |
-| constellations_unlocked | -                      | Constellation unlocked                                 |
+| equipments              | equipList              | [装備](#装備-聖遺物-武器) を参照                         |
+| stats                   | fightPropMap           | [FIGHT_PROPデータ](#fight_propデータ) を参照            |
+| constellations          | talentIdList           | [命ノ星座](#命ノ星座) を参照                             |
+| constellations_unlocked | -                      | 解放済みの命ノ星座                                      |
 | skill_data              | inherentProudSkillList |                                                        |
 | skill_id                | skillDepotId           |                                                        |
-| skills                  | -                      | Please refer [Skill](#skill)                           |
+| skills                  | -                      |  [スキル](#スキル) を参照                           |
 
-### Icon
+### アイコン
 
 | ラッパー | API | 備考                                                    |
 | ------- | --- | -------------------------------------------------------- |
-| icon    | -   | Avatar icon, Please refer [Icon Data](#icon-data)        |
-| side    | -   | Avatar side icon, Please refer [Icon Data](#icon-data)   |
-| banner  | -   | Avatar wish banner, Please refer [Icon Data](#icon-data) |
+| icon    | -   | アバターアイコン, [アイコン情報](#アイコン情報) を参照        |
+| side    | -   | アバターの横向きアイコン, [アイコン情報](#アイコン情報) を参照   |
+| banner  | -   | アバターの祈願バナー, [アイコン情報](#アイコン情報) を参照 |
 
-### Constellation
+### 命ノ星座
 
 | ラッパー  | API | 備考                      |
 | -------- | --- | -------------------------- |
-| id       | -   | Constellation ID           |
-| name     | -   | Constellation Name         |
-| icon     | -   | Constellation Icon (URL)   |
-| unlocked | -   | Constellation has unlocked |
+| id       | -   | 命ノ星座ID                  |
+| name     | -   | 命ノ星座の名前              |
+| icon     | -   | 命ノ星座のアイコンURL        |
+| unlocked | -   | 命ノ星座の開放状態           |
 
-### Skill
+### スキル
 
 | ラッパー    | API | 備考                   |
 | ---------- | --- | ----------------------- |
-| id         | -   | Skill ID                |
-| name       | -   | Skill Name              |
-| icon       | -   | Skill Icon (URL)        |
-| level      | -   | Skill Level             |
-| is_boosted | -   | Skill level has boosted |
+| id         | -   | スキルID                 |
+| name       | -   | スキル名                 |
+| icon       | -   | スキルのアイコンURL       |
+| level      | -   | スキルレベル             |
+| is_boosted | -   | スキルレベルの増加状態    |
 
-## Equipments (Artifact, Weapon)
+## 装備 (聖遺物, 武器)
 
 | ラッパー    | API                                 | 備考                                            |
 | ---------- | ----------------------------------- | ------------------------------------------------ |
 | id         | itemId                              |                                                  |
 | level      | reliquary -> level, weapon -> level |
-| type       | -                                   | Type of equipment (Artifact or Weapon)           |
+| type       | -                                   | 装備タイプ (聖遺物または武器)           |
 | refinement | weapon -> affixMap                  |                                                  |
 | ascension  | weapon -> promoteLevel              |                                                  |
-| detail     | flat                                | Please refer [Equipments Info](#equipments-info) |
+| detail     | flat                                | [装備情報](#装備情報) を参照 |
 
-### Equipments Info
+### 装備情報
 
 | ラッパー       | API                                 | 備考                                              |
 | ------------- | ----------------------------------- | -------------------------------------------------- |
-| name          | -                                   | Equipment Name (Artifact name or Weapon name)      |
-| icon          | icon                                | Please refer [Icon Data](#icon-data)               |
-| artifact_type | -                                   | Please refer [Artifact Type](#artifact-type)       |
+| name          | -                                   | 装備の名前 (聖遺物名 または 武器名)      |
+| icon          | icon                                | [アイコン情報](#アイコン情報) を参照               |
+| artifact_type | -                                   | [装備タイプ](#装備タイプ) を参照       |
 | rarity        | rankLevel                           |                                                    |
-| mainstats     | reliquaryMainstat, weaponStats -> 0 | Please refer [Equipments Stats](#equipments-stats) |
-| substats      | reliquarySubstats, weaponStats -> 1 | Please refer [Equipments Stats](#equipments-stats) |
+| mainstats     | reliquaryMainstat, weaponStats -> 0 | [装備ステータス](#装備ステータス) を参照 |
+| substats      | reliquarySubstats, weaponStats -> 1 | [装備ステータス](#装備ステータス) を参照 |
 
-### Equipments Stats
+### 装備ステータス
 
 | ラッパー | API     | 備考                          |
 | ------- | ------- | ------------------------------ |
 | prop_id | prop_id |                                |
-| type    | -       | Value type (NUMBER or PERCENT) |
-| name    | -       | Name of FIGHT_PROP             |
+| type    | -       | 値のタイプ (整数 または パーセント) |
+| name    | -       | FIGHT_PROPの名前             |
 | value   | value   |                                |
 
-## FIGHT_PROP Data
+## FIGHT_PROPデータ
 
-In FIGHT_PROP data. You can get the value from 4 methods.
-| Choice | Example | Output |
+FIGHT_PROPデータでは4つのメソッドから値を取得できます。
+| 選択 | 例 | 戻り値 |
 |------------------|---------------------------|----------------------------|
-| Get raw value | stats.FIGHT_PROP_HP.value | 15552.306640625 |
-| Get rounded value| stats.FIGHT_PROP_ATTACK.to_rounded() | 344 |
-| Get percentage | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage() | 61.5 |
-| Get percentage and symbol | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage_symbol() | 61.5% |
+| 生のデータを取得 | stats.FIGHT_PROP_HP.value | 15552.306640625 |
+| 丸め込んだ数値の取得 | stats.FIGHT_PROP_ATTACK.to_rounded() | 344 |
+| パーセントの数値の取得 | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage() | 61.5 |
+| %付きの数値の取得 | stats.FIGHT_PROP_FIRE_ADD_HURT.to_percentage_symbol() | 61.5% |
 
-## Build
+## ビルド
 
-In this `Builds` It's not pretty data. You can use this method to get data. Or if you want get full, You can use `raw` argument
-| Choice | Example | Output |
+`ビルド`のデータは整形されていません。以下のメソッドからデータを取得できます。また、`raw`引数を使うことで完全なデータを得られます。
+| 選択 | 例 | 戻り値 |
 |------------------|---------------------------|----------------------------|
-| Get avatar ID list | builds.get_avatar_list() | [10000021,10000037,10000025, ...] |
-| Get character build | builds.get_character(10000021) | List of [Build info](#avatar-builds-info) |
-| Get build info by avatar id | builds.get_character(10000021, 11111111) | [Build info](#avatar-builds-info) |
+| アバターIDのリストを取得 | builds.get_avatar_list() | [10000021,10000037,10000025, ...] |
+| キャラクターのビルドを取得 | builds.get_character(10000021) | List of [ビルド情報](#ビルド情報) |
+| アバターIDでビルド情報を取得 | builds.get_character(10000021, 11111111) | [ビルド情報](#ビルド情報) |
 
-# Icon Data
+# アイコン情報
 
-In icon data. You can get the value from 2 methods.
-| Choice | Example | Output |
+アイコン情報では2つのメソッドから値を取得できます。
+| 選択 | 例 | 戻り値 |
 |------------------|---------------------------|--------------------------------|
-| Get filename | icon.filename | UI_AvatarIcon_Kazuha_Card.png |
-| Get URL | icon.url | https://enka.network/ui/UI_AvatarIcon_Kazuha_Card.png |
+| ファイル名の取得 | icon.filename | UI_AvatarIcon_Kazuha_Card.png |
+| URLの取得 | icon.url | https://enka.network/ui/UI_AvatarIcon_Kazuha_Card.png |
 
-## Artifact Type
+## 装備タイプ
 
-| Key     | Value          |
+| キー     | 値          |
 | ------- | -------------- |
 | Flower  | EQUIP_BRACER   |
 | Feather | EQUIP_NECKLACE |
@@ -332,9 +332,9 @@ In icon data. You can get the value from 2 methods.
 | Goblet  | EQUIP_RING     |
 | Circlet | EQUIP_DRESS    |
 
-## Element Type
+## 元素タイプ
 
-| Key     | Value    |
+| キー     | 値    |
 | ------- | -------- |
 | Cryo    | Ice      |
 | Hydro   | Water    |
@@ -343,11 +343,11 @@ In icon data. You can get the value from 2 methods.
 | Geo     | Rock     |
 | Electro | Electric |
 
-# Assets
+# アセット
 
-## Assets character, constellations, skills, namecards
+## キャラクター, 命ノ星座, スキル, 名刺
 
-You can use avatarId to get the character, constellations, skills, namecards from assets.
+アバターID(avatarId)でキャラクター、命ノ星座、スキル、名刺のアセットを取得できます。
 
 ```py
 import asyncio
@@ -370,9 +370,9 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
 ```
 
-## Assets NameTextMapHash
+## NameTextMapHash
 
-The `NameTextMapHash` is a hash map that contains the name text of the assets. You can get `NameTextMapHash` from `hash_id` like this:
+`NameTextMapHash`はアセット名のテキストが入ったハッシュマップです。`hash_id`から`NameTextMapHash`を以下のように取得できます。
 
 ```py
 import asyncio
@@ -392,7 +392,7 @@ loop.run_until_complete(main())
 
 ## 言語のサポート
 
-| Languege   | Code |
+| 言語   | コード |
 | ---------- | ---- |
 | English    | en   |
 | русский    | ru   |
@@ -409,13 +409,13 @@ loop.run_until_complete(main())
 | Taiwan     | cht  |
 | Chinese    | chs  |
 
-If you want full docs for the API, visit [EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)
+APIの完全なドキュメントが必要な場合は[EnkaNetwork API Docs](https://github.com/EnkaNetwork/API-docs)を参照してください。
 
-## Support & Question
+## サポートと質問
 
-If you need support or some question about EnkaNetwokt.py. You can feel free contact to me in [Enka.network discord server](https://discord.gg/G3m7CWkssY) in [𝖯𝖸┃enkanetwork․py](https://discord.com/channels/840335525621268520/1046281445049647104) channel and mention (Ping) to **@M-307** for support and help
+Enkanetwork.pyについてサポートや質問がある場合は[Enka.network discordサーバー](https://discord.gg/G3m7CWkssY)の[𝖯𝖸┃enkanetwork․py](https://discord.com/channels/840335525621268520/1046281445049647104)で **@M-307** へメンションしてください。
 
-# LICENSE
+# ライセンス
 
 [MIT License](./LICENSE)
 
