@@ -93,7 +93,7 @@ class EquipmentsProps(BaseModel):
     prop_id: str = ''
     name: str = ''
     digit: DigitType = DigitType.NUMBER
-    value: int | float = 0
+    value: int = 0
     
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
