@@ -50,7 +50,7 @@ class showAvatar(BaseModel):
     """
         API Response data
     """
-    id: str = Field(0, alias="avatarId")
+    id: int = Field(0, alias="avatarId")
     level: int = 1
 
     """
