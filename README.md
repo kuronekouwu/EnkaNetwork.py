@@ -1,6 +1,6 @@
 # Enka Network Python
 
-EN | [TH](https://github.com/mrwan200/EnkaNetwork.py/blob/master/README_TH.md) | [JP](https://github.com/mrwan200/EnkaNetwork.py/blob/master/README_JP.md)
+EN | [TH](https://github.com/mrwan200/EnkaNetwork.py/blob/master/README_TH.md) | [JA](https://github.com/mrwan200/EnkaNetwork.py/blob/master/README_JA.md)
 
 Library for API wrapper data from site https://enka.network/
 

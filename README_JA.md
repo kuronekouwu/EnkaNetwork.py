@@ -1,6 +1,6 @@
 # Enka Network Python
 
-[EN](./README.md) | [TH](./README_TH.md) | JP
+[EN](./README.md) | [TH](./README_TH.md) | JA
 
 https://enka.network/ のAPIラッパーライブラリ
 

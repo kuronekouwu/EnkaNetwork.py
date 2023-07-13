@@ -1,5 +1,5 @@
 # Enka Network Python
-[EN](./README.md) | TH | [JP](./README_JP.md)
+[EN](./README.md) | TH | [JA](./README_JA.md)
 
 ไลบารีสำหรับดึงข้อมูล JSON จากเว็บ https://enka.network
 
