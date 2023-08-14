@@ -30,16 +30,20 @@ __all__ = ("EnkaNetworkAPI",)
 
 
 class EnkaNetworkAPI:
-    """ A library for API wrapper player by UID / Username from https://enka.network
+    """
+
+    A library for API wrapper player by UID / Username
+    from https://enka.network
 
     Parameters
     ------------
     lang: :class:`str`
         Init default language
     debug: :class:`bool`
-        If set to `True`. In request data or get assets. It's will be shown log processing
+        If set to `True`. In request data or get assets.
+        It's will be shown log processing
     key: :class:`str`
-        Depercated 
+        Depercated
     cache: :class:`bool`
         If set to `True`. In response data will be cache data
     user_agent: :class:`str`
@@ -54,7 +58,7 @@ class EnkaNetworkAPI:
     http: :class:`HTTPClient`
         HTTP for request and handle data
     lang: :class:`Language`
-        A default language 
+        A default language
 
     Example
     ------------
@@ -175,19 +179,19 @@ class EnkaNetworkAPI:
             The response player data
         """
 
-        # Loda cache 
+        # Loda cache
         cache = await self.__get_cache(uid)
         if cache:
             return EnkaNetworkResponse.parse_obj(cache)
 
         data = await self.__http.fetch_user_by_uid(uid, info=info)
         data = self.__format_json(data)
-        
+
         # Return data
         self.LOGGER.debug("Parsing data...")
 
         # Store cache
-        await self.__store_cache(uid,data)
+        await self.__store_cache(uid, data)
 
         if "owner" in data:
             data["owner"] = {
@@ -229,7 +233,7 @@ class EnkaNetworkAPI:
         :class:`EnkaNetworkProfileResponse`
             The response profile / hoyos and builds data
         """
-        # Loda cache 
+        # Loda cache
         cache = await self.__get_cache(profile_id)
         if cache:
             return EnkaNetworkProfileResponse.parse_obj(cache)
@@ -240,7 +244,7 @@ class EnkaNetworkAPI:
         self.LOGGER.debug("Parsing data...")
 
         # Store cache
-        await self.__store_cache(profile_id,data)
+        await self.__store_cache(profile_id, data)
 
         # Fetch hoyos and build(s)
         data = {
@@ -281,7 +285,7 @@ class EnkaNetworkAPI:
         """
         key = profile_id + ":hoyos"
 
-        # Loda cache 
+        # Loda cache
         cache = await self.__get_cache(key)
         if cache:
             return self.__format_hoyos(profile_id, cache)
@@ -308,7 +312,7 @@ class EnkaNetworkAPI:
         profile_id: Optional[:class:`str`]
             Username / patreon ID has subscriptions in Enka.Network
         metaname: Optional[:class:`str`]
-            Metaname from hoyos data or owner tag in hash field 
+            Metaname from hoyos data or owner tag in hash field
 
         Raises
         ------------
@@ -329,12 +333,13 @@ class EnkaNetworkAPI:
             A response builds data
         """
         key = profile_id + ":hoyos:" + metaname + ":builds"
-        # Loda cache 
+        # Loda cache
         cache = await self.__get_cache(key)
         if cache:
             return Builds.parse_obj(cache)
 
-        data = await self.__http.fetch_hoyos_by_username(profile_id, metaname, True)
+        data = await self.__http.fetch_hoyos_by_username(
+            profile_id, metaname, True)
         data = self.__format_json(data)
         self.LOGGER.debug("Parsing data...")
 
@@ -343,24 +348,24 @@ class EnkaNetworkAPI:
 
         return Builds.parse_obj(data)
 
-    async def fetch_raw_data(self, uid: Union[str, int], *, info: bool = False) -> Dict[str, Any]:
+    async def fetch_raw_data(self, uid: Union[str, int], *, info: bool = False) -> Dict[str, Any]:  # noqa
         """Fetches raw data for a user with the given UID. """
 
-        # Loda cache 
+        # Loda cache
         cache = await self.__get_cache(uid)
         if cache:
             return cache
-            
+
         data = await self.__http.fetch_user_by_uid(uid, info=info)
         data = self.__format_json(data)
 
         # Store cache
-        await self.__store_cache(uid,data, cache=cache)
+        await self.__store_cache(uid, data, cache=cache)
 
         return data
 
-    async def sync_build(self, uid: Union[str, int], old_data: Dict[str, Any]) -> Dict[str, Any]:
-        """ Sync build data 
+    async def sync_build(self, uid: Union[str, int], old_data: Dict[str, Any]) -> Dict[str, Any]:  # noqa
+        """ Sync build data
 
         Parameters
         ----------
@@ -391,16 +396,18 @@ class EnkaNetworkAPI:
                 self.LOGGER.debug(f"Writing {folder} file {filename}...")
 
                 # dumps to json file
-                with open(os.path.join(path[folder], filename), "w", encoding="utf-8") as f:
+                with open(os.path.join(path[folder], filename), "w",
+                          encoding="utf-8") as f:
                     json.dump(json.loads(data["content"]),
                               f, ensure_ascii=False, indent=4)
 
         # Reload config
         self.assets.reload_assets()
 
-    async def __format_hoyos(self, username: str, data: List[Any]) -> List[PlayerHoyos]:
+    async def __format_hoyos(self, username: str, data: List[Any]) -> List[PlayerHoyos]:  # noqa
         return [PlayerHoyos.parse_obj({
-            "builds": await self.fetch_builds(profile_id=username, metaname=data[key]["hash"]),
+            "builds": await self.fetch_builds(profile_id=username,
+                                              metaname=data[key]["hash"]),
             **data[key]
         }) for key in data]
 
@@ -430,7 +437,8 @@ class EnkaNetworkAPI:
             if cache is None:
                 await Config.CACHE.set(key, data)
             else:
-                await Config.CACHE.set(key, await self.merge_raw_data(data, cache_data=cache))
+                await Config.CACHE.set(key, await self.merge_raw_data(data,
+                                                                      cache_data=cache))  # noqa
 
     # Concept by genshin.py python library
     fetch_user = fetch_user_by_uid
