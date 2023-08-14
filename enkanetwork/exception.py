@@ -41,6 +41,15 @@ class EnkaServerUnknown(EnkaNetworError):
 
 
 """
+    Github
+"""
+
+
+class HTTPException(Exception):
+    """Base class for EnkaNetwork errors."""
+
+
+"""
     EnkaNetwork response error
 """
 
