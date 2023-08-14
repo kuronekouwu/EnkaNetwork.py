@@ -299,6 +299,16 @@
         "skillIcon": "Skill_E_Kate",
         "proudSkillGroupId": ""
     },
+    "10087": {
+        "nameTextMapHash": 130110989,
+        "skillIcon": "Skill_S_PlayerWater_01",
+        "proudSkillGroupId": 632
+    },
+    "10088": {
+        "nameTextMapHash": 168140725,
+        "skillIcon": "Skill_E_PlayerWater_01",
+        "proudSkillGroupId": 639
+    },
     "10117": {
         "nameTextMapHash": 2178570213,
         "skillIcon": "Skill_E_PlayerGrass_01",
@@ -1669,6 +1679,76 @@
         "skillIcon": "Skill_E_Baizhuer_01",
         "proudSkillGroupId": 8239
     },
+    "10831": {
+        "nameTextMapHash": 2038141157,
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 8331
+    },
+    "10832": {
+        "nameTextMapHash": 2169745509,
+        "skillIcon": "Skill_S_Linette_01",
+        "proudSkillGroupId": 8332
+    },
+    "10833": {
+        "nameTextMapHash": 3572684293,
+        "skillIcon": "Skill_S_Linette_02",
+        "proudSkillGroupId": ""
+    },
+    "10835": {
+        "nameTextMapHash": 496785501,
+        "skillIcon": "Skill_E_Linette_01",
+        "proudSkillGroupId": 8339
+    },
+    "10841": {
+        "nameTextMapHash": 2045120365,
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": 8431
+    },
+    "10842": {
+        "nameTextMapHash": 3118483965,
+        "skillIcon": "Skill_S_Liney_01",
+        "proudSkillGroupId": 8432
+    },
+    "10843": {
+        "nameTextMapHash": 216293141,
+        "skillIcon": "Skill_S_Liney_02",
+        "proudSkillGroupId": ""
+    },
+    "10844": {
+        "nameTextMapHash": 1740013101,
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
+    },
+    "10845": {
+        "nameTextMapHash": 2543605245,
+        "skillIcon": "Skill_E_Liney_01",
+        "proudSkillGroupId": 8439
+    },
+    "10851": {
+        "nameTextMapHash": 2253281405,
+        "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": 8531
+    },
+    "10852": {
+        "nameTextMapHash": 2430743149,
+        "skillIcon": "Skill_S_Freminet_01",
+        "proudSkillGroupId": 8532
+    },
+    "10853": {
+        "nameTextMapHash": 1020080013,
+        "skillIcon": "Skill_S_Freminet_02",
+        "proudSkillGroupId": ""
+    },
+    "10854": {
+        "nameTextMapHash": 912782125,
+        "skillIcon": "Skill_S_Freminet_03",
+        "proudSkillGroupId": ""
+    },
+    "10855": {
+        "nameTextMapHash": 285889909,
+        "skillIcon": "Skill_E_Freminet_01",
+        "proudSkillGroupId": 8539
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun",
@@ -1789,9 +1869,19 @@
         "skillIcon": "Btn_CatchAnimal_Shoot",
         "proudSkillGroupId": ""
     },
+    "20046": {
+        "nameTextMapHash": 4185154309,
+        "skillIcon": "Skill_Diving_Absorb",
+        "proudSkillGroupId": ""
+    },
     "20049": {
         "nameTextMapHash": 1068626397,
         "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
+    },
+    "20050": {
+        "nameTextMapHash": 1078788773,
+        "skillIcon": "Skill_Diving_Slash",
         "proudSkillGroupId": ""
     },
     "20051": {
@@ -1802,6 +1892,46 @@
     "20054": {
         "nameTextMapHash": 4262868373,
         "skillIcon": "Skill_E_Gagana_AimShoot",
+        "proudSkillGroupId": ""
+    },
+    "20059": {
+        "nameTextMapHash": 1661132309,
+        "skillIcon": "Skill_Diving_Shield",
+        "proudSkillGroupId": ""
+    },
+    "20062": {
+        "nameTextMapHash": 3991687493,
+        "skillIcon": "Skill_Diving_Echo",
+        "proudSkillGroupId": ""
+    },
+    "20063": {
+        "nameTextMapHash": 1137915773,
+        "skillIcon": "Btn_BounceConjuring_Hit_A_01",
+        "proudSkillGroupId": ""
+    },
+    "20064": {
+        "nameTextMapHash": 2573912525,
+        "skillIcon": "Btn_HideAndSeek_Seeker_A_01",
+        "proudSkillGroupId": ""
+    },
+    "20065": {
+        "nameTextMapHash": 3623286589,
+        "skillIcon": "Btn_CatchAnimal_Shoot",
+        "proudSkillGroupId": ""
+    },
+    "20066": {
+        "nameTextMapHash": 2221461965,
+        "skillIcon": "Btn_HideAndSeek_Seeker_S_01",
+        "proudSkillGroupId": ""
+    },
+    "20070": {
+        "nameTextMapHash": 2208227565,
+        "skillIcon": "QuesteventSkillIcon_01",
+        "proudSkillGroupId": ""
+    },
+    "20080": {
+        "nameTextMapHash": 3018374477,
+        "skillIcon": "QuesteventSkillIcon_01",
         "proudSkillGroupId": ""
     },
     "20100": {
@@ -2089,6 +2219,11 @@
         "skillIcon": "Btn_Fishing_Bait",
         "proudSkillGroupId": ""
     },
+    "20361": {
+        "nameTextMapHash": 1185804085,
+        "skillIcon": "Skill_E_Klee_01",
+        "proudSkillGroupId": ""
+    },
     "10384": {
         "nameTextMapHash": 1543775045,
         "skillIcon": "Btn_Recon_Bait",
@@ -2103,6 +2238,11 @@
         "nameTextMapHash": 3198281757,
         "skillIcon": "Skill_A_01",
         "proudSkillGroupId": ""
+    },
+    "100542": {
+        "nameTextMapHash": 3565118517,
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 630
     },
     "100543": {
         "nameTextMapHash": 3283214237,
@@ -2138,6 +2278,11 @@
         "nameTextMapHash": 2463434149,
         "skillIcon": "Skill_A_01",
         "proudSkillGroupId": ""
+    },
+    "100552": {
+        "nameTextMapHash": 299520933,
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": 631
     },
     "100553": {
         "nameTextMapHash": 2182891949,
@@ -2577,6 +2722,21 @@
     "5082010": {
         "nameTextMapHash": 3734682949,
         "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
+    },
+    "5083010": {
+        "nameTextMapHash": 500837677,
+        "skillIcon": "Skill_A_01",
+        "proudSkillGroupId": ""
+    },
+    "5084010": {
+        "nameTextMapHash": 3740273565,
+        "skillIcon": "Skill_A_02",
+        "proudSkillGroupId": ""
+    },
+    "5085010": {
+        "nameTextMapHash": 1031784445,
+        "skillIcon": "Skill_A_04",
         "proudSkillGroupId": ""
     }
 }

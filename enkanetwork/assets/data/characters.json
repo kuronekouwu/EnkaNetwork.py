@@ -66,11 +66,20 @@
         "iconName": "UI_AvatarIcon_PlayerBoy",
         "sideIconName": "UI_AvatarIcon_Side_PlayerBoy",
         "qualityType": "QUALITY_ORANGE",
-        "costElemType": "",
+        "costElemType": "Water",
         "skills": [
-            100542
+            100542,
+            10087,
+            10088
         ],
-        "talents": []
+        "talents": [
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ]
     },
     "10000005-504": {
         "nameTextMapHash": 1533656818,
@@ -219,11 +228,20 @@
         "iconName": "UI_AvatarIcon_PlayerGirl",
         "sideIconName": "UI_AvatarIcon_Side_PlayerGirl",
         "qualityType": "QUALITY_ORANGE",
-        "costElemType": "",
+        "costElemType": "Water",
         "skills": [
-            100552
+            100552,
+            10087,
+            10088
         ],
-        "talents": []
+        "talents": [
+            61,
+            62,
+            63,
+            64,
+            65,
+            66
+        ]
     },
     "10000007-704": {
         "nameTextMapHash": 3816664530,
@@ -1603,6 +1621,66 @@
             824,
             825,
             826
+        ]
+    },
+    "10000083": {
+        "nameTextMapHash": 1225226258,
+        "iconName": "UI_AvatarIcon_Linette",
+        "sideIconName": "UI_AvatarIcon_Side_Linette",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Wind",
+        "skills": [
+            10831,
+            10832,
+            10835
+        ],
+        "talents": [
+            831,
+            832,
+            833,
+            834,
+            835,
+            836
+        ]
+    },
+    "10000084": {
+        "nameTextMapHash": 2472444970,
+        "iconName": "UI_AvatarIcon_Liney",
+        "sideIconName": "UI_AvatarIcon_Side_Liney",
+        "qualityType": "QUALITY_ORANGE",
+        "costElemType": "Fire",
+        "skills": [
+            10841,
+            10842,
+            10845
+        ],
+        "talents": [
+            841,
+            842,
+            843,
+            844,
+            845,
+            846
+        ]
+    },
+    "10000085": {
+        "nameTextMapHash": 4201964354,
+        "iconName": "UI_AvatarIcon_Freminet",
+        "sideIconName": "UI_AvatarIcon_Side_Freminet",
+        "qualityType": "QUALITY_PURPLE",
+        "costElemType": "Ice",
+        "skills": [
+            10851,
+            10852,
+            10855
+        ],
+        "talents": [
+            851,
+            852,
+            853,
+            854,
+            855,
+            856
         ]
     }
 }

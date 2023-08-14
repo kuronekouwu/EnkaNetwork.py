@@ -167,6 +167,30 @@
         "nameTextMapHash": 712474025,
         "icon": "UI_Talent_S_PlayerGrass_06"
     },
+    "61": {
+        "nameTextMapHash": 464807465,
+        "icon": "UI_Talent_S_PlayerWater_01"
+    },
+    "62": {
+        "nameTextMapHash": 2736315841,
+        "icon": "UI_Talent_S_PlayerWater_02"
+    },
+    "63": {
+        "nameTextMapHash": 3914394073,
+        "icon": "UI_Talent_U_PlayerWater_01"
+    },
+    "64": {
+        "nameTextMapHash": 663820225,
+        "icon": "UI_Talent_S_PlayerWater_03"
+    },
+    "65": {
+        "nameTextMapHash": 110055385,
+        "icon": "UI_Talent_U_PlayerWater_02"
+    },
+    "66": {
+        "nameTextMapHash": 4220874993,
+        "icon": "UI_Talent_S_PlayerWater_04"
+    },
     "141": {
         "nameTextMapHash": 696499609,
         "icon": "UI_Talent_S_Barbara_01"
@@ -1702,5 +1726,77 @@
     "616": {
         "nameTextMapHash": 2439940993,
         "icon": "UI_Talent_S_Momoka_03"
+    },
+    "831": {
+        "nameTextMapHash": 2471765961,
+        "icon": "UI_Talent_S_Linette_01"
+    },
+    "832": {
+        "nameTextMapHash": 1377369345,
+        "icon": "UI_Talent_S_Linette_02"
+    },
+    "833": {
+        "nameTextMapHash": 4173595889,
+        "icon": "UI_Talent_U_Linette_01"
+    },
+    "834": {
+        "nameTextMapHash": 1475870801,
+        "icon": "UI_Talent_S_Linette_03"
+    },
+    "835": {
+        "nameTextMapHash": 1789577793,
+        "icon": "UI_Talent_U_Linette_02"
+    },
+    "836": {
+        "nameTextMapHash": 2746616153,
+        "icon": "UI_Talent_S_Linette_04"
+    },
+    "841": {
+        "nameTextMapHash": 1235684201,
+        "icon": "UI_Talent_S_Liney_01"
+    },
+    "842": {
+        "nameTextMapHash": 4294085417,
+        "icon": "UI_Talent_S_Liney_03"
+    },
+    "843": {
+        "nameTextMapHash": 2593991761,
+        "icon": "UI_Talent_U_Liney_01"
+    },
+    "844": {
+        "nameTextMapHash": 2932106129,
+        "icon": "UI_Talent_S_Liney_02"
+    },
+    "845": {
+        "nameTextMapHash": 2035233753,
+        "icon": "UI_Talent_U_Liney_02"
+    },
+    "846": {
+        "nameTextMapHash": 3525594449,
+        "icon": "UI_Talent_S_Liney_04"
+    },
+    "851": {
+        "nameTextMapHash": 2267561625,
+        "icon": "UI_Talent_S_Freminet_01"
+    },
+    "852": {
+        "nameTextMapHash": 2404188193,
+        "icon": "UI_Talent_S_Freminet_02"
+    },
+    "853": {
+        "nameTextMapHash": 2569900185,
+        "icon": "UI_Talent_U_Freminet_01"
+    },
+    "854": {
+        "nameTextMapHash": 2906179801,
+        "icon": "UI_Talent_S_Freminet_03"
+    },
+    "855": {
+        "nameTextMapHash": 2128995113,
+        "icon": "UI_Talent_U_Freminet_02"
+    },
+    "856": {
+        "nameTextMapHash": 2077326505,
+        "icon": "UI_Talent_S_Freminet_04"
     }
 }

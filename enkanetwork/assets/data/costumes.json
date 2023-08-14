@@ -58,5 +58,15 @@
         "iconName": "UI_AvatarIcon_LisaCostumeStudentin",
         "sideIconName": "UI_AvatarIcon_Side_LisaCostumeStudentin",
         "nameTextMapHash": 2255412906
+    },
+    "202901": {
+        "iconName": "UI_AvatarIcon_KleeCostumeWitch",
+        "sideIconName": "UI_AvatarIcon_Side_KleeCostumeWitch",
+        "nameTextMapHash": 2343491290
+    },
+    "201501": {
+        "iconName": "UI_AvatarIcon_KaeyaCostumeDancer",
+        "sideIconName": "UI_AvatarIcon_Side_KaeyaCostumeDancer",
+        "nameTextMapHash": 177626138
     }
 }
