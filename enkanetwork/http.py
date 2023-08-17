@@ -72,11 +72,9 @@ class Route:
         self.username = username
 
         if endpoint == 'enka':
-            self.url: str = Config.ENKA_PROTOCOL + "://" + Config.ENKA_URL
-            + path
+            self.url: str = Config.ENKA_PROTOCOL + "://" + Config.ENKA_URL + path
         else:
-            self.url: str = Config.ASSETS_PROTOCOL + "://" + Config.ASSETS_URL
-            + path
+            self.url: str = Config.ASSETS_PROTOCOL + "://" + Config.ASSETS_URL + path
 
 
 class HTTPClient:
