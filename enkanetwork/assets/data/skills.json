@@ -1749,6 +1749,36 @@
         "skillIcon": "Skill_E_Freminet_01",
         "proudSkillGroupId": 8539
     },
+    "10861": {
+        "nameTextMapHash": 3047671029,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 8631
+    },
+    "10862": {
+        "nameTextMapHash": 3496870941,
+        "skillIcon": "Skill_S_Wriothesley_01",
+        "proudSkillGroupId": 8632
+    },
+    "10865": {
+        "nameTextMapHash": 1703060229,
+        "skillIcon": "Skill_E_Wriothesley_01",
+        "proudSkillGroupId": 8639
+    },
+    "10871": {
+        "nameTextMapHash": 2288777957,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": 8731
+    },
+    "10872": {
+        "nameTextMapHash": 3874529309,
+        "skillIcon": "Skill_S_Neuvillette_01",
+        "proudSkillGroupId": 8732
+    },
+    "10875": {
+        "nameTextMapHash": 2195272997,
+        "skillIcon": "Skill_E_Neuvillette_01",
+        "proudSkillGroupId": 8739
+    },
     "20001": {
         "nameTextMapHash": 1936482797,
         "skillIcon": "Skill_A_Dvalin_AirGun",
@@ -1897,6 +1927,16 @@
     "20059": {
         "nameTextMapHash": 1661132309,
         "skillIcon": "Skill_Diving_Shield",
+        "proudSkillGroupId": ""
+    },
+    "20060": {
+        "nameTextMapHash": 810379957,
+        "skillIcon": "Skill_Diving_Jellyfish",
+        "proudSkillGroupId": ""
+    },
+    "20061": {
+        "nameTextMapHash": 1736468869,
+        "skillIcon": "Skill_Diving_Jellyfish_Trigger",
         "proudSkillGroupId": ""
     },
     "20062": {
@@ -2222,6 +2262,31 @@
     "20361": {
         "nameTextMapHash": 1185804085,
         "skillIcon": "Skill_E_Klee_01",
+        "proudSkillGroupId": ""
+    },
+    "20362": {
+        "nameTextMapHash": 529543717,
+        "skillIcon": "Skill_PoetryFestival_PitchPot_Icon01",
+        "proudSkillGroupId": ""
+    },
+    "20363": {
+        "nameTextMapHash": 2726683461,
+        "skillIcon": "Skill_E_Klee_01",
+        "proudSkillGroupId": ""
+    },
+    "20364": {
+        "nameTextMapHash": 1570478309,
+        "skillIcon": "Skill_E_BubbleGun_01",
+        "proudSkillGroupId": ""
+    },
+    "20365": {
+        "nameTextMapHash": 2631282493,
+        "skillIcon": "Btn_Recon_Bait",
+        "proudSkillGroupId": ""
+    },
+    "20366": {
+        "nameTextMapHash": 2209588093,
+        "skillIcon": "Btn_Recon_Bait",
         "proudSkillGroupId": ""
     },
     "10384": {
@@ -2737,6 +2802,16 @@
     "5085010": {
         "nameTextMapHash": 1031784445,
         "skillIcon": "Skill_A_04",
+        "proudSkillGroupId": ""
+    },
+    "5086010": {
+        "nameTextMapHash": 2740476477,
+        "skillIcon": "Skill_A_Catalyst_MD",
+        "proudSkillGroupId": ""
+    },
+    "5087010": {
+        "nameTextMapHash": 3370753429,
+        "skillIcon": "Skill_A_Catalyst_MD",
         "proudSkillGroupId": ""
     }
 }

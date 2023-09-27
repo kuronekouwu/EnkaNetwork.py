@@ -1688,5 +1688,65 @@
         ],
         "rankLevel": 4,
         "materialType": "MATERIAL_NAMECARD"
+    },
+    "210174": {
+        "nameTextMapHash": 696265500,
+        "icon": "UI_NameCardIcon_Neuvillette",
+        "picPath": [
+            "UI_NameCardPic_Neuvillette_Alpha",
+            "UI_NameCardPic_Neuvillette_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210175": {
+        "nameTextMapHash": 4090643572,
+        "icon": "UI_NameCardIcon_Wriothesley",
+        "picPath": [
+            "UI_NameCardPic_Wriothesley_Alpha",
+            "UI_NameCardPic_Wriothesley_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210176": {
+        "nameTextMapHash": 866604532,
+        "icon": "UI_NameCardIcon_Bp27",
+        "picPath": [
+            "UI_NameCardPic_Bp27_Alpha",
+            "UI_NameCardPic_Bp27_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210177": {
+        "nameTextMapHash": 3976555596,
+        "icon": "UI_NameCardIcon_Guqin",
+        "picPath": [
+            "UI_NameCardPic_Guqin_Alpha",
+            "UI_NameCardPic_Guqin_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210178": {
+        "nameTextMapHash": 1715198612,
+        "icon": "UI_NameCardIcon_Tzz8",
+        "picPath": [
+            "UI_NameCardPic_Tzz8_Alpha",
+            "UI_NameCardPic_Tzz8_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
+    },
+    "210179": {
+        "nameTextMapHash": 13290652,
+        "icon": "UI_NameCardIcon_FD2",
+        "picPath": [
+            "UI_NameCardPic_FD2_Alpha",
+            "UI_NameCardPic_FD2_P"
+        ],
+        "rankLevel": 4,
+        "materialType": "MATERIAL_NAMECARD"
     }
 }

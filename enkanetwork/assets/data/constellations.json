@@ -1798,5 +1798,53 @@
     "856": {
         "nameTextMapHash": 2077326505,
         "icon": "UI_Talent_S_Freminet_04"
+    },
+    "861": {
+        "nameTextMapHash": 4114524601,
+        "icon": "UI_Talent_S_Wriothesley_01"
+    },
+    "862": {
+        "nameTextMapHash": 2190383313,
+        "icon": "UI_Talent_S_Wriothesley_02"
+    },
+    "863": {
+        "nameTextMapHash": 1926021769,
+        "icon": "UI_Talent_U_Wriothesley_01"
+    },
+    "864": {
+        "nameTextMapHash": 2263893849,
+        "icon": "UI_Talent_S_Wriothesley_03"
+    },
+    "865": {
+        "nameTextMapHash": 2419244785,
+        "icon": "UI_Talent_U_Wriothesley_02"
+    },
+    "866": {
+        "nameTextMapHash": 126955769,
+        "icon": "UI_Talent_S_Wriothesley_04"
+    },
+    "871": {
+        "nameTextMapHash": 3840366369,
+        "icon": "UI_Talent_S_Neuvillette_01"
+    },
+    "872": {
+        "nameTextMapHash": 2437610633,
+        "icon": "UI_Talent_S_Neuvillette_02"
+    },
+    "873": {
+        "nameTextMapHash": 2720290529,
+        "icon": "UI_Talent_U_Neuvillette_01"
+    },
+    "874": {
+        "nameTextMapHash": 1561601289,
+        "icon": "UI_Talent_S_Neuvillette_03"
+    },
+    "875": {
+        "nameTextMapHash": 4222513497,
+        "icon": "UI_Talent_U_Neuvillette_02"
+    },
+    "876": {
+        "nameTextMapHash": 1739750817,
+        "icon": "UI_Talent_S_Neuvillette_04"
     }
 }
