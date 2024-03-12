@@ -21,7 +21,7 @@ class NamecardAsset(BaseModel):
     ------------
     id: :class:`int`
         Namecard ID
-    hash_id: :class:`int`
+    hash_id: :class:`int | str`
         Namecard hash id
     icon: :class:`IconAsset`
         A icon assets. Please refers in `IconAsset` class
@@ -32,7 +32,7 @@ class NamecardAsset(BaseModel):
     """
 
     id: int = 0
-    hash_id: int = Field("", alias="nameTextMapHash")
+    hash_id: int | str = Field("", alias="nameTextMapHash")
     icon: IconAsset
     banner: IconAsset
     navbar: IconAsset
@@ -67,14 +67,14 @@ class CharacterSkillAsset(BaseModel):
         Character skill(s) ID
     pround_map: :class:`int`
         pround map for a booest skill by constellation
-    hash_id: :class:`int`
+    hash_id: :class:`int | str`
         Skill(s) hash id
     icon: :class:`IconAsset`
         A icon assets. Please refers in `IconAsset` class
     """
     id: int = 0,
     pround_map: int = 0,
-    hash_id: int = Field("", alias="nameTextMapHash")
+    hash_id: int | str = Field("", alias="nameTextMapHash")
     icon: IconAsset = None
 
 
@@ -85,13 +85,13 @@ class CharacterConstellationsAsset(BaseModel):
     ------------
     id: :class:`int`
         Character constellations ID
-    hash_id: :class:`int`
+    hash_id: :class:`int | str`
         Constellations hash id
     icon: :class:`IconAsset`
         A icon assets. Please refers in `IconAsset` class
     """
     id: int = 0
-    hash_id: int = Field("", alias="nameTextMapHash")
+    hash_id: int | str = Field("", alias="nameTextMapHash")
     icon: IconAsset = None
 
 
@@ -141,7 +141,7 @@ class CharacterAsset(BaseModel):
     """
     id: int = 0
     rarity: int = 0
-    hash_id: int = Field("", alias="nameTextMapHash")
+    hash_id: int | str = Field("", alias="nameTextMapHash")
     element: ElementType = ElementType.Unknown
     images: CharacterIconAsset = None
     skill_id: int = 0
