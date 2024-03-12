@@ -21,7 +21,7 @@ class EquipmentsStats(BaseModel):
     prop_id: str = ""
     type: DigitType = DigitType.NUMBER
     name: str = ""
-    value: Union[int, float] = Field(0, alias="statValue")
+    value: int | float = Field(0, alias="statValue")
 
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
@@ -93,7 +93,7 @@ class EquipmentsProps(BaseModel):
     prop_id: str = ''
     name: str = ''
     digit: DigitType = DigitType.NUMBER
-    value: int = 0
+    value: int | float = 0
     
     def __init__(self, **data: Any) -> None:
         super().__init__(**data)
