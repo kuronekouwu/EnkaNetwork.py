@@ -78,7 +78,7 @@ def test_artifacts() -> None:
 
     for star in _j["artifacts"]:
         raw = _j["artifacts"][star]
-        data = Equipments.parse_obj(raw)
+        data = Equipments.model_validate(raw)
         assert data.id == raw["itemId"]
         assert data.type in list(EquipmentsType)
         assert data.detail.name is not None
@@ -106,7 +106,7 @@ def test_weapons():
 
     for star in _j["weapons"]:
         raw = _j["weapons"][star]
-        data = Equipments.parse_obj(raw)
+        data = Equipments.model_validate(raw)
         assert data.id == raw["itemId"]
         assert data.type in list(EquipmentsType)
         assert data.detail.name is not None

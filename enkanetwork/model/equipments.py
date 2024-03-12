@@ -67,16 +67,16 @@ class EquipmentsDetail(BaseModel):
             self.artifact_type = EquipType(data["equipType"])
             # Sub Stats
             for stats in data["reliquarySubstats"] if "reliquarySubstats" in data else []:
-                self.substats.append(EquipmentsStats.parse_obj(stats))
+                self.substats.append(EquipmentsStats.model_validate(stats))
 
         if data["itemType"] == "ITEM_WEAPON":  # AKA. Weapon
             LOGGER.debug("=== Weapon ===")
 
             # Main and Sub Stats
-            self.mainstats = EquipmentsStats.parse_obj(
+            self.mainstats = EquipmentsStats.model_validate(
                 data["weaponStats"][0])
             for stats in data["weaponStats"][1:]:
-                self.substats.append(EquipmentsStats.parse_obj(stats))
+                self.substats.append(EquipmentsStats.model_validate(stats))
 
         _name = Assets.get_hash_map(data.get("nameTextMapHash"))
         if "setNameTextMapHash" in data:

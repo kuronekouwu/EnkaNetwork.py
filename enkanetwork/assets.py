@@ -65,7 +65,7 @@ class Assets:
             LOGGER.error(f"Character not found with id: {id}")
             return
 
-        return assets.CharacterAsset.parse_obj({
+        return assets.CharacterAsset.model_validate({
             "id": id if str(id).isdigit() else id.split("-")[0],
             "skill_id": str(id).split("-")[1] if not str(id).isdigit() else 0,
             "images": cls.create_character_icon(data["sideIconName"]),
@@ -80,7 +80,7 @@ class Assets:
             LOGGER.error(f"Costume not found with id: {id}")
             return
 
-        return assets.CharacterCostume.parse_obj({
+        return assets.CharacterCostume.model_validate({
             "id": id,
             "images": cls.create_chractar_costume_icon(data["sideIconName"])
         })
@@ -93,7 +93,7 @@ class Assets:
             LOGGER.error(f"Character constellations not found with id: {id}")
             return
 
-        return assets.CharacterConstellationsAsset.parse_obj({
+        return assets.CharacterConstellationsAsset.model_validate({
             "id": id,
             **data,
             "icon": utils.IconAsset(filename=data["icon"])
@@ -110,7 +110,7 @@ class Assets:
 
 
         pround = data.get("proudSkillGroupId", 0)
-        return assets.CharacterSkillAsset.parse_obj({
+        return assets.CharacterSkillAsset.model_validate({
             "id": id,
             **data,
             "pround_map": pround if not pround is None and pround != "" else 0,
@@ -125,7 +125,7 @@ class Assets:
             LOGGER.error(f"Namecards not found with id: {id}")
             return
 
-        return assets.NamecardAsset.parse_obj({
+        return assets.NamecardAsset.model_validate({
             "id": id,
             **data,
             "icon": utils.IconAsset(filename=data["icon"]),
@@ -141,7 +141,7 @@ class Assets:
             LOGGER.error(f"Artifact props not found with id: {id}")
             return
         
-        return assets.AritfactProps.parse_obj({
+        return assets.AritfactProps.model_validate({
             "id": id,
             **data
         })

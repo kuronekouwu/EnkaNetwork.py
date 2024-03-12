@@ -182,7 +182,7 @@ class EnkaNetworkAPI:
         # Loda cache
         cache = await self.__get_cache(uid)
         if cache:
-            return EnkaNetworkResponse.parse_obj(cache)
+            return EnkaNetworkResponse.model_validate(cache)
 
         data = await self.__http.fetch_user_by_uid(uid, info=info)
         data = self.__format_json(data)
@@ -202,7 +202,7 @@ class EnkaNetworkAPI:
                 )
             }
 
-        return EnkaNetworkResponse.parse_obj(data)
+        return EnkaNetworkResponse.model_validate(data)
 
     async def fetch_user_by_username(
         self,
@@ -236,7 +236,7 @@ class EnkaNetworkAPI:
         # Loda cache
         cache = await self.__get_cache(profile_id)
         if cache:
-            return EnkaNetworkProfileResponse.parse_obj(cache)
+            return EnkaNetworkProfileResponse.model_validate(cache)
 
         data = await self.__http.fetch_user_by_username(profile_id)
         data = self.__format_json(data)
@@ -252,7 +252,7 @@ class EnkaNetworkAPI:
             "hoyos": await self.fetch_hoyos_by_username(profile_id)
         }
 
-        return EnkaNetworkProfileResponse.parse_obj(data)
+        return EnkaNetworkProfileResponse.model_validate(data)
 
     async def fetch_hoyos_by_username(
         self,
@@ -336,7 +336,7 @@ class EnkaNetworkAPI:
         # Loda cache
         cache = await self.__get_cache(key)
         if cache:
-            return Builds.parse_obj(cache)
+            return Builds.model_validate(cache)
 
         data = await self.__http.fetch_hoyos_by_username(
             profile_id, metaname, True)
@@ -346,7 +346,7 @@ class EnkaNetworkAPI:
         # Store cache
         await self.__store_cache(key, data)
 
-        return Builds.parse_obj(data)
+        return Builds.model_validate(data)
 
     async def fetch_raw_data(self, uid: Union[str, int], *, info: bool = False) -> Dict[str, Any]:  # noqa
         """Fetches raw data for a user with the given UID. """
@@ -405,7 +405,7 @@ class EnkaNetworkAPI:
         self.assets.reload_assets()
 
     async def __format_hoyos(self, username: str, data: List[Any]) -> List[PlayerHoyos]:  # noqa
-        return [PlayerHoyos.parse_obj({
+        return [PlayerHoyos.model_validate({
             "builds": await self.fetch_builds(profile_id=username,
                                               metaname=data[key]["hash"]),
             **data[key]
